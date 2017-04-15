@@ -1,0 +1,152 @@
+body {
+  color: white;
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+#search_form input {
+  font-size: 1em;
+  height: 50px;
+  width: 75%;
+}
+
+#search_form {
+  padding-bottom: 25px;
+}
+
+h1, h2 {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.offset {
+  margin-top: 35px;
+}
+
+.loader {
+  font-size: 3em;
+  margin-top:50px;
+  text-align: center;
+}
+
+h3, #res_legend, #compare_legend, #map_legend, #capacity_legend, .center {
+  text-align: center;
+}
+
+#cap_legend_text {
+  margin-top: -20px;
+}
+
+#capacity_legend circle {
+  fill: none;
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  padding: 5px;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+
+#map path {
+  /* fill: #d7c7ad; */
+  fill: white;
+  stroke: white;
+  stroke-width: 1.5;
+  fill-opacity: 0.2;
+  stroke-opacity: 0.3;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+div.tooltip ul {
+  list-style-type: none;
+  padding: 1% 0 1% 3%;
+}
+
+.focus line {
+  stroke: white;
+  stroke-width: 2;
+}
+
+.map-circle {
+  fill: steelblue;
+  opacity: 0.7;
+}
+
+circle {
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+circle:hover {
+  stroke-width: 3;
+}
+
+text {
+  fill: white;
+}
+
+g.focus text {
+  font-size: .8em;
+}
+
+a {
+  color: white;
+}
+
+path.capacity {
+  fill: none;
+  stroke: green;
+  stroke-width: 2;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: white;
+}
+
+path.snow {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1;
+}
+
+path.snow_avg {
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+g.legend_value:hover, g.legend_value:focus {
+  cursor: pointer;
+}
+
+[v-cloak] { display:none; }
