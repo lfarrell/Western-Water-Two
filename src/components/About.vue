@@ -1,0 +1,78 @@
+<template>
+  <div>
+    <h1>Western Water - Introduction</h1>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+        <p>Much of the American West is in a prolonged drought. Western Water tracks the water levels of reservoirs in several western states. It is a proxy for water availability
+          in the selected states more generally. Results will be updated monthly. The initial goal was to update levels daily,
+          but there isn't enough daily change in reservoir levels to warrant such granularity.</p>
+        <p>Western Water does not include water from desalination plants, ground water, or water pulled directly from rivers
+          Instead it focuses on water stored in reservoirs.</p>
+        <p>Data does not include every reservoir in California. Data for some reservoirs was not available for various reasons; mainly due to
+          an inability to scrape data or determine a reservoir's capacity. Nor is water from reservoirs on the Colorado river,
+          which provides water to much of southern California, as I found no way
+          to quantify how much water in each reservoir: Havasu, Mead and Powell, belongs to California, as each
+          reservoir lies wholly or in part outside the state. The Colorado River
+          Compact guarantees California 4,400,000 acre feet a year. So
+          you can spread it among the Colorado River reservoirs however you see fit. If there
+          is a shortfall in available water in the river California's water rights trump Arizona's.</p>
+        <p>Texas reservoir data should be complete. A handful of reservoirs in Texas are shared with other states or countries, with
+          the water split as a percentage between the agreement partners. The reservoir capacities and volume in the visualization
+          are based on Texas' percentages, except as noted below.</p>
+        <p>The shared reservoirs are (per <a href="http://waterdatafortexas.org/">http://waterdatafortexas.org/</a>):
+        <ul>
+          <li>Lake Amistad, shared with Mexico: 56.2% of reservoir belongs to Texas.</li>
+          <li>Lake Falcon, shared with Mexico: 58.6% of reservoir belongs to Texas.</li>
+          <li>Caddo Lake, shared with Louisiana: 50.0% of reservoir belongs to Texas</li>
+          <li>Elephant Butte Lake, shared with Colorado, New Mexico, Texas and the Mexican state of Chihuahua.</li>
+          <li>Lake Meredith, shared with New Mexico and Oklahoma: 500,000 acre feet belong to Texas after New Mexico's
+            allotment of 200,000 acre feet are held in Ute Lake. Texas must release water beyond its allotment
+            to Oklahoma.</li>
+          <li>Lake Texoma, shared with Oklahoma: 50.0% of reservoir belongs to Texas</li>
+          <li>Toledo Bend Reservoir, shared with Louisiana: 50.0% of reservoir belongs to Texas</li>
+        </ul>
+        </p>
+        <p>The goal is to include reservoirs from across the west, particularly the states in the Colorado River basin:
+          Colorado, Wyoming, Utah, New Mexico, Nevada, Arizona and California. However, it has been difficult to find historical
+          data for most states. For example, the United States Bureau of Reclamation maintains separate web sites for the upper and lower
+          Colorado. Reclamation staff have been very helpful in navigating their data, but technological issues with loading pages from the
+          Bureau's sites have made it difficult to grab data via scripting.  More often than not, page loads
+          fail when accessing Bureau data via Curl.
+        </p>
+        <p>Historical averages would be a nice addition. These are available for California reservoirs, but not for other states or snow
+          data. My plan is to calculate averages from the data I do have.</p>
+        <p>Ground water usage is also of interest, though data is difficult if not impossible
+          to obtain, as for instance, California doesn't track groundwater use.</p>
+        <p>Data courtesy of the following locations:</p>
+        <ul class="no-style">
+          <li><a href="http://cdec.water.ca.gov">California Data Exchange Center</a></li>
+          <li><a href="http://waterdatafortexas.org/">Water Data for Texas</a></li>
+          <li><a href="http://waterdata.usgs.gov/">United States Geological Survey - National Water Information System</a></li>
+          <li><a href="http://www.usbr.gov/">United States Bureau of Reclamation</a></li>
+          <li><a href="http://data.hydrometdataservice.info/dwr/">Salt River Project</a></li>
+          <li><a href="http://www.wcc.nrcs.usda.gov/snow/">United States Dept of Agriculture - Natural Resources Conservation Service</a></li>
+          <li><a href="http://www.denverwater.org/SupplyPlanning/WaterSupply/ReservoirLevels/">Denver Water</a></li>
+          <li><a href="http://www.waterquality.utah.gov/">Utah Department of Environmental Quality - Division of Water Quality</a></li>
+          <li><a href="http://en.wikipedia.org/">Wikipedia</a></li>
+          <li><a href="http://tools.wmflabs.org/geohack/">GeoHack</a></li>
+          <li><a href="http://www.lat-long.com/">http://www.lat-long.com</a></li>
+          <li><a href="http://catalog.opendata.city/">opendata.city</a></li>
+        </ul>
+        <p>Project built using:</p>
+        <ul>
+          <li><a href="http://d3js.org/">D3.js</a></li>
+          <li><a href="https://github.com/gka/d3-jetpack">D3-jetpack</a></li>
+          <li><a href="https://angularjs.org/">AngularJS</a></li>
+          <li><a href="http://simplehtmldom.sourceforge.net/">PHP Simple HTML DOM Parser</a></li>
+        </ul>
+        <p>If you have questions or comments feel free to contact me on Twitter at <a href="https://twitter.com/farrelldlfarrel">@farrelldlfarrel</a></p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+name: 'about'
+}
+</script>

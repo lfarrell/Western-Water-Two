@@ -99,6 +99,7 @@ circle:hover {
 
 text {
   fill: white;
+  stroke: white
 }
 
 g.focus text {
