@@ -9,13 +9,15 @@
 <script>
   import * as d3 from 'd3';
   import * as _ from 'lodash';
+  import {formatting} from './utilities/formatting';
   import {tip} from './utilities/tip';
 
   export default {
     name: 'LineChart',
 
     props: {
-      selectedData: Array
+      selectedData: Array,
+      hasKey: Boolean
     },
 
     watch: {
@@ -46,10 +48,10 @@
 
       draw() {
         let data = this.histAvg(this.selectedData),
-          num_format = d3.format(",.1"),
           short_format = d3.timeParse('%m/%y'),
           long_format = d3.timeParse('%m/%Y'),
           format = this.hasKey ? short_format : long_format,
+          num_format = d3.format(','),
           margin = {top: 20, right: 130, left: 100, bottom: 80},
           graph_width = 600 - margin.left - margin.right,
           graph_height = 500 - margin.top - margin.bottom;
@@ -73,7 +75,8 @@
         let yAxis = d3.axisLeft()
           .scale(yScale);
 
-        d3.select('#all_res_avg').text(_.round(data[0].mean, 1));
+        let avg_val = num_format(_.round(+data[0].mean, 1));
+        d3.select('#all_res_avg').text(avg_val);
 
         let storage = d3.line()
           .curve(d3.curveNatural)
@@ -124,7 +127,7 @@
           .attr('fill', 'none')
           .attr('stroke', 'steelblue')
           .attr('stroke-width', 2)
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+          .attr('transform', `translate(${margin.left},${margin.top})`);
 
         chart.append('g')
           .append('path')
@@ -134,7 +137,7 @@
           .attr('stroke', '#FCE883')
           .attr('stroke-width', 2)
           .attr('stroke-dasharray', [5,5])
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top +')');
+          .attr('transform', `translate(${margin.left},${margin.top})`);
 
         chart.append('g')
           .append('path')
@@ -143,9 +146,32 @@
           .attr('fill', 'none')
           .attr('stroke', 'green')
           .attr('stroke-width', 2)
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+          .attr('transform', `translate(${margin.left},${margin.top})`);
 
-     /*   function mousemove() {
+        let focus = chart.append('g')
+          .attr('class', 'focus')
+          .style('display', 'none');
+
+        focus.append('line')
+          .attr('class', 'y0')
+          .attr('x1', 0)
+          .attr('y1', 0)
+          .attr('x2', 0)
+          .attr('y2', graph_height);
+
+        chart.append('rect')
+          .attr('class', 'overlay')
+          .attr('width', graph_width)
+          .attr('height', graph_height)
+          .on('mouseover touchstart', function() { focus.style('display', null); })
+          .on('mouseout touchend', function() {
+            focus.style('display', 'none');
+            tip.tipHide(tip_div);
+          })
+          .on('mousemove touchmove', mousemove)
+          .attr('transform', `translate(${margin.left},${margin.top})`);
+
+      function mousemove() {
           let x0 = xScale.invert(d3.mouse(this)[0]),
             i = bisectDate(data, x0, 1),
             d0 = data[i - 1],
@@ -153,30 +179,26 @@
 
           if(d1 === undefined) d1 = Infinity;
           let d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-          let transform_values = [(xScale(format(d.date)) + margin.left), margin.top];
-          d3.select("#graph line.y0").translate(transform_values);
+          d3.select('#graph line.y0')
+            .attr('transform', `translate(${xScale(format(d.date)) + margin.left},${margin.top})`);
 
           let date_bits = d.date.split('/');
-          let message = `<h4 class="text-center">${chartService.stringDate(date_bits[0])}, 20${date_bits[1]}</h4>
+          let message = `<h4 class="text-center">${formatting.stringDate(date_bits[0])}, 20${date_bits[1]}</h4>
           <ul class="list-unstyled">
-          <li>Capacity: ${d.capacity} acre ft</li>
-          <li>Vol: ${d.storage} acre ft</li>
+          <li>Capacity: ${num_format(d.capacity)} acre ft</li>
+          <li>Vol: ${num_format(d.storage)} acre ft</li>
           <li>Pct Full: ${d.pct_capacity}%</li>
           <li>Pct of Hist. Avg: ${(d.storage / d.mean * 100).toFixed(1)}%</li>
           </ul>`;
 
-          tip.tipShow(tip, message); */
+          tip.tipShow(tip_div, message);
         }
       }
     },
 
     updated() {
       this.draw();
-    },
-
-   /* mounted() {
-      this.draw();
-    } */
+    }
   }
 </script>
 

@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 
-let tip = {
+const tip = {
   tipDiv: () => {
     let tip = document.querySelectorAll('.tooltip'); // check that there's not already a tip div
 

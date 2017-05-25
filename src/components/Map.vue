@@ -3,10 +3,10 @@
     <div v-if="loading" class="loader">Loading...</div>
     <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
       <h3>Reservoirs</h3>
-      <p class="center">Percent Full for Month Ending <span id="map_month"></span>, or Most Recently Available Month</p>
+      <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
       <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke"></svg>
     </div>
-    <line-chart v-show="done" :selectedData="selectedData"></line-chart>
+    <line-chart v-show="done" :selectedData="selectedData" :hasKey="hasKey"></line-chart>
   </div>
 </template>
 
@@ -45,13 +45,18 @@
     },
 
     computed: {
-        selectedData: function() {
-            let type;
-            return this.data.filter((d) => {
-                type = this.hasKey ? reservoirs.reservoir_names[d.reservoir] : d.reservoir;
-                return type === this.res;
-            });
-        }
+      selectedData: function() {
+        let type;
+        return this.data.filter((d) => {
+          type = this.hasKey ? reservoirs.reservoir_names[d.reservoir] : d.reservoir;
+          return type === this.res;
+        });
+      },
+
+      dateListing() {
+        let current_date = moment().subtract(1, 'month');
+        return current_date.format('MMMM YYYY');
+      },
     },
 
     methods: {
@@ -101,11 +106,6 @@
         return stations;
       },
 
-      dateListing() {
-        let current_date = moment().subtract(1, 'month');
-        return current_date.format('MM/YY');
-      },
-
       draw() {
         let vm = this;
         let tip_div = tip.tipDiv();
@@ -115,7 +115,6 @@
         let height = svg.attr('height');
         let reservoir_names = reservoirs.reservoir_names;
      //   let reservoir_list = reservoirs.reservoirs();
-        let today = this.dateListing();
 
         /* Draw the map */
         let scale = 1,

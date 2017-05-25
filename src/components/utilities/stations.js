@@ -1,4 +1,4 @@
-let reservoirs = {
+const reservoirs = {
   reservoir_names: [
     "Upper Klamath",
     "Gerber",
