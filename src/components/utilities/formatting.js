@@ -8,7 +8,7 @@ const formatting = {
     let month_num = parseInt(month, 10) - 1;
 
     return month_names[month_num];
-  }
+  },
 };
 
 export {formatting}

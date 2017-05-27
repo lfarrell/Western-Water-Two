@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div v-if="loading" class="loader">Loading...</div>
-    <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
+    <div v-if='loading' class='loader'>Loading...</div>
+    <div v-show='done' class='col-sm-12 col-lg-7 map-graph'>
       <h3>Reservoirs</h3>
-      <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
-      <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke"></svg>
+      <p class='center'>Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
+      <svg id='map' width='620' height='500' vector-effect='non-scaling-stroke'></svg>
     </div>
-    <line-chart v-show="done" :selectedData="selectedData" :hasKey="hasKey"></line-chart>
+    <line-chart v-show='done' :reservoirName='reservoirName' :selectedData='selectedData' :hasKey='hasKey'></line-chart>
   </div>
 </template>
 
@@ -28,6 +28,7 @@
         map: [],
         data: [],
         stations: [],
+        resValue: this.res
       }
     },
 
@@ -37,7 +38,8 @@
       res: String,
       resFile: String,
       hasKey: Boolean,
-      selectedData: Array
+      selectedData: Array,
+      reservoirName: String
     },
 
     components: {
@@ -46,11 +48,14 @@
 
     computed: {
       selectedData: function() {
-        let type;
+        let vm = this;
         return this.data.filter((d) => {
-          type = this.hasKey ? reservoirs.reservoir_names[d.reservoir] : d.reservoir;
-          return type === this.res;
+          return vm.resName(d) === this.resValue;
         });
+      },
+
+      reservoirName: function () {
+        return this.resValue;
       },
 
       dateListing() {
@@ -70,6 +75,10 @@
         } else {
           return 'lightgray';
         }
+      },
+
+      resName(d) {
+          return this.hasKey ? reservoirs.reservoir_names[d.reservoir] : d.reservoir;
       },
 
       mapScale(data) {
@@ -176,14 +185,17 @@
               .style('fill', (d) => {
                 return vm.resColors(d.pct_capacity);
               })
-              .on("mouseover", function(d) {
+              .on('click', function (res) {
+                vm.resValue = res.reservoir;
+              })
+              .on('mouseover', function(d) {
                 tip.tipShow(tip_div, d.reservoir);
 
                 d3.select(this).attr('r', function(d) {
                   return mapScale(d.capacity) * 1.5;
                 });
               })
-              .on("mouseout", function(d) {
+              .on('mouseout', function(d) {
                 tip.tipHide(tip_div);
 
                 d3.select(this).attr('r', function(d) {

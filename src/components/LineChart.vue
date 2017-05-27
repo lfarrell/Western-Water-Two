@@ -1,8 +1,8 @@
 <template>
-  <div class="col-sm-12 col-lg-5" id="graph">
-    <h3>Reservoir: <span id="reservoir">Shasta, CA</span></h3>
-    <p class="center">21st Century Average Volume: <span id="all_res_avg"></span> acre feet</p>
-    <svg id="line-chart"></svg>
+  <div class='col-sm-12 col-lg-5' id='graph'>
+    <h3>Reservoir: <span>{{location}}</span></h3>
+    <p class='center'>21st Century Average Volume: <span>{{res_avg}}</span> acre feet</p>
+    <svg id='line-chart'></svg>
   </div>
 </template>
 
@@ -15,15 +15,27 @@
   export default {
     name: 'LineChart',
 
+    data() {
+      return {
+        location: '',
+        res_avg: ''
+      }
+    },
+
     props: {
       selectedData: Array,
-      hasKey: Boolean
+      hasKey: Boolean,
+      reservoirName: String
     },
 
     watch: {
       selectedData: function(val) {
         this.selectedData = val;
         this.draw();
+      },
+
+      reservoirName: function(val) {
+          this.reservoirName = val;
       }
     },
 
@@ -57,14 +69,14 @@
           graph_height = 500 - margin.top - margin.bottom;
 
         let tip_div = tip.tipDiv();
+        let xScale = d3.scaleTime().domain(d3.extent(data, function(d) { return format(d.date); }));
 
-        let xScale = d3.scaleTime().range([0, graph_width]);
-
-        xScale.domain(d3.extent(data, function(d) { return format(d.date); }));
+        xScale.range([0, graph_width]);
 
         let yScale = d3.scaleLinear()
-          .domain([d3.max(data, function(d) { return d.capacity; }) * 1.2, 0])
-          .range([0, graph_height]);
+          .domain([d3.max(data, function(d) { return d.capacity; }) * 1.2, 0]);
+
+        yScale.range([0, graph_height]);
 
         let bisectDate = d3.bisector(function(d) { return format(d.date); }).right;
 
@@ -75,8 +87,8 @@
         let yAxis = d3.axisLeft()
           .scale(yScale);
 
-        let avg_val = num_format(_.round(+data[0].mean, 1));
-        d3.select('#all_res_avg').text(avg_val);
+        this.location = `${this.reservoirName}, ${data[0].state.toUpperCase()}`;
+        this.res_avg = num_format(_.round(+data[0].mean, 1));
 
         let storage = d3.line()
           .curve(d3.curveNatural)
@@ -99,7 +111,11 @@
 
         chart.append('g')
           .attr('class', 'x axis')
-          .attr('transform', 'translate('+ margin.left + ',' + (graph_height + margin.top) + ')')
+          .attr('transform', `translate(${margin.left},${(graph_height + margin.top)})`);
+
+        d3.select('g.x').transition()
+          .duration(1000)
+          .ease(d3.easeSinInOut)
           .call(xAxis);
 
         chart.append('text')
@@ -110,7 +126,11 @@
 
         chart.append('g')
           .attr('class', 'y axis')
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        d3.select('g.y').transition()
+          .duration(1000)
+          .ease(d3.easeSinInOut)
           .call(yAxis);
 
         chart.append('text')
@@ -122,16 +142,19 @@
           .text('Acre Feet');
 
         chart.append('path')
-          .attr('d', storage(data))
           .attr('id', 'storage')
           .attr('fill', 'none')
           .attr('stroke', 'steelblue')
           .attr('stroke-width', 2)
           .attr('transform', `translate(${margin.left},${margin.top})`);
 
+        d3.select('#storage').transition()
+          .duration(1000)
+          .ease(d3.easeSinInOut)
+          .attr('d', storage(data));
+
         chart.append('g')
           .append('path')
-          .attr('d', avg_storage(data))
           .attr('id', 'avg_storage')
           .attr('fill', 'none')
           .attr('stroke', '#FCE883')
@@ -139,39 +162,54 @@
           .attr('stroke-dasharray', [5,5])
           .attr('transform', `translate(${margin.left},${margin.top})`);
 
+        d3.select('#avg_storage').transition()
+          .duration(1200)
+          .ease(d3.easeSinInOut)
+          .attr('d', avg_storage(data));
+
         chart.append('g')
           .append('path')
-          .attr('d', capacity(data))
           .attr('id', 'capacity')
           .attr('fill', 'none')
           .attr('stroke', 'green')
           .attr('stroke-width', 2)
           .attr('transform', `translate(${margin.left},${margin.top})`);
 
-        let focus = chart.append('g')
-          .attr('class', 'focus')
+        d3.select('#capacity').transition()
+          .duration(1000)
+          .ease(d3.easeSinInOut)
+          .attr('d', capacity(data));
+
+        let focus = chart.append('g');
+
+        focus.attr('class', 'focus')
           .style('display', 'none');
 
-        focus.append('line')
-          .attr('class', 'y0')
-          .attr('x1', 0)
-          .attr('y1', 0)
-          .attr('x2', 0)
-          .attr('y2', graph_height);
+        let dragline = focus.append('line')
+            .attr('class', 'y0');
 
-        chart.append('rect')
-          .attr('class', 'overlay')
-          .attr('width', graph_width)
-          .attr('height', graph_height)
-          .on('mouseover touchstart', function() { focus.style('display', null); })
-          .on('mouseout touchend', function() {
-            focus.style('display', 'none');
-            tip.tipHide(tip_div);
-          })
-          .on('mousemove touchmove', mousemove)
-          .attr('transform', `translate(${margin.left},${margin.top})`);
+        dragline.attr('x1', 0)
+            .attr('y1', 0)
+            .attr('x2', 0)
+            .attr('y2', graph_height);
 
-      function mousemove() {
+          let show = chart.append('rect');
+
+            show.attr('class', 'overlay')
+            .attr('width', graph_width)
+            .attr('height', graph_height);
+
+            show.on('mouseover touchstart', function () {
+              focus.style('display', null);
+            })
+            .on('mouseout touchend', function () {
+              focus.style('display', 'none');
+              tip.tipHide(tip_div);
+            })
+            .on('mousemove touchmove', mousemove)
+            .attr('transform', `translate(${margin.left},${margin.top})`);
+
+        function mousemove() {
           let x0 = xScale.invert(d3.mouse(this)[0]),
             i = bisectDate(data, x0, 1),
             d0 = data[i - 1],
@@ -183,8 +221,8 @@
             .attr('transform', `translate(${xScale(format(d.date)) + margin.left},${margin.top})`);
 
           let date_bits = d.date.split('/');
-          let message = `<h4 class="text-center">${formatting.stringDate(date_bits[0])}, 20${date_bits[1]}</h4>
-          <ul class="list-unstyled">
+          let message = `<h4 class='text-center'>${formatting.stringDate(date_bits[0])}, 20${date_bits[1]}</h4>
+          <ul class='list-unstyled'>
           <li>Capacity: ${num_format(d.capacity)} acre ft</li>
           <li>Vol: ${num_format(d.storage)} acre ft</li>
           <li>Pct Full: ${d.pct_capacity}%</li>

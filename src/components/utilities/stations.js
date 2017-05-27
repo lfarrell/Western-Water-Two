@@ -1,4 +1,8 @@
 const reservoirs = {
+  resName: (hasKey, d) => {
+    return hasKey ? this.reservoir_names[d.reservoir] : d.reservoir;
+  },
+
   reservoir_names: [
     "Upper Klamath",
     "Gerber",
