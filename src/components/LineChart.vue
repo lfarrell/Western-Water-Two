@@ -1,11 +1,30 @@
 <template>
-  <div class='col-sm-12 col-lg-5' id='graph'>
+  <div class="col-sm-12 col-lg-5" id="graph">
     <h3>Reservoir: <span>{{location}}</span></h3>
     <p class='center'>21st Century Average Volume: <span>{{res_avg}}</span> acre feet</p>
-    <svg id='line-chart'></svg>
+    <svg id='line-chart'>
+      <text :x="graph_width/1.5" :y="graph_height+this.margins().bottom" text-anchor="zs">Date</text>
+      <text transform="rotate(-90)" :x="-graph_height/2" y="6" dy=".71em" style="text-anchor:end">Acre Feet</text>
+      <g>
+        <path id="storage" :d="storage" stroke="steelblue" :transform="graph_translate"></path>
+      </g>
+      <g>
+        <path id="avg_storage" :d="avg_storage" stroke="#FCE883" stroke-dasharray="5,5" :transform="graph_translate"></path>
+      </g>
+      <g>
+        <path id="capacity" :d="capacity" stroke="green" :transform="graph_translate"></path>
+      </g>
+      <g class="focus" style="display:none">
+        <line class="y0" x1="0" x2="0" y1="0" :y2="graph_height"></line>
+      </g>
+      <rect class="overlay" :height="graph_height" :width="graph_width"></rect>
+    </svg>
   </div>
 </template>
 
+chart.append('path')
+.attr('stroke', 'steelblue')
+.attr('transform', `translate(${margin.left},${margin.top})`);
 <script>
   import * as d3 from 'd3';
   import * as _ from 'lodash';
@@ -18,7 +37,13 @@
     data() {
       return {
         location: '',
-        res_avg: ''
+        res_avg: '',
+        storage: '',
+        avg_storage: '',
+        capacity: '',
+        graph_height: 500 - this.margins().top -this. margins().bottom,
+        graph_width: 600 - this.margins().left - this.margins().right,
+        graph_translate: `translate(${this.margins().left},${this.margins().top})`
       }
     },
 
@@ -40,6 +65,10 @@
     },
 
     methods: {
+      margins() {
+        return {top: 20, right: 130, left: 100, bottom: 80};
+      },
+
       histAvg(data) {
         if(data[0].mean === undefined) {
           let avg = d3.mean(data, function(d) {
@@ -63,20 +92,18 @@
           short_format = d3.timeParse('%m/%y'),
           long_format = d3.timeParse('%m/%Y'),
           format = this.hasKey ? short_format : long_format,
-          num_format = d3.format(','),
-          margin = {top: 20, right: 130, left: 100, bottom: 80},
-          graph_width = 600 - margin.left - margin.right,
-          graph_height = 500 - margin.top - margin.bottom;
+          margin = this.margins(),
+          num_format = d3.format(',');
 
         let tip_div = tip.tipDiv();
         let xScale = d3.scaleTime().domain(d3.extent(data, function(d) { return format(d.date); }));
 
-        xScale.range([0, graph_width]);
+        xScale.range([0, this.graph_width]);
 
         let yScale = d3.scaleLinear()
           .domain([d3.max(data, function(d) { return d.capacity; }) * 1.2, 0]);
 
-        yScale.range([0, graph_height]);
+        yScale.range([0, this.graph_height]);
 
         let bisectDate = d3.bisector(function(d) { return format(d.date); }).right;
 
@@ -106,108 +133,50 @@
           .y(function(d) { return yScale(d.capacity); });
 
         let chart = d3.select('#line-chart')
-          .attr('width', graph_width + margin.left + margin.right)
-          .attr('height', graph_height + margin.top + margin.bottom);
+          .attr('width', this.graph_width + margin.left + margin.right)
+          .attr('height', this.graph_height + margin.top + margin.bottom);
 
         chart.append('g')
           .attr('class', 'x axis')
-          .attr('transform', `translate(${margin.left},${(graph_height + margin.top)})`);
+          .attr('transform', `translate(${margin.left},${(this.graph_height + margin.top)})`);
 
         d3.select('g.x').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(xAxis);
 
-        chart.append('text')
-          .attr('x', graph_width / 1.5)
-          .attr('y', graph_height + margin.bottom)
-          .style('text-anchor', 'zs')
-          .text('Date');
-
         chart.append('g')
           .attr('class', 'y axis')
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+          .attr('transform', `translate(${margin.left},${margin.top})`);
 
         d3.select('g.y').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(yAxis);
 
-        chart.append('text')
-          .attr('transform', 'rotate(-90)')
-          .attr('x', -graph_height/2)
-          .attr('y', 6)
-          .attr('dy', '.71em')
-          .style('text-anchor', 'end')
-          .text('Acre Feet');
-
-        chart.append('path')
-          .attr('id', 'storage')
-          .attr('fill', 'none')
-          .attr('stroke', 'steelblue')
-          .attr('stroke-width', 2)
-          .attr('transform', `translate(${margin.left},${margin.top})`);
-
         d3.select('#storage').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .attr('d', storage(data));
-
-        chart.append('g')
-          .append('path')
-          .attr('id', 'avg_storage')
-          .attr('fill', 'none')
-          .attr('stroke', '#FCE883')
-          .attr('stroke-width', 2)
-          .attr('stroke-dasharray', [5,5])
-          .attr('transform', `translate(${margin.left},${margin.top})`);
 
         d3.select('#avg_storage').transition()
           .duration(1200)
           .ease(d3.easeSinInOut)
           .attr('d', avg_storage(data));
 
-        chart.append('g')
-          .append('path')
-          .attr('id', 'capacity')
-          .attr('fill', 'none')
-          .attr('stroke', 'green')
-          .attr('stroke-width', 2)
-          .attr('transform', `translate(${margin.left},${margin.top})`);
-
         d3.select('#capacity').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .attr('d', capacity(data));
 
-        let focus = chart.append('g');
-
-        focus.attr('class', 'focus')
-          .style('display', 'none');
-
-        let dragline = focus.append('line')
-            .attr('class', 'y0');
-
-        dragline.attr('x1', 0)
-            .attr('y1', 0)
-            .attr('x2', 0)
-            .attr('y2', graph_height);
-
-          let show = chart.append('rect');
-
-            show.attr('class', 'overlay')
-            .attr('width', graph_width)
-            .attr('height', graph_height);
-
-            show.on('mouseover touchstart', function () {
-              focus.style('display', null);
-            })
-            .on('mouseout touchend', function () {
-              focus.style('display', 'none');
-              tip.tipHide(tip_div);
-            })
-            .on('mousemove touchmove', mousemove)
-            .attr('transform', `translate(${margin.left},${margin.top})`);
+        let focus = d3.select('.focus');
+        d3.select('rect').on('mouseover touchstart', function () {
+          focus.style('display', null);
+        }).on('mouseout touchend', function () {
+          focus.style('display', 'none');
+          tip.tipHide(tip_div);
+        }).on('mousemove touchmove', mousemove)
+          .attr('transform', `translate(${margin.left},${margin.top})`);
 
         function mousemove() {
           let x0 = xScale.invert(d3.mouse(this)[0]),
@@ -232,14 +201,13 @@
           tip.tipShow(tip_div, message);
         }
       }
-    },
-
-    updated() {
-      this.draw();
     }
   }
 </script>
 
 <style scoped>
-
+  path {
+    fill: none;
+    stroke-width: 2;
+  }
 </style>
