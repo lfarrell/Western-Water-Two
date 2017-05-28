@@ -136,18 +136,20 @@ chart.append('path')
           .attr('width', this.graph_width + margin.left + margin.right)
           .attr('height', this.graph_height + margin.top + margin.bottom);
 
-        chart.append('g')
-          .attr('class', 'x axis')
-          .attr('transform', `translate(${margin.left},${(this.graph_height + margin.top)})`);
+        if(document.querySelectorAll('.axis').length === 0) {
+          chart.append('g')
+            .attr('class', 'x axis')
+            .attr('transform', `translate(${margin.left},${(this.graph_height + margin.top)})`);
+
+          chart.append('g')
+            .attr('class', 'y axis')
+            .attr('transform', `translate(${margin.left},${margin.top})`);
+        }
 
         d3.select('g.x').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(xAxis);
-
-        chart.append('g')
-          .attr('class', 'y axis')
-          .attr('transform', `translate(${margin.left},${margin.top})`);
 
         d3.select('g.y').transition()
           .duration(1000)
