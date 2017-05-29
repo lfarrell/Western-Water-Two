@@ -4,7 +4,11 @@
     <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
-      <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke"></svg>
+      <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
+       <!-- <g v-for="d in data">
+          <circle :x="" :y="" :fill="" :r="mapScale(d.)"></circle>
+        </g> -->
+      </svg>
     </div>
     <line-chart v-show="done" :whichState="whichState" :reservoirName="reservoirName"
                 :selectedData="selectedData" :hasKey="hasKey"></line-chart>
@@ -125,7 +129,6 @@
         let width = svg.attr('width');
         let height = svg.attr('height');
         let reservoir_names = reservoirs.reservoir_names;
-     //   let reservoir_list = reservoirs.reservoirs();
 
         /* Draw the map */
         let scale = 1,
@@ -142,10 +145,15 @@
             vm.stations = stations;
             vm.data = data;
 
+
+
             // Create Map
             let path = d3.geoPath().projection(projection);
             let bounds = path.bounds(map);
             scale = .95 / Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height);
+
+            let state = vm.whichState;
+
             let translation = [(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
               (height - scale * (bounds[1][1] + bounds[0][1])) / 2];
 

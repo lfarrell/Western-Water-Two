@@ -206,4 +206,9 @@
     fill: none;
     stroke-width: 2;
   }
+
+  text {
+    stroke:none;
+    fill:white;
+  }
 </style>
