@@ -1,6 +1,11 @@
 <template>
   <div>
-    <california-map mapFile="ca.counties.json" dataFile="ca.csv"></california-map>
+    <california-map
+      mapFile="ca.counties.json"
+      dataFile="ca.csv"
+      res="Shasta Dam"
+      resFile="ca_all.csv"
+      whichState="CA"></california-map>
   </div>
 </template>
 

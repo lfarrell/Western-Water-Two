@@ -1,6 +1,11 @@
 <template>
   <div>
-    <utah-map mapFile="ut.counties.json" dataFile="utah.csv"></utah-map>
+    <utah-map
+      mapFile="ut.counties.json"
+      dataFile="utah.csv"
+      res="Steinaker"
+      resFile="utah_all.csv"
+      whichState="UT"></utah-map>
   </div>
 </template>
 

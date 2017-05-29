@@ -1,6 +1,11 @@
 <template>
   <div>
-    <colorado-map mapFile="co.counties.json" dataFile="co.csv"></colorado-map>
+    <colorado-map
+      mapFile="co.counties.json"
+      dataFile="co.csv"
+      res="Vallecito"
+      resFile="co_all.csv"
+      whichState="CO"></colorado-map>
   </div>
 </template>
 

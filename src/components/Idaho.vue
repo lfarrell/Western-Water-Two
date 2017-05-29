@@ -1,6 +1,11 @@
 <template>
   <div>
-    <idaho-map mapFile="id.counties.json" dataFile="id.csv"></idaho-map>
+    <idaho-map
+      mapFile="id.counties.json"
+      dataFile="id.csv"
+      res="Arrowrock"
+      resFile="id_all.csv"
+      whichState="ID"></idaho-map>
   </div>
 </template>
 

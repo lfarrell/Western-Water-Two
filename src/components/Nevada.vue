@@ -1,6 +1,11 @@
 <template>
   <div>
-    <nevada-map mapFile="nv.counties.json" dataFile="nv.csv"></nevada-map>
+    <nevada-map
+      mapFile="nv.counties.json"
+      dataFile="nv.csv"
+      res="Lake Mead"
+      resFile="nv_all.csv"
+      whichState="NV"></nevada-map>
   </div>
 </template>
 

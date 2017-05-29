@@ -1,6 +1,11 @@
 <template>
   <div>
-    <oregon-map mapFile="or.counties.json" dataFile="or.csv"></oregon-map>
+    <oregon-map
+      mapFile="or.counties.json"
+      dataFile="or.csv"
+      res="Warm Springs Reservoir"
+      resFile="or_all.csv"
+      whichState="OR"></oregon-map>
   </div>
 </template>
 

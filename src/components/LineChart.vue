@@ -3,6 +3,8 @@
     <h3>Reservoir: <span>{{location}}</span></h3>
     <p class='center'>21st Century Average Volume: <span>{{res_avg}}</span> acre feet</p>
     <svg id='line-chart'>
+      <g class="x axis" :transform="`translate(${this.margins().left},${(this.graph_height + this.margins().top)})`"></g>
+      <g class="y axis" :transform="graph_translate"></g>
       <text :x="graph_width/1.5" :y="graph_height+this.margins().bottom" text-anchor="zs">Date</text>
       <text transform="rotate(-90)" :x="-graph_height/2" y="6" dy=".71em" style="text-anchor:end">Acre Feet</text>
       <g>
@@ -22,9 +24,6 @@
   </div>
 </template>
 
-chart.append('path')
-.attr('stroke', 'steelblue')
-.attr('transform', `translate(${margin.left},${margin.top})`);
 <script>
   import * as d3 from 'd3';
   import * as _ from 'lodash';
@@ -50,7 +49,8 @@ chart.append('path')
     props: {
       selectedData: Array,
       hasKey: Boolean,
-      reservoirName: String
+      reservoirName: String,
+      whichState: String
     },
 
     watch: {
@@ -87,6 +87,10 @@ chart.append('path')
         return data;
       },
 
+      stateName(d) {
+          return (this.whichState === 'none') ? d.state.toUpperCase() : this.whichState;
+      },
+
       draw() {
         let data = this.histAvg(this.selectedData),
           short_format = d3.timeParse('%m/%y'),
@@ -114,7 +118,7 @@ chart.append('path')
         let yAxis = d3.axisLeft()
           .scale(yScale);
 
-        this.location = `${this.reservoirName}, ${data[0].state.toUpperCase()}`;
+        this.location = `${this.reservoirName}, ${this.stateName(data[0])}`;
         this.res_avg = num_format(_.round(+data[0].mean, 1));
 
         let storage = d3.line()
@@ -135,16 +139,6 @@ chart.append('path')
         let chart = d3.select('#line-chart')
           .attr('width', this.graph_width + margin.left + margin.right)
           .attr('height', this.graph_height + margin.top + margin.bottom);
-
-        if(document.querySelectorAll('.axis').length === 0) {
-          chart.append('g')
-            .attr('class', 'x axis')
-            .attr('transform', `translate(${margin.left},${(this.graph_height + margin.top)})`);
-
-          chart.append('g')
-            .attr('class', 'y axis')
-            .attr('transform', `translate(${margin.left},${margin.top})`);
-        }
 
         d3.select('g.x').transition()
           .duration(1000)

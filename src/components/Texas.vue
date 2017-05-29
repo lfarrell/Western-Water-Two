@@ -4,7 +4,8 @@
       mapFile="tx.counties.json"
       dataFile="texas_resv.csv"
       res="Meredith"
-      resFile="tx_all.csv"></texas-map>
+      resFile="tx_all.csv"
+      whichState="TX"></texas-map>
   </div>
 </template>
 

@@ -33,6 +33,7 @@ export default new Router({
         mapFile: 'contig_us.geo.json',
         resFile: 'all.csv',
         res: 'Shasta Dam',
+        whichState: 'none',
         hasKey: true
       },
       component: Map

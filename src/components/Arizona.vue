@@ -1,6 +1,11 @@
 <template>
   <div>
-    <arizona-map mapFile="az.counties.json" dataFile="az.csv"></arizona-map>
+    <arizona-map
+      mapFile="az.counties.json"
+      dataFile="az.csv"
+      res="Lake Havasu"
+      resFile="az_all.csv"
+      whichState="AZ"></arizona-map>
   </div>
 </template>
 
