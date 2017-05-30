@@ -144,10 +144,10 @@
             vm.map = map;
             vm.stations = stations;
             vm.data = data;
-
-
-
             // Create Map
+            let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
+            svg.call(zoom);
+
             let path = d3.geoPath().projection(projection);
             let bounds = path.bounds(map);
             scale = .95 / Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height);
@@ -163,8 +163,10 @@
               .translate(translation);
             path = path.projection(projection);
 
+
+
             let maps = svg.selectAll('path')
-              .data(map.features);
+              .data(map.features).call(zoom);
 
             maps.enter()
               .append('path')
@@ -214,6 +216,10 @@
               });
 
             station.exit().remove();
+
+            function zoomed() {
+              svg.attr("transform", d3.event.transform);
+            }
 
             vm.loading = false;
             vm.done = true;

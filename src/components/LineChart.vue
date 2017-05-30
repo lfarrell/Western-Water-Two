@@ -91,6 +91,13 @@
           return (this.whichState === 'none') ? d.state.toUpperCase() : this.whichState;
       },
 
+      linePath(field, formatting, scales) {
+        return d3.line()
+          .curve(d3.curveNatural)
+          .x(function(d) { return scales.xScale(formatting(d.date)); })
+          .y(function(d) { return scales.yScale(d[field]); });
+      },
+
       draw() {
         let data = this.histAvg(this.selectedData),
           short_format = d3.timeParse('%m/%y'),
@@ -109,6 +116,8 @@
 
         yScale.range([0, this.graph_height]);
 
+        let scales = {xScale: xScale, yScale: yScale};
+
         let bisectDate = d3.bisector(function(d) { return format(d.date); }).right;
 
           // Create Axis
@@ -121,20 +130,9 @@
         this.location = `${this.reservoirName}, ${this.stateName(data[0])}`;
         this.res_avg = num_format(_.round(+data[0].mean, 1));
 
-        let storage = d3.line()
-          .curve(d3.curveNatural)
-          .x(function(d) { return xScale(format(d.date)); })
-          .y(function(d) { return yScale(d.storage); });
-
-        let avg_storage = d3.line()
-          .curve(d3.curveNatural)
-          .x(function(d) { return xScale(format(d.date)); })
-          .y(function(d) { return yScale(d.mean); });
-
-        let capacity = d3.line()
-          .curve(d3.curveNatural)
-          .x(function(d) { return xScale(format(d.date)); })
-          .y(function(d) { return yScale(d.capacity); });
+        let storage = this.linePath('storage', format, scales);
+        let avg_storage = this.linePath('mean', format, scales);
+        let capacity = this.linePath('capacity', format, scales);
 
         let chart = d3.select('#line-chart')
           .attr('width', this.graph_width + margin.left + margin.right)
