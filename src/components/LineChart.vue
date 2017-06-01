@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12 col-lg-5" id="graph">
+  <div class="col-sm-12 col-md-5" id="graph">
     <h3>Reservoir: <span>{{location}}</span></h3>
     <p class='center'>21st Century Average Volume: <span>{{res_avg}}</span> acre feet</p>
     <svg id='line-chart'>

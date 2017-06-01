@@ -4,6 +4,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#is-top {
+  margin-top: 80px
+}
+
 #search_form input {
   font-size: 1em;
   height: 50px;

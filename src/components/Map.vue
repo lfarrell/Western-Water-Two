@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div id="is-top">
     <div v-if="loading" class="loader">Loading...</div>
-    <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
+    <div class="row">
+    <div v-show="done" class="col-sm-12 col-md-7 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
       <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
@@ -12,7 +13,7 @@
     </div>
     <line-chart v-show="done" :whichState="whichState" :reservoirName="reservoirName"
                 :selectedData="selectedData" :hasKey="hasKey"></line-chart>
-  </div>
+  </div></div>
 </template>
 
 <script>
