@@ -104,7 +104,8 @@
           long_format = d3.timeParse('%m/%Y'),
           format = this.hasKey ? short_format : long_format,
           margin = this.margins(),
-          num_format = d3.format(',');
+          num_format = d3.format(','),
+          vm = this;
 
         let tip_div = tip.tipDiv();
         let xScale = d3.scaleTime().domain(d3.extent(data, function(d) { return format(d.date); }));
@@ -184,7 +185,8 @@
             .attr('transform', `translate(${xScale(format(d.date)) + margin.left},${margin.top})`);
 
           let date_bits = d.date.split('/');
-          let message = `<h4 class='text-center'>${formatting.stringDate(date_bits[0])}, 20${date_bits[1]}</h4>
+          let date_offset = vm.whichState === 'none' ? '20' : '';
+          let message = `<h4 class='text-center'>${formatting.stringDate(date_bits[0])}, ${date_offset}${date_bits[1]}</h4>
           <ul class='list-unstyled'>
           <li>Capacity: ${num_format(d.capacity)} acre ft</li>
           <li>Vol: ${num_format(d.storage)} acre ft</li>
