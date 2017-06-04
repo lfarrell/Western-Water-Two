@@ -232,13 +232,3 @@
     }
   }
 </script>
-
-<style scoped>
-  #map path {
-    fill: white;
-    stroke: white;
-    stroke-width: 1.5;
-    fill-opacity: 0.2;
-    stroke-opacity: 0.3;
-  }
-</style>

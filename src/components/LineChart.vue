@@ -202,7 +202,7 @@
 </script>
 
 <style scoped>
-  path {
+  #line-chart path {
     fill: none;
     stroke-width: 2;
   }
