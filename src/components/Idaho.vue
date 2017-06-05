@@ -6,17 +6,20 @@
       res="Arrowrock"
       resFile="id_all.csv"
       whichState="ID"></idaho-map>
+    <snow-chart whichState="ID"></snow-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
 
   export default {
     name: 'Idaho',
 
     components: {
-      idahoMap: Map
+      idahoMap: Map,
+      snowChart: SnowChart
     }
 
   }

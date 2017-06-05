@@ -6,17 +6,20 @@
       res="Lake Havasu"
       resFile="az_all.csv"
       whichState="AZ"></arizona-map>
+    <snow-chart whichState="AZ"></snow-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
 
   export default {
     name: 'Arizona',
 
     components: {
-      arizonaMap: Map
+      arizonaMap: Map,
+      snowChart: SnowChart
     }
 
   }

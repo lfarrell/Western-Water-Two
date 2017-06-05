@@ -6,17 +6,20 @@
       res="Lake Mead"
       resFile="nv_all.csv"
       whichState="NV"></nevada-map>
+    <snow-chart whichState="NV"></snow-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
 
   export default {
     name: 'Nevada',
 
     components: {
-      nevadaMap: Map
+      nevadaMap: Map,
+      snowChart: SnowChart
     }
 
   }

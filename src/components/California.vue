@@ -6,17 +6,20 @@
       res="Shasta Dam"
       resFile="ca_all.csv"
       whichState="CA"></california-map>
+    <snow-chart whichState="CA"></snow-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
 
   export default {
     name: 'California',
 
     components: {
-      californiaMap: Map
+      californiaMap: Map,
+      snowChart: SnowChart
     }
 
   }

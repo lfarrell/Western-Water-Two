@@ -6,17 +6,20 @@
       res="Steinaker"
       resFile="utah_all.csv"
       whichState="UT"></utah-map>
+    <snow-chart whichState="UT"></snow-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
 
   export default {
     name: 'Utah',
 
     components: {
-      utahMap: Map
+      utahMap: Map,
+      snowChart: SnowChart
     }
 
   }
