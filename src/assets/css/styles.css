@@ -51,8 +51,11 @@ h3, #res_legend, #compare_legend, #map_legend, #capacity_legend, .center {
   shape-rendering: crispEdges;
 }
 
+#snow path, #snow line {
+  stroke: none;
+}
+
 #map path {
-  /* fill: #d7c7ad; */
   fill: white;
   stroke: white;
   stroke-width: 1.5;

@@ -64,7 +64,7 @@
 
       colorScale(data) {
         let temp_colors = ['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf',
-          '#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'];
+          '#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse();
 
         return d3.scaleQuantile()
           .domain(d3.extent(data, (d) => { return d.temp_mean; }))
@@ -100,6 +100,7 @@
           parse_year = d3.timeParse("%Y"),
           full_width = this.fullWidth,
           type = (full_width <= 500) ? "%y" : "%Y",
+          num_format = d3.format(','),
           vm = this;
 
         let sizing;
@@ -176,7 +177,7 @@
                   `<h4 class="text-center">${d.date.getFullYear()}</h4>
                    <h5  class="text-center">Snow/Water Equivalence</h5>
                    <ul class="list-unstyled">
-                   <li>Elevation: ${d.elev} feet</li>
+                   <li>Elevation: ${num_format(d.elev)}+ feet</li>
                    <li>Temp Mean: ${d.temp_mean} degrees</li>
                    <li>Water Mean: ${d.snow_mean} inches</li>
                    <li>Water Median: ${d.snow_median} inches</li>
