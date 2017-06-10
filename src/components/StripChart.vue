@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12 col-lg-12" id="drought-strip">
+  <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
     <h3 class="text-center">Drought Level</h3>
     <svg id="strip" height="110" width="1000">
       <template v-for="d in data">
@@ -38,7 +38,8 @@
         stripColor: {},
         barWidth: '',
         avgVals: [],
-        tipDiv: tip
+        tipDiv: tip,
+        done: false
       }
     },
 
@@ -128,6 +129,7 @@
           vm.stripColor = vm.stripColors(vm.data);
           vm.barWidth = bar_width;
           vm.avgVals = vm.avgValues(vm.data);
+          vm.done = true;
         });
       }
     },

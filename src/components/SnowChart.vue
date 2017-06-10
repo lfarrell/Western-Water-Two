@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12 col-lg-12">
+  <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
     <svg id="snow" :height="graph_height" :width="graph_width"></svg>
   </div>
@@ -30,6 +30,7 @@
           },
           graph_height: 500 - this.margins().top -this. margins().bottom,
           graph_width: this.fullWidth() + this.margins().left + this.margins().right,
+          done: false
         }
     },
 
@@ -195,7 +196,9 @@
                 d3.select(this).attr('r', circleSize(d.snow_mean));
               });
 
-            circles.exit().remove()
+            circles.exit().remove();
+
+            vm.done = true;
           });
       }
     },
