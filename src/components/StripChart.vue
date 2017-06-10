@@ -114,7 +114,6 @@
 
       draw() {
         let vm = this;
-        let tip_div = tip.tipDiv();
 
         d3.csv(`static/data/palmer/${this.stateFile}`, function(datas) {
           let bar_width = _.floor((vm.width / datas.length), 3);
@@ -129,25 +128,6 @@
           vm.stripColor = vm.stripColors(vm.data);
           vm.barWidth = bar_width;
           vm.avgVals = vm.avgValues(vm.data);
-
-        /*  d3.selectAll('rect')
-           .on('mouseover touchstart', function (d) {
-             // d3.select(this).attr('height', 100);
-
-              let template = `
-                <h4 class="text-center">${vm.stringDate(d.month)}, ${d.year}</h4>
-                <ul class="list-unstyled"
-                  <li>Historical Avg: ${vm.monthAvg(avgs, 'drought', d.month)}</li>
-                  <li>Actual Avg: ${d.value}</li>
-                  <li>Departure from Avg: ${d.anomaly}</li>
-                </ul>`;
-
-             // tip.tipShow(tip_div, template);
-            })
-            .on('mouseout touchend', function (d) {
-            //  d3.select(this).attr('height', 80);
-            //  tip.tipHide(tip_div);
-            }); */
         });
       }
     },
