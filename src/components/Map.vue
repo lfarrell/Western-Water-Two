@@ -163,8 +163,6 @@
               .translate(translation);
             path = path.projection(projection);
 
-
-
             let maps = svg.selectAll('path')
               .data(map.features).call(zoom);
 
