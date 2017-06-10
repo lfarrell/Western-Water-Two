@@ -13,14 +13,24 @@ const tip = {
       .style('opacity', 0);
   },
 
-  tipShow: (tip, text) => {
+  tipShow: (tip, text, event) => {
+    let x_screen, y_screen;
+
+    if(event !== undefined) {
+      x_screen = event.pageX - 38;
+      y_screen = event.pageY - 138;
+    } else {
+      x_screen = d3.event.pageX - 38;
+      y_screen = d3.event.pageY - 38;
+    }
+
     tip.transition()
       .duration(100)
       .style('opacity', .9);
 
     tip.html(text)
-      .style('top', (d3.event.pageY-38)+'px')
-      .style('left', (d3.event.pageX-38)+'px');
+      .style('top', `${y_screen}px`)
+      .style('left', `${x_screen}px`);
 
   },
 
