@@ -1,6 +1,19 @@
 <template>
-  <div class="col-sm-12 col-lg-12">
-    <svg id="strip" height="110" width="1000"></svg>
+  <div class="col-sm-12 col-lg-12" id="drought-strip">
+    <h3 class="text-center">Drought Level</h3>
+    <svg id="strip" height="110" width="1000">
+      <template v-for="d in data">
+        <rect :x="scale(d.date)" y="0"
+              :height="height"
+              :width="barWidth"
+              :fill="stripColor(d.anomaly)"
+              :transform="offset"
+              @mouseover="showItem(d, tipDiv, $event)"
+              @mouseout="hideItem(tipDiv, $event)"
+              @touchstart="showItem(d, tipDiv, $event)"
+              @touchend="hideItem(tipDiv, $event)"></rect>
+      </template>
+    </svg>
   </div>
 </template>
 
@@ -18,7 +31,14 @@
     data() {
       return {
         data: [],
-        width: window.innerWidth - margins.left - margins.right
+        height: 80,
+        width: window.innerWidth - margins.left - margins.right,
+        offset: `translate(${margins.left},0)`,
+        scale: {},
+        stripColor: {},
+        barWidth: '',
+        avgVals: [],
+        tipDiv: tip
       }
     },
 
@@ -33,9 +53,28 @@
           .range([0, width]);
       },
 
+      showItem(data, tip, event) {
+        d3.select(event.target).attr('height', 100);
+        let template = `
+                <h4 class="text-center">${this.stringDate(data.month)}, ${data.year}</h4>
+                <ul class="list-unstyled"
+                  <li>Historical Avg: ${this.monthAvg(this.avgVals, 'drought', data.month)}</li>
+                  <li>Actual Avg: ${data.value}</li>
+                  <li>Departure from Avg: ${data.anomaly}</li>
+                </ul>`;
+
+         tip.tipShow(tip.tipDiv(), template, event);
+      },
+
+      hideItem(tip, event) {
+        d3.select(event.target).attr('height', 80);
+        tip.tipHide(tip.tipDiv());
+      },
+
       stripColors(data) {
         let precip_colors = ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',
           '#c7eae5','#80cdc1','#35978f','#01665e','#003c30'];
+
         return d3.scaleQuantize()
           .domain(d3.extent(data, (d) => { return d.anomaly; }))
           .range(precip_colors);
@@ -86,25 +125,14 @@
           });
 
           vm.data = _.sortByOrder(datas, ['year', 'month']);
-          let xScale = vm.xScale(vm.data, vm.width);
-          let strip_color = vm.stripColors(vm.data);
-          let avgs = vm.avgValues(vm.data);
+          vm.scale = vm.xScale(vm.data, vm.width);
+          vm.stripColor = vm.stripColors(vm.data);
+          vm.barWidth = bar_width;
+          vm.avgVals = vm.avgValues(vm.data);
 
-          let add = d3.select('#strip').selectAll('bar')
-            .data(vm.data);
-
-          add.enter().append('rect')
-            .merge(add)
-            .attr('x', function (d) {
-              return xScale(d.date);
-            })
-            .attr('width', bar_width)
-            .attr('y', 0)
-            .attr('height', 80)
-            .attr('transform', `translate(${margins.left},0)`)
-            .style('fill', (d) => { return strip_color(d.anomaly); })
-            .on('mouseover touchstart', function (d) {
-              d3.select(this).attr('height', 100);
+        /*  d3.selectAll('rect')
+           .on('mouseover touchstart', function (d) {
+             // d3.select(this).attr('height', 100);
 
               let template = `
                 <h4 class="text-center">${vm.stringDate(d.month)}, ${d.year}</h4>
@@ -114,12 +142,12 @@
                   <li>Departure from Avg: ${d.anomaly}</li>
                 </ul>`;
 
-              tip.tipShow(tip_div, template);
+             // tip.tipShow(tip_div, template);
             })
             .on('mouseout touchend', function (d) {
-              d3.select(this).attr('height', 80);
-              tip.tipHide(tip_div);
-            });
+            //  d3.select(this).attr('height', 80);
+            //  tip.tipHide(tip_div);
+            }); */
         });
       }
     },
