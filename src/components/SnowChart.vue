@@ -1,7 +1,16 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
-    <svg id="snow" :height="graph_height" :width="graph_width"></svg>
+    <svg id="snow" :height="graph_height" :width="graph_width">
+      <template v-for="d in snow_data">
+        <circle :cx="xYearScale(d.date)" :cy="elevationScale(d.elev)"
+                :r="circleSize(d.snow_mean)" :fill="color(d.temp_mean)"
+                :transform="graph_translate"
+                @mouseover="show(d, $event)"
+                @mouseout="hide(d)">
+        </circle>
+      </template>
+    </svg>
   </div>
 </template>
 
@@ -10,11 +19,14 @@
   import * as _ from 'lodash';
   import {tip} from './utilities/tip';
 
+  let tip_div = tip.tipDiv();
+
   export default {
     name: 'SnowChart',
 
     data() {
         return {
+          snow_data: [],
           state_list: {
             AZ: 'Arizona',
             CA: 'California',
@@ -30,7 +42,11 @@
           },
           graph_height: 500 - this.margins().top -this. margins().bottom,
           graph_width: this.fullWidth() + this.margins().left + this.margins().right,
-          done: false
+          graph_translate: `translate(${this.margins().left},${this.margins().top})`,
+          circleSize: {},
+          color: {},
+          xYearScale: {},
+          elevationScale: {},
         }
     },
 
@@ -96,6 +112,28 @@
         return scale;
       },
 
+      show(d, event) {
+        tip_div.html(
+          `<h4 class="text-center">${d.date.getFullYear()}</h4>
+                   <h5  class="text-center">Snow/Water Equivalence</h5>
+                   <ul class="list-unstyled">
+                   <li>Elevation: ${d.elev} feet</li>
+                   <li>Temp Mean: ${d.temp_mean} degrees</li>
+                   <li>Water Mean: ${d.snow_mean} inches</li>
+                   <li>Water Median: ${d.snow_median} inches</li>
+                   </ul>`
+        ).style('top', (event.pageY-38)+'px')
+          .style('left', (event.pageX-38)+'px');
+        d3.select(this).attr('r', circleSize(d.snow_mean) * 1.3);
+      },
+
+      hide(d) {
+        tip_div.transition()
+          .duration(250)
+          .style('opacity', 0);
+        d3.select(this).attr('r', circleSize(d.snow_mean));
+      },
+
       draw() {
         let margins = this.margins(),
           parse_year = d3.timeParse("%Y"),
@@ -113,7 +151,6 @@
         }
 
         let svg_year = d3.select('#snow');
-        let tip_div = tip.tipDiv();
 
         d3.queue()
           .defer(d3.csv, 'static/data/snow/snow_month.csv')
@@ -129,19 +166,21 @@
               d.elev = d.elev + '000';
             });
 
-            let circleSize = vm.circleRadius(data, sizing);
-            let color = vm.colorScale(data);
+            vm.snow_data = data;
+
+            vm.circleSize = vm.circleRadius(data, sizing);
+            vm.color = vm.colorScale(data);
 
             let elevations = _.pluck(_.uniq(data, 'elev'), 'elev');
-            let xYearScale = vm.timeScale(data, 'date', vm.fullWidth() - 50 - margins.left - margins.right);
-            let elevationScale = vm.ordinalScale(elevations, elevations.length * 45);
+            vm.xYearScale = vm.timeScale(data, 'date', vm.fullWidth() - 50 - margins.left - margins.right);
+            vm.elevationScale = vm.ordinalScale(elevations, elevations.length * 45);
 
             let xYearAxis = d3.axisTop()
-              .scale(xYearScale)
+              .scale(vm.xYearScale)
               .tickFormat(d3.timeFormat(type));
 
             let yYearAxis = d3.axisLeft()
-              .scale(elevationScale)
+              .scale(vm.elevationScale)
               .tickFormat(d3.format(',d'));
 
             svg_year.append('g')
@@ -156,20 +195,20 @@
 
             d3.select('#snow g.y').call(yYearAxis);
 
-            let circles = svg_year.selectAll('circle').data(data);
+         /*   let circles = svg_year.selectAll('circle').data(data);
 
             circles.enter().append('circle')
               .merge(circles)
               .attr('transform', `translate(${margins.left}, ${margins.top})`)
               .style('fill', function(d) {
-                return color(d.temp_mean);
+                return color(`translate(${margins.left}, ${margins.top})`);
               })
               .attr('cx', function(d) { return xYearScale(d.date); })
               .attr('cy', function(d) { return elevationScale(d.elev); })
               .attr('r', function(d) {
                 return circleSize(d.snow_mean);
               })
-              .on('mouseover touchstart', function(d) {
+              d3.selectAll('circle').on('mouseover touchstart', function(d) {
                 tip_div.transition()
                   .duration(100)
                   .style('opacity', .9);
@@ -199,6 +238,7 @@
             circles.exit().remove();
 
             vm.done = true;
+) */
           });
       }
     },

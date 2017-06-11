@@ -43,6 +43,10 @@ h3, #res_legend, #compare_legend, #map_legend, #capacity_legend, .center {
   stroke-width: 1.5;
 }
 
+#snow path, #snow line {
+  stroke: none;
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -113,12 +117,6 @@ a {
   color: white;
 }
 
-path.capacity {
-  fill: none;
-  stroke: green;
-  stroke-width: 2;
-}
-
 .overlay {
   fill: none;
   pointer-events: all;
@@ -127,18 +125,6 @@ path.capacity {
 .focus circle {
   fill: none;
   stroke: white;
-}
-
-path.snow {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1;
-}
-
-path.snow_avg {
-  fill: none;
-  stroke: white;
-  stroke-width: 1;
 }
 
 .center {
