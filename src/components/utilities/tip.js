@@ -17,7 +17,16 @@ const tip = {
     let x_screen, y_screen;
 
     if(event !== undefined) {
-      let offset = /map/.test(event.target.id) ? 38 : 138;
+      let offset;
+
+      if(/map/.test(event.target.id)) {
+        offset = 38;
+      } else if(/snow/.test(event.target.id)) {
+        offset = 158;
+      } else {
+        offset = 138;
+      }
+      
       x_screen = event.pageX - 38;
       y_screen = event.pageY - offset;
     } else {

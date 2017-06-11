@@ -2,12 +2,17 @@
   <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
     <svg id="snow" :height="graph_height" :width="graph_width">
-      <template v-for="d in snow_data">
-        <circle :cx="xYearScale(d.date)" :cy="elevationScale(d.elev)"
+      <g class="axis x" :transform="graph_translate"></g>
+      <g class="axis y" :transform="graph_translate_left"></g>
+      <template v-for="(d, index) in snow_data">
+        <circle :id="whichType + d.state + index"
+                :cx="xYearScale(d.date)" :cy="elevationScale(d.elev)"
                 :r="circleSize(d.snow_mean)" :fill="color(d.temp_mean)"
                 :transform="graph_translate"
-                @mouseover="show(d, $event)"
-                @mouseout="hide(d)">
+                @mouseover="showItem(d, tipDiv, $event)"
+                @mouseout="hideItem(d, tipDiv, $event)"
+                @touchstart="showItem(d, tipDiv, $event)"
+                @touchend="hideItem(d, tipDiv, $event)">
         </circle>
       </template>
     </svg>
@@ -18,8 +23,6 @@
   import * as d3 from 'd3';
   import * as _ from 'lodash';
   import {tip} from './utilities/tip';
-
-  let tip_div = tip.tipDiv();
 
   export default {
     name: 'SnowChart',
@@ -43,10 +46,14 @@
           graph_height: 500 - this.margins().top -this. margins().bottom,
           graph_width: this.fullWidth() + this.margins().left + this.margins().right,
           graph_translate: `translate(${this.margins().left},${this.margins().top})`,
+          graph_translate_left: `translate(${this.margins().left - 25},${this.margins().top})`,
+          tipDiv: tip,
           circleSize: {},
           color: {},
           xYearScale: {},
           elevationScale: {},
+          whichType: 'snow',
+          done: false
         }
     },
 
@@ -61,22 +68,6 @@
 
       fullWidth() {
         return window.innerWidth;
-      },
-
-      stateList() {
-        return {
-          AZ: 'Arizona',
-          CA: 'California',
-          CO: 'Colorado',
-          ID: 'Idaho',
-          MT: 'Montana',
-          NV: 'Nevada',
-          NM: 'New Mexico',
-          OR: 'Oregon',
-          UT: 'Utah',
-          WA: 'Washington',
-          WY: 'Wyoming'
-        }
       },
 
       colorScale(data) {
@@ -112,8 +103,8 @@
         return scale;
       },
 
-      show(d, event) {
-        tip_div.html(
+      showItem(d, tip, event) {
+        let text =
           `<h4 class="text-center">${d.date.getFullYear()}</h4>
                    <h5  class="text-center">Snow/Water Equivalence</h5>
                    <ul class="list-unstyled">
@@ -121,17 +112,15 @@
                    <li>Temp Mean: ${d.temp_mean} degrees</li>
                    <li>Water Mean: ${d.snow_mean} inches</li>
                    <li>Water Median: ${d.snow_median} inches</li>
-                   </ul>`
-        ).style('top', (event.pageY-38)+'px')
-          .style('left', (event.pageX-38)+'px');
-        d3.select(this).attr('r', circleSize(d.snow_mean) * 1.3);
+                   </ul>`;
+
+        d3.select(event.target).attr('r', this.circleSize(d.snow_mean) * 1.3);
+        tip.tipShow(tip.tipDiv(), text, event);
       },
 
-      hide(d) {
-        tip_div.transition()
-          .duration(250)
-          .style('opacity', 0);
-        d3.select(this).attr('r', circleSize(d.snow_mean));
+      hideItem(d, tip, event) {
+        d3.select(event.target).attr('r', this.circleSize(d.snow_mean));
+        tip.tipHide(tip.tipDiv());
       },
 
       draw() {
@@ -166,12 +155,11 @@
               d.elev = d.elev + '000';
             });
 
-            vm.snow_data = data;
+            let elevations = _.pluck(_.uniq(data, 'elev'), 'elev');
 
+            vm.snow_data = data;
             vm.circleSize = vm.circleRadius(data, sizing);
             vm.color = vm.colorScale(data);
-
-            let elevations = _.pluck(_.uniq(data, 'elev'), 'elev');
             vm.xYearScale = vm.timeScale(data, 'date', vm.fullWidth() - 50 - margins.left - margins.right);
             vm.elevationScale = vm.ordinalScale(elevations, elevations.length * 45);
 
@@ -183,62 +171,10 @@
               .scale(vm.elevationScale)
               .tickFormat(d3.format(',d'));
 
-            svg_year.append('g')
-              .attr("class", "axis x")
-              .attr('transform', `translate(${margins.left}, ${margins.top})`);
-
             d3.select("#snow g.x").call(xYearAxis);
-
-            svg_year.append('g')
-              .attr('class', 'axis y')
-              .attr('transform', `translate(${margins.left - 25}, ${margins.top})`);
-
             d3.select('#snow g.y').call(yYearAxis);
 
-         /*   let circles = svg_year.selectAll('circle').data(data);
-
-            circles.enter().append('circle')
-              .merge(circles)
-              .attr('transform', `translate(${margins.left}, ${margins.top})`)
-              .style('fill', function(d) {
-                return color(`translate(${margins.left}, ${margins.top})`);
-              })
-              .attr('cx', function(d) { return xYearScale(d.date); })
-              .attr('cy', function(d) { return elevationScale(d.elev); })
-              .attr('r', function(d) {
-                return circleSize(d.snow_mean);
-              })
-              d3.selectAll('circle').on('mouseover touchstart', function(d) {
-                tip_div.transition()
-                  .duration(100)
-                  .style('opacity', .9);
-
-                tip_div.html(
-                  `<h4 class="text-center">${d.date.getFullYear()}</h4>
-                   <h5  class="text-center">Snow/Water Equivalence</h5>
-                   <ul class="list-unstyled">
-                   <li>Elevation: ${num_format(d.elev)}+ feet</li>
-                   <li>Temp Mean: ${d.temp_mean} degrees</li>
-                   <li>Water Mean: ${d.snow_mean} inches</li>
-                   <li>Water Median: ${d.snow_median} inches</li>
-                   </ul>`
-                )
-                  .style('top', (d3.event.pageY+18)+'px')
-                  .style('left', (d3.event.pageX-55)+'px');
-
-                d3.select(this).attr('r', circleSize(d.snow_mean) * 1.3);
-              })
-              .on('mouseout touchend', function(d) {
-                tip_div.transition()
-                  .duration(250)
-                  .style('opacity', 0);
-                d3.select(this).attr('r', circleSize(d.snow_mean));
-              });
-
-            circles.exit().remove();
-
             vm.done = true;
-) */
           });
       }
     },
