@@ -17,8 +17,9 @@ const tip = {
     let x_screen, y_screen;
 
     if(event !== undefined) {
+      let offset = /map/.test(event.target.id) ? 38 : 138;
       x_screen = event.pageX - 38;
-      y_screen = event.pageY - 138;
+      y_screen = event.pageY - offset;
     } else {
       x_screen = d3.event.pageX - 38;
       y_screen = d3.event.pageY - 38;

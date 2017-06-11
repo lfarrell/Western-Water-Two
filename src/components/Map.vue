@@ -5,9 +5,18 @@
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
       <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
-       <!-- <g v-for="d in data">
-          <circle :x="" :y="" :fill="" :r="mapScale(d.)"></circle>
-        </g> -->
+        <template v-for="(d, index) in stations">
+          <circle :id="whichType + d.state + index"
+                  :cx="projection([d.lng, d.lat])[0]"
+                  :cy="projection([d.lng, d.lat])[1]"
+                  :fill="d.color"
+                  :r="scale(d.capacity)"
+                  @click="newRes(d)"
+                  @mouseover="showItem(d, tipDiv, $event)"
+                  @mouseout="hideItem(d, tipDiv, $event)"
+                  @touchstart="showItem(d, tipDiv, $event)"
+                  @touchend="hideItem(d, tipDiv, $event)"></circle>
+        </template>
       </svg>
     </div>
     <line-chart v-show="done" :whichState="whichState" :reservoirName="reservoirName"
@@ -33,7 +42,11 @@
         map: [],
         data: [],
         stations: [],
-        resValue: this.res
+        resValue: this.res,
+        scale: {},
+        projection: {},
+        tipDiv: tip,
+        whichType: 'map'
       }
     },
 
@@ -71,6 +84,20 @@
     },
 
     methods: {
+      newRes(d) {
+        this.resValue = d.reservoir;
+      },
+
+      showItem(d, tip, event) {
+        d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
+        tip.tipShow(tip.tipDiv(), this.resName(d), event);
+      },
+
+      hideItem(d, tip, event) {
+        d3.select(event.target).attr('r', this.scale(d.capacity));
+        tip.tipHide(tip.tipDiv());
+      },
+
       resColors(d) {
         if (d >= 75) {
           return '#1a9641';
@@ -142,7 +169,6 @@
           .defer(d3.csv, `static/data/states_all/${this.resFile}`)
           .await(function(error, map, stations, data) {
             vm.map = map;
-            vm.stations = stations;
             vm.data = data;
             // Create Map
             let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
@@ -151,8 +177,6 @@
             let path = d3.geoPath().projection(projection);
             let bounds = path.bounds(map);
             scale = .95 / Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height);
-
-            let state = vm.whichState;
 
             let translation = [(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
               (height - scale * (bounds[1][1] + bounds[0][1])) / 2];
@@ -175,45 +199,13 @@
 
             // Create reservoir circles
             stations = vm.mapPctFull(data, stations, reservoir_names,vm.hasKey);
-            let mapScale = vm.mapScale(data);
+            stations.forEach((d) => {
+                d.color = vm.resColors(d.pct_capacity);
+            });
 
-            let station = svg.selectAll('circle')
-              .data(stations);
-
-            station.enter()
-              .append('circle')
-              .merge(station)
-              .attr('cx', (d) => {
-                return projection([d.lng, d.lat])[0];
-              })
-              .attr('cy', (d) => {
-                return projection([d.lng, d.lat])[1];
-              })
-              .attr('r', (d) => {
-                return mapScale(d.capacity);
-              })
-              .style('fill', (d) => {
-                return vm.resColors(d.pct_capacity);
-              })
-              .on('click', function (res) {
-                vm.resValue = res.reservoir;
-              })
-              .on('mouseover', function(d) {
-                tip.tipShow(tip_div, d.reservoir);
-
-                d3.select(this).attr('r', function(d) {
-                  return mapScale(d.capacity) * 1.5;
-                });
-              })
-              .on('mouseout', function(d) {
-                tip.tipHide(tip_div);
-
-                d3.select(this).attr('r', function(d) {
-                  return mapScale(d.capacity);
-                });
-              });
-
-            station.exit().remove();
+            vm.scale = vm.mapScale(data);
+            vm.stations = stations;
+            vm.projection = projection;
 
             function zoomed() {
               svg.attr("transform", d3.event.transform);
