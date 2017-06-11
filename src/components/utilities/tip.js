@@ -26,7 +26,7 @@ const tip = {
       } else {
         offset = 138;
       }
-      
+
       x_screen = event.pageX - 38;
       y_screen = event.pageY - offset;
     } else {

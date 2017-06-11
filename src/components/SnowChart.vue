@@ -30,19 +30,6 @@
     data() {
         return {
           snow_data: [],
-          state_list: {
-            AZ: 'Arizona',
-            CA: 'California',
-            CO: 'Colorado',
-            ID: 'Idaho',
-            MT: 'Montana',
-            NV: 'Nevada',
-            NM: 'New Mexico',
-            OR: 'Oregon',
-            UT: 'Utah',
-            WA: 'Washington',
-            WY: 'Wyoming'
-          },
           graph_height: 500 - this.margins().top -this. margins().bottom,
           graph_width: this.fullWidth() + this.margins().left + this.margins().right,
           graph_translate: `translate(${this.margins().left},${this.margins().top})`,
@@ -52,6 +39,7 @@
           color: {},
           xYearScale: {},
           elevationScale: {},
+          numFormat: this.numFormatting(),
           whichType: 'snow',
           done: false
         }
@@ -108,7 +96,7 @@
           `<h4 class="text-center">${d.date.getFullYear()}</h4>
                    <h5  class="text-center">Snow/Water Equivalence</h5>
                    <ul class="list-unstyled">
-                   <li>Elevation: ${d.elev} feet</li>
+                   <li>Elevation: ${this.numFormat(d.elev)}+ feet</li>
                    <li>Temp Mean: ${d.temp_mean} degrees</li>
                    <li>Water Mean: ${d.snow_mean} inches</li>
                    <li>Water Median: ${d.snow_median} inches</li>
@@ -123,23 +111,23 @@
         tip.tipHide(tip.tipDiv());
       },
 
+      numFormatting() {
+          return d3.format(',');
+      },
+
       draw() {
         let margins = this.margins(),
           parse_year = d3.timeParse("%Y"),
           full_width = this.fullWidth,
           type = (full_width <= 500) ? "%y" : "%Y",
-          num_format = d3.format(','),
-          vm = this;
-
-        let sizing;
+          vm = this,
+          sizing;
 
         if (full_width < 500) {
           sizing = [1, 6];
         } else {
           sizing = [2, 20];
         }
-
-        let svg_year = d3.select('#snow');
 
         d3.queue()
           .defer(d3.csv, 'static/data/snow/snow_month.csv')
