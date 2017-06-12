@@ -4,8 +4,8 @@
     <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
-
-        <svg width="450" height="45" transform="translate(200,0)">
+      <p id="map_legend">
+        <svg width="450" height="45" transform="translate(70,0)">
           <g>
             <rect x="30" y="15" width="10" height="10" style="fill: rgb(26, 150, 65);"></rect>
             <text x="45" y="25" height="30" width="200">75%+</text>
@@ -19,7 +19,7 @@
             <text x="180" y="25" height="30" width="750">Less than 50% </text>
           </g>
         </svg>
-
+      </p>
       <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
         <template v-for="(d, index) in stations">
           <circle :id="whichType + d.state + index"
@@ -106,7 +106,7 @@
 
       showItem(d, tip, event) {
         d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
-        tip.tipShow(tip.tipDiv(), this.resName(d), event);
+        tip.tipShow(tip.tipDiv(), d.reservoir, event);
       },
 
       hideItem(d, tip, event) {
