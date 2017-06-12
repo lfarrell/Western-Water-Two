@@ -139,12 +139,12 @@
           .attr('width', this.graph_width + margin.left + margin.right)
           .attr('height', this.graph_height + margin.top + margin.bottom);
 
-        d3.select('g.x').transition()
+        d3.select('#line-chart g.x').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(xAxis);
 
-        d3.select('g.y').transition()
+        d3.select('#line-chart g.y').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(yAxis);
@@ -165,7 +165,7 @@
           .attr('d', capacity(data));
 
         let focus = d3.select('.focus');
-        d3.select('rect').on('mouseover touchstart', function () {
+        d3.select('rect.overlay').on('mouseover touchstart', function () {
           focus.style('display', null);
         }).on('mouseout touchend', function () {
           focus.style('display', 'none');

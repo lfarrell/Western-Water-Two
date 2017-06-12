@@ -4,6 +4,22 @@
     <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
+
+        <svg width="450" height="45" transform="translate(200,0)">
+          <g>
+            <rect x="30" y="15" width="10" height="10" style="fill: rgb(26, 150, 65);"></rect>
+            <text x="45" y="25" height="30" width="200">75%+</text>
+          </g>
+          <g>
+            <rect x="95" y="15" width="10" height="10" style="fill: rgb(252, 232, 131);"></rect>
+            <text x="110" y="25" height="30" width="200">50%+</text>
+          </g>
+          <g>
+            <rect x="165" y="15" width="10" height="10" style="fill: rgb(215, 25, 28);"></rect>
+            <text x="180" y="25" height="30" width="750">Less than 50% </text>
+          </g>
+        </svg>
+
       <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
         <template v-for="(d, index) in stations">
           <circle :id="whichType + d.state + index"
@@ -150,7 +166,6 @@
 
       draw() {
         let vm = this;
-        let tip_div = tip.tipDiv();
 
         let svg = d3.select('#map');
         let width = svg.attr('width');
