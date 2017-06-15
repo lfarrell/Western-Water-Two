@@ -1,6 +1,7 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
+    <legend-chart :colors="colors" :dataValues="snow_data" :field="legend_field"></legend-chart>
     <svg id="snow" :height="graph_height" :width="graph_width">
       <g class="axis x" :transform="graph_translate"></g>
       <g class="axis y" :transform="graph_translate_left"></g>
@@ -22,6 +23,7 @@
 <script>
   import * as d3 from 'd3';
   import * as _ from 'lodash';
+  import LegendChart from './LegendChart.vue';
   import {tip} from './utilities/tip';
 
   export default {
@@ -35,18 +37,25 @@
           graph_translate: `translate(${this.margins().left},${this.margins().top})`,
           graph_translate_left: `translate(${this.margins().left - 25},${this.margins().top})`,
           tipDiv: tip,
+          colors: ['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf',
+            '#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse(),
           circleSize: {},
           color: {},
           xYearScale: {},
           elevationScale: {},
           numFormat: this.numFormatting(),
           whichType: 'snow',
-          done: false
+          done: false,
+          legend_field: 'temp_mean'
         }
     },
 
     props: {
        whichState: String
+    },
+
+    components: {
+      LegendChart: LegendChart
     },
 
     methods: {
@@ -59,12 +68,9 @@
       },
 
       colorScale(data) {
-        let temp_colors = ['#a50026','#d73027','#f46d43','#fdae61','#fee090','#ffffbf',
-          '#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse();
-
         return d3.scaleQuantile()
           .domain(d3.extent(data, (d) => { return d.temp_mean; }))
-          .range(temp_colors);
+          .range(this.colors);
       },
 
       circleRadius(data, sizing) {
