@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="loading" class="loader">Loading...</div>
-    <div v-show="done" class="col-sm-12 col-lg-7 map-graph">
+    <div v-show="done" class="col-sm-12 col-lg-6 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
       <p id="map_legend">
@@ -20,7 +20,7 @@
           </g>
         </svg>
       </p>
-      <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
+      <svg id="map" width="600" height="500" vector-effect="non-scaling-stroke">
         <template v-for="(d, index) in stations">
           <circle :id="whichType + d.state + index"
                   :cx="projection([d.lng, d.lat])[0]"
