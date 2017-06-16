@@ -1,7 +1,8 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
     <h3 class="text-center">Drought Level</h3>
-    <svg id="strip" height="110" width="1000">
+    <legend-chart :colors="colors" :dataValues="dataValues" :field="legend_field"></legend-chart>
+    <svg id="strip" height="110" :width="width">
       <template v-for="d in data">
         <rect :x="scale(d.date)" y="0"
               :height="height"
@@ -20,6 +21,7 @@
 <script>
   import * as d3 from 'd3';
   import * as _ from 'lodash';
+  import LegendChart from './LegendChart.vue';
   import {tip} from './utilities/tip';
 
   const margins = { top: 20, right: 50, left: 100, bottom: 75 },
@@ -35,16 +37,30 @@
         width: window.innerWidth - margins.left - margins.right,
         offset: `translate(${margins.left},0)`,
         scale: {},
+        colors: ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',
+          '#c7eae5','#80cdc1','#35978f','#01665e','#003c30'],
         stripColor: {},
         barWidth: '',
         avgVals: [],
         tipDiv: tip,
-        done: false
+        done: false,
+        legend_field: 'anomaly'
       }
     },
 
     props: {
-      stateFile: String
+      stateFile: String,
+      dataValues: Array
+    },
+
+    computed: {
+      dataValues: function () {
+        return this.data;
+      }
+    },
+
+    components: {
+      LegendChart: LegendChart
     },
 
     methods: {
@@ -73,12 +89,9 @@
       },
 
       stripColors(data) {
-        let precip_colors = ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',
-          '#c7eae5','#80cdc1','#35978f','#01665e','#003c30'];
-
         return d3.scaleQuantize()
           .domain(d3.extent(data, (d) => { return d.anomaly; }))
-          .range(precip_colors);
+          .range(this.colors);
       },
 
       stringDate(month) {

@@ -1,6 +1,6 @@
 <template>
-  <svg width="1000" height="90">
-    <g id="legend" width="1000" transform="translate(20,20)"></g>
+  <svg :width="width" height="90" :transform="translate">
+    <g :id="field" :width="width"></g>
   </svg>
 </template>
 
@@ -13,7 +13,8 @@
 
     data() {
       return {
-          width: window.innerWidth - 100
+        width: window.innerWidth - 100,
+        translate: `translate(${(window.innerWidth - 870) / 2},20)`
       }
     },
 
@@ -21,6 +22,13 @@
       colors: Array,
       dataValues: Array,
       field: String
+    },
+
+    watch: {
+      dataValues: function(val) {
+        this.dataValues = val;
+        this.draw();
+      }
     },
 
     methods: {
@@ -42,7 +50,7 @@
       },
 
       draw() {
-        let svg = d3.select('#legend');
+        let svg = d3.select(`#${this.field}`);
         let legend_scale = this.legendSquare();
 
         svg.call(legend_scale);

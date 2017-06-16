@@ -1,7 +1,7 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
-    <legend-chart :colors="colors" :dataValues="snow_data" :field="legend_field"></legend-chart>
+    <legend-chart :colors="colors" :dataValues="dataValues" :field="legend_field"></legend-chart>
     <svg id="snow" :height="graph_height" :width="graph_width">
       <g class="axis x" :transform="graph_translate"></g>
       <g class="axis y" :transform="graph_translate_left"></g>
@@ -51,7 +51,14 @@
     },
 
     props: {
-       whichState: String
+      whichState: String,
+      dataValues: Array
+    },
+
+    computed: {
+      dataValues: function () {
+        return this.snow_data;
+      }
     },
 
     components: {
