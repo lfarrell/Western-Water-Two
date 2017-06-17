@@ -1,6 +1,7 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
     <h3 class="text-center">Drought Level</h3>
+    <h4 class="text-center">Departure from Average (Anomaly degrees)</h4>
     <legend-chart :colors="colors" :dataValues="dataValues" :field="legend_field"></legend-chart>
     <svg id="strip" height="110" :width="width">
       <template v-for="d in data">

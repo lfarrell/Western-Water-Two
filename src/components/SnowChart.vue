@@ -1,6 +1,7 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
+    <h4 class="text-center">Temperature (degrees Fahrenheit)</h4>
     <legend-chart :colors="colors" :dataValues="dataValues" :field="legend_field"></legend-chart>
     <svg id="snow" :height="graph_height" :width="graph_width">
       <g class="axis x" :transform="graph_translate"></g>
@@ -32,7 +33,7 @@
     data() {
         return {
           snow_data: [],
-          graph_height: 500 - this.margins().top -this. margins().bottom,
+          graph_height: this.baseHeight() - this.margins().top -this. margins().bottom,
           graph_width: this.fullWidth() + this.margins().left + this.margins().right,
           graph_translate: `translate(${this.margins().left},${this.margins().top})`,
           graph_translate_left: `translate(${this.margins().left - 25},${this.margins().top})`,
@@ -72,6 +73,35 @@
 
       fullWidth() {
         return window.innerWidth;
+      },
+
+      baseHeight() {
+        switch(this.whichState) {
+          case 'AZ':
+            return 280;
+        /*  case 'CA':
+            return 350; */
+          case 'CO':
+            return 250;
+        /*  case 'ID':
+            return 350;
+          case 'MT':
+            return 350;
+          case 'NV':
+            return 350;
+          case 'NM':
+            return 350;
+          case 'OR':
+            return 350;
+          case 'UT':
+            return 350;
+          case 'WA':
+            return 350;
+          case 'WY':
+            return 350; */
+          default:
+            return 350;
+        }
       },
 
       colorScale(data) {

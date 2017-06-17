@@ -7,19 +7,22 @@
       resFile="wa_all.csv"
       whichState="WA"></washington-map>
     <snow-chart whichState="WA"></snow-chart>
+    <strip-chart stateFile="az.csv"></strip-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
   import SnowChart from './SnowChart.vue';
+  import StripChart from './StripChart.vue';
 
   export default {
     name: 'Washington',
 
     components: {
       washingtonMap: Map,
-      snowChart: SnowChart
+      snowChart: SnowChart,
+      stripChart: StripChart
     }
 
   }

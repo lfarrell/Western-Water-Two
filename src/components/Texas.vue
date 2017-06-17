@@ -6,17 +6,20 @@
       res="Meredith"
       resFile="tx_all.csv"
       whichState="TX"></texas-map>
+    <strip-chart stateFile="az.csv"></strip-chart>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import StripChart from './StripChart.vue';
 
   export default {
     name: 'Texas',
 
     components: {
-        texasMap: Map
+      texasMap: Map,
+      stripChart: StripChart
     }
 
   }
