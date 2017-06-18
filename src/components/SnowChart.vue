@@ -2,7 +2,15 @@
   <div v-show="done" class="col-sm-12 col-lg-12">
     <h3>Snow Levels</h3>
     <h4 class="text-center">Temperature (degrees Fahrenheit)</h4>
-    <legend-chart :colors="colors" :dataValues="dataValues" :field="legend_field"></legend-chart>
+    <legend-chart :colors="colors"
+                  :dataValues="dataValues"
+                  :field="legend_temp"
+                  :legendType="legend_temp_type"></legend-chart>
+    <h4 class="text-center">Snow/Water Equivalence (inches)</h4>
+    <legend-chart :colors="[]"
+           :dataValues="dataValues"
+           :field="legend_snow"
+           :legendType="legend_snow_type"></legend-chart>
     <svg id="snow" :height="graph_height" :width="graph_width">
       <g class="axis x" :transform="graph_translate"></g>
       <g class="axis y" :transform="graph_translate_left"></g>
@@ -47,7 +55,10 @@
           numFormat: this.numFormatting(),
           whichType: 'snow',
           done: false,
-          legend_field: 'temp_mean'
+          legend_temp: 'temp_mean',
+          legend_temp_type: 'square',
+          legend_snow: 'snow_mean',
+          legend_snow_type: 'circle'
         }
     },
 

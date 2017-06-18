@@ -2,7 +2,10 @@
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
     <h3 class="text-center">Drought Level</h3>
     <h4 class="text-center">Departure from Average (Anomaly degrees)</h4>
-    <legend-chart :colors="colors" :dataValues="dataValues" :field="legend_field"></legend-chart>
+    <legend-chart :colors="colors"
+                  :dataValues="dataValues"
+                  :field="legend_field"
+                  :legendType="legend_type"></legend-chart>
     <svg id="strip" height="110" :width="width">
       <template v-for="d in data">
         <rect :x="scale(d.date)" y="0"
@@ -45,7 +48,8 @@
         avgVals: [],
         tipDiv: tip,
         done: false,
-        legend_field: 'anomaly'
+        legend_field: 'anomaly',
+        legend_type: 'square'
       }
     },
 
