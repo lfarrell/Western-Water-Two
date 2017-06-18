@@ -20,6 +20,11 @@
           </g>
         </svg>
       </p>
+      <h4 class="text-center">Reservoir Capacity (acre feet)</h4>
+      <circle-legend-chart
+        :dataValues="stations"
+        :field="legend_field"
+        :whichType="whichType"></circle-legend-chart>
       <svg id="map" width="600" height="500" vector-effect="non-scaling-stroke">
         <template v-for="(d, index) in stations">
           <circle :id="whichType + d.state + index"
@@ -45,6 +50,7 @@
   import * as _ from 'lodash';
   import moment from 'moment';
   import LineChart from './LineChart.vue';
+  import CircleLegendChart from './CircleLegendChart.vue';
   import {tip} from './utilities/tip';
   import {reservoirs} from './utilities/stations';
 
@@ -62,7 +68,8 @@
         scale: {},
         projection: {},
         tipDiv: tip,
-        whichType: 'map'
+        whichType: 'map',
+        legend_field: 'capacity'
       }
     },
 
@@ -78,7 +85,8 @@
     },
 
     components: {
-      LineChart: LineChart
+      LineChart: LineChart,
+      CircleLegendChart: CircleLegendChart
     },
 
     computed: {

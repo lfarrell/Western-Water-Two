@@ -8,7 +8,8 @@
     <h4 class="text-center">Snow/Water Equivalence (inches)</h4>
     <circle-legend-chart
            :dataValues="dataValues"
-           :field="legend_snow"></circle-legend-chart>
+           :field="legend_snow"
+           :whichType="whichType"></circle-legend-chart>
     <div id="snow_graph">
       <svg id="snow" :height="graph_height" :width="graph_width">
         <g class="axis x" :transform="graph_translate"></g>

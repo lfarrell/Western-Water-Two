@@ -15,13 +15,14 @@
       return {
         width: '',
         height: '',
-        translate: `translate(${(window.innerWidth - 150) / 2},20)`
+        translate: ''
       }
     },
 
     props: {
       dataValues: Array,
       field: String,
+      whichType: String
     },
 
     watch: {
@@ -60,11 +61,25 @@
           this.translate = 'translate(0,0)';
         } else {
           this.height = 70;
-          this.width = screen_width - 100;
-          this.translate = `translate(${(screen_width - 320) / 2},0)`
+          this.width = (this.whichType === 'map') ? 350 : screen_width - 100;
+          this.translate = (this.whichType === 'map')? `translate(${(this.width - 50) / 2},0)` :
+            `translate(${(screen_width - 320) / 2},0)`;
         }
 
         return {size: size, orientation: orientation};
+      },
+
+      chartType() {
+          let format, spacing;
+          if(this.whichType === 'map') {
+              format = ',';
+              spacing = 40;
+          } else {
+              format = '.01f';
+              spacing = 30;
+          }
+
+          return {format: format, spacing: spacing};
       },
 
       legendCircle() {
@@ -72,12 +87,14 @@
           .domain(d3.extent(this.dataValues, (d) => { return +d[this.field]; }))
           .range(this.circleSizing());
         let configs = this.legendOrientation();
+        let chart_format = this.chartType()
 
         return legend.legendSize()
           .scale(legend_scales)
           .shape('circle')
-          .shapePadding(30)
+          .shapePadding(chart_format.spacing)
           .labelOffset(20)
+          .labelFormat(d3.format(chart_format.format))
           .orient(configs.orientation);
       },
 
