@@ -4,8 +4,7 @@
     <h4 class="text-center">Departure from Average (Anomaly degrees)</h4>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
-                  :field="legend_field"
-                  :legendType="legend_type"></legend-chart>
+                  :field="legend_field"></legend-chart>
     <svg id="strip" height="110" :width="width">
       <template v-for="d in data">
         <rect :x="scale(d.date)" y="0"
@@ -48,8 +47,7 @@
         avgVals: [],
         tipDiv: tip,
         done: false,
-        legend_field: 'anomaly',
-        legend_type: 'square'
+        legend_field: 'anomaly'
       }
     },
 

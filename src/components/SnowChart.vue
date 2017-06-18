@@ -4,28 +4,28 @@
     <h4 class="text-center">Temperature (degrees Fahrenheit)</h4>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
-                  :field="legend_temp"
-                  :legendType="legend_temp_type"></legend-chart>
+                  :field="legend_temp"></legend-chart>
     <h4 class="text-center">Snow/Water Equivalence (inches)</h4>
-    <legend-chart :colors="[]"
+    <circle-legend-chart
            :dataValues="dataValues"
-           :field="legend_snow"
-           :legendType="legend_snow_type"></legend-chart>
-    <svg id="snow" :height="graph_height" :width="graph_width">
-      <g class="axis x" :transform="graph_translate"></g>
-      <g class="axis y" :transform="graph_translate_left"></g>
-      <template v-for="(d, index) in snow_data">
-        <circle :id="whichType + d.state + index"
-                :cx="xYearScale(d.date)" :cy="elevationScale(d.elev)"
-                :r="circleSize(d.snow_mean)" :fill="color(d.temp_mean)"
-                :transform="graph_translate"
-                @mouseover="showItem(d, tipDiv, $event)"
-                @mouseout="hideItem(d, tipDiv, $event)"
-                @touchstart="showItem(d, tipDiv, $event)"
-                @touchend="hideItem(d, tipDiv, $event)">
-        </circle>
-      </template>
-    </svg>
+           :field="legend_snow"></circle-legend-chart>
+    <div id="snow_graph">
+      <svg id="snow" :height="graph_height" :width="graph_width">
+        <g class="axis x" :transform="graph_translate"></g>
+        <g class="axis y" :transform="graph_translate_left"></g>
+        <template v-for="(d, index) in snow_data">
+          <circle :id="whichType + d.state + index"
+                  :cx="xYearScale(d.date)" :cy="elevationScale(d.elev)"
+                  :r="circleSize(d.snow_mean)" :fill="color(d.temp_mean)"
+                  :transform="graph_translate"
+                  @mouseover="showItem(d, tipDiv, $event)"
+                  @mouseout="hideItem(d, tipDiv, $event)"
+                  @touchstart="showItem(d, tipDiv, $event)"
+                  @touchend="hideItem(d, tipDiv, $event)">
+          </circle>
+        </template>
+      </svg>
+    </div>
   </div>
 </template>
 
@@ -33,6 +33,7 @@
   import * as d3 from 'd3';
   import * as _ from 'lodash';
   import LegendChart from './LegendChart.vue';
+  import CircleLegendChart from './CircleLegendChart.vue';
   import {tip} from './utilities/tip';
 
   export default {
@@ -56,9 +57,7 @@
           whichType: 'snow',
           done: false,
           legend_temp: 'temp_mean',
-          legend_temp_type: 'square',
-          legend_snow: 'snow_mean',
-          legend_snow_type: 'circle'
+          legend_snow: 'snow_mean'
         }
     },
 
@@ -74,7 +73,8 @@
     },
 
     components: {
-      LegendChart: LegendChart
+      LegendChart: LegendChart,
+      CircleLegendChart: CircleLegendChart
     },
 
     methods: {

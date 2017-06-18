@@ -141,8 +141,8 @@ a {
   display: none;
 }
 
-g.legend_value:hover, g.legend_value:focus {
-  cursor: pointer;
+#snow_graph {
+  margin-top: 30px;
 }
 
 [v-cloak] { display:none; }
