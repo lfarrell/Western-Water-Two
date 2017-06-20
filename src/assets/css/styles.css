@@ -33,6 +33,10 @@ h3, #res_legend, #compare_legend, #map_legend, .center {
   text-align: center;
 }
 
+h4.upper {
+  margin-top: -10px;
+}
+
 #snow path, #snow line {
   stroke: none;
 }

@@ -20,7 +20,7 @@
           </g>
         </svg>
       </p>
-      <h4 class="text-center">Reservoir Capacity (acre feet)</h4>
+      <h4 class="text-center upper">Reservoir Capacity (acre feet)</h4>
       <circle-legend-chart
         :dataValues="stations"
         :field="legend_field"
