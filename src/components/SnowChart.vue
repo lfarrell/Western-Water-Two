@@ -80,7 +80,7 @@
 
     methods: {
       margins() {
-        return {top: 25, right: 40, bottom: 50, left: 75};
+        return {top: 25, right: 40, bottom: 0, left: 75};
       },
 
       fullWidth() {
@@ -90,27 +90,27 @@
       baseHeight() {
         switch(this.whichState) {
           case 'AZ':
+            return 220;
+          case 'CA':
             return 280;
-        /*  case 'CA':
-            return 350; */
           case 'CO':
-            return 250;
-        /*  case 'ID':
+            return 210;
+          case 'ID':
             return 350;
           case 'MT':
             return 350;
           case 'NV':
-            return 350;
+            return 280;
           case 'NM':
-            return 350;
+            return 200;
           case 'OR':
-            return 350;
+            return 300;
           case 'UT':
-            return 350;
+            return 330;
           case 'WA':
-            return 350;
+            return 280;
           case 'WY':
-            return 350; */
+            return 320;
           default:
             return 350;
         }
