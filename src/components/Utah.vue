@@ -7,7 +7,7 @@
       resFile="utah_all.csv"
       whichState="UT"></utah-map>
     <snow-chart whichState="UT"></snow-chart>
-    <strip-chart stateFile="az.csv"></strip-chart>
+    <strip-chart stateFile="UT_drought_all.csv"></strip-chart>
   </div>
 </template>
 

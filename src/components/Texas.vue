@@ -6,7 +6,7 @@
       res="Meredith"
       resFile="tx_all.csv"
       whichState="TX"></texas-map>
-    <strip-chart stateFile="az.csv"></strip-chart>
+    <strip-chart stateFile="TX_drought_all.csv"></strip-chart>
   </div>
 </template>
 

@@ -7,7 +7,7 @@
       resFile="wy_all.csv"
       whichState="WY"></wyoming-map>
     <snow-chart whichState="WY"></snow-chart>
-    <strip-chart stateFile="az.csv"></strip-chart>
+    <strip-chart stateFile="WY_drought_all.csv"></strip-chart>
   </div>
 </template>
 

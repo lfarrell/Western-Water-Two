@@ -7,7 +7,7 @@
       resFile="ca_all.csv"
       whichState="CA"></california-map>
     <snow-chart whichState="CA"></snow-chart>
-    <strip-chart stateFile="az.csv"></strip-chart>
+    <strip-chart stateFile="CA_drought_all.csv"></strip-chart>
   </div>
 </template>
 

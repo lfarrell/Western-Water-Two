@@ -1,11 +1,11 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
     <h3 class="text-center">Drought Level</h3>
-    <h4 class="text-center">Departure from Average (Anomaly degrees)</h4>
+    <h4 class="text-center">Departure from Average (Anomaly from Avg Palmer Value)</h4>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
                   :field="legend_field"></legend-chart>
-    <svg id="strip" height="110" :width="width">
+    <svg id="strip" height="110" :width="width_large">
       <template v-for="d in data">
         <rect :x="scale(d.date)" y="0"
               :height="height"
@@ -27,8 +27,7 @@
   import LegendChart from './LegendChart.vue';
   import {tip} from './utilities/tip';
 
-  const margins = { top: 20, right: 50, left: 100, bottom: 75 },
-        height = 400 - margins.top - margins.bottom;
+  const margins = { top: 20, right: 50, left: 75, bottom: 75 };
 
   export default {
     name: 'StripChart',
@@ -37,7 +36,8 @@
       return {
         data: [],
         height: 80,
-        width: window.innerWidth - margins.left - margins.right,
+        width: window.innerWidth - 100 - margins.left - margins.right,
+        width_large: window.innerWidth + margins.left + margins.right,
         offset: `translate(${margins.left},0)`,
         scale: {},
         colors: ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',
@@ -67,20 +67,24 @@
     },
 
     methods: {
-      xScale(data, width) {
-        return d3.scaleTime()
-          .domain(d3.extent(data, (d) => { return d.date; }))
-          .range([0, width]);
+      xScale() {
+        let scale = d3.scaleTime()
+          .range([0, this.width]);
+        scale.domain(d3.extent(this.data, (d) => { return d.date; }));
+
+        return scale;
       },
 
       showItem(data, tip, event) {
+        let formatting = d3.format('.01f');
         d3.select(event.target).attr('height', 100);
+
         let template = `
                 <h4 class="text-center">${this.stringDate(data.month)}, ${data.year}</h4>
                 <ul class="list-unstyled"
                   <li>Historical Avg: ${this.monthAvg(this.avgVals, 'drought', data.month)}</li>
-                  <li>Actual Avg: ${data.value}</li>
-                  <li>Departure from Avg: ${data.anomaly}</li>
+                  <li>Actual Avg: ${formatting(data.value)}</li>
+                  <li>Departure from Avg: ${formatting(data.anomaly)}</li>
                 </ul>`;
 
          tip.tipShow(tip.tipDiv(), template, event);
@@ -91,9 +95,9 @@
         tip.tipHide(tip.tipDiv());
       },
 
-      stripColors(data) {
-        return d3.scaleQuantize()
-          .domain(d3.extent(data, (d) => { return d.anomaly; }))
+      stripColors() {
+        return d3.scaleQuantile()
+          .domain(d3.extent(this.data, (d) => { return +d.anomaly; }))
           .range(this.colors);
       },
 
@@ -129,22 +133,27 @@
         return avgs[field][parseInt(month,10) - 1].value.toFixed(2);
       },
 
+      barsWidth() {
+        return _.floor(this.width / this.data.length, 3);
+      },
+
       draw() {
         let vm = this;
 
         d3.csv(`static/data/palmer/${this.stateFile}`, function(datas) {
-          let bar_width = _.floor((vm.width / datas.length), 3);
           let parse_date = d3.timeParse('%m/%Y');
 
           datas.forEach((d) => {
             d.date = parse_date(`${d.month}/${d.year}`)
           });
+          let sorted_data = _.sortByOrder(datas, ['year', 'month']);
 
-          vm.data = _.sortByOrder(datas, ['year', 'month']);
-          vm.scale = vm.xScale(vm.data, vm.width);
-          vm.stripColor = vm.stripColors(vm.data);
-          vm.barWidth = bar_width;
-          vm.avgVals = vm.avgValues(vm.data);
+          vm.data = sorted_data;
+          vm.scale = vm.xScale();
+          vm.stripColor = vm.stripColors();
+          vm.barWidth = vm.barsWidth();
+          vm.avgVals = vm.avgValues(sorted_data);
+          vm.barWidth = vm.barsWidth();
           vm.done = true;
         });
       }
