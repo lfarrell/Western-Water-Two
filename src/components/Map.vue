@@ -25,7 +25,7 @@
         :dataValues="stations"
         :field="legend_field"
         :whichType="whichType"></circle-legend-chart>
-      <svg id="map" width="600" height="500" vector-effect="non-scaling-stroke">
+      <svg id="map" class="is-map" width="600" height="500">
         <template v-for="(d, index) in stations">
           <circle :id="whichType + d.state + index"
                   :cx="projection([d.lng, d.lat])[0]"
@@ -53,6 +53,7 @@
   import CircleLegendChart from './CircleLegendChart.vue';
   import {tip} from './utilities/tip';
   import {reservoirs} from './utilities/stations';
+  import {formatting} from './utilities/formatting';
 
   export default {
     name: 'Map',
@@ -180,12 +181,6 @@
         let height = svg.attr('height');
         let reservoir_names = reservoirs.reservoir_names;
 
-        /* Draw the map */
-        let scale = 1,
-          projection = d3.geoAlbers()
-            .scale(scale)
-            .translate([0,0]);
-
         d3.queue()
           .defer(d3.json, `static/data/maps/${this.mapFile}`)
           .defer(d3.csv, `static/data/stations/${this.dataFile}`)
@@ -197,18 +192,8 @@
             let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
             svg.call(zoom);
 
-            let path = d3.geoPath().projection(projection);
-            let bounds = path.bounds(map);
-            scale = .95 / Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height);
-
-            let translation = [(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
-              (height - scale * (bounds[1][1] + bounds[0][1])) / 2];
-
-            // update projection
-            projection = d3.geoAlbersUsa()
-              .scale(scale)
-              .translate(translation);
-            path = path.projection(projection);
+            let map_path = formatting.mapScaling(height, width, map);
+            let path = map_path.path;
 
             let maps = svg.selectAll('path')
               .data(map.features).call(zoom);
@@ -216,6 +201,7 @@
             maps.enter()
               .append('path')
               .merge(maps)
+              .attr('vector-effect', 'non-scaling-stroke')
               .attr('d', path);
 
             maps.exit().remove();
@@ -228,7 +214,7 @@
 
             vm.scale = vm.mapScale(data);
             vm.stations = stations;
-            vm.projection = projection;
+            vm.projection = map_path.projection;
 
             function zoomed() {
               svg.attr("transform", d3.event.transform);
