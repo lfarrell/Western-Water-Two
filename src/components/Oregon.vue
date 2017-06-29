@@ -8,6 +8,9 @@
       whichState="OR"></oregon-map>
     <snow-chart whichState="OR"></snow-chart>
     <strip-chart stateFile="OR_drought_all.csv"></strip-chart>
+    <drought-map mapFile="or.counties.json"
+                 centersFile="or_centers.json"
+                 dataFile="or-counties.csv"></drought-map>
   </div>
 </template>
 
@@ -15,6 +18,7 @@
   import Map from './Map.vue';
   import SnowChart from './SnowChart.vue';
   import StripChart from './StripChart.vue';
+  import DroughtMap from './DroughtMap.vue';
 
   export default {
     name: 'Oregon',
@@ -22,7 +26,8 @@
     components: {
       oregonMap: Map,
       snowChart: SnowChart,
-      stripChart: StripChart
+      stripChart: StripChart,
+      droughtMap: DroughtMap
     }
 
   }

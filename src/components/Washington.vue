@@ -8,6 +8,9 @@
       whichState="WA"></washington-map>
     <snow-chart whichState="WA"></snow-chart>
     <strip-chart stateFile="WA_drought_all.csv"></strip-chart>
+    <drought-map mapFile="wa.counties.json"
+                 centersFile="wa_centers.json"
+                 dataFile="wa-counties.csv"></drought-map>
   </div>
 </template>
 
@@ -15,6 +18,7 @@
   import Map from './Map.vue';
   import SnowChart from './SnowChart.vue';
   import StripChart from './StripChart.vue';
+  import DroughtMap from './DroughtMap.vue';
 
   export default {
     name: 'Washington',
@@ -22,7 +26,8 @@
     components: {
       washingtonMap: Map,
       snowChart: SnowChart,
-      stripChart: StripChart
+      stripChart: StripChart,
+      droughtMap: DroughtMap
     }
 
   }

@@ -15,6 +15,7 @@
   import Map from './Map.vue';
   import SnowChart from './SnowChart.vue';
   import StripChart from './StripChart.vue';
+  import DroughtMap from './DroughtMap.vue';
 
   export default {
     name: 'Idaho',
