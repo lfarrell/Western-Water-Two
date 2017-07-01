@@ -139,4 +139,9 @@ a {
   margin-top: 30px;
 }
 
+#drought_map circle {
+  fill: none;
+  stroke-width: 1.5
+}
+
 [v-cloak] { display:none; }
