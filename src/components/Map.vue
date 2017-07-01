@@ -188,6 +188,7 @@
           .await(function(error, map, stations, data) {
             vm.map = map;
             vm.data = data;
+
             // Create Map
             let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
             svg.call(zoom);

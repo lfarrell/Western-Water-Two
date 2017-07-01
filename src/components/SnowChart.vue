@@ -44,7 +44,7 @@
         return {
           snow_data: [],
           graph_height: this.baseHeight() - this.margins().top -this. margins().bottom,
-          graph_width: this.fullWidth() + this.margins().left + this.margins().right,
+          graph_width: this.fullWidth(),
           graph_translate: `translate(${this.margins().left},${this.margins().top})`,
           graph_translate_left: `translate(${this.margins().left - 25},${this.margins().top})`,
           tipDiv: tip,
@@ -80,11 +80,11 @@
 
     methods: {
       margins() {
-        return {top: 25, right: 40, bottom: 0, left: 75};
+        return {top: 25, right: 0, bottom: 0, left: 75};
       },
 
       fullWidth() {
-        return window.innerWidth;
+        return window.innerWidth - 50;
       },
 
       baseHeight() {

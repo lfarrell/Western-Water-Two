@@ -1,5 +1,5 @@
 <template>
-  <svg :width="width" :height="height" :transform="translate">
+  <svg :width="circle_width" :height="circle_height" :transform="translate">
     <g :id="field" :width="width" transform="translate(20,15)"></g>
   </svg>
 </template>
@@ -13,8 +13,8 @@
 
     data() {
       return {
-        width: '',
-        height: '',
+        circle_width: '',
+        circle_height: '',
         translate: ''
       }
     },
@@ -56,13 +56,13 @@
         }
 
         if(orientation === 'vertical') {
-          this.height = 210;
-          this.width = 100;
+          this.circle_height = 210;
+          this.circle_width = 100;
           this.translate = 'translate(0,0)';
         } else {
-          this.height = 70;
-          this.width = (this.whichType === 'map') ? 350 : screen_width - 100;
-          this.translate = (this.whichType === 'map')? `translate(${(this.width - 50) / 2},0)` :
+          this.circle_height = 70;
+          this.circle_width = 350;
+          this.translate = (this.whichType === 'map')? `translate(${(this.circle_width - 50)  / 2},0)` :
             `translate(${(screen_width - 320) / 2},0)`;
         }
 
@@ -87,7 +87,7 @@
           .domain(d3.extent(this.dataValues, (d) => { return +d[this.field]; }))
           .range(this.circleSizing());
         let configs = this.legendOrientation();
-        let chart_format = this.chartType()
+        let chart_format = this.chartType();
 
         return legend.legendSize()
           .scale(legend_scales)

@@ -37,7 +37,7 @@
         data: [],
         height: 80,
         width: window.innerWidth - 100 - margins.left - margins.right,
-        width_large: window.innerWidth + margins.left + margins.right,
+        width_large: window.innerWidth - 100 + margins.left + margins.right,
         offset: `translate(${margins.left},0)`,
         scale: {},
         colors: ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',

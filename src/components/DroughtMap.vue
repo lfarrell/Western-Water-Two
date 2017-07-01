@@ -1,6 +1,8 @@
 <template>
   <div class="col-sm-12 col-lg-12">
-    <svg class="is-map" id="drought_map" :height="graph_height" :width="graph_width"></svg>
+    <svg class="is-map" id="drought_map" :height="graph_height" :width="graph_width">
+
+    </svg>
   </div>
 </template>
 
@@ -77,19 +79,19 @@
             `<h4 class="text-center"> ${state_list[state.state]}</h4>
             <h5  class="text-center">Drought Levels (% of state)</h5>
             <div class="row">
-            <div class="col-md-6">
-            <ul class="list-unstyled first">
-            <li>D0: ${formatted(state['D0'])}%</li>
-            <li>D1: ${formatted(state['D1'])}%</li>
-            <li>D2: ${formatted(state['D2'])}%</li>
-            </ul>
-            </div>
-            <div class="col-md-6">
-            <ul class="list-unstyled last">
-            <li>D3: ${formatted(state['D3'])}%</li>
-            <li>D4: ${formatted(state['D4'])}%</li>
-            </ul>
-            </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled first">
+                  <li>D0: ${formatted(state['D0'])}%</li>
+                  <li>D1: ${formatted(state['D1'])}%</li>
+                  <li>D2: ${formatted(state['D2'])}%</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled last">
+                  <li>D3: ${formatted(state['D3'])}%</li>
+                  <li>D4: ${formatted(state['D4'])}%</li>
+                </ul>
+              </div>
             </div>`
           )
             .style("top", (d3.event.pageY+18)+"px")

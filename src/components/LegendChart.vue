@@ -15,7 +15,7 @@
       return {
         width: '',
         height: '',
-        translate: `translate(${(window.innerWidth - 870) / 2},20)`
+        translate: ''
       }
     },
 
@@ -40,19 +40,15 @@
         if(screen_width < 1000) {
           size = 40;
           orientation = 'vertical';
-        } else {
-          size = 70;
-          orientation = 'horizontal';
-        }
-
-        if(orientation === 'vertical') {
           this.height = 210;
           this.width = 200;
           this.translate = 'translate(0,0)';
         } else {
+          size = 70;
+          orientation = 'horizontal';
           this.height = 90;
-          this.width = screen_width - 100;
-          this.translate = `translate(${(screen_width - 870) / 2},20)`
+          this.width = 840;
+          this.translate = `translate(${(screen_width - 870) / 2},20)`;
         }
 
         return {size: size, orientation: orientation};
