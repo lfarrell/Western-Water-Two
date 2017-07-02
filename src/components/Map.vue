@@ -9,15 +9,15 @@
         <svg width="450" height="45" transform="translate(70,0)">
           <g>
             <rect x="30" y="15" width="10" height="10" style="fill: rgb(26, 150, 65);"></rect>
-            <text x="45" y="25" height="30" width="200">75%+</text>
+            <text x="45" y="25" height="30" width="20">75%+</text>
           </g>
           <g>
-            <rect x="95" y="15" width="10" height="10" style="fill: rgb(252, 232, 131);"></rect>
-            <text x="110" y="25" height="30" width="200">50%+</text>
+            <rect x="100" y="15" width="10" height="10" style="fill: rgb(252, 232, 131);"></rect>
+            <text x="115" y="25" height="30" width="20">50%+</text>
           </g>
           <g>
             <rect x="165" y="15" width="10" height="10" style="fill: rgb(215, 25, 28);"></rect>
-            <text x="180" y="25" height="30" width="750">Less than 50% </text>
+            <text x="180" y="25" height="30" width="40">Less than 50% </text>
           </g>
         </svg>
       </p>
@@ -55,6 +55,7 @@
   import {tip} from './utilities/tip';
   import {reservoirs} from './utilities/stations';
   import {formatting} from './utilities/formatting';
+  import {dataloader} from './utilities/dataloader';
 
   export default {
     name: 'Map',
@@ -181,6 +182,8 @@
         let width = svg.attr('width');
         let height = svg.attr('height');
         let reservoir_names = reservoirs.reservoir_names;
+
+       // console.log(dataloader.load(`static/data/states_all/${vm.resFile}`))
 
         d3.queue()
           .defer(d3.json, `static/data/maps/${this.mapFile}`)
