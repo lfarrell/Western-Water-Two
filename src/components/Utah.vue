@@ -6,17 +6,28 @@
       res="Steinaker"
       resFile="utah_all.csv"
       whichState="UT"></utah-map>
+    <snow-chart whichState="UT"></snow-chart>
+    <strip-chart stateFile="UT_drought_all.csv"></strip-chart>
+    <drought-map mapFile="ut.counties.json"
+                 centersFile="ut_centers.json"
+                 dataFile="ut-counties.csv"></drought-map>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
+  import StripChart from './StripChart.vue';
+  import DroughtMap from './DroughtMap.vue';
 
   export default {
     name: 'Utah',
 
     components: {
-      utahMap: Map
+      utahMap: Map,
+      snowChart: SnowChart,
+      stripChart: StripChart,
+      droughtMap: DroughtMap
     }
 
   }

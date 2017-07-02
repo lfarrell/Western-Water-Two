@@ -2,13 +2,43 @@
   <div id="is-top">
     <div v-if="loading" class="loader">Loading...</div>
     <div class="row">
-    <div v-show="done" class="col-sm-12 col-md-7 map-graph">
+    <div v-show="done" class="col-sm-12 col-lg-6 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
-      <svg id="map" width="620" height="500" vector-effect="non-scaling-stroke">
-       <!-- <g v-for="d in data">
-          <circle :x="" :y="" :fill="" :r="mapScale(d.)"></circle>
-        </g> -->
+      <p id="map_legend">
+        <svg width="450" height="45" transform="translate(70,0)">
+          <g>
+            <rect x="30" y="15" width="10" height="10" style="fill: rgb(26, 150, 65);"></rect>
+            <text x="45" y="25" height="30" width="200">75%+</text>
+          </g>
+          <g>
+            <rect x="95" y="15" width="10" height="10" style="fill: rgb(252, 232, 131);"></rect>
+            <text x="110" y="25" height="30" width="200">50%+</text>
+          </g>
+          <g>
+            <rect x="165" y="15" width="10" height="10" style="fill: rgb(215, 25, 28);"></rect>
+            <text x="180" y="25" height="30" width="750">Less than 50% </text>
+          </g>
+        </svg>
+      </p>
+      <h4 class="text-center upper">Reservoir Capacity (acre feet)</h4>
+      <circle-legend-chart
+        :dataValues="stations"
+        :field="legend_field"
+        :whichType="whichType"></circle-legend-chart>
+      <svg id="map" class="is-map" width="600" height="500">
+        <template v-for="(d, index) in stations">
+          <circle :id="whichType + d.state + index"
+                  :cx="projection([d.lng, d.lat])[0]"
+                  :cy="projection([d.lng, d.lat])[1]"
+                  :fill="d.color"
+                  :r="scale(d.capacity)"
+                  @click="newRes(d)"
+                  @mouseover="showItem(d, tipDiv, $event)"
+                  @mouseout="hideItem(d, tipDiv, $event)"
+                  @touchstart="showItem(d, tipDiv, $event)"
+                  @touchend="hideItem(d, tipDiv, $event)"></circle>
+        </template>
       </svg>
     </div>
     <line-chart v-show="done" :whichState="whichState" :reservoirName="reservoirName"
@@ -21,8 +51,10 @@
   import * as _ from 'lodash';
   import moment from 'moment';
   import LineChart from './LineChart.vue';
+  import CircleLegendChart from './CircleLegendChart.vue';
   import {tip} from './utilities/tip';
   import {reservoirs} from './utilities/stations';
+  import {formatting} from './utilities/formatting';
 
   export default {
     name: 'Map',
@@ -34,7 +66,12 @@
         map: [],
         data: [],
         stations: [],
-        resValue: this.res
+        resValue: this.res,
+        scale: {},
+        projection: {},
+        tipDiv: tip,
+        whichType: 'map',
+        legend_field: 'capacity'
       }
     },
 
@@ -50,7 +87,8 @@
     },
 
     components: {
-      LineChart: LineChart
+      LineChart: LineChart,
+      CircleLegendChart: CircleLegendChart
     },
 
     computed: {
@@ -72,6 +110,20 @@
     },
 
     methods: {
+      newRes(d) {
+        this.resValue = d.reservoir;
+      },
+
+      showItem(d, tip, event) {
+        d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
+        tip.tipShow(tip.tipDiv(), d.reservoir, event);
+      },
+
+      hideItem(d, tip, event) {
+        d3.select(event.target).attr('r', this.scale(d.capacity));
+        tip.tipHide(tip.tipDiv());
+      },
+
       resColors(d) {
         if (d >= 75) {
           return '#1a9641';
@@ -124,18 +176,11 @@
 
       draw() {
         let vm = this;
-        let tip_div = tip.tipDiv();
 
         let svg = d3.select('#map');
         let width = svg.attr('width');
         let height = svg.attr('height');
         let reservoir_names = reservoirs.reservoir_names;
-
-        /* Draw the map */
-        let scale = 1,
-          projection = d3.geoAlbers()
-            .scale(scale)
-            .translate([0,0]);
 
         d3.queue()
           .defer(d3.json, `static/data/maps/${this.mapFile}`)
@@ -143,28 +188,14 @@
           .defer(d3.csv, `static/data/states_all/${this.resFile}`)
           .await(function(error, map, stations, data) {
             vm.map = map;
-            vm.stations = stations;
             vm.data = data;
+
             // Create Map
             let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
             svg.call(zoom);
 
-            let path = d3.geoPath().projection(projection);
-            let bounds = path.bounds(map);
-            scale = .95 / Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height);
-
-            let state = vm.whichState;
-
-            let translation = [(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
-              (height - scale * (bounds[1][1] + bounds[0][1])) / 2];
-
-            // update projection
-            projection = d3.geoAlbersUsa()
-              .scale(scale)
-              .translate(translation);
-            path = path.projection(projection);
-
-
+            let map_path = formatting.mapScaling(height, width, map);
+            let path = map_path.path;
 
             let maps = svg.selectAll('path')
               .data(map.features).call(zoom);
@@ -172,51 +203,20 @@
             maps.enter()
               .append('path')
               .merge(maps)
+              .attr('vector-effect', 'non-scaling-stroke')
               .attr('d', path);
 
             maps.exit().remove();
 
             // Create reservoir circles
             stations = vm.mapPctFull(data, stations, reservoir_names,vm.hasKey);
-            let mapScale = vm.mapScale(data);
+            stations.forEach((d) => {
+                d.color = vm.resColors(d.pct_capacity);
+            });
 
-            let station = svg.selectAll('circle')
-              .data(stations);
-
-            station.enter()
-              .append('circle')
-              .merge(station)
-              .attr('cx', (d) => {
-                return projection([d.lng, d.lat])[0];
-              })
-              .attr('cy', (d) => {
-                return projection([d.lng, d.lat])[1];
-              })
-              .attr('r', (d) => {
-                return mapScale(d.capacity);
-              })
-              .style('fill', (d) => {
-                return vm.resColors(d.pct_capacity);
-              })
-              .on('click', function (res) {
-                vm.resValue = res.reservoir;
-              })
-              .on('mouseover', function(d) {
-                tip.tipShow(tip_div, d.reservoir);
-
-                d3.select(this).attr('r', function(d) {
-                  return mapScale(d.capacity) * 1.5;
-                });
-              })
-              .on('mouseout', function(d) {
-                tip.tipHide(tip_div);
-
-                d3.select(this).attr('r', function(d) {
-                  return mapScale(d.capacity);
-                });
-              });
-
-            station.exit().remove();
+            vm.scale = vm.mapScale(data);
+            vm.stations = stations;
+            vm.projection = map_path.projection;
 
             function zoomed() {
               svg.attr("transform", d3.event.transform);
@@ -233,13 +233,3 @@
     }
   }
 </script>
-
-<style scoped>
-  #map path {
-    fill: white;
-    stroke: white;
-    stroke-width: 1.5;
-    fill-opacity: 0.2;
-    stroke-opacity: 0.3;
-  }
-</style>

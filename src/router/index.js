@@ -30,7 +30,7 @@ export default new Router({
       path: '/',
       props: {
         dataFile: 'all_resv.csv',
-        mapFile: 'contig_us.geo.json',
+        mapFile: 'western_us.json',
         resFile: 'all.csv',
         res: 'Shasta Dam',
         whichState: 'none',

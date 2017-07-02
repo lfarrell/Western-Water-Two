@@ -41,7 +41,7 @@
         avg_storage: '',
         capacity: '',
         graph_height: 500 - this.margins().top -this. margins().bottom,
-        graph_width: 600 - this.margins().left - this.margins().right,
+        graph_width: 650 - this.margins().left - this.margins().right,
         graph_translate: `translate(${this.margins().left},${this.margins().top})`
       }
     },
@@ -104,7 +104,8 @@
           long_format = d3.timeParse('%m/%Y'),
           format = this.hasKey ? short_format : long_format,
           margin = this.margins(),
-          num_format = d3.format(',');
+          num_format = d3.format(','),
+          vm = this;
 
         let tip_div = tip.tipDiv();
         let xScale = d3.scaleTime().domain(d3.extent(data, function(d) { return format(d.date); }));
@@ -138,12 +139,12 @@
           .attr('width', this.graph_width + margin.left + margin.right)
           .attr('height', this.graph_height + margin.top + margin.bottom);
 
-        d3.select('g.x').transition()
+        d3.select('#line-chart g.x').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(xAxis);
 
-        d3.select('g.y').transition()
+        d3.select('#line-chart g.y').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
           .call(yAxis);
@@ -164,7 +165,7 @@
           .attr('d', capacity(data));
 
         let focus = d3.select('.focus');
-        d3.select('rect').on('mouseover touchstart', function () {
+        d3.select('rect.overlay').on('mouseover touchstart', function () {
           focus.style('display', null);
         }).on('mouseout touchend', function () {
           focus.style('display', 'none');
@@ -184,7 +185,8 @@
             .attr('transform', `translate(${xScale(format(d.date)) + margin.left},${margin.top})`);
 
           let date_bits = d.date.split('/');
-          let message = `<h4 class='text-center'>${formatting.stringDate(date_bits[0])}, 20${date_bits[1]}</h4>
+          let date_offset = vm.whichState === 'none' ? '20' : '';
+          let message = `<h4 class='text-center'>${formatting.stringDate(date_bits[0])}, ${date_offset}${date_bits[1]}</h4>
           <ul class='list-unstyled'>
           <li>Capacity: ${num_format(d.capacity)} acre ft</li>
           <li>Vol: ${num_format(d.storage)} acre ft</li>
@@ -200,7 +202,7 @@
 </script>
 
 <style scoped>
-  path {
+  #line-chart path {
     fill: none;
     stroke-width: 2;
   }

@@ -34,18 +34,16 @@ h1, h2 {
   text-align: center;
 }
 
-h3, #res_legend, #compare_legend, #map_legend, #capacity_legend, .center {
+h3, #res_legend, #compare_legend, #map_legend, .center {
   text-align: center;
 }
 
-#cap_legend_text {
-  margin-top: -20px;
+h4.upper {
+  margin-top: -10px;
 }
 
-#capacity_legend circle {
-  fill: none;
-  stroke: white;
-  stroke-width: 1.5;
+#snow path, #snow line {
+  stroke: none;
 }
 
 .axis path,
@@ -56,8 +54,11 @@ h3, #res_legend, #compare_legend, #map_legend, #capacity_legend, .center {
   shape-rendering: crispEdges;
 }
 
-#map path {
-  /* fill: #d7c7ad; */
+#snow path, #snow line {
+  stroke: none;
+}
+
+.is-map path {
   fill: white;
   stroke: white;
   stroke-width: 1.5;
@@ -94,17 +95,23 @@ div.tooltip ul {
 }
 
 circle {
-  stroke: black;
-  stroke-width: 0.5;
+  stroke: lightgray;
+  stroke-width: 0.25;
+}
+
+circle.swatch {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
 }
 
 circle:hover {
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 text {
   fill: white;
-  stroke: white
+  font-size: 13px;
 }
 
 g.focus text {
@@ -113,12 +120,6 @@ g.focus text {
 
 a {
   color: white;
-}
-
-path.capacity {
-  fill: none;
-  stroke: green;
-  stroke-width: 2;
 }
 
 .overlay {
@@ -131,18 +132,6 @@ path.capacity {
   stroke: white;
 }
 
-path.snow {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1;
-}
-
-path.snow_avg {
-  fill: none;
-  stroke: white;
-  stroke-width: 1;
-}
-
 .center {
   text-align: center;
 }
@@ -151,8 +140,13 @@ path.snow_avg {
   display: none;
 }
 
-g.legend_value:hover, g.legend_value:focus {
-  cursor: pointer;
+#snow_graph {
+  margin-top: 30px;
+}
+
+#drought_map circle {
+  fill: none;
+  stroke-width: 1.5
 }
 
 [v-cloak] { display:none; }

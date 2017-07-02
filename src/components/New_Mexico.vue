@@ -1,22 +1,33 @@
 <template>
   <div>
-    <texas-map
+    <nm-map
       mapFile="nm.counties.json"
       dataFile="nm.csv"
       res="Caballo"
       resFile="nm_all.csv"
-      whichState="NM"></texas-map>
+      whichState="NM"></nm-map>
+    <snow-chart whichState="NM"></snow-chart>
+    <strip-chart stateFile="NM_drought_all.csv"></strip-chart>
+    <drought-map mapFile="nm.counties.json"
+                 centersFile="nm_centers.json"
+                 dataFile="nm-counties.csv"></drought-map>
   </div>
 </template>
 
 <script>
   import Map from './Map.vue';
+  import SnowChart from './SnowChart.vue';
+  import StripChart from './StripChart.vue';
+  import DroughtMap from './DroughtMap.vue';
 
   export default {
     name: 'New_Mexico',
 
     components: {
-      texasMap: Map
+      nmMap: Map,
+      snowChart: SnowChart,
+      stripChart: StripChart,
+      droughtMap: DroughtMap
     }
 
   }
