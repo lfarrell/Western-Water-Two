@@ -62,7 +62,7 @@
         } else {
           this.height = 70;
           this.width = 350;
-          this.translate = (this.whichType === 'map')? `translate(${(this.width - 50)  / 2},0)` :
+          this.translate = (this.whichType === 'map')? `translate(${(this.width - 65)  / 2},0)` :
             `translate(${(screen_width - 320) / 2},0)`;
         }
 
@@ -73,7 +73,7 @@
           let format, spacing;
           if(this.whichType === 'map') {
               format = ',';
-              spacing = 40;
+              spacing = 50;
           } else {
               format = '.01f';
               spacing = 30;
