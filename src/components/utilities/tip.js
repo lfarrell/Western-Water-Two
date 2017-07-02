@@ -2,14 +2,14 @@ import * as d3 from 'd3';
 
 const tip = {
   tipDiv: () => {
-    let tip = document.querySelectorAll('.tooltip'); // check that there's not already a tip div
+    let tip = document.querySelectorAll('.tooltips'); // check that there's not already a tip div
 
     if(tip.length) {
-      return d3.select('.tooltip');
+      return d3.select('.tooltips');
     }
 
     return d3.select('body').append('div')
-      .attr('class', 'tooltip')
+      .attr('class', 'tooltips')
       .style('opacity', 0);
   },
 
