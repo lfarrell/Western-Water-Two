@@ -47,26 +47,22 @@
 
       legendOrientation() {
         let screen_width = window.innerWidth;
-        let size, orientation;
+        let orientation;
 
         if(screen_width < 1000) {
           orientation = 'vertical';
-        } else {
-          orientation = 'horizontal';
-        }
-
-        if(orientation === 'vertical') {
           this.height = 210;
           this.width = 100;
           this.translate = 'translate(0,0)';
         } else {
+          orientation = 'horizontal';
           this.height = 70;
           this.width = 350;
-          this.translate = (this.whichType === 'map')? `translate(${(this.width - 65)  / 2},0)` :
+          this.translate = (this.whichType === 'map') ? `translate(${(this.width - 65)  / 2},0)` :
             `translate(${(screen_width - 320) / 2},0)`;
         }
 
-        return {size: size, orientation: orientation};
+        return {orientation: orientation};
       },
 
       chartType() {
