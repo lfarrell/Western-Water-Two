@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "bootstrap-vue": "^0.16.1",
+    "bootstrap-vue": "^0.17.1",
     "d3": "^4.7.4",
     "d3-svg-annotation": "^1.11.0",
     "d3-svg-legend": "^2.24.1",
