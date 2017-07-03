@@ -80,7 +80,7 @@
         d3.select(event.target).attr('height', 100);
 
         let template = `
-                <h4 class="text-center">${this.stringDate(data.month)}, ${data.year}</h4>
+                <h4 class="text-center tip">${this.stringDate(data.month)}, ${data.year}</h4>
                 <ul class="list-unstyled"
                   <li>Historical Avg: ${this.monthAvg(this.avgVals, 'drought', data.month)}</li>
                   <li>Actual Avg: ${formatting(data.value)}</li>

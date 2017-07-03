@@ -148,8 +148,8 @@
 
       showItem(d, tip, event) {
         let text =
-          `<h4 class="text-center">${d.date.getFullYear()}</h4>
-                   <h5  class="text-center">Snow/Water Equivalence</h5>
+          `<h4 class="text-center tip">${d.date.getFullYear()}</h4>
+                   <h5  class="text-center tip">Snow/Water Equivalence</h5>
                    <ul class="list-unstyled">
                    <li>Elevation: ${this.numFormat(d.elev)}+ feet</li>
                    <li>Temp Mean: ${d.temp_mean} degrees</li>

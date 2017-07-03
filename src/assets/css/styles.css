@@ -66,8 +66,8 @@ h4.upper {
   stroke-opacity: 0.3;
 }
 
-h4.tip {
-  font-size: 1.2rem
+h4.tip, h5.tip {
+  font-size: 1.05rem
 }
 
 div.tooltips {
