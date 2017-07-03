@@ -36,7 +36,9 @@
       circleSizing() {
         let sizing;
 
-        if (window.innerWidth < 500) {
+        if (this.whichType !== 'map') {
+          sizing = [3, 13];
+        } else if (window.innerWidth < 500) {
           sizing = [1, 6];
         } else {
           sizing = [2, 20];

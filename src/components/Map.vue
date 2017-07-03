@@ -144,7 +144,7 @@
       mapScale(data) {
         return d3.scaleSqrt()
           .domain(d3.extent(data, (d) => { return d.capacity * .2; }))
-          .range([2, 12]);
+          .range([3, 13]);
       },
 
       mapPctFull(data, stations, reservoir_names, key_used) {
