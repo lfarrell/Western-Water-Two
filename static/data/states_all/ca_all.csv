@@ -206,6 +206,8 @@ reservoir,storage,capacity,pct_capacity,date
 "Alpine Lake",8891,8900,99.9,01/2017
 "Alpine Lake",8884,8900,99.8,02/2017
 "Alpine Lake",8891,8900,99.9,03/2017
+"Alpine Lake",8891,8900,99.9,04/2017
+"Alpine Lake",8490,8900,95.4,05/2017
 "Antelope Lake",15645,22600,69.2,01/2000
 "Antelope Lake",16983,22600,75.1,02/2000
 "Antelope Lake",20313,22600,89.9,03/2000
@@ -413,6 +415,8 @@ reservoir,storage,capacity,pct_capacity,date
 "Antelope Lake",23456,22600,103.8,01/2017
 "Antelope Lake",24146,22600,106.8,02/2017
 "Antelope Lake",24126,22600,106.8,03/2017
+"Antelope Lake",23876,22600,105.6,04/2017
+"Antelope Lake",23333,22600,103.2,05/2017
 Barrett,16840,37900,44.4,01/2000
 Barrett,19301,37900,50.9,02/2000
 Barrett,20344,37900,53.7,03/2000
@@ -619,6 +623,8 @@ Barrett,1834,37900,4.8,11/2016
 Barrett,5390,37900,14.2,01/2017
 Barrett,8442,37900,22.3,02/2017
 Barrett,12321,37900,32.5,03/2017
+Barrett,12726,37900,33.6,04/2017
+Barrett,13003,37900,34.3,05/2017
 "Bear River At Camp Far West Dam",105700,104500,101.1,01/2000
 "Bear River At Camp Far West Dam",109000,104500,104.3,02/2000
 "Bear River At Camp Far West Dam",105300,104500,100.8,03/2000
@@ -826,6 +832,8 @@ Barrett,12321,37900,32.5,03/2017
 "Bear River At Camp Far West Dam",95070,104500,91,01/2017
 "Bear River At Camp Far West Dam",96230,104500,92.1,02/2017
 "Bear River At Camp Far West Dam",95270,104500,91.2,03/2017
+"Bear River At Camp Far West Dam",94880,104500,90.8,04/2017
+"Bear River At Camp Far West Dam",91430,104500,87.5,05/2017
 "Bear Valley Dam",58169,74000,78.6,01/2000
 "Bear Valley Dam",60150,74000,81.3,02/2000
 "Bear Valley Dam",61550,74000,83.2,03/2000
@@ -1033,6 +1041,8 @@ Barrett,12321,37900,32.5,03/2017
 "Bear Valley Dam",35372,74000,47.8,01/2017
 "Bear Valley Dam",38663,74000,52.2,02/2017
 "Bear Valley Dam",41536,74000,56.1,03/2017
+"Bear Valley Dam",42356,74000,57.2,04/2017
+"Bear Valley Dam",41419,74000,56,05/2017
 "Beardsley Lake",23096,77600,29.8,01/2000
 "Beardsley Lake",33300,77600,42.9,02/2000
 "Beardsley Lake",40200,77600,51.8,03/2000
@@ -1240,6 +1250,8 @@ Barrett,12321,37900,32.5,03/2017
 "Beardsley Lake",78357,77600,101,01/2017
 "Beardsley Lake",78608,77600,101.3,02/2017
 "Beardsley Lake",79076,77600,101.9,03/2017
+"Beardsley Lake",81776,77600,105.4,04/2017
+"Beardsley Lake",81402,77600,104.9,05/2017
 Berryessa,1396100,1602000,87.1,01/2000
 Berryessa,1564500,1602000,97.7,02/2000
 Berryessa,1598400,1602000,99.8,03/2000
@@ -1447,6 +1459,8 @@ Berryessa,930996,1602000,58.1,12/2016
 Berryessa,1331744,1602000,83.1,01/2017
 Berryessa,1587711,1602000,99.1,02/2017
 Berryessa,1562918,1602000,97.6,03/2017
+Berryessa,1555447,1602000,97.1,04/2017
+Berryessa,1535040,1602000,95.8,05/2017
 "Black Butte",59779,143700,41.6,01/2000
 "Black Butte",81440,143700,56.7,02/2000
 "Black Butte",103520,143700,72,03/2000
@@ -1654,6 +1668,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Black Butte",33996,143700,23.7,01/2017
 "Black Butte",41507,143700,28.9,02/2017
 "Black Butte",73324,143700,51,03/2017
+"Black Butte",108813,143700,75.7,04/2017
+"Black Butte",113040,143700,78.7,05/2017
 "Boca Reservoir",11527,41100,28,01/2000
 "Boca Reservoir",19635,41100,47.8,02/2000
 "Boca Reservoir",31514,41100,76.7,03/2000
@@ -1861,6 +1877,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Boca Reservoir",22276,41100,54.2,01/2017
 "Boca Reservoir",31900,41100,77.6,02/2017
 "Boca Reservoir",31551,41100,76.8,03/2017
+"Boca Reservoir",30875,41100,75.1,04/2017
+"Boca Reservoir",34772,41100,84.6,05/2017
 "Bouquet Canyon",27770,36500,76.1,01/2000
 "Bouquet Canyon",29180,36500,79.9,02/2000
 "Bouquet Canyon",28420,36500,77.9,03/2000
@@ -2081,6 +2099,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Bowman Lake",59900,64000,93.6,01/2017
 "Bowman Lake",62250,64000,97.3,02/2017
 "Bowman Lake",58600,64000,91.6,03/2017
+"Bowman Lake",64300,64000,100.5,04/2017
+"Bowman Lake",64410,64000,100.6,05/2017
 "Bridgeport Reservoir",22380,44100,50.7,01/2000
 "Bridgeport Reservoir",28810,44100,65.3,02/2000
 "Bridgeport Reservoir",32480,44100,73.7,03/2000
@@ -2288,6 +2308,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Bridgeport Reservoir",32560,44100,73.8,01/2017
 "Bridgeport Reservoir",30240,44100,68.6,02/2017
 "Bridgeport Reservoir",14790,44100,33.5,03/2017
+"Bridgeport Reservoir",11770,44100,26.7,04/2017
+"Bridgeport Reservoir",14030,44100,31.8,05/2017
 "Briones Dam",52680,67500,78,01/2000
 "Briones Dam",54920,67500,81.4,02/2000
 "Briones Dam",54300,67500,80.4,03/2000
@@ -2495,6 +2517,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Briones Dam",58120,67500,86.1,01/2017
 "Briones Dam",57260,67500,84.8,02/2017
 "Briones Dam",54160,67500,80.2,03/2017
+"Briones Dam",54050,67500,80.1,04/2017
+"Briones Dam",54430,67500,80.6,05/2017
 "Buchanan Dam",70002,150000,46.7,01/2000
 "Buchanan Dam",111210,150000,74.1,02/2000
 "Buchanan Dam",122655,150000,81.8,03/2000
@@ -2702,6 +2726,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Buchanan Dam",107238,150000,71.5,01/2017
 "Buchanan Dam",119855,150000,79.9,02/2017
 "Buchanan Dam",125713,150000,83.8,03/2017
+"Buchanan Dam",136848,150000,91.2,04/2017
+"Buchanan Dam",138019,150000,92,05/2017
 "Bucks Lake Storage",56125,103000,54.5,01/2000
 "Bucks Lake Storage",66955,103000,65,02/2000
 "Bucks Lake Storage",72617,103000,70.5,03/2000
@@ -2904,6 +2930,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Bucks Lake Storage",82139,103000,79.7,10/2016
 "Bucks Lake Storage",92475,103000,89.8,01/2017
 "Bucks Lake Storage",102384,103000,99.4,03/2017
+"Bucks Lake Storage",103081,103000,100.1,04/2017
+"Bucks Lake Storage",103795,103000,100.8,05/2017
 "Butt Valley",30816,49800,61.9,01/2000
 "Butt Valley",43649,49800,87.6,02/2000
 "Butt Valley",34591,49800,69.5,03/2000
@@ -3105,6 +3133,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Butt Valley",36732,49800,73.8,10/2016
 "Butt Valley",37575,49800,75.5,01/2017
 "Butt Valley",40142,49800,80.6,03/2017
+"Butt Valley",41559,49800,83.5,04/2017
+"Butt Valley",44415,49800,89.2,05/2017
 "Cachuma Lake",156142,190000,82.2,01/2000
 "Cachuma Lake",171741,190000,90.4,02/2000
 "Cachuma Lake",188987,190000,99.5,03/2000
@@ -3312,6 +3342,8 @@ Berryessa,1562918,1602000,97.6,03/2017
 "Cachuma Lake",24867,190000,13.1,01/2017
 "Cachuma Lake",89227,190000,47,02/2017
 "Cachuma Lake",97301,190000,51.2,03/2017
+"Cachuma Lake",99015,190000,52.1,04/2017
+"Cachuma Lake",98721,190000,52,05/2017
 Calaveras,76622,100000,76.6,01/2000
 Calaveras,99204,100000,99.2,02/2000
 Calaveras,95926,100000,95.9,03/2000
@@ -3519,6 +3551,8 @@ Calaveras,34373,100000,34.4,12/2016
 Calaveras,53220,100000,53.2,01/2017
 Calaveras,54916,100000,54.9,02/2017
 Calaveras,34416,100000,34.4,03/2017
+Calaveras,28015,100000,28,04/2017
+Calaveras,29245,100000,29.2,05/2017
 "Camanche Reservoir",309520,417100,74.2,01/2000
 "Camanche Reservoir",302290,417100,72.5,02/2000
 "Camanche Reservoir",280820,417100,67.3,03/2000
@@ -3726,6 +3760,8 @@ Calaveras,34416,100000,34.4,03/2017
 "Camanche Reservoir",270560,417100,64.9,01/2017
 "Camanche Reservoir",395640,417100,94.9,02/2017
 "Camanche Reservoir",303120,417100,72.7,03/2017
+"Camanche Reservoir",283120,417100,67.9,04/2017
+"Camanche Reservoir",291140,417100,69.8,05/2017
 "Caples Lake",12163,21600,56.3,01/2000
 "Caples Lake",11824,21600,54.7,02/2000
 "Caples Lake",11344,21600,52.5,03/2000
@@ -3933,6 +3969,8 @@ Calaveras,34416,100000,34.4,03/2017
 "Caples Lake",13682,21600,63.3,01/2017
 "Caples Lake",16736,21600,77.5,02/2017
 "Caples Lake",12755,21600,59.1,03/2017
+"Caples Lake",12651,21600,58.6,04/2017
+"Caples Lake",15615,21600,72.3,05/2017
 Casitas,212458,254000,83.6,01/2000
 Casitas,219600,254000,86.5,02/2000
 Casitas,225100,254000,88.6,03/2000
@@ -4140,6 +4178,8 @@ Casitas,89182,254000,35.1,12/2016
 Casitas,93324,254000,36.7,01/2017
 Casitas,109916,254000,43.3,02/2017
 Casitas,111447,254000,43.9,03/2017
+Casitas,110124,254000,43.4,04/2017
+Casitas,109600,254000,43.1,05/2017
 Castaic,287775,325000,88.5,01/2000
 Castaic,291228,325000,89.6,02/2000
 Castaic,298997,325000,92,03/2000
@@ -4347,6 +4387,8 @@ Castaic,183407,325000,56.4,12/2016
 Castaic,260207,325000,80.1,01/2017
 Castaic,300899,325000,92.6,02/2017
 Castaic,300065,325000,92.3,03/2017
+Castaic,300706,325000,92.5,04/2017
+Castaic,310102,325000,95.4,05/2017
 Chabot,8700,10300,84.5,01/2000
 Chabot,9760,10300,94.8,02/2000
 Chabot,9696,10300,94.1,03/2000
@@ -4554,6 +4596,8 @@ Chabot,8310,10300,80.7,12/2016
 Chabot,10640,10300,103.3,01/2017
 Chabot,10710,10300,104,02/2017
 Chabot,10570,10300,102.6,03/2017
+Chabot,10640,10300,103.3,04/2017
+Chabot,10310,10300,100.1,05/2017
 "Cherry Lake",237500,268000,88.6,01/2000
 "Cherry Lake",228100,268000,85.1,02/2000
 "Cherry Lake",207800,268000,77.5,03/2000
@@ -4761,415 +4805,421 @@ Chabot,10570,10300,102.6,03/2017
 "Cherry Lake",227895,268000,85,01/2017
 "Cherry Lake",238022,268000,88.8,02/2017
 "Cherry Lake",220712,268000,82.4,03/2017
-"Clear Lk - Cache Creek",104820,315000,33.3,01/2000
-"Clear Lk - Cache Creek",285499,315000,90.6,02/2000
-"Clear Lk - Cache Creek",312949,315000,99.3,03/2000
-"Clear Lk - Cache Creek",312945,315000,99.3,04/2000
-"Clear Lk - Cache Creek",292954,315000,93,05/2000
-"Clear Lk - Cache Creek",213703,315000,67.8,06/2000
-"Clear Lk - Cache Creek",157434,315000,50,07/2000
-"Clear Lk - Cache Creek",98284,315000,31.2,08/2000
-"Clear Lk - Cache Creek",65742,315000,20.9,09/2000
-"Clear Lk - Cache Creek",49584,315000,15.7,10/2000
-"Clear Lk - Cache Creek",45958,315000,14.6,11/2000
-"Clear Lk - Cache Creek",45555,315000,14.5,12/2000
-"Clear Lk - Cache Creek",65742,315000,20.9,01/2001
-"Clear Lk - Cache Creek",156608,315000,49.7,02/2001
-"Clear Lk - Cache Creek",212020,315000,67.3,03/2001
-"Clear Lk - Cache Creek",209076,315000,66.4,04/2001
-"Clear Lk - Cache Creek",181886,315000,57.7,05/2001
-"Clear Lk - Cache Creek",144654,315000,45.9,06/2001
-"Clear Lk - Cache Creek",108910,315000,34.6,07/2001
-"Clear Lk - Cache Creek",65742,315000,20.9,08/2001
-"Clear Lk - Cache Creek",47568,315000,15.1,09/2001
-"Clear Lk - Cache Creek",62504,315000,19.8,11/2001
-"Clear Lk - Cache Creek",183135,315000,58.1,12/2001
-"Clear Lk - Cache Creek",247206,315000,78.5,01/2002
-"Clear Lk - Cache Creek",267185,315000,84.8,02/2002
-"Clear Lk - Cache Creek",283765,315000,90.1,03/2002
-"Clear Lk - Cache Creek",279900,315000,88.9,04/2002
-"Clear Lk - Cache Creek",242945,315000,77.1,05/2002
-"Clear Lk - Cache Creek",191058,315000,60.7,06/2002
-"Clear Lk - Cache Creek",135592,315000,43,07/2002
-"Clear Lk - Cache Creek",86665,315000,27.5,08/2002
-"Clear Lk - Cache Creek",49988,315000,15.9,09/2002
-"Clear Lk - Cache Creek",34701,315000,11,10/2002
-"Clear Lk - Cache Creek",38314,315000,12.2,11/2002
-"Clear Lk - Cache Creek",233585,315000,74.2,12/2002
-"Clear Lk - Cache Creek",261165,315000,82.9,01/2003
-"Clear Lk - Cache Creek",292439,315000,92.8,02/2003
-"Clear Lk - Cache Creek",315142,315000,100,03/2003
-"Clear Lk - Cache Creek",327003,315000,103.8,04/2003
-"Clear Lk - Cache Creek",303758,315000,96.4,05/2003
-"Clear Lk - Cache Creek",255767,315000,81.2,06/2003
-"Clear Lk - Cache Creek",199002,315000,63.2,07/2003
-"Clear Lk - Cache Creek",153718,315000,48.8,08/2003
-"Clear Lk - Cache Creek",113000,315000,35.9,09/2003
-"Clear Lk - Cache Creek",87676,315000,27.8,10/2003
-"Clear Lk - Cache Creek",92570,315000,29.4,11/2003
-"Clear Lk - Cache Creek",213703,315000,67.8,12/2003
-"Clear Lk - Cache Creek",249774,315000,79.3,01/2004
-"Clear Lk - Cache Creek",367258,315000,116.6,02/2004
-"Clear Lk - Cache Creek",317336,315000,100.7,03/2004
-"Clear Lk - Cache Creek",305066,315000,96.8,04/2004
-"Clear Lk - Cache Creek",257081,315000,81.6,05/2004
-"Clear Lk - Cache Creek",204871,315000,65,06/2004
-"Clear Lk - Cache Creek",156105,315000,49.6,07/2004
-"Clear Lk - Cache Creek",102369,315000,32.5,08/2004
-"Clear Lk - Cache Creek",63716,315000,20.2,09/2004
-"Clear Lk - Cache Creek",55233,315000,17.5,10/2004
-"Clear Lk - Cache Creek",58464,315000,18.6,11/2004
-"Clear Lk - Cache Creek",114232,315000,36.3,12/2004
-"Clear Lk - Cache Creek",208000,315000,66,01/2005
-"Clear Lk - Cache Creek",265000,315000,84.1,02/2005
-"Clear Lk - Cache Creek",314703,315000,99.9,03/2005
-"Clear Lk - Cache Creek",315580,315000,100.2,04/2005
-"Clear Lk - Cache Creek",317500,315000,100.8,05/2005
-"Clear Lk - Cache Creek",286366,315000,90.9,06/2005
-"Clear Lk - Cache Creek",226000,315000,71.7,07/2005
-"Clear Lk - Cache Creek",183135,315000,58.1,08/2005
-"Clear Lk - Cache Creek",149633,315000,47.5,09/2005
-"Clear Lk - Cache Creek",132301,315000,42,10/2005
-"Clear Lk - Cache Creek",135730,315000,43.1,11/2005
-"Clear Lk - Cache Creek",275114,315000,87.3,12/2005
-"Clear Lk - Cache Creek",270000,315000,85.7,01/2006
-"Clear Lk - Cache Creek",314265,315000,99.8,02/2006
-"Clear Lk - Cache Creek",323921,315000,102.8,03/2006
-"Clear Lk - Cache Creek",323482,315000,102.7,04/2006
-"Clear Lk - Cache Creek",304560,315000,96.7,05/2006
-"Clear Lk - Cache Creek",264790,315000,84.1,06/2006
-"Clear Lk - Cache Creek",202000,315000,64.1,07/2006
-"Clear Lk - Cache Creek",155600,315000,49.4,08/2006
-"Clear Lk - Cache Creek",128189,315000,40.7,09/2006
-"Clear Lk - Cache Creek",111773,315000,35.5,10/2006
-"Clear Lk - Cache Creek",111750,315000,35.5,11/2006
-"Clear Lk - Cache Creek",140122,315000,44.5,12/2006
-"Clear Lk - Cache Creek",142000,315000,45.1,01/2007
-"Clear Lk - Cache Creek",233585,315000,74.2,02/2007
-"Clear Lk - Cache Creek",251550,315000,79.9,03/2007
-"Clear Lk - Cache Creek",240700,315000,76.4,04/2007
-"Clear Lk - Cache Creek",215808,315000,68.5,05/2007
-"Clear Lk - Cache Creek",170256,315000,54,06/2007
-"Clear Lk - Cache Creek",125723,315000,39.9,07/2007
-"Clear Lk - Cache Creek",84013,315000,26.7,08/2007
-"Clear Lk - Cache Creek",51602,315000,16.4,09/2007
-"Clear Lk - Cache Creek",44348,315000,14.1,10/2007
-"Clear Lk - Cache Creek",40323,315000,12.8,11/2007
-"Clear Lk - Cache Creek",51602,315000,16.4,12/2007
-"Clear Lk - Cache Creek",188000,315000,59.7,01/2008
-"Clear Lk - Cache Creek",285499,315000,90.6,02/2008
-"Clear Lk - Cache Creek",291300,315000,92.5,03/2008
-"Clear Lk - Cache Creek",275546,315000,87.5,04/2008
-"Clear Lk - Cache Creek",232736,315000,73.9,05/2008
-"Clear Lk - Cache Creek",188553,315000,59.9,06/2008
-"Clear Lk - Cache Creek",148362,315000,47.1,07/2008
-"Clear Lk - Cache Creek",89714,315000,28.5,08/2008
-"Clear Lk - Cache Creek",54023,315000,17.2,09/2008
-"Clear Lk - Cache Creek",45555,315000,14.5,10/2008
-"Clear Lk - Cache Creek",44750,315000,14.2,11/2008
-"Clear Lk - Cache Creek",46360,315000,14.7,12/2008
-"Clear Lk - Cache Creek",45555,315000,14.5,01/2009
-"Clear Lk - Cache Creek",120800,315000,38.3,02/2009
-"Clear Lk - Cache Creek",168600,315000,53.5,03/2009
-"Clear Lk - Cache Creek",161564,315000,51.3,04/2009
-"Clear Lk - Cache Creek",154130,315000,48.9,05/2009
-"Clear Lk - Cache Creek",123673,315000,39.3,06/2009
-"Clear Lk - Cache Creek",90122,315000,28.6,07/2009
-"Clear Lk - Cache Creek",56040,315000,17.8,08/2009
-"Clear Lk - Cache Creek",33094,315000,10.5,09/2009
-"Clear Lk - Cache Creek",26690,315000,8.5,10/2009
-"Clear Lk - Cache Creek",22294,315000,7.1,11/2009
-"Clear Lk - Cache Creek",28290,315000,9,12/2009
-"Clear Lk - Cache Creek",184801,315000,58.7,01/2010
-"Clear Lk - Cache Creek",236557,315000,75.1,02/2010
-"Clear Lk - Cache Creek",285065,315000,90.5,03/2010
-"Clear Lk - Cache Creek",323921,315000,102.8,04/2010
-"Clear Lk - Cache Creek",290268,315000,92.1,05/2010
-"Clear Lk - Cache Creek",243794,315000,77.4,06/2010
-"Clear Lk - Cache Creek",179387,315000,56.9,07/2010
-"Clear Lk - Cache Creek",119979,315000,38.1,08/2010
-"Clear Lk - Cache Creek",90938,315000,28.9,09/2010
-"Clear Lk - Cache Creek",91346,315000,29,10/2010
-"Clear Lk - Cache Creek",97467,315000,30.9,11/2010
-"Clear Lk - Cache Creek",209497,315000,66.5,12/2010
-"Clear Lk - Cache Creek",235708,315000,74.8,01/2011
-"Clear Lk - Cache Creek",302014,315000,95.9,02/2011
-"Clear Lk - Cache Creek",382852,315000,121.5,03/2011
-"Clear Lk - Cache Creek",313388,315000,99.5,04/2011
-"Clear Lk - Cache Creek",285499,315000,90.6,05/2011
-"Clear Lk - Cache Creek",257910,315000,81.9,06/2011
-"Clear Lk - Cache Creek",198164,315000,62.9,07/2011
-"Clear Lk - Cache Creek",144242,315000,45.8,08/2011
-"Clear Lk - Cache Creek",109319,315000,34.7,09/2011
-"Clear Lk - Cache Creek",101961,315000,32.4,10/2011
-"Clear Lk - Cache Creek",99501,315000,31.6,11/2011
-"Clear Lk - Cache Creek",94202,315000,29.9,12/2011
-"Clear Lk - Cache Creek",118337,315000,37.6,01/2012
-"Clear Lk - Cache Creek",121621,315000,38.6,02/2012
-"Clear Lk - Cache Creek",124120,315000,39.4,03/2012
-"Clear Lk - Cache Creek",241664,315000,76.7,04/2012
-"Clear Lk - Cache Creek",213282,315000,67.7,05/2012
-"Clear Lk - Cache Creek",173575,315000,55.1,06/2012
-"Clear Lk - Cache Creek",127368,315000,40.4,07/2012
-"Clear Lk - Cache Creek",86862,315000,27.6,08/2012
-"Clear Lk - Cache Creek",61696,315000,19.6,09/2012
-"Clear Lk - Cache Creek",49181,315000,15.6,10/2012
-"Clear Lk - Cache Creek",78726,315000,25,11/2012
-"Clear Lk - Cache Creek",231038,315000,73.3,12/2012
-"Clear Lk - Cache Creek",241238,315000,76.6,01/2013
-"Clear Lk - Cache Creek",242942,315000,77.1,02/2013
-"Clear Lk - Cache Creek",253198,315000,80.4,03/2013
-"Clear Lk - Cache Creek",247206,315000,78.5,04/2013
-"Clear Lk - Cache Creek",211599,315000,67.2,05/2013
-"Clear Lk - Cache Creek",170670,315000,54.2,06/2013
-"Clear Lk - Cache Creek",122442,315000,38.9,07/2013
-"Clear Lk - Cache Creek",81571,315000,25.9,08/2013
-"Clear Lk - Cache Creek",50795,315000,16.1,09/2013
-"Clear Lk - Cache Creek",36307,315000,11.5,10/2013
-"Clear Lk - Cache Creek",28690,315000,9.1,11/2013
-"Clear Lk - Cache Creek",24290,315000,7.7,12/2013
-"Clear Lk - Cache Creek",21895,315000,7,01/2014
-"Clear Lk - Cache Creek",57656,315000,18.3,02/2014
-"Clear Lk - Cache Creek",86048,315000,27.3,03/2014
-"Clear Lk - Cache Creek",93386,315000,29.6,04/2014
-"Clear Lk - Cache Creek",73854,315000,23.4,05/2014
-"Clear Lk - Cache Creek",48400,315000,15.4,06/2014
-"Clear Lk - Cache Creek",23491,315000,7.5,07/2014
-"Clear Lk - Cache Creek",111773,315000,35.5,12/2014
-"Clear Lk - Cache Creek",116695,315000,37,01/2015
-"Clear Lk - Cache Creek",184385,315000,58.5,02/2015
-"Clear Lk - Cache Creek",181886,315000,57.7,03/2015
-"Clear Lk - Cache Creek",175650,315000,55.8,04/2015
-"Clear Lk - Cache Creek",150422,315000,47.8,05/2015
-"Clear Lk - Cache Creek",121210,315000,38.5,06/2015
-"Clear Lk - Cache Creek",87676,315000,27.8,07/2015
-"Clear Lk - Cache Creek",55637,315000,17.7,08/2015
-"Clear Lk - Cache Creek",35504,315000,11.3,09/2015
-"Clear Lk - Cache Creek",21895,315000,7,10/2015
-"Clear Lk - Cache Creek",17905,315000,5.7,11/2015
-"Clear Lk - Cache Creek",51198,315000,16.3,12/2015
-"Clear Lk - Cache Creek",178555,315000,56.7,01/2016
-"Clear Lk - Cache Creek",201097,315000,63.8,02/2016
-"Clear Lk - Cache Creek",320848,315000,101.9,03/2016
-"Clear Lk - Cache Creek",304630,315000,96.7,04/2016
-"Clear Lk - Cache Creek",264772,315000,84.1,05/2016
-"Clear Lk - Cache Creek",210338,315000,66.8,06/2016
-"Clear Lk - Cache Creek",152894,315000,48.5,07/2016
-"Clear Lk - Cache Creek",97876,315000,31.1,08/2016
-"Clear Lk - Cache Creek",59676,315000,18.9,09/2016
-"Clear Lk - Cache Creek",65337,315000,20.7,10/2016
-"Clear Lk - Cache Creek",68986,315000,21.9,11/2016
-"Clear Lk - Cache Creek",146302,315000,46.4,12/2016
-"Clear Lk - Cache Creek",336257,315000,106.7,01/2017
-"Clear Lk - Cache Creek",418684,315000,132.9,02/2017
-"Clear Lk - Cache Creek",315580,315000,100.2,03/2017
-"Clear Lk - Klamath R",304780,451000,67.6,01/2000
-"Clear Lk - Klamath R",317940,451000,70.5,02/2000
-"Clear Lk - Klamath R",343660,451000,76.2,03/2000
-"Clear Lk - Klamath R",351930,451000,78,04/2000
-"Clear Lk - Klamath R",339660,451000,75.3,05/2000
-"Clear Lk - Klamath R",318870,451000,70.7,06/2000
-"Clear Lk - Klamath R",295850,451000,65.6,07/2000
-"Clear Lk - Klamath R",266480,451000,59.1,08/2000
-"Clear Lk - Klamath R",239510,451000,53.1,09/2000
-"Clear Lk - Klamath R",236680,451000,52.5,10/2000
-"Clear Lk - Klamath R",237770,451000,52.7,11/2000
-"Clear Lk - Klamath R",237990,451000,52.8,12/2000
-"Clear Lk - Klamath R",237770,451000,52.7,01/2001
-"Clear Lk - Klamath R",238860,451000,53,02/2001
-"Clear Lk - Klamath R",241480,451000,53.5,03/2001
-"Clear Lk - Klamath R",239080,451000,53,04/2001
-"Clear Lk - Klamath R",218110,451000,48.4,05/2001
-"Clear Lk - Klamath R",189630,451000,42,06/2001
-"Clear Lk - Klamath R",164420,451000,36.5,07/2001
-"Clear Lk - Klamath R",137919,451000,30.6,08/2001
-"Clear Lk - Klamath R",121100,451000,26.9,09/2001
-"Clear Lk - Klamath R",118290,451000,26.2,10/2001
-"Clear Lk - Klamath R",123170,451000,27.3,11/2001
-"Clear Lk - Klamath R",136570,451000,30.3,12/2001
-"Clear Lk - Klamath R",144540,451000,32,01/2002
-"Clear Lk - Klamath R",152030,451000,33.7,02/2002
-"Clear Lk - Klamath R",161800,451000,35.9,03/2002
-"Clear Lk - Klamath R",175400,451000,38.9,04/2002
-"Clear Lk - Klamath R",168270,451000,37.3,05/2002
-"Clear Lk - Klamath R",147880,451000,32.8,06/2002
-"Clear Lk - Klamath R",128300,451000,28.4,07/2002
-"Clear Lk - Klamath R",105300,451000,23.3,08/2002
-"Clear Lk - Klamath R",92130,451000,20.4,09/2002
-"Clear Lk - Klamath R",84400,451000,18.7,10/2002
-"Clear Lk - Klamath R",89730,451000,19.9,11/2002
-"Clear Lk - Klamath R",97000,451000,21.5,12/2002
-"Clear Lk - Klamath R",101900,451000,22.6,01/2003
-"Clear Lk - Klamath R",106600,451000,23.6,02/2003
-"Clear Lk - Klamath R",113100,451000,25.1,03/2003
-"Clear Lk - Klamath R",126400,451000,28,04/2003
-"Clear Lk - Klamath R",129260,451000,28.7,05/2003
-"Clear Lk - Klamath R",108600,451000,24.1,06/2003
-"Clear Lk - Klamath R",87240,451000,19.3,07/2003
-"Clear Lk - Klamath R",57560,451000,12.8,08/2003
-"Clear Lk - Klamath R",61360,451000,13.6,09/2003
-"Clear Lk - Klamath R",56570,451000,12.5,10/2003
-"Clear Lk - Klamath R",59300,451000,13.1,11/2003
-"Clear Lk - Klamath R",62100,451000,13.8,12/2003
-"Clear Lk - Klamath R",66590,451000,14.8,01/2004
-"Clear Lk - Klamath R",100140,451000,22.2,02/2004
-"Clear Lk - Klamath R",145560,451000,32.3,03/2004
-"Clear Lk - Klamath R",131180,451000,29.1,04/2004
-"Clear Lk - Klamath R",120910,451000,26.8,05/2004
-"Clear Lk - Klamath R",100905,451000,22.4,06/2004
-"Clear Lk - Klamath R",80580,451000,17.9,07/2004
-"Clear Lk - Klamath R",37915,451000,8.4,08/2004
-"Clear Lk - Klamath R",20730,451000,4.6,09/2004
-"Clear Lk - Klamath R",56430,451000,12.5,10/2004
-"Clear Lk - Klamath R",56850,451000,12.6,11/2004
-"Clear Lk - Klamath R",61060,451000,13.5,12/2004
-"Clear Lk - Klamath R",64030,451000,14.2,01/2005
-"Clear Lk - Klamath R",64190,451000,14.2,02/2005
-"Clear Lk - Klamath R",69040,451000,15.3,03/2005
-"Clear Lk - Klamath R",77510,451000,17.2,04/2005
-"Clear Lk - Klamath R",103690,451000,23,05/2005
-"Clear Lk - Klamath R",91780,451000,20.4,06/2005
-"Clear Lk - Klamath R",70580,451000,15.6,07/2005
-"Clear Lk - Klamath R",32810,451000,7.3,08/2005
-"Clear Lk - Klamath R",55310,451000,12.3,09/2005
-"Clear Lk - Klamath R",53820,451000,11.9,10/2005
-"Clear Lk - Klamath R",60920,451000,13.5,11/2005
-"Clear Lk - Klamath R",112740,451000,25,12/2005
-"Clear Lk - Klamath R",136760,451000,30.3,01/2006
-"Clear Lk - Klamath R",163000,451000,36.1,02/2006
-"Clear Lk - Klamath R",206190,451000,45.7,03/2006
-"Clear Lk - Klamath R",246740,451000,54.7,04/2006
-"Clear Lk - Klamath R",251250,451000,55.7,05/2006
-"Clear Lk - Klamath R",234280,451000,51.9,06/2006
-"Clear Lk - Klamath R",212130,451000,47,07/2006
-"Clear Lk - Klamath R",189210,451000,42,08/2006
-"Clear Lk - Klamath R",171310,451000,38,09/2006
-"Clear Lk - Klamath R",166650,451000,37,10/2006
-"Clear Lk - Klamath R",167250,451000,37.1,11/2006
-"Clear Lk - Klamath R",168670,451000,37.4,12/2006
-"Clear Lk - Klamath R",169080,451000,37.5,01/2007
-"Clear Lk - Klamath R",173350,451000,38.4,02/2007
-"Clear Lk - Klamath R",179080,451000,39.7,03/2007
-"Clear Lk - Klamath R",177650,451000,39.4,04/2007
-"Clear Lk - Klamath R",159400,451000,35.3,05/2007
-"Clear Lk - Klamath R",142000,451000,31.5,06/2007
-"Clear Lk - Klamath R",120350,451000,26.7,07/2007
-"Clear Lk - Klamath R",98380,451000,21.8,08/2007
-"Clear Lk - Klamath R",125522,451000,27.8,09/2007
-"Clear Lk - Klamath R",82870,451000,18.4,10/2007
-"Clear Lk - Klamath R",82540,451000,18.3,11/2007
-"Clear Lk - Klamath R",84360,451000,18.7,12/2007
-"Clear Lk - Klamath R",88720,451000,19.7,01/2008
-"Clear Lk - Klamath R",95410,451000,21.2,02/2008
-"Clear Lk - Klamath R",136950,451000,30.4,03/2008
-"Clear Lk - Klamath R",151240,451000,33.5,04/2008
-"Clear Lk - Klamath R",150050,451000,33.3,05/2008
-"Clear Lk - Klamath R",136760,451000,30.3,06/2008
-"Clear Lk - Klamath R",116990,451000,25.9,07/2008
-"Clear Lk - Klamath R",93330,451000,20.7,08/2008
-"Clear Lk - Klamath R",76870,451000,17,09/2008
-"Clear Lk - Klamath R",78960,451000,17.5,10/2008
-"Clear Lk - Klamath R",77510,451000,17.2,11/2008
-"Clear Lk - Klamath R",78630,451000,17.4,12/2008
-"Clear Lk - Klamath R",79760,451000,17.7,01/2009
-"Clear Lk - Klamath R",82370,451000,18.3,02/2009
-"Clear Lk - Klamath R",89500,451000,19.8,03/2009
-"Clear Lk - Klamath R",89500,451000,19.8,04/2009
-"Clear Lk - Klamath R",69810,451000,15.5,05/2009
-"Clear Lk - Klamath R",35280,451000,7.8,06/2009
-"Clear Lk - Klamath R",36380,451000,8.1,07/2009
-"Clear Lk - Klamath R",56710,451000,12.6,08/2009
-"Clear Lk - Klamath R",40620,451000,9,09/2009
-"Clear Lk - Klamath R",56290,451000,12.5,10/2009
-"Clear Lk - Klamath R",56570,451000,12.5,11/2009
-"Clear Lk - Klamath R",59590,451000,13.2,12/2009
-"Clear Lk - Klamath R",60480,451000,13.4,01/2010
-"Clear Lk - Klamath R",65230,451000,14.5,02/2010
-"Clear Lk - Klamath R",72910,451000,16.2,03/2010
-"Clear Lk - Klamath R",78150,451000,17.3,04/2010
-"Clear Lk - Klamath R",66740,451000,14.8,05/2010
-"Clear Lk - Klamath R",61060,451000,13.5,06/2010
-"Clear Lk - Klamath R",52500,451000,11.6,07/2010
-"Clear Lk - Klamath R",44930,451000,10,08/2010
-"Clear Lk - Klamath R",41350,451000,9.2,09/2010
-"Clear Lk - Klamath R",38980,451000,8.6,10/2010
-"Clear Lk - Klamath R",39280,451000,8.7,11/2010
-"Clear Lk - Klamath R",50450,451000,11.2,12/2010
-"Clear Lk - Klamath R",73070,451000,16.2,01/2011
-"Clear Lk - Klamath R",79920,451000,17.7,02/2011
-"Clear Lk - Klamath R",129070,451000,28.6,03/2011
-"Clear Lk - Klamath R",74868,451000,16.6,04/2011
-"Clear Lk - Klamath R",187140,451000,41.5,05/2011
-"Clear Lk - Klamath R",179500,451000,39.8,06/2011
-"Clear Lk - Klamath R",160200,451000,35.5,07/2011
-"Clear Lk - Klamath R",139082,451000,30.8,08/2011
-"Clear Lk - Klamath R",124690,451000,27.6,09/2011
-"Clear Lk - Klamath R",121290,451000,26.9,10/2011
-"Clear Lk - Klamath R",119970,451000,26.6,11/2011
-"Clear Lk - Klamath R",119790,451000,26.6,12/2011
-"Clear Lk - Klamath R",120350,451000,26.7,01/2012
-"Clear Lk - Klamath R",118480,451000,26.3,02/2012
-"Clear Lk - Klamath R",124120,451000,27.5,03/2012
-"Clear Lk - Klamath R",129260,451000,28.7,04/2012
-"Clear Lk - Klamath R",117920,451000,26.1,05/2012
-"Clear Lk - Klamath R",102090,451000,22.6,06/2012
-"Clear Lk - Klamath R",82870,451000,18.4,07/2012
-"Clear Lk - Klamath R",53160,451000,11.8,08/2012
-"Clear Lk - Klamath R",59300,451000,13.1,09/2012
-"Clear Lk - Klamath R",56010,451000,12.4,10/2012
-"Clear Lk - Klamath R",59590,451000,13.2,11/2012
-"Clear Lk - Klamath R",76390,451000,16.9,12/2012
-"Clear Lk - Klamath R",82870,451000,18.4,01/2013
-"Clear Lk - Klamath R",93160,451000,20.7,02/2013
-"Clear Lk - Klamath R",109000,451000,24.2,03/2013
-"Clear Lk - Klamath R",100320,451000,22.2,04/2013
-"Clear Lk - Klamath R",89390,451000,19.8,05/2013
-"Clear Lk - Klamath R",75440,451000,16.7,06/2013
-"Clear Lk - Klamath R",59740,451000,13.2,07/2013
-"Clear Lk - Klamath R",52630,451000,11.7,08/2013
-"Clear Lk - Klamath R",47650,451000,10.6,09/2013
-"Clear Lk - Klamath R",59590,451000,13.2,10/2013
-"Clear Lk - Klamath R",60480,451000,13.4,11/2013
-"Clear Lk - Klamath R",60620,451000,13.4,12/2013
-"Clear Lk - Klamath R",46500,451000,10.3,01/2014
-"Clear Lk - Klamath R",48610,451000,10.8,02/2014
-"Clear Lk - Klamath R",53960,451000,12,03/2014
-"Clear Lk - Klamath R",52890,451000,11.7,04/2014
-"Clear Lk - Klamath R",46730,451000,10.4,05/2014
-"Clear Lk - Klamath R",39790,451000,8.8,06/2014
-"Clear Lk - Klamath R",33250,451000,7.4,07/2014
-"Clear Lk - Klamath R",28980,451000,6.4,08/2014
-"Clear Lk - Klamath R",25390,451000,5.6,09/2014
-"Clear Lk - Klamath R",24470,451000,5.4,10/2014
-"Clear Lk - Klamath R",24550,451000,5.4,11/2014
-"Clear Lk - Klamath R",28550,451000,6.3,12/2014
-"Clear Lk - Klamath R",35920,451000,8,01/2015
-"Clear Lk - Klamath R",44600,451000,9.9,02/2015
-"Clear Lk - Klamath R",45930,451000,10.2,03/2015
-"Clear Lk - Klamath R",43180,451000,9.6,04/2015
-"Clear Lk - Klamath R",41680,451000,9.2,05/2015
-"Clear Lk - Klamath R",36281,451000,8,06/2015
-"Clear Lk - Klamath R",31228,451000,6.9,07/2015
-"Clear Lk - Klamath R",25648,451000,5.7,08/2015
-"Clear Lk - Klamath R",22700,451000,5,09/2015
-"Clear Lk - Klamath R",20976,451000,4.7,10/2015
-"Clear Lk - Klamath R",21000,451000,4.7,11/2015
-"Clear Lk - Klamath R",23000,451000,5.1,12/2015
-"Clear Lk - Klamath R",46880,451000,10.4,01/2016
-"Clear Lk - Klamath R",80905,451000,17.9,02/2016
-"Clear Lk - Klamath R",123174,451000,27.3,03/2016
-"Clear Lk - Klamath R",124505,451000,27.6,04/2016
-"Clear Lk - Klamath R",118450,451000,26.3,05/2016
-"Clear Lk - Klamath R",100305,451000,22.2,06/2016
-"Clear Lk - Klamath R",83526,451000,18.5,07/2016
-"Clear Lk - Klamath R",65984,451000,14.6,08/2016
-"Clear Lk - Klamath R",57420,451000,12.7,09/2016
-"Clear Lk - Klamath R",58714,451000,13,10/2016
-"Clear Lk - Klamath R",58714,451000,13,11/2016
-"Clear Lk - Klamath R",64934,451000,14.4,12/2016
-"Clear Lk - Klamath R",86697,451000,19.2,01/2017
-"Clear Lk - Klamath R",188383,451000,41.8,02/2017
-"Clear Lk - Klamath R",248891,451000,55.2,03/2017
+"Cherry Lake",182560,268000,68.1,04/2017
+"Cherry Lake",199029,268000,74.3,05/2017
+"Clear Lk   Cache Creek",104820,315000,33.3,01/2000
+"Clear Lk   Cache Creek",285499,315000,90.6,02/2000
+"Clear Lk   Cache Creek",312949,315000,99.3,03/2000
+"Clear Lk   Cache Creek",312945,315000,99.3,04/2000
+"Clear Lk   Cache Creek",292954,315000,93,05/2000
+"Clear Lk   Cache Creek",213703,315000,67.8,06/2000
+"Clear Lk   Cache Creek",157434,315000,50,07/2000
+"Clear Lk   Cache Creek",98284,315000,31.2,08/2000
+"Clear Lk   Cache Creek",65742,315000,20.9,09/2000
+"Clear Lk   Cache Creek",49584,315000,15.7,10/2000
+"Clear Lk   Cache Creek",45958,315000,14.6,11/2000
+"Clear Lk   Cache Creek",45555,315000,14.5,12/2000
+"Clear Lk   Cache Creek",65742,315000,20.9,01/2001
+"Clear Lk   Cache Creek",156608,315000,49.7,02/2001
+"Clear Lk   Cache Creek",212020,315000,67.3,03/2001
+"Clear Lk   Cache Creek",209076,315000,66.4,04/2001
+"Clear Lk   Cache Creek",181886,315000,57.7,05/2001
+"Clear Lk   Cache Creek",144654,315000,45.9,06/2001
+"Clear Lk   Cache Creek",108910,315000,34.6,07/2001
+"Clear Lk   Cache Creek",65742,315000,20.9,08/2001
+"Clear Lk   Cache Creek",47568,315000,15.1,09/2001
+"Clear Lk   Cache Creek",62504,315000,19.8,11/2001
+"Clear Lk   Cache Creek",183135,315000,58.1,12/2001
+"Clear Lk   Cache Creek",247206,315000,78.5,01/2002
+"Clear Lk   Cache Creek",267185,315000,84.8,02/2002
+"Clear Lk   Cache Creek",283765,315000,90.1,03/2002
+"Clear Lk   Cache Creek",279900,315000,88.9,04/2002
+"Clear Lk   Cache Creek",242945,315000,77.1,05/2002
+"Clear Lk   Cache Creek",191058,315000,60.7,06/2002
+"Clear Lk   Cache Creek",135592,315000,43,07/2002
+"Clear Lk   Cache Creek",86665,315000,27.5,08/2002
+"Clear Lk   Cache Creek",49988,315000,15.9,09/2002
+"Clear Lk   Cache Creek",34701,315000,11,10/2002
+"Clear Lk   Cache Creek",38314,315000,12.2,11/2002
+"Clear Lk   Cache Creek",233585,315000,74.2,12/2002
+"Clear Lk   Cache Creek",261165,315000,82.9,01/2003
+"Clear Lk   Cache Creek",292439,315000,92.8,02/2003
+"Clear Lk   Cache Creek",315142,315000,100,03/2003
+"Clear Lk   Cache Creek",327003,315000,103.8,04/2003
+"Clear Lk   Cache Creek",303758,315000,96.4,05/2003
+"Clear Lk   Cache Creek",255767,315000,81.2,06/2003
+"Clear Lk   Cache Creek",199002,315000,63.2,07/2003
+"Clear Lk   Cache Creek",153718,315000,48.8,08/2003
+"Clear Lk   Cache Creek",113000,315000,35.9,09/2003
+"Clear Lk   Cache Creek",87676,315000,27.8,10/2003
+"Clear Lk   Cache Creek",92570,315000,29.4,11/2003
+"Clear Lk   Cache Creek",213703,315000,67.8,12/2003
+"Clear Lk   Cache Creek",249774,315000,79.3,01/2004
+"Clear Lk   Cache Creek",367258,315000,116.6,02/2004
+"Clear Lk   Cache Creek",317336,315000,100.7,03/2004
+"Clear Lk   Cache Creek",305066,315000,96.8,04/2004
+"Clear Lk   Cache Creek",257081,315000,81.6,05/2004
+"Clear Lk   Cache Creek",204871,315000,65,06/2004
+"Clear Lk   Cache Creek",156105,315000,49.6,07/2004
+"Clear Lk   Cache Creek",102369,315000,32.5,08/2004
+"Clear Lk   Cache Creek",63716,315000,20.2,09/2004
+"Clear Lk   Cache Creek",55233,315000,17.5,10/2004
+"Clear Lk   Cache Creek",58464,315000,18.6,11/2004
+"Clear Lk   Cache Creek",114232,315000,36.3,12/2004
+"Clear Lk   Cache Creek",208000,315000,66,01/2005
+"Clear Lk   Cache Creek",265000,315000,84.1,02/2005
+"Clear Lk   Cache Creek",314703,315000,99.9,03/2005
+"Clear Lk   Cache Creek",315580,315000,100.2,04/2005
+"Clear Lk   Cache Creek",317500,315000,100.8,05/2005
+"Clear Lk   Cache Creek",286366,315000,90.9,06/2005
+"Clear Lk   Cache Creek",226000,315000,71.7,07/2005
+"Clear Lk   Cache Creek",183135,315000,58.1,08/2005
+"Clear Lk   Cache Creek",149633,315000,47.5,09/2005
+"Clear Lk   Cache Creek",132301,315000,42,10/2005
+"Clear Lk   Cache Creek",135730,315000,43.1,11/2005
+"Clear Lk   Cache Creek",275114,315000,87.3,12/2005
+"Clear Lk   Cache Creek",270000,315000,85.7,01/2006
+"Clear Lk   Cache Creek",314265,315000,99.8,02/2006
+"Clear Lk   Cache Creek",323921,315000,102.8,03/2006
+"Clear Lk   Cache Creek",323482,315000,102.7,04/2006
+"Clear Lk   Cache Creek",304560,315000,96.7,05/2006
+"Clear Lk   Cache Creek",264790,315000,84.1,06/2006
+"Clear Lk   Cache Creek",202000,315000,64.1,07/2006
+"Clear Lk   Cache Creek",155600,315000,49.4,08/2006
+"Clear Lk   Cache Creek",128189,315000,40.7,09/2006
+"Clear Lk   Cache Creek",111773,315000,35.5,10/2006
+"Clear Lk   Cache Creek",111750,315000,35.5,11/2006
+"Clear Lk   Cache Creek",140122,315000,44.5,12/2006
+"Clear Lk   Cache Creek",142000,315000,45.1,01/2007
+"Clear Lk   Cache Creek",233585,315000,74.2,02/2007
+"Clear Lk   Cache Creek",251550,315000,79.9,03/2007
+"Clear Lk   Cache Creek",240700,315000,76.4,04/2007
+"Clear Lk   Cache Creek",215808,315000,68.5,05/2007
+"Clear Lk   Cache Creek",170256,315000,54,06/2007
+"Clear Lk   Cache Creek",125723,315000,39.9,07/2007
+"Clear Lk   Cache Creek",84013,315000,26.7,08/2007
+"Clear Lk   Cache Creek",51602,315000,16.4,09/2007
+"Clear Lk   Cache Creek",44348,315000,14.1,10/2007
+"Clear Lk   Cache Creek",40323,315000,12.8,11/2007
+"Clear Lk   Cache Creek",51602,315000,16.4,12/2007
+"Clear Lk   Cache Creek",188000,315000,59.7,01/2008
+"Clear Lk   Cache Creek",285499,315000,90.6,02/2008
+"Clear Lk   Cache Creek",291300,315000,92.5,03/2008
+"Clear Lk   Cache Creek",275546,315000,87.5,04/2008
+"Clear Lk   Cache Creek",232736,315000,73.9,05/2008
+"Clear Lk   Cache Creek",188553,315000,59.9,06/2008
+"Clear Lk   Cache Creek",148362,315000,47.1,07/2008
+"Clear Lk   Cache Creek",89714,315000,28.5,08/2008
+"Clear Lk   Cache Creek",54023,315000,17.2,09/2008
+"Clear Lk   Cache Creek",45555,315000,14.5,10/2008
+"Clear Lk   Cache Creek",44750,315000,14.2,11/2008
+"Clear Lk   Cache Creek",46360,315000,14.7,12/2008
+"Clear Lk   Cache Creek",45555,315000,14.5,01/2009
+"Clear Lk   Cache Creek",120800,315000,38.3,02/2009
+"Clear Lk   Cache Creek",168600,315000,53.5,03/2009
+"Clear Lk   Cache Creek",161564,315000,51.3,04/2009
+"Clear Lk   Cache Creek",154130,315000,48.9,05/2009
+"Clear Lk   Cache Creek",123673,315000,39.3,06/2009
+"Clear Lk   Cache Creek",90122,315000,28.6,07/2009
+"Clear Lk   Cache Creek",56040,315000,17.8,08/2009
+"Clear Lk   Cache Creek",33094,315000,10.5,09/2009
+"Clear Lk   Cache Creek",26690,315000,8.5,10/2009
+"Clear Lk   Cache Creek",22294,315000,7.1,11/2009
+"Clear Lk   Cache Creek",28290,315000,9,12/2009
+"Clear Lk   Cache Creek",184801,315000,58.7,01/2010
+"Clear Lk   Cache Creek",236557,315000,75.1,02/2010
+"Clear Lk   Cache Creek",285065,315000,90.5,03/2010
+"Clear Lk   Cache Creek",323921,315000,102.8,04/2010
+"Clear Lk   Cache Creek",290268,315000,92.1,05/2010
+"Clear Lk   Cache Creek",243794,315000,77.4,06/2010
+"Clear Lk   Cache Creek",179387,315000,56.9,07/2010
+"Clear Lk   Cache Creek",119979,315000,38.1,08/2010
+"Clear Lk   Cache Creek",90938,315000,28.9,09/2010
+"Clear Lk   Cache Creek",91346,315000,29,10/2010
+"Clear Lk   Cache Creek",97467,315000,30.9,11/2010
+"Clear Lk   Cache Creek",209497,315000,66.5,12/2010
+"Clear Lk   Cache Creek",235708,315000,74.8,01/2011
+"Clear Lk   Cache Creek",302014,315000,95.9,02/2011
+"Clear Lk   Cache Creek",382852,315000,121.5,03/2011
+"Clear Lk   Cache Creek",313388,315000,99.5,04/2011
+"Clear Lk   Cache Creek",285499,315000,90.6,05/2011
+"Clear Lk   Cache Creek",257910,315000,81.9,06/2011
+"Clear Lk   Cache Creek",198164,315000,62.9,07/2011
+"Clear Lk   Cache Creek",144242,315000,45.8,08/2011
+"Clear Lk   Cache Creek",109319,315000,34.7,09/2011
+"Clear Lk   Cache Creek",101961,315000,32.4,10/2011
+"Clear Lk   Cache Creek",99501,315000,31.6,11/2011
+"Clear Lk   Cache Creek",94202,315000,29.9,12/2011
+"Clear Lk   Cache Creek",118337,315000,37.6,01/2012
+"Clear Lk   Cache Creek",121621,315000,38.6,02/2012
+"Clear Lk   Cache Creek",124120,315000,39.4,03/2012
+"Clear Lk   Cache Creek",241664,315000,76.7,04/2012
+"Clear Lk   Cache Creek",213282,315000,67.7,05/2012
+"Clear Lk   Cache Creek",173575,315000,55.1,06/2012
+"Clear Lk   Cache Creek",127368,315000,40.4,07/2012
+"Clear Lk   Cache Creek",86862,315000,27.6,08/2012
+"Clear Lk   Cache Creek",61696,315000,19.6,09/2012
+"Clear Lk   Cache Creek",49181,315000,15.6,10/2012
+"Clear Lk   Cache Creek",78726,315000,25,11/2012
+"Clear Lk   Cache Creek",231038,315000,73.3,12/2012
+"Clear Lk   Cache Creek",241238,315000,76.6,01/2013
+"Clear Lk   Cache Creek",242942,315000,77.1,02/2013
+"Clear Lk   Cache Creek",253198,315000,80.4,03/2013
+"Clear Lk   Cache Creek",247206,315000,78.5,04/2013
+"Clear Lk   Cache Creek",211599,315000,67.2,05/2013
+"Clear Lk   Cache Creek",170670,315000,54.2,06/2013
+"Clear Lk   Cache Creek",122442,315000,38.9,07/2013
+"Clear Lk   Cache Creek",81571,315000,25.9,08/2013
+"Clear Lk   Cache Creek",50795,315000,16.1,09/2013
+"Clear Lk   Cache Creek",36307,315000,11.5,10/2013
+"Clear Lk   Cache Creek",28690,315000,9.1,11/2013
+"Clear Lk   Cache Creek",24290,315000,7.7,12/2013
+"Clear Lk   Cache Creek",21895,315000,7,01/2014
+"Clear Lk   Cache Creek",57656,315000,18.3,02/2014
+"Clear Lk   Cache Creek",86048,315000,27.3,03/2014
+"Clear Lk   Cache Creek",93386,315000,29.6,04/2014
+"Clear Lk   Cache Creek",73854,315000,23.4,05/2014
+"Clear Lk   Cache Creek",48400,315000,15.4,06/2014
+"Clear Lk   Cache Creek",23491,315000,7.5,07/2014
+"Clear Lk   Cache Creek",111773,315000,35.5,12/2014
+"Clear Lk   Cache Creek",116695,315000,37,01/2015
+"Clear Lk   Cache Creek",184385,315000,58.5,02/2015
+"Clear Lk   Cache Creek",181886,315000,57.7,03/2015
+"Clear Lk   Cache Creek",175650,315000,55.8,04/2015
+"Clear Lk   Cache Creek",150422,315000,47.8,05/2015
+"Clear Lk   Cache Creek",121210,315000,38.5,06/2015
+"Clear Lk   Cache Creek",87676,315000,27.8,07/2015
+"Clear Lk   Cache Creek",55637,315000,17.7,08/2015
+"Clear Lk   Cache Creek",35504,315000,11.3,09/2015
+"Clear Lk   Cache Creek",21895,315000,7,10/2015
+"Clear Lk   Cache Creek",17905,315000,5.7,11/2015
+"Clear Lk   Cache Creek",51198,315000,16.3,12/2015
+"Clear Lk   Cache Creek",178555,315000,56.7,01/2016
+"Clear Lk   Cache Creek",201097,315000,63.8,02/2016
+"Clear Lk   Cache Creek",320848,315000,101.9,03/2016
+"Clear Lk   Cache Creek",304630,315000,96.7,04/2016
+"Clear Lk   Cache Creek",264772,315000,84.1,05/2016
+"Clear Lk   Cache Creek",210338,315000,66.8,06/2016
+"Clear Lk   Cache Creek",152894,315000,48.5,07/2016
+"Clear Lk   Cache Creek",97876,315000,31.1,08/2016
+"Clear Lk   Cache Creek",59676,315000,18.9,09/2016
+"Clear Lk   Cache Creek",65337,315000,20.7,10/2016
+"Clear Lk   Cache Creek",68986,315000,21.9,11/2016
+"Clear Lk   Cache Creek",146302,315000,46.4,12/2016
+"Clear Lk   Cache Creek",336257,315000,106.7,01/2017
+"Clear Lk   Cache Creek",418684,315000,132.9,02/2017
+"Clear Lk   Cache Creek",315580,315000,100.2,03/2017
+"Clear Lk   Cache Creek",324801,315000,103.1,04/2017
+"Clear Lk   Cache Creek",292874,315000,93,05/2017
+"Clear Lk   Klamath R",304780,451000,67.6,01/2000
+"Clear Lk   Klamath R",317940,451000,70.5,02/2000
+"Clear Lk   Klamath R",343660,451000,76.2,03/2000
+"Clear Lk   Klamath R",351930,451000,78,04/2000
+"Clear Lk   Klamath R",339660,451000,75.3,05/2000
+"Clear Lk   Klamath R",318870,451000,70.7,06/2000
+"Clear Lk   Klamath R",295850,451000,65.6,07/2000
+"Clear Lk   Klamath R",266480,451000,59.1,08/2000
+"Clear Lk   Klamath R",239510,451000,53.1,09/2000
+"Clear Lk   Klamath R",236680,451000,52.5,10/2000
+"Clear Lk   Klamath R",237770,451000,52.7,11/2000
+"Clear Lk   Klamath R",237990,451000,52.8,12/2000
+"Clear Lk   Klamath R",237770,451000,52.7,01/2001
+"Clear Lk   Klamath R",238860,451000,53,02/2001
+"Clear Lk   Klamath R",241480,451000,53.5,03/2001
+"Clear Lk   Klamath R",239080,451000,53,04/2001
+"Clear Lk   Klamath R",218110,451000,48.4,05/2001
+"Clear Lk   Klamath R",189630,451000,42,06/2001
+"Clear Lk   Klamath R",164420,451000,36.5,07/2001
+"Clear Lk   Klamath R",137919,451000,30.6,08/2001
+"Clear Lk   Klamath R",121100,451000,26.9,09/2001
+"Clear Lk   Klamath R",118290,451000,26.2,10/2001
+"Clear Lk   Klamath R",123170,451000,27.3,11/2001
+"Clear Lk   Klamath R",136570,451000,30.3,12/2001
+"Clear Lk   Klamath R",144540,451000,32,01/2002
+"Clear Lk   Klamath R",152030,451000,33.7,02/2002
+"Clear Lk   Klamath R",161800,451000,35.9,03/2002
+"Clear Lk   Klamath R",175400,451000,38.9,04/2002
+"Clear Lk   Klamath R",168270,451000,37.3,05/2002
+"Clear Lk   Klamath R",147880,451000,32.8,06/2002
+"Clear Lk   Klamath R",128300,451000,28.4,07/2002
+"Clear Lk   Klamath R",105300,451000,23.3,08/2002
+"Clear Lk   Klamath R",92130,451000,20.4,09/2002
+"Clear Lk   Klamath R",84400,451000,18.7,10/2002
+"Clear Lk   Klamath R",89730,451000,19.9,11/2002
+"Clear Lk   Klamath R",97000,451000,21.5,12/2002
+"Clear Lk   Klamath R",101900,451000,22.6,01/2003
+"Clear Lk   Klamath R",106600,451000,23.6,02/2003
+"Clear Lk   Klamath R",113100,451000,25.1,03/2003
+"Clear Lk   Klamath R",126400,451000,28,04/2003
+"Clear Lk   Klamath R",129260,451000,28.7,05/2003
+"Clear Lk   Klamath R",108600,451000,24.1,06/2003
+"Clear Lk   Klamath R",87240,451000,19.3,07/2003
+"Clear Lk   Klamath R",57560,451000,12.8,08/2003
+"Clear Lk   Klamath R",61360,451000,13.6,09/2003
+"Clear Lk   Klamath R",56570,451000,12.5,10/2003
+"Clear Lk   Klamath R",59300,451000,13.1,11/2003
+"Clear Lk   Klamath R",62100,451000,13.8,12/2003
+"Clear Lk   Klamath R",66590,451000,14.8,01/2004
+"Clear Lk   Klamath R",100140,451000,22.2,02/2004
+"Clear Lk   Klamath R",145560,451000,32.3,03/2004
+"Clear Lk   Klamath R",131180,451000,29.1,04/2004
+"Clear Lk   Klamath R",120910,451000,26.8,05/2004
+"Clear Lk   Klamath R",100905,451000,22.4,06/2004
+"Clear Lk   Klamath R",80580,451000,17.9,07/2004
+"Clear Lk   Klamath R",37915,451000,8.4,08/2004
+"Clear Lk   Klamath R",20730,451000,4.6,09/2004
+"Clear Lk   Klamath R",56430,451000,12.5,10/2004
+"Clear Lk   Klamath R",56850,451000,12.6,11/2004
+"Clear Lk   Klamath R",61060,451000,13.5,12/2004
+"Clear Lk   Klamath R",64030,451000,14.2,01/2005
+"Clear Lk   Klamath R",64190,451000,14.2,02/2005
+"Clear Lk   Klamath R",69040,451000,15.3,03/2005
+"Clear Lk   Klamath R",77510,451000,17.2,04/2005
+"Clear Lk   Klamath R",103690,451000,23,05/2005
+"Clear Lk   Klamath R",91780,451000,20.4,06/2005
+"Clear Lk   Klamath R",70580,451000,15.6,07/2005
+"Clear Lk   Klamath R",32810,451000,7.3,08/2005
+"Clear Lk   Klamath R",55310,451000,12.3,09/2005
+"Clear Lk   Klamath R",53820,451000,11.9,10/2005
+"Clear Lk   Klamath R",60920,451000,13.5,11/2005
+"Clear Lk   Klamath R",112740,451000,25,12/2005
+"Clear Lk   Klamath R",136760,451000,30.3,01/2006
+"Clear Lk   Klamath R",163000,451000,36.1,02/2006
+"Clear Lk   Klamath R",206190,451000,45.7,03/2006
+"Clear Lk   Klamath R",246740,451000,54.7,04/2006
+"Clear Lk   Klamath R",251250,451000,55.7,05/2006
+"Clear Lk   Klamath R",234280,451000,51.9,06/2006
+"Clear Lk   Klamath R",212130,451000,47,07/2006
+"Clear Lk   Klamath R",189210,451000,42,08/2006
+"Clear Lk   Klamath R",171310,451000,38,09/2006
+"Clear Lk   Klamath R",166650,451000,37,10/2006
+"Clear Lk   Klamath R",167250,451000,37.1,11/2006
+"Clear Lk   Klamath R",168670,451000,37.4,12/2006
+"Clear Lk   Klamath R",169080,451000,37.5,01/2007
+"Clear Lk   Klamath R",173350,451000,38.4,02/2007
+"Clear Lk   Klamath R",179080,451000,39.7,03/2007
+"Clear Lk   Klamath R",177650,451000,39.4,04/2007
+"Clear Lk   Klamath R",159400,451000,35.3,05/2007
+"Clear Lk   Klamath R",142000,451000,31.5,06/2007
+"Clear Lk   Klamath R",120350,451000,26.7,07/2007
+"Clear Lk   Klamath R",98380,451000,21.8,08/2007
+"Clear Lk   Klamath R",125522,451000,27.8,09/2007
+"Clear Lk   Klamath R",82870,451000,18.4,10/2007
+"Clear Lk   Klamath R",82540,451000,18.3,11/2007
+"Clear Lk   Klamath R",84360,451000,18.7,12/2007
+"Clear Lk   Klamath R",88720,451000,19.7,01/2008
+"Clear Lk   Klamath R",95410,451000,21.2,02/2008
+"Clear Lk   Klamath R",136950,451000,30.4,03/2008
+"Clear Lk   Klamath R",151240,451000,33.5,04/2008
+"Clear Lk   Klamath R",150050,451000,33.3,05/2008
+"Clear Lk   Klamath R",136760,451000,30.3,06/2008
+"Clear Lk   Klamath R",116990,451000,25.9,07/2008
+"Clear Lk   Klamath R",93330,451000,20.7,08/2008
+"Clear Lk   Klamath R",76870,451000,17,09/2008
+"Clear Lk   Klamath R",78960,451000,17.5,10/2008
+"Clear Lk   Klamath R",77510,451000,17.2,11/2008
+"Clear Lk   Klamath R",78630,451000,17.4,12/2008
+"Clear Lk   Klamath R",79760,451000,17.7,01/2009
+"Clear Lk   Klamath R",82370,451000,18.3,02/2009
+"Clear Lk   Klamath R",89500,451000,19.8,03/2009
+"Clear Lk   Klamath R",89500,451000,19.8,04/2009
+"Clear Lk   Klamath R",69810,451000,15.5,05/2009
+"Clear Lk   Klamath R",35280,451000,7.8,06/2009
+"Clear Lk   Klamath R",36380,451000,8.1,07/2009
+"Clear Lk   Klamath R",56710,451000,12.6,08/2009
+"Clear Lk   Klamath R",40620,451000,9,09/2009
+"Clear Lk   Klamath R",56290,451000,12.5,10/2009
+"Clear Lk   Klamath R",56570,451000,12.5,11/2009
+"Clear Lk   Klamath R",59590,451000,13.2,12/2009
+"Clear Lk   Klamath R",60480,451000,13.4,01/2010
+"Clear Lk   Klamath R",65230,451000,14.5,02/2010
+"Clear Lk   Klamath R",72910,451000,16.2,03/2010
+"Clear Lk   Klamath R",78150,451000,17.3,04/2010
+"Clear Lk   Klamath R",66740,451000,14.8,05/2010
+"Clear Lk   Klamath R",61060,451000,13.5,06/2010
+"Clear Lk   Klamath R",52500,451000,11.6,07/2010
+"Clear Lk   Klamath R",44930,451000,10,08/2010
+"Clear Lk   Klamath R",41350,451000,9.2,09/2010
+"Clear Lk   Klamath R",38980,451000,8.6,10/2010
+"Clear Lk   Klamath R",39280,451000,8.7,11/2010
+"Clear Lk   Klamath R",50450,451000,11.2,12/2010
+"Clear Lk   Klamath R",73070,451000,16.2,01/2011
+"Clear Lk   Klamath R",79920,451000,17.7,02/2011
+"Clear Lk   Klamath R",129070,451000,28.6,03/2011
+"Clear Lk   Klamath R",74868,451000,16.6,04/2011
+"Clear Lk   Klamath R",187140,451000,41.5,05/2011
+"Clear Lk   Klamath R",179500,451000,39.8,06/2011
+"Clear Lk   Klamath R",160200,451000,35.5,07/2011
+"Clear Lk   Klamath R",139082,451000,30.8,08/2011
+"Clear Lk   Klamath R",124690,451000,27.6,09/2011
+"Clear Lk   Klamath R",121290,451000,26.9,10/2011
+"Clear Lk   Klamath R",119970,451000,26.6,11/2011
+"Clear Lk   Klamath R",119790,451000,26.6,12/2011
+"Clear Lk   Klamath R",120350,451000,26.7,01/2012
+"Clear Lk   Klamath R",118480,451000,26.3,02/2012
+"Clear Lk   Klamath R",124120,451000,27.5,03/2012
+"Clear Lk   Klamath R",129260,451000,28.7,04/2012
+"Clear Lk   Klamath R",117920,451000,26.1,05/2012
+"Clear Lk   Klamath R",102090,451000,22.6,06/2012
+"Clear Lk   Klamath R",82870,451000,18.4,07/2012
+"Clear Lk   Klamath R",53160,451000,11.8,08/2012
+"Clear Lk   Klamath R",59300,451000,13.1,09/2012
+"Clear Lk   Klamath R",56010,451000,12.4,10/2012
+"Clear Lk   Klamath R",59590,451000,13.2,11/2012
+"Clear Lk   Klamath R",76390,451000,16.9,12/2012
+"Clear Lk   Klamath R",82870,451000,18.4,01/2013
+"Clear Lk   Klamath R",93160,451000,20.7,02/2013
+"Clear Lk   Klamath R",109000,451000,24.2,03/2013
+"Clear Lk   Klamath R",100320,451000,22.2,04/2013
+"Clear Lk   Klamath R",89390,451000,19.8,05/2013
+"Clear Lk   Klamath R",75440,451000,16.7,06/2013
+"Clear Lk   Klamath R",59740,451000,13.2,07/2013
+"Clear Lk   Klamath R",52630,451000,11.7,08/2013
+"Clear Lk   Klamath R",47650,451000,10.6,09/2013
+"Clear Lk   Klamath R",59590,451000,13.2,10/2013
+"Clear Lk   Klamath R",60480,451000,13.4,11/2013
+"Clear Lk   Klamath R",60620,451000,13.4,12/2013
+"Clear Lk   Klamath R",46500,451000,10.3,01/2014
+"Clear Lk   Klamath R",48610,451000,10.8,02/2014
+"Clear Lk   Klamath R",53960,451000,12,03/2014
+"Clear Lk   Klamath R",52890,451000,11.7,04/2014
+"Clear Lk   Klamath R",46730,451000,10.4,05/2014
+"Clear Lk   Klamath R",39790,451000,8.8,06/2014
+"Clear Lk   Klamath R",33250,451000,7.4,07/2014
+"Clear Lk   Klamath R",28980,451000,6.4,08/2014
+"Clear Lk   Klamath R",25390,451000,5.6,09/2014
+"Clear Lk   Klamath R",24470,451000,5.4,10/2014
+"Clear Lk   Klamath R",24550,451000,5.4,11/2014
+"Clear Lk   Klamath R",28550,451000,6.3,12/2014
+"Clear Lk   Klamath R",35920,451000,8,01/2015
+"Clear Lk   Klamath R",44600,451000,9.9,02/2015
+"Clear Lk   Klamath R",45930,451000,10.2,03/2015
+"Clear Lk   Klamath R",43180,451000,9.6,04/2015
+"Clear Lk   Klamath R",41680,451000,9.2,05/2015
+"Clear Lk   Klamath R",36281,451000,8,06/2015
+"Clear Lk   Klamath R",31228,451000,6.9,07/2015
+"Clear Lk   Klamath R",25648,451000,5.7,08/2015
+"Clear Lk   Klamath R",22700,451000,5,09/2015
+"Clear Lk   Klamath R",20976,451000,4.7,10/2015
+"Clear Lk   Klamath R",21000,451000,4.7,11/2015
+"Clear Lk   Klamath R",23000,451000,5.1,12/2015
+"Clear Lk   Klamath R",46880,451000,10.4,01/2016
+"Clear Lk   Klamath R",80905,451000,17.9,02/2016
+"Clear Lk   Klamath R",123174,451000,27.3,03/2016
+"Clear Lk   Klamath R",124505,451000,27.6,04/2016
+"Clear Lk   Klamath R",118450,451000,26.3,05/2016
+"Clear Lk   Klamath R",100305,451000,22.2,06/2016
+"Clear Lk   Klamath R",83526,451000,18.5,07/2016
+"Clear Lk   Klamath R",65984,451000,14.6,08/2016
+"Clear Lk   Klamath R",57420,451000,12.7,09/2016
+"Clear Lk   Klamath R",58714,451000,13,10/2016
+"Clear Lk   Klamath R",58714,451000,13,11/2016
+"Clear Lk   Klamath R",64934,451000,14.4,12/2016
+"Clear Lk   Klamath R",86697,451000,19.2,01/2017
+"Clear Lk   Klamath R",188383,451000,41.8,02/2017
+"Clear Lk   Klamath R",248891,451000,55.2,03/2017
+"Clear Lk   Klamath R",285845,451000,63.4,04/2017
+"Clear Lk   Klamath R",283344,451000,62.8,05/2017
 "Cogswell Reservoir",68,9000,0.8,01/2000
 "Cogswell Reservoir",2486,9000,27.6,02/2000
 "Cogswell Reservoir",4273,9000,47.5,03/2000
@@ -5375,6 +5425,8 @@ Chabot,10570,10300,102.6,03/2017
 "Cogswell Reservoir",367,9000,4.1,11/2016
 "Cogswell Reservoir",3683,9000,40.9,01/2017
 "Cogswell Reservoir",6728,9000,74.8,03/2017
+"Cogswell Reservoir",6296,9000,70,04/2017
+"Cogswell Reservoir",5672,9000,63,05/2017
 Courtright,42550,123300,34.5,01/2000
 Courtright,61032,123300,49.5,02/2000
 Courtright,45465,123300,36.9,03/2000
@@ -5560,213 +5612,215 @@ Courtright,46053,123300,37.4,03/2015
 Courtright,52489,123300,42.6,04/2015
 Courtright,47920,123300,38.9,05/2015
 Courtright,51710,123300,41.9,06/2015
-"Coyote Res-sta Clara",5559,23700,23.5,01/2000
-"Coyote Res-sta Clara",14201,23700,59.9,02/2000
-"Coyote Res-sta Clara",12425,23700,52.4,03/2000
-"Coyote Res-sta Clara",11911,23700,50.3,04/2000
-"Coyote Res-sta Clara",11911,23700,50.3,05/2000
-"Coyote Res-sta Clara",11415,23700,48.2,06/2000
-"Coyote Res-sta Clara",10878,23700,45.9,07/2000
-"Coyote Res-sta Clara",10430,23700,44,08/2000
-"Coyote Res-sta Clara",10132,23700,42.8,09/2000
-"Coyote Res-sta Clara",6526,23700,27.5,10/2000
-"Coyote Res-sta Clara",4096,23700,17.3,11/2000
-"Coyote Res-sta Clara",3909,23700,16.5,12/2000
-"Coyote Res-sta Clara",4300,23700,18.1,01/2001
-"Coyote Res-sta Clara",9608,23700,40.5,02/2001
-"Coyote Res-sta Clara",11930,23700,50.3,03/2001
-"Coyote Res-sta Clara",11879,23700,50.1,04/2001
-"Coyote Res-sta Clara",11553,23700,48.7,05/2001
-"Coyote Res-sta Clara",11139,23700,47,06/2001
-"Coyote Res-sta Clara",10772,23700,45.5,07/2001
-"Coyote Res-sta Clara",10377,23700,43.8,08/2001
-"Coyote Res-sta Clara",10062,23700,42.5,09/2001
-"Coyote Res-sta Clara",8753,23700,36.9,10/2001
-"Coyote Res-sta Clara",5543,23700,23.4,11/2001
-"Coyote Res-sta Clara",6209,23700,26.2,12/2001
-"Coyote Res-sta Clara",8520,23700,35.9,01/2002
-"Coyote Res-sta Clara",9072,23700,38.3,02/2002
-"Coyote Res-sta Clara",11153,23700,47.1,03/2002
-"Coyote Res-sta Clara",11273,23700,47.6,04/2002
-"Coyote Res-sta Clara",11103,23700,46.8,05/2002
-"Coyote Res-sta Clara",10786,23700,45.5,06/2002
-"Coyote Res-sta Clara",10442,23700,44.1,07/2002
-"Coyote Res-sta Clara",10132,23700,42.8,08/2002
-"Coyote Res-sta Clara",9857,23700,41.6,09/2002
-"Coyote Res-sta Clara",8644,23700,36.5,10/2002
-"Coyote Res-sta Clara",5652,23700,23.8,11/2002
-"Coyote Res-sta Clara",13397,23700,56.5,12/2002
-"Coyote Res-sta Clara",11966,23700,50.5,01/2003
-"Coyote Res-sta Clara",12218,23700,51.6,02/2003
-"Coyote Res-sta Clara",11952,23700,50.4,03/2003
-"Coyote Res-sta Clara",11966,23700,50.5,04/2003
-"Coyote Res-sta Clara",11782,23700,49.7,05/2003
-"Coyote Res-sta Clara",11507,23700,48.6,06/2003
-"Coyote Res-sta Clara",11057,23700,46.7,07/2003
-"Coyote Res-sta Clara",10712,23700,45.2,08/2003
-"Coyote Res-sta Clara",6366,23700,26.9,09/2003
-"Coyote Res-sta Clara",6216,23700,26.2,10/2003
-"Coyote Res-sta Clara",6150,23700,25.9,11/2003
-"Coyote Res-sta Clara",22925,23700,96.7,12/2003
-"Coyote Res-sta Clara",8631,23700,36.4,01/2004
-"Coyote Res-sta Clara",13880,23700,58.6,02/2004
-"Coyote Res-sta Clara",12326,23700,52,03/2004
-"Coyote Res-sta Clara",12196,23700,51.5,04/2004
-"Coyote Res-sta Clara",11887,23700,50.2,05/2004
-"Coyote Res-sta Clara",11545,23700,48.7,06/2004
-"Coyote Res-sta Clara",11171,23700,47.1,07/2004
-"Coyote Res-sta Clara",10814,23700,45.6,08/2004
-"Coyote Res-sta Clara",10510,23700,44.3,09/2004
-"Coyote Res-sta Clara",4936,23700,20.8,10/2004
-"Coyote Res-sta Clara",3944,23700,16.6,11/2004
-"Coyote Res-sta Clara",9080,23700,38.3,12/2004
-"Coyote Res-sta Clara",12382,23700,52.2,01/2005
-"Coyote Res-sta Clara",17235,23700,72.7,02/2005
-"Coyote Res-sta Clara",20645,23700,87.1,03/2005
-"Coyote Res-sta Clara",13129,23700,55.4,04/2005
-"Coyote Res-sta Clara",12368,23700,52.2,05/2005
-"Coyote Res-sta Clara",12349,23700,52.1,06/2005
-"Coyote Res-sta Clara",12058,23700,50.9,07/2005
-"Coyote Res-sta Clara",8692,23700,36.7,08/2005
-"Coyote Res-sta Clara",11382,23700,48,09/2005
-"Coyote Res-sta Clara",6920,23700,29.2,10/2005
-"Coyote Res-sta Clara",3724,23700,15.7,11/2005
-"Coyote Res-sta Clara",9920,23700,41.9,12/2005
-"Coyote Res-sta Clara",12220,23700,51.6,01/2006
-"Coyote Res-sta Clara",12787,23700,54,02/2006
-"Coyote Res-sta Clara",15615,23700,65.9,03/2006
-"Coyote Res-sta Clara",21567,23700,91,04/2006
-"Coyote Res-sta Clara",14334,23700,60.5,05/2006
-"Coyote Res-sta Clara",11984,23700,50.6,06/2006
-"Coyote Res-sta Clara",11692,23700,49.3,07/2006
-"Coyote Res-sta Clara",11369,23700,48,08/2006
-"Coyote Res-sta Clara",11070,23700,46.7,09/2006
-"Coyote Res-sta Clara",10647,23700,44.9,10/2006
-"Coyote Res-sta Clara",4646,23700,19.6,11/2006
-"Coyote Res-sta Clara",4014,23700,16.9,12/2006
-"Coyote Res-sta Clara",4061,23700,17.1,01/2007
-"Coyote Res-sta Clara",6556,23700,27.7,02/2007
-"Coyote Res-sta Clara",7294,23700,30.8,03/2007
-"Coyote Res-sta Clara",7225,23700,30.5,04/2007
-"Coyote Res-sta Clara",7031,23700,29.7,05/2007
-"Coyote Res-sta Clara",6689,23700,28.2,06/2007
-"Coyote Res-sta Clara",6428,23700,27.1,07/2007
-"Coyote Res-sta Clara",6200,23700,26.2,08/2007
-"Coyote Res-sta Clara",5948,23700,25.1,09/2007
-"Coyote Res-sta Clara",5793,23700,24.4,10/2007
-"Coyote Res-sta Clara",5638,23700,23.8,11/2007
-"Coyote Res-sta Clara",5546,23700,23.4,12/2007
-"Coyote Res-sta Clara",4061,23700,17.1,01/2008
-"Coyote Res-sta Clara",13850,23700,58.4,02/2008
-"Coyote Res-sta Clara",12430,23700,52.4,03/2008
-"Coyote Res-sta Clara",12150,23700,51.3,04/2008
-"Coyote Res-sta Clara",11965,23700,50.5,05/2008
-"Coyote Res-sta Clara",11549,23700,48.7,06/2008
-"Coyote Res-sta Clara",11193,23700,47.2,07/2008
-"Coyote Res-sta Clara",10841,23700,45.7,08/2008
-"Coyote Res-sta Clara",10493,23700,44.3,09/2008
-"Coyote Res-sta Clara",10242,23700,43.2,10/2008
-"Coyote Res-sta Clara",10075,23700,42.5,11/2008
-"Coyote Res-sta Clara",9991,23700,42.2,12/2008
-"Coyote Res-sta Clara",9950,23700,42,01/2009
-"Coyote Res-sta Clara",12719,23700,53.7,02/2009
-"Coyote Res-sta Clara",12719,23700,53.7,03/2009
-"Coyote Res-sta Clara",11734,23700,49.5,04/2009
-"Coyote Res-sta Clara",11549,23700,48.7,05/2009
-"Coyote Res-sta Clara",11105,23700,46.9,06/2009
-"Coyote Res-sta Clara",10929,23700,46.1,07/2009
-"Coyote Res-sta Clara",10535,23700,44.5,08/2009
-"Coyote Res-sta Clara",10200,23700,43,09/2009
-"Coyote Res-sta Clara",9661,23700,40.8,10/2009
-"Coyote Res-sta Clara",10929,23700,46.1,11/2009
-"Coyote Res-sta Clara",12012,23700,50.7,12/2009
-"Coyote Res-sta Clara",15150,23700,63.9,01/2010
-"Coyote Res-sta Clara",13105,23700,55.3,02/2010
-"Coyote Res-sta Clara",14620,23700,61.7,03/2010
-"Coyote Res-sta Clara",16580,23700,70,04/2010
-"Coyote Res-sta Clara",23244,23700,98.1,05/2010
-"Coyote Res-sta Clara",11965,23700,50.5,06/2010
-"Coyote Res-sta Clara",11503,23700,48.5,07/2010
-"Coyote Res-sta Clara",11061,23700,46.7,08/2010
-"Coyote Res-sta Clara",10665,23700,45,09/2010
-"Coyote Res-sta Clara",10368,23700,43.7,10/2010
-"Coyote Res-sta Clara",9824,23700,41.5,11/2010
-"Coyote Res-sta Clara",12719,23700,53.7,12/2010
-"Coyote Res-sta Clara",12671,23700,53.5,01/2011
-"Coyote Res-sta Clara",21617,23700,91.2,02/2011
-"Coyote Res-sta Clara",23628,23700,99.7,03/2011
-"Coyote Res-sta Clara",18596,23700,78.5,04/2011
-"Coyote Res-sta Clara",12335,23700,52,05/2011
-"Coyote Res-sta Clara",12289,23700,51.9,06/2011
-"Coyote Res-sta Clara",11873,23700,50.1,07/2011
-"Coyote Res-sta Clara",11503,23700,48.5,08/2011
-"Coyote Res-sta Clara",11149,23700,47,09/2011
-"Coyote Res-sta Clara",10577,23700,44.6,10/2011
-"Coyote Res-sta Clara",9382,23700,39.6,11/2011
-"Coyote Res-sta Clara",8830,23700,37.3,12/2011
-"Coyote Res-sta Clara",8868,23700,37.4,01/2012
-"Coyote Res-sta Clara",8868,23700,37.4,02/2012
-"Coyote Res-sta Clara",10159,23700,42.9,03/2012
-"Coyote Res-sta Clara",12012,23700,50.7,04/2012
-"Coyote Res-sta Clara",11734,23700,49.5,05/2012
-"Coyote Res-sta Clara",11061,23700,46.7,06/2012
-"Coyote Res-sta Clara",10075,23700,42.5,07/2012
-"Coyote Res-sta Clara",9104,23700,38.4,08/2012
-"Coyote Res-sta Clara",8332,23700,35.2,09/2012
-"Coyote Res-sta Clara",7593,23700,32,10/2012
-"Coyote Res-sta Clara",7031,23700,29.7,11/2012
-"Coyote Res-sta Clara",11781,23700,49.7,12/2012
-"Coyote Res-sta Clara",12058,23700,50.9,01/2013
-"Coyote Res-sta Clara",12151,23700,51.3,02/2013
-"Coyote Res-sta Clara",12151,23700,51.3,03/2013
-"Coyote Res-sta Clara",11920,23700,50.3,04/2013
-"Coyote Res-sta Clara",11550,23700,48.7,05/2013
-"Coyote Res-sta Clara",11193,23700,47.2,06/2013
-"Coyote Res-sta Clara",10751,23700,45.4,07/2013
-"Coyote Res-sta Clara",10326,23700,43.6,08/2013
-"Coyote Res-sta Clara",9991,23700,42.2,09/2013
-"Coyote Res-sta Clara",9541,23700,40.3,10/2013
-"Coyote Res-sta Clara",8984,23700,37.9,11/2013
-"Coyote Res-sta Clara",7849,23700,33.1,12/2013
-"Coyote Res-sta Clara",7556,23700,31.9,01/2014
-"Coyote Res-sta Clara",8370,23700,35.3,02/2014
-"Coyote Res-sta Clara",9263,23700,39.1,03/2014
-"Coyote Res-sta Clara",9621,23700,40.6,04/2014
-"Coyote Res-sta Clara",9462,23700,39.9,05/2014
-"Coyote Res-sta Clara",9263,23700,39.1,06/2014
-"Coyote Res-sta Clara",9024,23700,38.1,07/2014
-"Coyote Res-sta Clara",8485,23700,35.8,08/2014
-"Coyote Res-sta Clara",7666,23700,32.3,09/2014
-"Coyote Res-sta Clara",7342,23700,31,10/2014
-"Coyote Res-sta Clara",6962,23700,29.4,11/2014
-"Coyote Res-sta Clara",11919,23700,50.3,12/2014
-"Coyote Res-sta Clara",11873,23700,50.1,01/2015
-"Coyote Res-sta Clara",12335,23700,52,02/2015
-"Coyote Res-sta Clara",12382,23700,52.2,03/2015
-"Coyote Res-sta Clara",12197,23700,51.5,04/2015
-"Coyote Res-sta Clara",11965,23700,50.5,05/2015
-"Coyote Res-sta Clara",11595,23700,48.9,06/2015
-"Coyote Res-sta Clara",11149,23700,47,07/2015
-"Coyote Res-sta Clara",9263,23700,39.1,08/2015
-"Coyote Res-sta Clara",8562,23700,36.1,09/2015
-"Coyote Res-sta Clara",8294,23700,35,10/2015
-"Coyote Res-sta Clara",8179,23700,34.5,11/2015
-"Coyote Res-sta Clara",8485,23700,35.8,12/2015
-"Coyote Res-sta Clara",12382,23700,52.2,01/2016
-"Coyote Res-sta Clara",12719,23700,53.7,02/2016
-"Coyote Res-sta Clara",17207,23700,72.6,03/2016
-"Coyote Res-sta Clara",12478,23700,52.6,04/2016
-"Coyote Res-sta Clara",12335,23700,52,05/2016
-"Coyote Res-sta Clara",11642,23700,49.1,06/2016
-"Coyote Res-sta Clara",6824,23700,28.8,07/2016
-"Coyote Res-sta Clara",6429,23700,27.1,08/2016
-"Coyote Res-sta Clara",6010,23700,25.4,09/2016
-"Coyote Res-sta Clara",5948,23700,25.1,10/2016
-"Coyote Res-sta Clara",5948,23700,25.1,11/2016
-"Coyote Res-sta Clara",8032,23700,33.9,12/2016
-"Coyote Res-sta Clara",21866,23700,92.3,01/2017
-"Coyote Res-sta Clara",23500,23700,99.2,02/2017
-"Coyote Res-sta Clara",23372,23700,98.6,03/2017
+"Coyote Res Sta Clara",5559,23700,23.5,01/2000
+"Coyote Res Sta Clara",14201,23700,59.9,02/2000
+"Coyote Res Sta Clara",12425,23700,52.4,03/2000
+"Coyote Res Sta Clara",11911,23700,50.3,04/2000
+"Coyote Res Sta Clara",11911,23700,50.3,05/2000
+"Coyote Res Sta Clara",11415,23700,48.2,06/2000
+"Coyote Res Sta Clara",10878,23700,45.9,07/2000
+"Coyote Res Sta Clara",10430,23700,44,08/2000
+"Coyote Res Sta Clara",10132,23700,42.8,09/2000
+"Coyote Res Sta Clara",6526,23700,27.5,10/2000
+"Coyote Res Sta Clara",4096,23700,17.3,11/2000
+"Coyote Res Sta Clara",3909,23700,16.5,12/2000
+"Coyote Res Sta Clara",4300,23700,18.1,01/2001
+"Coyote Res Sta Clara",9608,23700,40.5,02/2001
+"Coyote Res Sta Clara",11930,23700,50.3,03/2001
+"Coyote Res Sta Clara",11879,23700,50.1,04/2001
+"Coyote Res Sta Clara",11553,23700,48.7,05/2001
+"Coyote Res Sta Clara",11139,23700,47,06/2001
+"Coyote Res Sta Clara",10772,23700,45.5,07/2001
+"Coyote Res Sta Clara",10377,23700,43.8,08/2001
+"Coyote Res Sta Clara",10062,23700,42.5,09/2001
+"Coyote Res Sta Clara",8753,23700,36.9,10/2001
+"Coyote Res Sta Clara",5543,23700,23.4,11/2001
+"Coyote Res Sta Clara",6209,23700,26.2,12/2001
+"Coyote Res Sta Clara",8520,23700,35.9,01/2002
+"Coyote Res Sta Clara",9072,23700,38.3,02/2002
+"Coyote Res Sta Clara",11153,23700,47.1,03/2002
+"Coyote Res Sta Clara",11273,23700,47.6,04/2002
+"Coyote Res Sta Clara",11103,23700,46.8,05/2002
+"Coyote Res Sta Clara",10786,23700,45.5,06/2002
+"Coyote Res Sta Clara",10442,23700,44.1,07/2002
+"Coyote Res Sta Clara",10132,23700,42.8,08/2002
+"Coyote Res Sta Clara",9857,23700,41.6,09/2002
+"Coyote Res Sta Clara",8644,23700,36.5,10/2002
+"Coyote Res Sta Clara",5652,23700,23.8,11/2002
+"Coyote Res Sta Clara",13397,23700,56.5,12/2002
+"Coyote Res Sta Clara",11966,23700,50.5,01/2003
+"Coyote Res Sta Clara",12218,23700,51.6,02/2003
+"Coyote Res Sta Clara",11952,23700,50.4,03/2003
+"Coyote Res Sta Clara",11966,23700,50.5,04/2003
+"Coyote Res Sta Clara",11782,23700,49.7,05/2003
+"Coyote Res Sta Clara",11507,23700,48.6,06/2003
+"Coyote Res Sta Clara",11057,23700,46.7,07/2003
+"Coyote Res Sta Clara",10712,23700,45.2,08/2003
+"Coyote Res Sta Clara",6366,23700,26.9,09/2003
+"Coyote Res Sta Clara",6216,23700,26.2,10/2003
+"Coyote Res Sta Clara",6150,23700,25.9,11/2003
+"Coyote Res Sta Clara",22925,23700,96.7,12/2003
+"Coyote Res Sta Clara",8631,23700,36.4,01/2004
+"Coyote Res Sta Clara",13880,23700,58.6,02/2004
+"Coyote Res Sta Clara",12326,23700,52,03/2004
+"Coyote Res Sta Clara",12196,23700,51.5,04/2004
+"Coyote Res Sta Clara",11887,23700,50.2,05/2004
+"Coyote Res Sta Clara",11545,23700,48.7,06/2004
+"Coyote Res Sta Clara",11171,23700,47.1,07/2004
+"Coyote Res Sta Clara",10814,23700,45.6,08/2004
+"Coyote Res Sta Clara",10510,23700,44.3,09/2004
+"Coyote Res Sta Clara",4936,23700,20.8,10/2004
+"Coyote Res Sta Clara",3944,23700,16.6,11/2004
+"Coyote Res Sta Clara",9080,23700,38.3,12/2004
+"Coyote Res Sta Clara",12382,23700,52.2,01/2005
+"Coyote Res Sta Clara",17235,23700,72.7,02/2005
+"Coyote Res Sta Clara",20645,23700,87.1,03/2005
+"Coyote Res Sta Clara",13129,23700,55.4,04/2005
+"Coyote Res Sta Clara",12368,23700,52.2,05/2005
+"Coyote Res Sta Clara",12349,23700,52.1,06/2005
+"Coyote Res Sta Clara",12058,23700,50.9,07/2005
+"Coyote Res Sta Clara",8692,23700,36.7,08/2005
+"Coyote Res Sta Clara",11382,23700,48,09/2005
+"Coyote Res Sta Clara",6920,23700,29.2,10/2005
+"Coyote Res Sta Clara",3724,23700,15.7,11/2005
+"Coyote Res Sta Clara",9920,23700,41.9,12/2005
+"Coyote Res Sta Clara",12220,23700,51.6,01/2006
+"Coyote Res Sta Clara",12787,23700,54,02/2006
+"Coyote Res Sta Clara",15615,23700,65.9,03/2006
+"Coyote Res Sta Clara",21567,23700,91,04/2006
+"Coyote Res Sta Clara",14334,23700,60.5,05/2006
+"Coyote Res Sta Clara",11984,23700,50.6,06/2006
+"Coyote Res Sta Clara",11692,23700,49.3,07/2006
+"Coyote Res Sta Clara",11369,23700,48,08/2006
+"Coyote Res Sta Clara",11070,23700,46.7,09/2006
+"Coyote Res Sta Clara",10647,23700,44.9,10/2006
+"Coyote Res Sta Clara",4646,23700,19.6,11/2006
+"Coyote Res Sta Clara",4014,23700,16.9,12/2006
+"Coyote Res Sta Clara",4061,23700,17.1,01/2007
+"Coyote Res Sta Clara",6556,23700,27.7,02/2007
+"Coyote Res Sta Clara",7294,23700,30.8,03/2007
+"Coyote Res Sta Clara",7225,23700,30.5,04/2007
+"Coyote Res Sta Clara",7031,23700,29.7,05/2007
+"Coyote Res Sta Clara",6689,23700,28.2,06/2007
+"Coyote Res Sta Clara",6428,23700,27.1,07/2007
+"Coyote Res Sta Clara",6200,23700,26.2,08/2007
+"Coyote Res Sta Clara",5948,23700,25.1,09/2007
+"Coyote Res Sta Clara",5793,23700,24.4,10/2007
+"Coyote Res Sta Clara",5638,23700,23.8,11/2007
+"Coyote Res Sta Clara",5546,23700,23.4,12/2007
+"Coyote Res Sta Clara",4061,23700,17.1,01/2008
+"Coyote Res Sta Clara",13850,23700,58.4,02/2008
+"Coyote Res Sta Clara",12430,23700,52.4,03/2008
+"Coyote Res Sta Clara",12150,23700,51.3,04/2008
+"Coyote Res Sta Clara",11965,23700,50.5,05/2008
+"Coyote Res Sta Clara",11549,23700,48.7,06/2008
+"Coyote Res Sta Clara",11193,23700,47.2,07/2008
+"Coyote Res Sta Clara",10841,23700,45.7,08/2008
+"Coyote Res Sta Clara",10493,23700,44.3,09/2008
+"Coyote Res Sta Clara",10242,23700,43.2,10/2008
+"Coyote Res Sta Clara",10075,23700,42.5,11/2008
+"Coyote Res Sta Clara",9991,23700,42.2,12/2008
+"Coyote Res Sta Clara",9950,23700,42,01/2009
+"Coyote Res Sta Clara",12719,23700,53.7,02/2009
+"Coyote Res Sta Clara",12719,23700,53.7,03/2009
+"Coyote Res Sta Clara",11734,23700,49.5,04/2009
+"Coyote Res Sta Clara",11549,23700,48.7,05/2009
+"Coyote Res Sta Clara",11105,23700,46.9,06/2009
+"Coyote Res Sta Clara",10929,23700,46.1,07/2009
+"Coyote Res Sta Clara",10535,23700,44.5,08/2009
+"Coyote Res Sta Clara",10200,23700,43,09/2009
+"Coyote Res Sta Clara",9661,23700,40.8,10/2009
+"Coyote Res Sta Clara",10929,23700,46.1,11/2009
+"Coyote Res Sta Clara",12012,23700,50.7,12/2009
+"Coyote Res Sta Clara",15150,23700,63.9,01/2010
+"Coyote Res Sta Clara",13105,23700,55.3,02/2010
+"Coyote Res Sta Clara",14620,23700,61.7,03/2010
+"Coyote Res Sta Clara",16580,23700,70,04/2010
+"Coyote Res Sta Clara",23244,23700,98.1,05/2010
+"Coyote Res Sta Clara",11965,23700,50.5,06/2010
+"Coyote Res Sta Clara",11503,23700,48.5,07/2010
+"Coyote Res Sta Clara",11061,23700,46.7,08/2010
+"Coyote Res Sta Clara",10665,23700,45,09/2010
+"Coyote Res Sta Clara",10368,23700,43.7,10/2010
+"Coyote Res Sta Clara",9824,23700,41.5,11/2010
+"Coyote Res Sta Clara",12719,23700,53.7,12/2010
+"Coyote Res Sta Clara",12671,23700,53.5,01/2011
+"Coyote Res Sta Clara",21617,23700,91.2,02/2011
+"Coyote Res Sta Clara",23628,23700,99.7,03/2011
+"Coyote Res Sta Clara",18596,23700,78.5,04/2011
+"Coyote Res Sta Clara",12335,23700,52,05/2011
+"Coyote Res Sta Clara",12289,23700,51.9,06/2011
+"Coyote Res Sta Clara",11873,23700,50.1,07/2011
+"Coyote Res Sta Clara",11503,23700,48.5,08/2011
+"Coyote Res Sta Clara",11149,23700,47,09/2011
+"Coyote Res Sta Clara",10577,23700,44.6,10/2011
+"Coyote Res Sta Clara",9382,23700,39.6,11/2011
+"Coyote Res Sta Clara",8830,23700,37.3,12/2011
+"Coyote Res Sta Clara",8868,23700,37.4,01/2012
+"Coyote Res Sta Clara",8868,23700,37.4,02/2012
+"Coyote Res Sta Clara",10159,23700,42.9,03/2012
+"Coyote Res Sta Clara",12012,23700,50.7,04/2012
+"Coyote Res Sta Clara",11734,23700,49.5,05/2012
+"Coyote Res Sta Clara",11061,23700,46.7,06/2012
+"Coyote Res Sta Clara",10075,23700,42.5,07/2012
+"Coyote Res Sta Clara",9104,23700,38.4,08/2012
+"Coyote Res Sta Clara",8332,23700,35.2,09/2012
+"Coyote Res Sta Clara",7593,23700,32,10/2012
+"Coyote Res Sta Clara",7031,23700,29.7,11/2012
+"Coyote Res Sta Clara",11781,23700,49.7,12/2012
+"Coyote Res Sta Clara",12058,23700,50.9,01/2013
+"Coyote Res Sta Clara",12151,23700,51.3,02/2013
+"Coyote Res Sta Clara",12151,23700,51.3,03/2013
+"Coyote Res Sta Clara",11920,23700,50.3,04/2013
+"Coyote Res Sta Clara",11550,23700,48.7,05/2013
+"Coyote Res Sta Clara",11193,23700,47.2,06/2013
+"Coyote Res Sta Clara",10751,23700,45.4,07/2013
+"Coyote Res Sta Clara",10326,23700,43.6,08/2013
+"Coyote Res Sta Clara",9991,23700,42.2,09/2013
+"Coyote Res Sta Clara",9541,23700,40.3,10/2013
+"Coyote Res Sta Clara",8984,23700,37.9,11/2013
+"Coyote Res Sta Clara",7849,23700,33.1,12/2013
+"Coyote Res Sta Clara",7556,23700,31.9,01/2014
+"Coyote Res Sta Clara",8370,23700,35.3,02/2014
+"Coyote Res Sta Clara",9263,23700,39.1,03/2014
+"Coyote Res Sta Clara",9621,23700,40.6,04/2014
+"Coyote Res Sta Clara",9462,23700,39.9,05/2014
+"Coyote Res Sta Clara",9263,23700,39.1,06/2014
+"Coyote Res Sta Clara",9024,23700,38.1,07/2014
+"Coyote Res Sta Clara",8485,23700,35.8,08/2014
+"Coyote Res Sta Clara",7666,23700,32.3,09/2014
+"Coyote Res Sta Clara",7342,23700,31,10/2014
+"Coyote Res Sta Clara",6962,23700,29.4,11/2014
+"Coyote Res Sta Clara",11919,23700,50.3,12/2014
+"Coyote Res Sta Clara",11873,23700,50.1,01/2015
+"Coyote Res Sta Clara",12335,23700,52,02/2015
+"Coyote Res Sta Clara",12382,23700,52.2,03/2015
+"Coyote Res Sta Clara",12197,23700,51.5,04/2015
+"Coyote Res Sta Clara",11965,23700,50.5,05/2015
+"Coyote Res Sta Clara",11595,23700,48.9,06/2015
+"Coyote Res Sta Clara",11149,23700,47,07/2015
+"Coyote Res Sta Clara",9263,23700,39.1,08/2015
+"Coyote Res Sta Clara",8562,23700,36.1,09/2015
+"Coyote Res Sta Clara",8294,23700,35,10/2015
+"Coyote Res Sta Clara",8179,23700,34.5,11/2015
+"Coyote Res Sta Clara",8485,23700,35.8,12/2015
+"Coyote Res Sta Clara",12382,23700,52.2,01/2016
+"Coyote Res Sta Clara",12719,23700,53.7,02/2016
+"Coyote Res Sta Clara",17207,23700,72.6,03/2016
+"Coyote Res Sta Clara",12478,23700,52.6,04/2016
+"Coyote Res Sta Clara",12335,23700,52,05/2016
+"Coyote Res Sta Clara",11642,23700,49.1,06/2016
+"Coyote Res Sta Clara",6824,23700,28.8,07/2016
+"Coyote Res Sta Clara",6429,23700,27.1,08/2016
+"Coyote Res Sta Clara",6010,23700,25.4,09/2016
+"Coyote Res Sta Clara",5948,23700,25.1,10/2016
+"Coyote Res Sta Clara",5948,23700,25.1,11/2016
+"Coyote Res Sta Clara",8032,23700,33.9,12/2016
+"Coyote Res Sta Clara",21866,23700,92.3,01/2017
+"Coyote Res Sta Clara",23500,23700,99.2,02/2017
+"Coyote Res Sta Clara",23372,23700,98.6,03/2017
+"Coyote Res Sta Clara",23308,23700,98.3,04/2017
+"Coyote Res Sta Clara",11965,23700,50.5,05/2017
 "Crane Valley",29427,45400,64.8,01/2000
 "Crane Valley",31905,45400,70.3,02/2000
 "Crane Valley",30101,45400,66.3,03/2000
@@ -5974,6 +6028,8 @@ Courtright,51710,123300,41.9,06/2015
 "Crane Valley",33845,45400,74.5,01/2017
 "Crane Valley",35332,45400,77.8,02/2017
 "Crane Valley",34901,45400,76.9,03/2017
+"Crane Valley",40375,45400,88.9,04/2017
+"Crane Valley",45003,45400,99.1,05/2017
 "Cuyamaca Dam",561,11700,4.8,01/2000
 "Cuyamaca Dam",749,11700,6.4,02/2000
 "Cuyamaca Dam",923,11700,7.9,03/2000
@@ -6179,6 +6235,8 @@ Courtright,51710,123300,41.9,06/2015
 "Cuyamaca Dam",3288,11700,28.1,01/2017
 "Cuyamaca Dam",4905,11700,41.9,02/2017
 "Cuyamaca Dam",4525,11700,38.7,03/2017
+"Cuyamaca Dam",2538,11700,21.7,04/2017
+"Cuyamaca Dam",1142,11700,9.8,05/2017
 "Del Valle",29822,77100,38.7,01/2000
 "Del Valle",38862,77100,50.4,02/2000
 "Del Valle",38980,77100,50.6,03/2000
@@ -6386,6 +6444,8 @@ Courtright,51710,123300,41.9,06/2015
 "Del Valle",40162,77100,52.1,01/2017
 "Del Valle",39688,77100,51.5,02/2017
 "Del Valle",39435,77100,51.1,03/2017
+"Del Valle",40754,77100,52.9,04/2017
+"Del Valle",40547,77100,52.6,05/2017
 "Diamond Valley",31679,800000,4,01/2000
 "Diamond Valley",67656,800000,8.5,02/2000
 "Diamond Valley",117783,800000,14.7,03/2000
@@ -6586,6 +6646,8 @@ Courtright,51710,123300,41.9,06/2015
 "Diamond Valley",593605,800000,74.2,01/2017
 "Diamond Valley",634422,800000,79.3,02/2017
 "Diamond Valley",671054,800000,83.9,03/2017
+"Diamond Valley",694315,800000,86.8,04/2017
+"Diamond Valley",708423,800000,88.6,05/2017
 "Don Pedro Reservoir",1590000,2030000,78.3,01/2000
 "Don Pedro Reservoir",1735000,2030000,85.5,02/2000
 "Don Pedro Reservoir",1704000,2030000,83.9,03/2000
@@ -6793,6 +6855,8 @@ Courtright,51710,123300,41.9,06/2015
 "Don Pedro Reservoir",1795091,2030000,88.4,01/2017
 "Don Pedro Reservoir",2002962,2030000,98.7,02/2017
 "Don Pedro Reservoir",1760016,2030000,86.7,03/2017
+"Don Pedro Reservoir",1641278,2030000,80.9,04/2017
+"Don Pedro Reservoir",1770484,2030000,87.2,05/2017
 Donnells,16098,56900,28.3,01/2000
 Donnells,13800,56900,24.3,02/2000
 Donnells,14397,56900,25.3,03/2000
@@ -7000,6 +7064,8 @@ Donnells,31333,56900,55.1,12/2016
 Donnells,43503,56900,76.5,01/2017
 Donnells,56555,56900,99.4,02/2017
 Donnells,57200,56900,100.5,03/2017
+Donnells,57763,56900,101.5,04/2017
+Donnells,58312,56900,102.5,05/2017
 Dwinnell,26000,50000,52,01/2000
 Dwinnell,35358,50000,70.7,02/2000
 Dwinnell,40280,50000,80.6,03/2000
@@ -7207,6 +7273,8 @@ Dwinnell,21205,50000,42.4,12/2016
 Dwinnell,31937,50000,63.9,01/2017
 Dwinnell,45905,50000,91.8,02/2017
 Dwinnell,47114,50000,94.2,03/2017
+Dwinnell,45909,50000,91.8,04/2017
+Dwinnell,43873,50000,87.7,05/2017
 "East Park Reservoir",46100,51000,90.4,01/2000
 "East Park Reservoir",49130,51000,96.3,02/2000
 "East Park Reservoir",48500,51000,95.1,03/2000
@@ -7414,6 +7482,8 @@ Dwinnell,47114,50000,94.2,03/2017
 "East Park Reservoir",48760,51000,95.6,01/2017
 "East Park Reservoir",48917,51000,95.9,02/2017
 "East Park Reservoir",48595,51000,95.3,03/2017
+"East Park Reservoir",48650,51000,95.4,04/2017
+"East Park Reservoir",48542,51000,95.2,05/2017
 "El Capitan Dam",39574,112800,35.1,01/2000
 "El Capitan Dam",41134,112800,36.5,02/2000
 "El Capitan Dam",43069,112800,38.2,03/2000
@@ -7620,6 +7690,8 @@ Dwinnell,47114,50000,94.2,03/2017
 "El Capitan Dam",32762,112800,29,01/2017
 "El Capitan Dam",42656,112800,37.8,02/2017
 "El Capitan Dam",49797,112800,44.1,03/2017
+"El Capitan Dam",50405,112800,44.7,04/2017
+"El Capitan Dam",49890,112800,44.2,05/2017
 Englebright,60082,70000,85.8,01/2000
 Englebright,71376,70000,102,02/2000
 Englebright,67819,70000,96.9,03/2000
@@ -7827,6 +7899,8 @@ Englebright,66469,70000,95,12/2016
 Englebright,70979,70000,101.4,01/2017
 Englebright,72635,70000,103.8,02/2017
 Englebright,71799,70000,102.6,03/2017
+Englebright,71874,70000,102.7,04/2017
+Englebright,71219,70000,101.7,05/2017
 "Florence Lake",1142,64400,1.8,01/2000
 "Florence Lake",1190,64400,1.8,02/2000
 "Florence Lake",1327,64400,2.1,03/2000
@@ -8034,6 +8108,8 @@ Englebright,71799,70000,102.6,03/2017
 "Florence Lake",10908,64400,16.9,01/2017
 "Florence Lake",5693,64400,8.8,02/2017
 "Florence Lake",8308,64400,12.9,03/2017
+"Florence Lake",1083,64400,1.7,04/2017
+"Florence Lake",56344,64400,87.5,05/2017
 "Folsom Lake",568000,977000,58.1,01/2000
 "Folsom Lake",599000,977000,61.3,02/2000
 "Folsom Lake",674300,977000,69,03/2000
@@ -8241,6 +8317,8 @@ Englebright,71799,70000,102.6,03/2017
 "Folsom Lake",408425,977000,41.8,01/2017
 "Folsom Lake",404391,977000,41.4,02/2017
 "Folsom Lake",590592,977000,60.4,03/2017
+"Folsom Lake",723656,977000,74.1,04/2017
+"Folsom Lake",936873,977000,95.9,05/2017
 "French Lake",8760,12500,70.1,01/2000
 "French Lake",9820,12500,78.6,02/2000
 "French Lake",10600,12500,84.8,03/2000
@@ -8448,6 +8526,8 @@ Englebright,71799,70000,102.6,03/2017
 "French Lake",13890,12500,111.1,01/2017
 "French Lake",13937,12500,111.5,02/2017
 "French Lake",14010,12500,112.1,03/2017
+"French Lake",14062,12500,112.5,04/2017
+"French Lake",14103,12500,112.8,05/2017
 "French Meadows",75900,136400,55.6,01/2000
 "French Meadows",82200,136400,60.3,02/2000
 "French Meadows",82600,136400,60.6,03/2000
@@ -8655,6 +8735,8 @@ Englebright,71799,70000,102.6,03/2017
 "French Meadows",108719,136400,79.7,01/2017
 "French Meadows",111476,136400,81.7,02/2017
 "French Meadows",112591,136400,82.5,03/2017
+"French Meadows",132917,136400,97.4,04/2017
+"French Meadows",120562,136400,88.4,05/2017
 "Frenchman Dam",43415,55500,78.2,01/2000
 "Frenchman Dam",45597,55500,82.2,02/2000
 "Frenchman Dam",50046,55500,90.2,03/2000
@@ -8862,6 +8944,8 @@ Englebright,71799,70000,102.6,03/2017
 "Frenchman Dam",27040,55500,48.7,01/2017
 "Frenchman Dam",45737,55500,82.4,02/2017
 "Frenchman Dam",57458,55500,103.5,03/2017
+"Frenchman Dam",57264,55500,103.2,04/2017
+"Frenchman Dam",55744,55500,100.4,05/2017
 "Friant Dam",311500,520500,59.8,01/2000
 "Friant Dam",423200,520500,81.3,02/2000
 "Friant Dam",462000,520500,88.8,03/2000
@@ -9069,6 +9153,8 @@ Englebright,71799,70000,102.6,03/2017
 "Friant Dam",343208,520500,65.9,01/2017
 "Friant Dam",421159,520500,80.9,02/2017
 "Friant Dam",204248,520500,39.2,03/2017
+"Friant Dam",261319,520500,50.2,04/2017
+"Friant Dam",407481,520500,78.3,05/2017
 "Gem  Lake",5641,17200,32.8,01/2000
 "Gem  Lake",4631,17200,26.9,02/2000
 "Gem  Lake",1988,17200,11.6,03/2000
@@ -9275,6 +9361,8 @@ Englebright,71799,70000,102.6,03/2017
 "Gem  Lake",5740,17200,33.4,01/2017
 "Gem  Lake",4350,17200,25.3,02/2017
 "Gem  Lake",2160,17200,12.6,03/2017
+"Gem  Lake",0,17200,0,04/2017
+"Gem  Lake",5560,17200,32.3,05/2017
 Gerber,59220,94300,62.8,01/2000
 Gerber,68758,94300,72.9,02/2000
 Gerber,83538,94300,88.6,03/2000
@@ -9482,6 +9570,8 @@ Gerber,18752,94300,19.9,12/2016
 Gerber,20926,94300,22.2,01/2017
 Gerber,56404,94300,59.8,02/2017
 Gerber,81581,94300,86.5,03/2017
+Gerber,95653,94300,101.4,04/2017
+Gerber,90138,94300,95.6,05/2017
 "Gibraltar Dam",2975,10000,29.8,01/2000
 "Gibraltar Dam",6729,10000,67.3,02/2000
 "Gibraltar Dam",7126,10000,71.3,03/2000
@@ -9686,6 +9776,8 @@ Gerber,81581,94300,86.5,03/2017
 "Gibraltar Dam",320,10000,3.2,11/2016
 "Gibraltar Dam",5220,10000,52.2,01/2017
 "Gibraltar Dam",5309,10000,53.1,03/2017
+"Gibraltar Dam",5298,10000,53,04/2017
+"Gibraltar Dam",5135,10000,51.4,05/2017
 "Grant Lake",39840,47500,83.9,01/2000
 "Grant Lake",37900,47500,79.8,02/2000
 "Grant Lake",36690,47500,77.2,03/2000
@@ -9893,6 +9985,8 @@ Gerber,81581,94300,86.5,03/2017
 "Grant Lake",24310,47500,51.2,01/2017
 "Grant Lake",27160,47500,57.2,02/2017
 "Grant Lake",30509,47500,64.2,03/2017
+"Grant Lake",33167,47500,69.8,04/2017
+"Grant Lake",46322,47500,97.5,05/2017
 Haiwee,29930,46600,64.2,01/2000
 Haiwee,32280,46600,69.3,02/2000
 Haiwee,30980,46600,66.5,03/2000
@@ -10100,6 +10194,8 @@ Haiwee,25102,46600,53.9,12/2016
 Haiwee,33077,46600,71,01/2017
 Haiwee,32895,46600,70.6,02/2017
 Haiwee,25654,46600,55.1,03/2017
+Haiwee,24054,46600,51.6,04/2017
+Haiwee,26201,46600,56.2,05/2017
 "Hell Hole",105300,208400,50.5,01/2000
 "Hell Hole",123600,208400,59.3,02/2000
 "Hell Hole",128800,208400,61.8,03/2000
@@ -10307,6 +10403,8 @@ Haiwee,25654,46600,55.1,03/2017
 "Hell Hole",200384,208400,96.2,01/2017
 "Hell Hole",206356,208400,99,02/2017
 "Hell Hole",208018,208400,99.8,03/2017
+"Hell Hole",208538,208400,100.1,04/2017
+"Hell Hole",208989,208400,100.3,05/2017
 Henshaw,5502,50000,11,01/2000
 Henshaw,7032,50000,14.1,02/2000
 Henshaw,8088,50000,16.2,03/2000
@@ -10514,6 +10612,8 @@ Henshaw,3586,50000,7.2,12/2016
 Henshaw,8633,50000,17.3,01/2017
 Henshaw,13303,50000,26.6,02/2017
 Henshaw,15769,50000,31.5,03/2017
+Henshaw,14829,50000,29.7,04/2017
+Henshaw,13316,50000,26.6,05/2017
 "Hetch Hetchy",221800,360000,61.6,01/2000
 "Hetch Hetchy",216100,360000,60,02/2000
 "Hetch Hetchy",172600,360000,47.9,03/2000
@@ -10721,6 +10821,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Hetch Hetchy",311315,360000,86.5,01/2017
 "Hetch Hetchy",310567,360000,86.3,02/2017
 "Hetch Hetchy",285076,360000,79.2,03/2017
+"Hetch Hetchy",282892,360000,78.6,04/2017
+"Hetch Hetchy",274595,360000,76.3,05/2017
 "Hidden Dam",22245,90000,24.7,01/2000
 "Hidden Dam",55587,90000,61.8,02/2000
 "Hidden Dam",62417,90000,69.4,03/2000
@@ -10928,6 +11030,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Hidden Dam",29646,90000,32.9,01/2017
 "Hidden Dam",35725,90000,39.7,02/2017
 "Hidden Dam",43878,90000,48.8,03/2017
+"Hidden Dam",65681,90000,73,04/2017
+"Hidden Dam",70660,90000,78.5,05/2017
 "Huntington Lake",36336,89800,40.5,01/2000
 "Huntington Lake",39331,89800,43.8,02/2000
 "Huntington Lake",41061,89800,45.7,03/2000
@@ -11135,6 +11239,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Huntington Lake",47871,89800,53.3,01/2017
 "Huntington Lake",32820,89800,36.5,02/2017
 "Huntington Lake",30528,89800,34,03/2017
+"Huntington Lake",41772,89800,46.5,04/2017
+"Huntington Lake",83433,89800,92.9,05/2017
 "Ice House",23619,37100,63.7,01/2000
 "Ice House",24822,37100,66.9,02/2000
 "Ice House",22990,37100,62,03/2000
@@ -11342,6 +11448,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Ice House",32327,37100,87.1,01/2017
 "Ice House",33630,37100,90.6,02/2017
 "Ice House",33785,37100,91.1,03/2017
+"Ice House",37143,37100,100.1,04/2017
+"Ice House",40891,37100,110.2,05/2017
 "Indian Valley",228052,300000,76,01/2000
 "Indian Valley",267191,300000,89.1,02/2000
 "Indian Valley",266192,300000,88.7,03/2000
@@ -11549,6 +11657,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Indian Valley",152770,300000,50.9,01/2017
 "Indian Valley",242948,300000,81,02/2017
 "Indian Valley",261672,300000,87.2,03/2017
+"Indian Valley",276159,300000,92.1,04/2017
+"Indian Valley",276120,300000,92,05/2017
 "Iron Canyon",7517,24300,30.9,01/2000
 "Iron Canyon",5783,24300,23.8,02/2000
 "Iron Canyon",5577,24300,23,03/2000
@@ -11756,6 +11866,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Iron Canyon",11422,24300,47,01/2017
 "Iron Canyon",9068,24300,37.3,02/2017
 "Iron Canyon",8107,24300,33.4,03/2017
+"Iron Canyon",11404,24300,46.9,04/2017
+"Iron Canyon",8276,24300,34.1,05/2017
 "Isabella Dam",167617,568000,29.5,01/2000
 "Isabella Dam",178813,568000,31.5,02/2000
 "Isabella Dam",193303,568000,34,03/2000
@@ -11963,6 +12075,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Isabella Dam",215280,568000,37.9,01/2017
 "Isabella Dam",328896,568000,57.9,02/2017
 "Isabella Dam",245652,568000,43.2,03/2017
+"Isabella Dam",272606,568000,48,04/2017
+"Isabella Dam",337193,568000,59.4,05/2017
 "Jenkinson Lake",36484,41000,89,01/2000
 "Jenkinson Lake",41234,41000,100.6,02/2000
 "Jenkinson Lake",41118,41000,100.3,03/2000
@@ -12170,6 +12284,8 @@ Henshaw,15769,50000,31.5,03/2017
 "Jenkinson Lake",41227,41000,100.6,01/2017
 "Jenkinson Lake",41278,41000,100.7,02/2017
 "Jenkinson Lake",41221,41000,100.5,03/2017
+"Jenkinson Lake",41169,41000,100.4,04/2017
+"Jenkinson Lake",41143,41000,100.3,05/2017
 Kent,22203,32900,67.5,01/2000
 Kent,32895,32900,100,02/2000
 Kent,32769,32900,99.6,03/2000
@@ -12377,6 +12493,8 @@ Kent,32895,32900,100,12/2016
 Kent,32895,32900,100,01/2017
 Kent,32895,32900,100,02/2017
 Kent,32895,32900,100,03/2017
+Kent,32895,32900,100,04/2017
+Kent,32488,32900,98.7,05/2017
 "Keswick Reservoir",19541,23800,82.1,01/2000
 "Keswick Reservoir",20853,23800,87.6,02/2000
 "Keswick Reservoir",20569,23800,86.4,03/2000
@@ -12584,6 +12702,8 @@ Kent,32895,32900,100,03/2017
 "Keswick Reservoir",21520,23800,90.4,01/2017
 "Keswick Reservoir",20311,23800,85.3,02/2017
 "Keswick Reservoir",20704,23800,87,03/2017
+"Keswick Reservoir",22408,23800,94.2,04/2017
+"Keswick Reservoir",22057,23800,92.7,05/2017
 "Lake Almanor",867741,1308000,66.3,01/2000
 "Lake Almanor",932957,1308000,71.3,02/2000
 "Lake Almanor",972735,1308000,74.4,03/2000
@@ -12787,6 +12907,8 @@ Kent,32895,32900,100,03/2017
 "Lake Almanor",894810,1308000,68.4,10/2016
 "Lake Almanor",1022917,1308000,78.2,01/2017
 "Lake Almanor",1050731,1308000,80.3,03/2017
+"Lake Almanor",1051785,1308000,80.4,04/2017
+"Lake Almanor",1062351,1308000,81.2,05/2017
 "Lake Britton",38748,34600,112,01/2000
 "Lake Britton",39618,34600,114.5,02/2000
 "Lake Britton",36151,34600,104.5,03/2000
@@ -12994,6 +13116,8 @@ Kent,32895,32900,100,03/2017
 "Lake Britton",37514,34600,108.4,01/2017
 "Lake Britton",40233,34600,116.3,02/2017
 "Lake Britton",38946,34600,112.6,03/2017
+"Lake Britton",36116,34600,104.4,04/2017
+"Lake Britton",34473,34600,99.6,05/2017
 "Lake Crowley",116000,183500,63.2,01/2000
 "Lake Crowley",125000,183500,68.1,02/2000
 "Lake Crowley",132210,183500,72,03/2000
@@ -13201,6 +13325,8 @@ Kent,32895,32900,100,03/2017
 "Lake Crowley",122913,183500,67,01/2017
 "Lake Crowley",128018,183500,69.8,02/2017
 "Lake Crowley",111270,183500,60.6,03/2017
+"Lake Crowley",92504,183500,50.4,04/2017
+"Lake Crowley",82393,183500,44.9,05/2017
 "Lake Davis",57328,83000,69.1,01/2000
 "Lake Davis",60976,83000,73.5,02/2000
 "Lake Davis",65593,83000,79,03/2000
@@ -13408,6 +13534,8 @@ Kent,32895,32900,100,03/2017
 "Lake Davis",59567,83000,71.8,01/2017
 "Lake Davis",80596,83000,97.1,02/2017
 "Lake Davis",87210,83000,105.1,03/2017
+"Lake Davis",89637,83000,108,04/2017
+"Lake Davis",84693,83000,102,05/2017
 "Lake Eleanor",24500,28600,85.7,01/2000
 "Lake Eleanor",24200,28600,84.6,02/2000
 "Lake Eleanor",25000,28600,87.4,03/2000
@@ -13615,6 +13743,8 @@ Kent,32895,32900,100,03/2017
 "Lake Eleanor",16898,28600,59.1,01/2017
 "Lake Eleanor",22053,28600,77.1,02/2017
 "Lake Eleanor",23541,28600,82.3,03/2017
+"Lake Eleanor",24100,28600,84.3,04/2017
+"Lake Eleanor",24472,28600,85.6,05/2017
 "Lake Hemet",10696,14000,76.4,01/2000
 "Lake Hemet",11341,14000,81,02/2000
 "Lake Hemet",11604,14000,82.9,03/2000
@@ -13822,6 +13952,8 @@ Kent,32895,32900,100,03/2017
 "Lake Hemet",7836,14000,56,01/2017
 "Lake Hemet",9550,14000,68.2,02/2017
 "Lake Hemet",10313,14000,73.7,03/2017
+"Lake Hemet",10439,14000,74.6,04/2017
+"Lake Hemet",10407,14000,74.3,05/2017
 "Lake Hennessey",22147,31000,71.4,01/2000
 "Lake Hennessey",31000,31000,100,02/2000
 "Lake Hennessey",31000,31000,100,03/2000
@@ -14029,6 +14161,8 @@ Kent,32895,32900,100,03/2017
 "Lake Hennessey",31000,31000,100,01/2017
 "Lake Hennessey",31000,31000,100,02/2017
 "Lake Hennessey",31000,31000,100,03/2017
+"Lake Hennessey",31000,31000,100,04/2017
+"Lake Hennessey",30179,31000,97.4,05/2017
 "Lake Hodges",18680,30300,61.7,01/2000
 "Lake Hodges",19507,30300,64.4,02/2000
 "Lake Hodges",19623,30300,64.8,03/2000
@@ -14235,6 +14369,8 @@ Kent,32895,32900,100,03/2017
 "Lake Hodges",16103,30300,53.1,01/2017
 "Lake Hodges",23786,30300,78.5,02/2017
 "Lake Hodges",22853,30300,75.4,03/2017
+"Lake Hodges",21680,30300,71.6,04/2017
+"Lake Hodges",21461,30300,70.8,05/2017
 "Lake Jennings",8670,9800,88.5,01/2000
 "Lake Jennings",8595,9800,87.7,02/2000
 "Lake Jennings",8605,9800,87.8,03/2000
@@ -14441,6 +14577,8 @@ Kent,32895,32900,100,03/2017
 "Lake Jennings",8529,9800,87,01/2017
 "Lake Jennings",9068,9800,92.5,02/2017
 "Lake Jennings",8686,9800,88.6,03/2017
+"Lake Jennings",8745,9800,89.2,04/2017
+"Lake Jennings",8819,9800,90,05/2017
 "Lake Mathews",144040,179300,80.3,01/2000
 "Lake Mathews",165251,179300,92.2,02/2000
 "Lake Mathews",159386,179300,88.9,03/2000
@@ -14648,6 +14786,8 @@ Kent,32895,32900,100,03/2017
 "Lake Mathews",163078,179300,91,01/2017
 "Lake Mathews",162305,179300,90.5,02/2017
 "Lake Mathews",168878,179300,94.2,03/2017
+"Lake Mathews",164083,179300,91.5,04/2017
+"Lake Mathews",159692,179300,89.1,05/2017
 "Lake Mccloud",33598,35300,95.2,01/2000
 "Lake Mccloud",32978,35300,93.4,02/2000
 "Lake Mccloud",33122,35300,93.8,03/2000
@@ -14855,6 +14995,8 @@ Kent,32895,32900,100,03/2017
 "Lake Mccloud",19601,35300,55.5,01/2017
 "Lake Mccloud",23380,35300,66.2,02/2017
 "Lake Mccloud",27288,35300,77.3,03/2017
+"Lake Mccloud",27307,35300,77.4,04/2017
+"Lake Mccloud",30069,35300,85.2,05/2017
 "Lake Mcclure",644900,1024600,62.9,01/2000
 "Lake Mcclure",727100,1024600,71,02/2000
 "Lake Mcclure",711900,1024600,69.5,03/2000
@@ -15062,6 +15204,8 @@ Kent,32895,32900,100,03/2017
 "Lake Mcclure",745886,1024600,72.8,01/2017
 "Lake Mcclure",918857,1024600,89.7,02/2017
 "Lake Mcclure",696279,1024600,68,03/2017
+"Lake Mcclure",663478,1024600,64.8,04/2017
+"Lake Mcclure",827595,1024600,80.8,05/2017
 "Lake Mendocino",69419,122400,56.7,01/2000
 "Lake Mendocino",79994,122400,65.4,02/2000
 "Lake Mendocino",89445,122400,73.1,03/2000
@@ -15269,6 +15413,8 @@ Kent,32895,32900,100,03/2017
 "Lake Mendocino",74981,122400,61.3,01/2017
 "Lake Mendocino",82557,122400,67.4,02/2017
 "Lake Mendocino",84105,122400,68.7,03/2017
+"Lake Mendocino",97260,122400,79.5,04/2017
+"Lake Mendocino",97029,122400,79.3,05/2017
 "Lake Natoma",7642,9000,84.9,01/2000
 "Lake Natoma",7810,9000,86.8,02/2000
 "Lake Natoma",8176,9000,90.8,03/2000
@@ -15476,6 +15622,8 @@ Kent,32895,32900,100,03/2017
 "Lake Natoma",6913,9000,76.8,01/2017
 "Lake Natoma",8306,9000,92.3,02/2017
 "Lake Natoma",7286,9000,81,03/2017
+"Lake Natoma",7499,9000,83.3,04/2017
+"Lake Natoma",7386,9000,82.1,05/2017
 "Lake Pillsbury",61900,80500,76.9,01/2000
 "Lake Pillsbury",63500,80500,78.9,02/2000
 "Lake Pillsbury",64200,80500,79.8,03/2000
@@ -15683,6 +15831,8 @@ Kent,32895,32900,100,03/2017
 "Lake Pillsbury",55739,80500,69.2,01/2017
 "Lake Pillsbury",56079,80500,69.7,02/2017
 "Lake Pillsbury",69319,80500,86.1,03/2017
+"Lake Pillsbury",72769,80500,90.4,04/2017
+"Lake Pillsbury",67685,80500,84.1,05/2017
 "Lake Piru",55200,83200,66.3,01/2000
 "Lake Piru",61000,83200,73.3,02/2000
 "Lake Piru",67900,83200,81.6,03/2000
@@ -15889,6 +16039,8 @@ Kent,32895,32900,100,03/2017
 "Lake Piru",10724,83200,12.9,01/2017
 "Lake Piru",28403,83200,34.1,02/2017
 "Lake Piru",29938,83200,36,03/2017
+"Lake Piru",29457,83200,35.4,04/2017
+"Lake Piru",27891,83200,33.5,05/2017
 "Lake San Antonio",268660,50500,532,01/2000
 "Lake San Antonio",302142,50500,598.3,02/2000
 "Lake San Antonio",315650,50500,625,03/2000
@@ -16096,6 +16248,8 @@ Kent,32895,32900,100,03/2017
 "Lake San Antonio",86130,50500,170.6,01/2017
 "Lake San Antonio",161988,50500,320.8,02/2017
 "Lake San Antonio",179315,50500,355.1,03/2017
+"Lake San Antonio",190095,50500,376.4,04/2017
+"Lake San Antonio",187540,50500,371.4,05/2017
 "Lake Silverwood",70223,78000,90,01/2000
 "Lake Silverwood",69238,78000,88.8,02/2000
 "Lake Silverwood",70554,78000,90.5,03/2000
@@ -16303,6 +16457,8 @@ Kent,32895,32900,100,03/2017
 "Lake Silverwood",67558,78000,86.6,01/2017
 "Lake Silverwood",69838,78000,89.5,02/2017
 "Lake Silverwood",67964,78000,87.1,03/2017
+"Lake Silverwood",65709,78000,84.2,04/2017
+"Lake Silverwood",68921,78000,88.4,05/2017
 "Lake Spaulding S Yuba System",51688,144600,35.7,01/2000
 "Lake Spaulding S Yuba System",57267,144600,39.6,02/2000
 "Lake Spaulding S Yuba System",55618,144600,38.5,03/2000
@@ -16504,6 +16660,8 @@ Kent,32895,32900,100,03/2017
 "Lake Spaulding S Yuba System",91448,144600,63.2,10/2016
 "Lake Spaulding S Yuba System",99354,144600,68.7,01/2017
 "Lake Spaulding S Yuba System",115486,144600,79.9,03/2017
+"Lake Spaulding S Yuba System",115870,144600,80.1,04/2017
+"Lake Spaulding S Yuba System",118198,144600,81.7,05/2017
 "Lake Tahoe",559100,732000,76.4,01/2000
 "Lake Tahoe",627800,732000,85.8,02/2000
 "Lake Tahoe",627800,732000,85.8,03/2000
@@ -16711,6 +16869,8 @@ Kent,32895,32900,100,03/2017
 "Lake Tahoe",255200,732000,34.9,01/2017
 "Lake Tahoe",455100,732000,62.2,02/2017
 "Lake Tahoe",517400,732000,70.7,03/2017
+"Lake Tahoe",570100,732000,77.9,04/2017
+"Lake Tahoe",659700,732000,90.1,05/2017
 "Leroy Anderson",62697,89100,70.4,01/2000
 "Leroy Anderson",79285,89100,89,02/2000
 "Leroy Anderson",87639,89100,98.4,03/2000
@@ -16918,6 +17078,8 @@ Kent,32895,32900,100,03/2017
 "Leroy Anderson",69127,89100,77.6,01/2017
 "Leroy Anderson",90373,89100,101.4,02/2017
 "Leroy Anderson",72784,89100,81.7,03/2017
+"Leroy Anderson",51337,89100,57.6,04/2017
+"Leroy Anderson",51337,89100,57.6,05/2017
 Lewiston,13926,14700,94.7,01/2000
 Lewiston,14248,14700,96.9,02/2000
 Lewiston,14128,14700,96.1,03/2000
@@ -17125,6 +17287,8 @@ Lewiston,14158,14700,96.3,12/2016
 Lewiston,14315,14700,97.4,01/2017
 Lewiston,13882,14700,94.4,02/2017
 Lewiston,14479,14700,98.5,03/2017
+Lewiston,14053,14700,95.6,04/2017
+Lewiston,14517,14700,98.8,05/2017
 "Lexington Reservoir",4964,21400,23.2,01/2000
 "Lexington Reservoir",17588,21400,82.2,02/2000
 "Lexington Reservoir",19424,21400,90.8,03/2000
@@ -17332,6 +17496,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Lexington Reservoir",16765,21400,78.3,01/2017
 "Lexington Reservoir",18291,21400,85.5,02/2017
 "Lexington Reservoir",19044,21400,89,03/2017
+"Lexington Reservoir",18410,21400,86,04/2017
+"Lexington Reservoir",17696,21400,82.7,05/2017
 "Little Grass Valley",54800,93000,58.9,01/2000
 "Little Grass Valley",71200,93000,76.6,02/2000
 "Little Grass Valley",79800,93000,85.8,03/2000
@@ -17533,6 +17699,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Little Grass Valley",48824,93000,52.5,10/2016
 "Little Grass Valley",68709,93000,73.9,01/2017
 "Little Grass Valley",70918,93000,76.3,03/2017
+"Little Grass Valley",71869,93000,77.3,04/2017
+"Little Grass Valley",85037,93000,91.4,05/2017
 "Loon Lake",36528,76500,47.7,01/2000
 "Loon Lake",33698,76500,44,02/2000
 "Loon Lake",20187,76500,26.4,03/2000
@@ -17740,6 +17908,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Loon Lake",59526,76500,77.8,01/2017
 "Loon Lake",60034,76500,78.5,02/2017
 "Loon Lake",59304,76500,77.5,03/2017
+"Loon Lake",62532,76500,81.7,04/2017
+"Loon Lake",66383,76500,86.8,05/2017
 "Los Banos",20207,34600,58.4,01/2000
 "Los Banos",19961,34600,57.7,02/2000
 "Los Banos",20731,34600,59.9,03/2000
@@ -17947,6 +18117,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Los Banos",20128,34600,58.2,01/2017
 "Los Banos",19869,34600,57.4,02/2017
 "Los Banos",21507,34600,62.2,03/2017
+"Los Banos",21986,34600,63.5,04/2017
+"Los Banos",21777,34600,62.9,05/2017
 "Los Vaqueros Reservoir",84140,160000,52.6,01/2000
 "Los Vaqueros Reservoir",88410,160000,55.3,02/2000
 "Los Vaqueros Reservoir",92520,160000,57.8,03/2000
@@ -18154,6 +18326,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Los Vaqueros Reservoir",133536,160000,83.5,01/2017
 "Los Vaqueros Reservoir",143412,160000,89.6,02/2017
 "Los Vaqueros Reservoir",143932,160000,90,03/2017
+"Los Vaqueros Reservoir",150954,160000,94.3,04/2017
+"Los Vaqueros Reservoir",153472,160000,95.9,05/2017
 "Loveland Reservoir",14418,25400,56.8,01/2000
 "Loveland Reservoir",7792,25400,30.7,02/2000
 "Loveland Reservoir",8067,25400,31.8,03/2000
@@ -18360,6 +18534,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Loveland Reservoir",12345,25400,48.6,01/2017
 "Loveland Reservoir",17950,25400,70.7,02/2017
 "Loveland Reservoir",13451,25400,53,03/2017
+"Loveland Reservoir",13795,25400,54.3,04/2017
+"Loveland Reservoir",14349,25400,56.5,05/2017
 "Lower Bear",7133,48800,14.6,01/2000
 "Lower Bear",12475,48800,25.6,02/2000
 "Lower Bear",12757,48800,26.1,03/2000
@@ -18560,6 +18736,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Lower Bear",21749,48800,44.6,10/2016
 "Lower Bear",36711,48800,75.2,01/2017
 "Lower Bear",43620,48800,89.4,03/2017
+"Lower Bear",49580,48800,101.6,04/2017
+"Lower Bear",52419,48800,107.4,05/2017
 "Lower Crystal Springs Reservoir",50428,57900,87.1,01/2000
 "Lower Crystal Springs Reservoir",58786,57900,101.5,02/2000
 "Lower Crystal Springs Reservoir",52545,57900,90.8,03/2000
@@ -18767,6 +18945,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Lower Crystal Springs Reservoir",57319,57900,99,01/2017
 "Lower Crystal Springs Reservoir",56666,57900,97.9,02/2017
 "Lower Crystal Springs Reservoir",55506,57900,95.9,03/2017
+"Lower Crystal Springs Reservoir",59572,57900,102.9,04/2017
+"Lower Crystal Springs Reservoir",52500,57900,90.7,05/2017
 "Lower Otay",40559,49500,81.9,01/2000
 "Lower Otay",40238,49500,81.3,02/2000
 "Lower Otay",40106,49500,81,03/2000
@@ -18973,6 +19153,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Lower Otay",42082,49500,85,01/2017
 "Lower Otay",46653,49500,94.2,02/2017
 "Lower Otay",46257,49500,93.4,03/2017
+"Lower Otay",45763,49500,92.5,04/2017
+"Lower Otay",45223,49500,91.4,05/2017
 "Mammoth Pool",31093,123000,25.3,01/2000
 "Mammoth Pool",52463,123000,42.7,02/2000
 "Mammoth Pool",14765,123000,12,03/2000
@@ -19180,6 +19362,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Mammoth Pool",113384,123000,92.2,01/2017
 "Mammoth Pool",120501,123000,98,02/2017
 "Mammoth Pool",120206,123000,97.7,03/2017
+"Mammoth Pool",122339,123000,99.5,04/2017
+"Mammoth Pool",124115,123000,100.9,05/2017
 "Matilija Dam",650,1800,36.1,01/2000
 "Matilija Dam",810,1800,45,02/2000
 "Matilija Dam",720,1800,40,03/2000
@@ -19387,6 +19571,8 @@ Lewiston,14479,14700,98.5,03/2017
 "Matilija Dam",964,1800,53.6,01/2017
 "Matilija Dam",1028,1800,57.1,02/2017
 "Matilija Dam",1028,1800,57.1,03/2017
+"Matilija Dam",959,1800,53.3,04/2017
+"Matilija Dam",959,1800,53.3,05/2017
 Miramar,6073,7200,84.3,01/2000
 Miramar,6107,7200,84.8,02/2000
 Miramar,5913,7200,82.1,03/2000
@@ -19593,6 +19779,8 @@ Miramar,5606,7200,77.9,11/2016
 Miramar,5410,7200,75.1,01/2017
 Miramar,5649,7200,78.5,02/2017
 Miramar,3849,7200,53.5,03/2017
+Miramar,5521,7200,76.7,04/2017
+Miramar,5397,7200,75,05/2017
 "Modesto Reservoir",15000,29000,51.7,01/2000
 "Modesto Reservoir",17636,29000,60.8,02/2000
 "Modesto Reservoir",19022,29000,65.6,03/2000
@@ -19800,6 +19988,8 @@ Miramar,3849,7200,53.5,03/2017
 "Modesto Reservoir",21718,29000,74.9,01/2017
 "Modesto Reservoir",18392,29000,63.4,02/2017
 "Modesto Reservoir",17653,29000,60.9,03/2017
+"Modesto Reservoir",15163,29000,52.3,04/2017
+"Modesto Reservoir",16920,29000,58.3,05/2017
 "Morena Dam",30585,50200,60.9,01/2000
 "Morena Dam",28669,50200,57.1,02/2000
 "Morena Dam",26350,50200,52.5,03/2000
@@ -20006,6 +20196,8 @@ Miramar,3849,7200,53.5,03/2017
 "Morena Dam",1946,50200,3.9,01/2017
 "Morena Dam",2928,50200,5.8,02/2017
 "Morena Dam",4695,50200,9.4,03/2017
+"Morena Dam",4736,50200,9.4,04/2017
+"Morena Dam",4750,50200,9.5,05/2017
 "Mountain Meadows",5654,24800,22.8,01/2000
 "Mountain Meadows",6876,24800,27.7,02/2000
 "Mountain Meadows",11434,24800,46.1,03/2000
@@ -20206,6 +20398,8 @@ Miramar,3849,7200,53.5,03/2017
 "Mountain Meadows",5663,24800,22.8,10/2016
 "Mountain Meadows",5694,24800,23,01/2017
 "Mountain Meadows",7928,24800,32,03/2017
+"Mountain Meadows",16032,24800,64.6,04/2017
+"Mountain Meadows",21779,24800,87.8,05/2017
 "Murray Res",4030,4800,84,01/2000
 "Murray Res",4292,4800,89.4,02/2000
 "Murray Res",3760,4800,78.3,03/2000
@@ -20412,6 +20606,8 @@ Miramar,3849,7200,53.5,03/2017
 "Murray Res",4129,4800,86,01/2017
 "Murray Res",4421,4800,92.1,02/2017
 "Murray Res",3854,4800,80.3,03/2017
+"Murray Res",3913,4800,81.5,04/2017
+"Murray Res",4044,4800,84.3,05/2017
 Nacimiento,215590,350000,61.6,01/2000
 Nacimiento,280150,350000,80,02/2000
 Nacimiento,318062,350000,90.9,03/2000
@@ -20619,6 +20815,8 @@ Nacimiento,93275,350000,26.7,12/2016
 Nacimiento,305178,350000,87.2,01/2017
 Nacimiento,328085,350000,93.7,02/2017
 Nacimiento,331560,350000,94.7,03/2017
+Nacimiento,336643,350000,96.2,04/2017
+Nacimiento,306440,350000,87.6,05/2017
 "New Bullards Bar",604763,969600,62.4,01/2000
 "New Bullards Bar",781986,969600,80.7,02/2000
 "New Bullards Bar",786129,969600,81.1,03/2000
@@ -20826,6 +21024,8 @@ Nacimiento,331560,350000,94.7,03/2017
 "New Bullards Bar",788639,969600,81.3,01/2017
 "New Bullards Bar",767796,969600,79.2,02/2017
 "New Bullards Bar",805119,969600,83,03/2017
+"New Bullards Bar",894738,969600,92.3,04/2017
+"New Bullards Bar",941515,969600,97.1,05/2017
 "New Hogan Lake",178497,317000,56.3,01/2000
 "New Hogan Lake",205906,317000,65,02/2000
 "New Hogan Lake",198959,317000,62.8,03/2000
@@ -21033,6 +21233,8 @@ Nacimiento,331560,350000,94.7,03/2017
 "New Hogan Lake",173494,317000,54.7,01/2017
 "New Hogan Lake",220437,317000,69.5,02/2017
 "New Hogan Lake",212206,317000,66.9,03/2017
+"New Hogan Lake",246304,317000,77.7,04/2017
+"New Hogan Lake",246562,317000,77.8,05/2017
 "New Melones Reservoir",1926000,2400000,80.3,01/2000
 "New Melones Reservoir",2008000,2400000,83.7,02/2000
 "New Melones Reservoir",2012000,2400000,83.8,03/2000
@@ -21240,6 +21442,8 @@ Nacimiento,331560,350000,94.7,03/2017
 "New Melones Reservoir",1012764,2400000,42.2,01/2017
 "New Melones Reservoir",1577779,2400000,65.7,02/2017
 "New Melones Reservoir",1811888,2400000,75.5,03/2017
+"New Melones Reservoir",2002009,2400000,83.4,04/2017
+"New Melones Reservoir",2079169,2400000,86.6,05/2017
 Nicasio,20166,22400,90,01/2000
 Nicasio,22430,22400,100.1,02/2000
 Nicasio,22430,22400,100.1,03/2000
@@ -21447,6 +21651,8 @@ Nicasio,22430,22400,100.1,12/2016
 Nicasio,22430,22400,100.1,01/2017
 Nicasio,22430,22400,100.1,02/2017
 Nicasio,22430,22400,100.1,03/2017
+Nicasio,22430,22400,100.1,04/2017
+Nicasio,22351,22400,99.8,05/2017
 "Oneill Forebay",49580,56400,87.9,01/2000
 "Oneill Forebay",49847,56400,88.4,02/2000
 "Oneill Forebay",41579,56400,73.7,03/2000
@@ -21654,6 +21860,8 @@ Nicasio,22430,22400,100.1,03/2017
 "Oneill Forebay",40280,56400,71.4,01/2017
 "Oneill Forebay",51126,56400,90.6,02/2017
 "Oneill Forebay",46758,56400,82.9,03/2017
+"Oneill Forebay",50379,56400,89.3,04/2017
+"Oneill Forebay",443348,56400,786.1,05/2017
 "Oroville Dam",2345401,3537600,66.3,01/2000
 "Oroville Dam",2765788,3537600,78.2,02/2000
 "Oroville Dam",2838641,3537600,80.2,03/2000
@@ -21861,6 +22069,8 @@ Nicasio,22430,22400,100.1,03/2017
 "Oroville Dam",2841754,3537600,80.3,01/2017
 "Oroville Dam",2706003,3537600,76.5,02/2017
 "Oroville Dam",2681122,3537600,75.8,03/2017
+"Oroville Dam",2621552,3537600,74.1,04/2017
+"Oroville Dam",2465532,3537600,69.7,05/2017
 Pardee,187610,210000,89.3,01/2000
 Pardee,193380,210000,92.1,02/2000
 Pardee,186620,210000,88.9,03/2000
@@ -22068,6 +22278,8 @@ Pardee,187929,210000,89.5,12/2016
 Pardee,204450,210000,97.4,01/2017
 Pardee,203570,210000,96.9,02/2017
 Pardee,192165,210000,91.5,03/2017
+Pardee,199841,210000,95.2,04/2017
+Pardee,206005,210000,98.1,05/2017
 Perris,119968,131500,91.2,01/2000
 Perris,120215,131500,91.4,02/2000
 Perris,118535,131500,90.1,03/2000
@@ -22275,6 +22487,8 @@ Perris,49467,131500,37.6,12/2016
 Perris,49828,131500,37.9,01/2017
 Perris,58054,131500,44.1,02/2017
 Perris,58475,131500,44.5,03/2017
+Perris,57953,131500,44.1,04/2017
+Perris,59660,131500,45.4,05/2017
 "Pine Flat Dam",434709,1000000,43.5,01/2000
 "Pine Flat Dam",540165,1000000,54,02/2000
 "Pine Flat Dam",644764,1000000,64.5,03/2000
@@ -22482,6 +22696,8 @@ Perris,58475,131500,44.5,03/2017
 "Pine Flat Dam",618104,1000000,61.8,01/2017
 "Pine Flat Dam",776012,1000000,77.6,02/2017
 "Pine Flat Dam",585267,1000000,58.5,03/2017
+"Pine Flat Dam",504494,1000000,50.4,04/2017
+"Pine Flat Dam",757053,1000000,75.7,05/2017
 "Prosser Creek Reservoir",9730,28800,33.8,01/2000
 "Prosser Creek Reservoir",9850,28800,34.2,02/2000
 "Prosser Creek Reservoir",9800,28800,34,03/2000
@@ -22689,6 +22905,8 @@ Perris,58475,131500,44.5,03/2017
 "Prosser Creek Reservoir",9424,28800,32.7,01/2017
 "Prosser Creek Reservoir",8330,28800,28.9,02/2017
 "Prosser Creek Reservoir",9059,28800,31.5,03/2017
+"Prosser Creek Reservoir",7670,28800,26.6,04/2017
+"Prosser Creek Reservoir",10541,28800,36.6,05/2017
 Pyramid,165650,180000,92,01/2000
 Pyramid,168883,180000,93.8,02/2000
 Pyramid,164523,180000,91.4,03/2000
@@ -22896,6 +23114,8 @@ Pyramid,164649,180000,91.5,12/2016
 Pyramid,165320,180000,91.8,01/2017
 Pyramid,165092,180000,91.7,02/2017
 Pyramid,166426,180000,92.5,03/2017
+Pyramid,165587,180000,92,04/2017
+Pyramid,165701,180000,92.1,05/2017
 "Railroad Canyon",8616,11600,74.3,01/2000
 "Railroad Canyon",10669,11600,92,02/2000
 "Railroad Canyon",11396,11600,98.2,03/2000
@@ -23101,6 +23321,8 @@ Pyramid,166426,180000,92.5,03/2017
 "Railroad Canyon",11846,11600,102.1,01/2017
 "Railroad Canyon",11836,11600,102,02/2017
 "Railroad Canyon",11464,11600,98.8,03/2017
+"Railroad Canyon",11016,11600,95,04/2017
+"Railroad Canyon",10297,11600,88.8,05/2017
 "Redinger Lake",23460,35000,67,01/2000
 "Redinger Lake",25073,35000,71.6,02/2000
 "Redinger Lake",22918,35000,65.5,03/2000
@@ -23308,6 +23530,8 @@ Pyramid,166426,180000,92.5,03/2017
 "Redinger Lake",19373,35000,55.4,01/2017
 "Redinger Lake",20622,35000,58.9,02/2017
 "Redinger Lake",21899,35000,62.6,03/2017
+"Redinger Lake",23167,35000,66.2,04/2017
+"Redinger Lake",22880,35000,65.4,05/2017
 Relief,1633,15100,10.8,01/2000
 Relief,2067,15100,13.7,02/2000
 Relief,2849,15100,18.9,03/2000
@@ -23510,6 +23734,8 @@ Relief,9778,15100,64.8,09/2016
 Relief,12828,15100,85,10/2016
 Relief,11286,15100,74.7,01/2017
 Relief,9396,15100,62.2,03/2017
+Relief,8298,15100,55,04/2017
+Relief,14671,15100,97.2,05/2017
 Rollins,65300,66000,98.9,01/2000
 Rollins,67100,66000,101.7,02/2000
 Rollins,66600,66000,100.9,03/2000
@@ -23717,6 +23943,8 @@ Rollins,66400,66000,100.6,12/2016
 Rollins,66625,66000,100.9,01/2017
 Rollins,66680,66000,101,02/2017
 Rollins,66595,66000,100.9,03/2017
+Rollins,66550,66000,100.8,04/2017
+Rollins,65970,66000,100,05/2017
 "Saddlebag Lake Reservoir",3749,9800,38.3,01/2000
 "Saddlebag Lake Reservoir",3234,9800,33,02/2000
 "Saddlebag Lake Reservoir",2450,9800,25,03/2000
@@ -23923,6 +24151,8 @@ Rollins,66595,66000,100.9,03/2017
 "Saddlebag Lake Reservoir",2790,9800,28.5,01/2017
 "Saddlebag Lake Reservoir",2700,9800,27.6,02/2017
 "Saddlebag Lake Reservoir",1870,9800,19.1,03/2017
+"Saddlebag Lake Reservoir",1230,9800,12.6,04/2017
+"Saddlebag Lake Reservoir",2280,9800,23.3,05/2017
 "Salt Springs",19708,141900,13.9,01/2000
 "Salt Springs",33691,141900,23.7,02/2000
 "Salt Springs",38616,141900,27.2,03/2000
@@ -24307,6 +24537,8 @@ Rollins,66595,66000,100.9,03/2017
 "San Andreas",18929,19000,99.6,01/2017
 "San Andreas",18541,19000,97.6,02/2017
 "San Andreas",19174,19000,100.9,03/2017
+"San Andreas",18449,19000,97.1,04/2017
+"San Andreas",17919,19000,94.3,05/2017
 "San Antonio Reservoir",42498,50500,84.2,01/2000
 "San Antonio Reservoir",45235,50500,89.6,02/2000
 "San Antonio Reservoir",47514,50500,94.1,03/2000
@@ -24514,6 +24746,8 @@ Rollins,66595,66000,100.9,03/2017
 "San Antonio Reservoir",48572,50500,96.2,01/2017
 "San Antonio Reservoir",50517,50500,100,02/2017
 "San Antonio Reservoir",47922,50500,94.9,03/2017
+"San Antonio Reservoir",46048,50500,91.2,04/2017
+"San Antonio Reservoir",41777,50500,82.7,05/2017
 "San Gabriel",3343,44200,7.6,01/2000
 "San Gabriel",10891,44200,24.6,02/2000
 "San Gabriel",19943,44200,45.1,03/2000
@@ -24719,6 +24953,8 @@ Rollins,66595,66000,100.9,03/2017
 "San Gabriel",3941,44200,8.9,11/2016
 "San Gabriel",17383,44200,39.3,01/2017
 "San Gabriel",36570,44200,82.7,03/2017
+"San Gabriel",38067,44200,86.1,04/2017
+"San Gabriel",35255,44200,79.8,05/2017
 "San Luis Reservoir",1505272,2041000,73.8,01/2000
 "San Luis Reservoir",1825778,2041000,89.5,02/2000
 "San Luis Reservoir",2026438,2041000,99.3,03/2000
@@ -24926,6 +25162,8 @@ Rollins,66595,66000,100.9,03/2017
 "San Luis Reservoir",1699786,2041000,83.3,01/2017
 "San Luis Reservoir",1991481,2041000,97.6,02/2017
 "San Luis Reservoir",2014762,2041000,98.7,03/2017
+"San Luis Reservoir",1998304,2041000,97.9,04/2017
+"San Luis Reservoir",1909871,2041000,93.6,05/2017
 "San Pablo",25010,43200,57.9,01/2000
 "San Pablo",33390,43200,77.3,02/2000
 "San Pablo",35250,43200,81.6,03/2000
@@ -25133,6 +25371,8 @@ Rollins,66595,66000,100.9,03/2017
 "San Pablo",37740,43200,87.4,01/2017
 "San Pablo",38290,43200,88.6,02/2017
 "San Pablo",35140,43200,81.3,03/2017
+"San Pablo",36010,43200,83.4,04/2017
+"San Pablo",35410,43200,82,05/2017
 "San Vicente",71458,242000,29.5,01/2000
 "San Vicente",75842,242000,31.3,02/2000
 "San Vicente",76350,242000,31.5,03/2000
@@ -25339,6 +25579,8 @@ Rollins,66595,66000,100.9,03/2017
 "San Vicente",185961,242000,76.8,01/2017
 "San Vicente",188289,242000,77.8,02/2017
 "San Vicente",200705,242000,82.9,03/2017
+"San Vicente",194309,242000,80.3,04/2017
+"San Vicente",193105,242000,79.8,05/2017
 "Santa Margarita Lake",13687,23843,57.4,01/2000
 "Santa Margarita Lake",21933,23843,92,02/2000
 "Santa Margarita Lake",23842,23843,100,03/2000
@@ -25546,6 +25788,8 @@ Rollins,66595,66000,100.9,03/2017
 "Santa Margarita Lake",17573,23843,73.7,01/2017
 "Santa Margarita Lake",24100,23843,101.1,02/2017
 "Santa Margarita Lake",23945,23843,100.4,03/2017
+"Santa Margarita Lake",23895,23843,100.2,04/2017
+"Santa Margarita Lake",23895,23843,100.2,05/2017
 "Santiago Creek Res",4810,25000,19.2,01/2000
 "Santiago Creek Res",4960,25000,19.8,02/2000
 "Santiago Creek Res",6000,25000,24,03/2000
@@ -25752,6 +25996,8 @@ Rollins,66595,66000,100.9,03/2017
 "Santiago Creek Res",13949,25000,55.8,01/2017
 "Santiago Creek Res",15208,25000,60.8,02/2017
 "Santiago Creek Res",13551,25000,54.2,03/2017
+"Santiago Creek Res",13245,25000,53,04/2017
+"Santiago Creek Res",12383,25000,49.5,05/2017
 "Scotts Flat",38655,49000,78.9,01/2000
 "Scotts Flat",48547,49000,99.1,02/2000
 "Scotts Flat",48547,49000,99.1,03/2000
@@ -25959,213 +26205,8 @@ Rollins,66595,66000,100.9,03/2017
 "Scotts Flat",48547,49000,99.1,01/2017
 "Scotts Flat",48550,49000,99.1,02/2017
 "Scotts Flat",48040,49000,98,03/2017
-"Shasta Dam",3697073,4552000,81.2,01/2000
-"Shasta Dam",3857423,4552000,84.7,02/2000
-"Shasta Dam",3751868,4552000,82.4,03/2000
-"Shasta Dam",4153279,4552000,91.2,04/2000
-"Shasta Dam",4111519,4552000,90.3,05/2000
-"Shasta Dam",3825179,4552000,84,06/2000
-"Shasta Dam",3321200,4552000,73,07/2000
-"Shasta Dam",3043522,4552000,66.9,08/2000
-"Shasta Dam",2985131,4552000,65.6,09/2000
-"Shasta Dam",2941357,4552000,64.6,10/2000
-"Shasta Dam",2885680,4552000,63.4,11/2000
-"Shasta Dam",2910875,4552000,63.9,12/2000
-"Shasta Dam",3035294,4552000,66.7,01/2001
-"Shasta Dam",3495969,4552000,76.8,02/2001
-"Shasta Dam",3955799,4552000,86.9,03/2001
-"Shasta Dam",4020071,4552000,88.3,04/2001
-"Shasta Dam",3782524,4552000,83.1,05/2001
-"Shasta Dam",3283078,4552000,72.1,06/2001
-"Shasta Dam",2716074,4552000,59.7,07/2001
-"Shasta Dam",2389562,4552000,52.5,08/2001
-"Shasta Dam",2199643,4552000,48.3,09/2001
-"Shasta Dam",2167051,4552000,47.6,10/2001
-"Shasta Dam",2284384,4552000,50.2,11/2001
-"Shasta Dam",2986262,4552000,65.6,12/2001
-"Shasta Dam",3516585,4552000,77.3,01/2002
-"Shasta Dam",3839544,4552000,84.3,02/2002
-"Shasta Dam",4136151,4552000,90.9,03/2002
-"Shasta Dam",4296717,4552000,94.4,04/2002
-"Shasta Dam",4121856,4552000,90.6,05/2002
-"Shasta Dam",3678844,4552000,80.8,06/2002
-"Shasta Dam",3102924,4552000,68.2,07/2002
-"Shasta Dam",2758417,4552000,60.6,08/2002
-"Shasta Dam",2558201,4552000,56.2,09/2002
-"Shasta Dam",2414071,4552000,53,10/2002
-"Shasta Dam",2334938,4552000,51.3,11/2002
-"Shasta Dam",3223197,4552000,70.8,12/2002
-"Shasta Dam",3536772,4552000,77.7,01/2003
-"Shasta Dam",3584283,4552000,78.7,02/2003
-"Shasta Dam",4103708,4552000,90.2,03/2003
-"Shasta Dam",4536624,4552000,99.7,04/2003
-"Shasta Dam",4435987,4552000,97.5,05/2003
-"Shasta Dam",4088097,4552000,89.8,06/2003
-"Shasta Dam",3547162,4552000,77.9,07/2003
-"Shasta Dam",3258552,4552000,71.6,08/2003
-"Shasta Dam",3159376,4552000,69.4,09/2003
-"Shasta Dam",3090889,4552000,67.9,10/2003
-"Shasta Dam",3090196,4552000,67.9,11/2003
-"Shasta Dam",3345962,4552000,73.5,12/2003
-"Shasta Dam",3606500,4552000,79.2,01/2004
-"Shasta Dam",3868600,4552000,85,02/2004
-"Shasta Dam",3905184,4552000,85.8,03/2004
-"Shasta Dam",4059792,4552000,89.2,04/2004
-"Shasta Dam",3863800,4552000,84.9,05/2004
-"Shasta Dam",3360818,4552000,73.8,06/2004
-"Shasta Dam",2802297,4552000,61.6,07/2004
-"Shasta Dam",2410369,4552000,53,08/2004
-"Shasta Dam",2182851,4552000,48,09/2004
-"Shasta Dam",2158914,4552000,47.4,10/2004
-"Shasta Dam",2124248,4552000,46.7,11/2004
-"Shasta Dam",2417193,4552000,53.1,12/2004
-"Shasta Dam",2832031,4552000,62.2,01/2005
-"Shasta Dam",3168056,4552000,69.6,02/2005
-"Shasta Dam",3827041,4552000,84.1,03/2005
-"Shasta Dam",4207234,4552000,92.4,04/2005
-"Shasta Dam",4467986,4552000,98.2,05/2005
-"Shasta Dam",4217184,4552000,92.6,06/2005
-"Shasta Dam",3639214,4552000,79.9,07/2005
-"Shasta Dam",3271767,4552000,71.9,08/2005
-"Shasta Dam",3034837,4552000,66.7,09/2005
-"Shasta Dam",2855374,4552000,62.7,10/2005
-"Shasta Dam",2896041,4552000,63.6,11/2005
-"Shasta Dam",3754767,4552000,82.5,12/2005
-"Shasta Dam",3586074,4552000,78.8,01/2006
-"Shasta Dam",3834224,4552000,84.2,02/2006
-"Shasta Dam",3853900,4552000,84.7,03/2006
-"Shasta Dam",4057305,4552000,89.1,04/2006
-"Shasta Dam",4467101,4552000,98.1,05/2006
-"Shasta Dam",4249102,4552000,93.3,06/2006
-"Shasta Dam",3784113,4552000,83.1,07/2006
-"Shasta Dam",3377701,4552000,74.2,08/2006
-"Shasta Dam",3205145,4552000,70.4,09/2006
-"Shasta Dam",3119405,4552000,68.5,10/2006
-"Shasta Dam",3127097,4552000,68.7,11/2006
-"Shasta Dam",3334767,4552000,73.3,12/2006
-"Shasta Dam",3374275,4552000,74.1,01/2007
-"Shasta Dam",3772193,4552000,82.9,02/2007
-"Shasta Dam",4010994,4552000,88.1,03/2007
-"Shasta Dam",3901137,4552000,85.7,04/2007
-"Shasta Dam",3601174,4552000,79.1,05/2007
-"Shasta Dam",3140631,4552000,69,06/2007
-"Shasta Dam",2559821,4552000,56.2,07/2007
-"Shasta Dam",2133899,4552000,46.9,08/2007
-"Shasta Dam",1879144,4552000,41.3,09/2007
-"Shasta Dam",1800690,4552000,39.6,10/2007
-"Shasta Dam",1729679,4552000,38,11/2007
-"Shasta Dam",1784100,4552000,39.2,12/2007
-"Shasta Dam",2179031,4552000,47.9,01/2008
-"Shasta Dam",2641041,4552000,58,02/2008
-"Shasta Dam",2990558,4552000,65.7,03/2008
-"Shasta Dam",2954112,4552000,64.9,04/2008
-"Shasta Dam",2806832,4552000,61.7,05/2008
-"Shasta Dam",2402186,4552000,52.8,06/2008
-"Shasta Dam",1905819,4552000,41.9,07/2008
-"Shasta Dam",1570784,4552000,34.5,08/2008
-"Shasta Dam",1384481,4552000,30.4,09/2008
-"Shasta Dam",1282770,4552000,28.2,10/2008
-"Shasta Dam",1331169,4552000,29.2,11/2008
-"Shasta Dam",1361975,4552000,29.9,12/2008
-"Shasta Dam",1416145,4552000,31.1,01/2009
-"Shasta Dam",1960458,4552000,43.1,02/2009
-"Shasta Dam",2880614,4552000,63.3,03/2009
-"Shasta Dam",2998247,4552000,65.9,04/2009
-"Shasta Dam",3118941,4552000,68.5,05/2009
-"Shasta Dam",2797114,4552000,61.4,06/2009
-"Shasta Dam",2325795,4552000,51.1,07/2009
-"Shasta Dam",1936123,4552000,42.5,08/2009
-"Shasta Dam",1773947,4552000,39,09/2009
-"Shasta Dam",1707930,4552000,37.5,10/2009
-"Shasta Dam",1673687,4552000,36.8,11/2009
-"Shasta Dam",1777112,4552000,39,12/2009
-"Shasta Dam",2596882,4552000,57,01/2010
-"Shasta Dam",3380147,4552000,74.3,02/2010
-"Shasta Dam",3868648,4552000,85,03/2010
-"Shasta Dam",4390774,4552000,96.5,04/2010
-"Shasta Dam",4464744,4552000,98.1,05/2010
-"Shasta Dam",4279177,4552000,94,06/2010
-"Shasta Dam",3841140,4552000,84.4,07/2010
-"Shasta Dam",3491704,4552000,76.7,08/2010
-"Shasta Dam",3318779,4552000,72.9,09/2010
-"Shasta Dam",3272489,4552000,71.9,10/2010
-"Shasta Dam",3224150,4552000,70.8,11/2010
-"Shasta Dam",3489195,4552000,76.7,12/2010
-"Shasta Dam",3490198,4552000,76.7,01/2011
-"Shasta Dam",3784113,4552000,83.1,02/2011
-"Shasta Dam",4032173,4552000,88.6,03/2011
-"Shasta Dam",4266264,4552000,93.7,04/2011
-"Shasta Dam",4486848,4552000,98.6,05/2011
-"Shasta Dam",4401530,4552000,96.7,06/2011
-"Shasta Dam",4034923,4552000,88.6,07/2011
-"Shasta Dam",3619135,4552000,79.5,08/2011
-"Shasta Dam",3341094,4552000,73.4,09/2011
-"Shasta Dam",3226770,4552000,70.9,10/2011
-"Shasta Dam",3150229,4552000,69.2,11/2011
-"Shasta Dam",3094584,4552000,68,12/2011
-"Shasta Dam",3107334,4552000,68.3,01/2012
-"Shasta Dam",3169235,4552000,69.6,02/2012
-"Shasta Dam",3853414,4552000,84.7,03/2012
-"Shasta Dam",4440094,4552000,97.5,04/2012
-"Shasta Dam",4299311,4552000,94.4,05/2012
-"Shasta Dam",3880716,4552000,85.3,06/2012
-"Shasta Dam",3271045,4552000,71.9,07/2012
-"Shasta Dam",2794523,4552000,61.4,08/2012
-"Shasta Dam",2591560,4552000,56.9,09/2012
-"Shasta Dam",2466130,4552000,54.2,10/2012
-"Shasta Dam",2564273,4552000,56.3,11/2012
-"Shasta Dam",3318052,4552000,72.9,12/2012
-"Shasta Dam",3473687,4552000,76.3,01/2013
-"Shasta Dam",3610647,4552000,79.3,02/2013
-"Shasta Dam",3771133,4552000,82.8,03/2013
-"Shasta Dam",3788352,4552000,83.2,04/2013
-"Shasta Dam",3362531,4552000,73.9,05/2013
-"Shasta Dam",2938227,4552000,64.5,06/2013
-"Shasta Dam",2433819,4552000,53.5,07/2013
-"Shasta Dam",2101287,4552000,46.2,08/2013
-"Shasta Dam",1905985,4552000,41.9,09/2013
-"Shasta Dam",1744200,4552000,38.3,10/2013
-"Shasta Dam",1695999,4552000,37.3,11/2013
-"Shasta Dam",1673380,4552000,36.8,12/2013
-"Shasta Dam",1655800,4552000,36.4,01/2014
-"Shasta Dam",1773314,4552000,39,02/2014
-"Shasta Dam",2198728,4552000,48.3,03/2014
-"Shasta Dam",2408810,4552000,52.9,04/2014
-"Shasta Dam",2177212,4552000,47.8,05/2014
-"Shasta Dam",1851266,4552000,40.7,06/2014
-"Shasta Dam",1575037,4552000,34.6,07/2014
-"Shasta Dam",1342087,4552000,29.5,08/2014
-"Shasta Dam",1157084,4552000,25.4,09/2014
-"Shasta Dam",1108846,4552000,24.4,10/2014
-"Shasta Dam",1047922,4552000,23,11/2014
-"Shasta Dam",1867305,4552000,41,12/2014
-"Shasta Dam",2000830,4552000,44,01/2015
-"Shasta Dam",2612715,4552000,57.4,02/2015
-"Shasta Dam",2689083,4552000,59.1,03/2015
-"Shasta Dam",2662479,4552000,58.5,04/2015
-"Shasta Dam",2404134,4552000,52.8,05/2015
-"Shasta Dam",2198180,4552000,48.3,06/2015
-"Shasta Dam",1990340,4552000,43.7,07/2015
-"Shasta Dam",1788558,4552000,39.3,08/2015
-"Shasta Dam",1602500,4552000,35.2,09/2015
-"Shasta Dam",1416282,4552000,31.1,10/2015
-"Shasta Dam",1328945,4552000,29.2,11/2015
-"Shasta Dam",1427251,4552000,31.4,12/2015
-"Shasta Dam",2346025,4552000,51.5,01/2016
-"Shasta Dam",2766120,4552000,60.8,02/2016
-"Shasta Dam",4026672,4552000,88.5,03/2016
-"Shasta Dam",4233111,4552000,93,04/2016
-"Shasta Dam",4167076,4552000,91.5,05/2016
-"Shasta Dam",3920296,4552000,86.1,06/2016
-"Shasta Dam",3544374,4552000,77.9,07/2016
-"Shasta Dam",3132231,4552000,68.8,08/2016
-"Shasta Dam",2811392,4552000,61.8,09/2016
-"Shasta Dam",2765261,4552000,60.7,10/2016
-"Shasta Dam",2910211,4552000,63.9,11/2016
-"Shasta Dam",3341580,4552000,73.4,12/2016
-"Shasta Dam",3546148,4552000,77.9,01/2017
-"Shasta Dam",3779345,4552000,83,02/2017
-"Shasta Dam",4031347,4552000,88.6,03/2017
+"Scotts Flat",47940,49000,97.8,04/2017
+"Scotts Flat",46840,49000,95.6,05/2017
 "Shaver Lake",92196,135300,68.1,01/2000
 "Shaver Lake",95814,135300,70.8,02/2000
 "Shaver Lake",86840,135300,64.2,03/2000
@@ -26373,6 +26414,8 @@ Rollins,66595,66000,100.9,03/2017
 "Shaver Lake",90875,135300,67.2,01/2017
 "Shaver Lake",77263,135300,57.1,02/2017
 "Shaver Lake",64472,135300,47.7,03/2017
+"Shaver Lake",61217,135300,45.2,04/2017
+"Shaver Lake",101882,135300,75.3,05/2017
 Skinner,38347,43800,87.6,01/2000
 Skinner,39313,43800,89.8,02/2000
 Skinner,34201,43800,78.1,03/2000
@@ -26580,6 +26623,8 @@ Skinner,36492,43800,83.3,12/2016
 Skinner,37290,43800,85.1,01/2017
 Skinner,38096,43800,87,02/2017
 Skinner,36667,43800,83.7,03/2017
+Skinner,39506,43800,90.2,04/2017
+Skinner,40368,43800,92.2,05/2017
 "Slab Creek",12259,16600,73.8,01/2000
 "Slab Creek",13876,16600,83.6,02/2000
 "Slab Creek",14808,16600,89.2,03/2000
@@ -26787,6 +26832,8 @@ Skinner,36667,43800,83.7,03/2017
 "Slab Creek",12542,16600,75.6,01/2017
 "Slab Creek",13240,16600,79.8,02/2017
 "Slab Creek",13404,16600,80.7,03/2017
+"Slab Creek",13761,16600,82.9,04/2017
+"Slab Creek",13635,16600,82.1,05/2017
 "Sly Creek",38002,65000,58.5,01/2000
 "Sly Creek",54700,65000,84.2,02/2000
 "Sly Creek",58500,65000,90,03/2000
@@ -26989,6 +27036,8 @@ Skinner,36667,43800,83.7,03/2017
 "Sly Creek",46277,65000,71.2,10/2016
 "Sly Creek",51530,65000,79.3,01/2017
 "Sly Creek",46868,65000,72.1,03/2017
+"Sly Creek",56026,65000,86.2,04/2017
+"Sly Creek",57508,65000,88.5,05/2017
 "Soulajule Dam",8487,10700,79.3,01/2000
 "Soulajule Dam",10572,10700,98.8,02/2000
 "Soulajule Dam",10363,10700,96.9,03/2000
@@ -27196,6 +27245,8 @@ Skinner,36667,43800,83.7,03/2017
 "Soulajule Dam",10572,10700,98.8,01/2017
 "Soulajule Dam",10572,10700,98.8,02/2017
 "Soulajule Dam",10572,10700,98.8,03/2017
+"Soulajule Dam",10572,10700,98.8,04/2017
+"Soulajule Dam",10345,10700,96.7,05/2017
 "South Lake",5790,12900,44.9,01/2000
 "South Lake",5341,12900,41.4,02/2000
 "South Lake",4038,12900,31.3,03/2000
@@ -27402,6 +27453,8 @@ Skinner,36667,43800,83.7,03/2017
 "South Lake",6540,12900,50.7,01/2017
 "South Lake",6170,12900,47.8,02/2017
 "South Lake",2920,12900,22.6,03/2017
+"South Lake",1440,12900,11.2,04/2017
+"South Lake",2600,12900,20.2,05/2017
 "Spicer Meadows",72552,190000,38.2,01/2000
 "Spicer Meadows",76878,190000,40.5,02/2000
 "Spicer Meadows",84554,190000,44.5,03/2000
@@ -27609,6 +27662,8 @@ Skinner,36667,43800,83.7,03/2017
 "Spicer Meadows",122794,190000,64.6,01/2017
 "Spicer Meadows",133707,190000,70.4,02/2017
 "Spicer Meadows",116048,190000,61.1,03/2017
+"Spicer Meadows",130582,190000,68.7,04/2017
+"Spicer Meadows",189362,190000,99.7,05/2017
 Stampede,203158,226500,89.7,01/2000
 Stampede,202461,226500,89.4,02/2000
 Stampede,204061,226500,90.1,03/2000
@@ -27816,6 +27871,8 @@ Stampede,113353,226500,50,12/2016
 Stampede,144603,226500,63.8,01/2017
 Stampede,174400,226500,77,02/2017
 Stampede,180296,226500,79.6,03/2017
+Stampede,182743,226500,80.7,04/2017
+Stampede,206031,226500,91,05/2017
 "Stony Gorge Reservoir",39300,50400,78,01/2000
 "Stony Gorge Reservoir",39440,50400,78.3,02/2000
 "Stony Gorge Reservoir",49640,50400,98.5,03/2000
@@ -28023,6 +28080,8 @@ Stampede,180296,226500,79.6,03/2017
 "Stony Gorge Reservoir",35470,50400,70.4,01/2017
 "Stony Gorge Reservoir",38984,50400,77.3,02/2017
 "Stony Gorge Reservoir",48711,50400,96.6,03/2017
+"Stony Gorge Reservoir",47190,50400,93.6,04/2017
+"Stony Gorge Reservoir",49163,50400,97.5,05/2017
 Strawberry,6089,18300,33.3,01/2000
 Strawberry,6295,18300,34.4,02/2000
 Strawberry,8257,18300,45.1,03/2000
@@ -28224,6 +28283,8 @@ Strawberry,16724,18300,91.4,10/2016
 Strawberry,13096,18300,71.6,11/2016
 Strawberry,9691,18300,53,01/2017
 Strawberry,3471,18300,19,03/2017
+Strawberry,11908,18300,65.1,04/2017
+Strawberry,17789,18300,97.2,05/2017
 "Success Dam",13465,82300,16.4,01/2000
 "Success Dam",30557,82300,37.1,02/2000
 "Success Dam",48283,82300,58.7,03/2000
@@ -28431,6 +28492,8 @@ Strawberry,3471,18300,19,03/2017
 "Success Dam",38953,82300,47.3,01/2017
 "Success Dam",49672,82300,60.4,02/2017
 "Success Dam",43492,82300,52.8,03/2017
+"Success Dam",66405,82300,80.7,04/2017
+"Success Dam",77887,82300,94.6,05/2017
 "Sutherland Reservoir",6831,29700,23,01/2000
 "Sutherland Reservoir",6982,29700,23.5,02/2000
 "Sutherland Reservoir",7082,29700,23.8,03/2000
@@ -28637,6 +28700,8 @@ Strawberry,3471,18300,19,03/2017
 "Sutherland Reservoir",5060,29700,17,01/2017
 "Sutherland Reservoir",9381,29700,31.6,02/2017
 "Sutherland Reservoir",12965,29700,43.7,03/2017
+"Sutherland Reservoir",13671,29700,46,04/2017
+"Sutherland Reservoir",14068,29700,47.4,05/2017
 "Sweetwater Reservoir",9572,27700,34.6,01/2000
 "Sweetwater Reservoir",17126,27700,61.8,02/2000
 "Sweetwater Reservoir",16488,27700,59.5,03/2000
@@ -28843,6 +28908,8 @@ Strawberry,3471,18300,19,03/2017
 "Sweetwater Reservoir",5108,27700,18.4,01/2017
 "Sweetwater Reservoir",8573,27700,30.9,02/2017
 "Sweetwater Reservoir",16105,27700,58.1,03/2017
+"Sweetwater Reservoir",15357,27700,55.4,04/2017
+"Sweetwater Reservoir",14712,27700,53.1,05/2017
 "Terminus Dam",22319,185600,12,01/2000
 "Terminus Dam",36443,185600,19.6,02/2000
 "Terminus Dam",42909,185600,23.1,03/2000
@@ -29050,6 +29117,8 @@ Strawberry,3471,18300,19,03/2017
 "Terminus Dam",46596,185600,25.1,01/2017
 "Terminus Dam",98981,185600,53.3,02/2017
 "Terminus Dam",51640,185600,27.8,03/2017
+"Terminus Dam",83098,185600,44.8,04/2017
+"Terminus Dam",133222,185600,71.8,05/2017
 "Thermalito  Total",53557,81300,65.9,01/2000
 "Thermalito  Total",61889,81300,76.1,02/2000
 "Thermalito  Total",69779,81300,85.8,03/2000
@@ -29257,6 +29326,8 @@ Strawberry,3471,18300,19,03/2017
 "Thermalito  Total",63528,81300,78.1,01/2017
 "Thermalito  Total",67280,81300,82.8,02/2017
 "Thermalito  Total",57224,81300,70.4,03/2017
+"Thermalito  Total",73949,81300,91,04/2017
+"Thermalito  Total",65358,81300,80.4,05/2017
 "Thomas A Edison",49754,125000,39.8,01/2000
 "Thomas A Edison",51712,125000,41.4,02/2000
 "Thomas A Edison",43387,125000,34.7,03/2000
@@ -29464,6 +29535,8 @@ Strawberry,3471,18300,19,03/2017
 "Thomas A Edison",42343,125000,33.9,01/2017
 "Thomas A Edison",32677,125000,26.1,02/2017
 "Thomas A Edison",23447,125000,18.8,03/2017
+"Thomas A Edison",21153,125000,16.9,04/2017
+"Thomas A Edison",72349,125000,57.9,05/2017
 "Tinemaha Reservoir",2260,16499,13.7,01/2000
 "Tinemaha Reservoir",2720,16499,16.5,02/2000
 "Tinemaha Reservoir",2330,16499,14.1,03/2000
@@ -29671,6 +29744,8 @@ Strawberry,3471,18300,19,03/2017
 "Tinemaha Reservoir",4376,16499,26.5,01/2017
 "Tinemaha Reservoir",4385,16499,26.6,02/2017
 "Tinemaha Reservoir",2768,16499,16.8,03/2017
+"Tinemaha Reservoir",3556,16499,21.6,04/2017
+"Tinemaha Reservoir",3320,16499,20.1,05/2017
 "Trinity Lake",1975728,2447700,80.7,01/2000
 "Trinity Lake",2148973,2447700,87.8,02/2000
 "Trinity Lake",2093195,2447700,85.5,03/2000
@@ -29878,6 +29953,8 @@ Strawberry,3471,18300,19,03/2017
 "Trinity Lake",1460766,2447700,59.7,01/2017
 "Trinity Lake",1921976,2447700,78.5,02/2017
 "Trinity Lake",2176855,2447700,88.9,03/2017
+"Trinity Lake",2301922,2447700,94,04/2017
+"Trinity Lake",2286603,2447700,93.4,05/2017
 Tulloch,56900,68400,83.2,01/2000
 Tulloch,55900,68400,81.7,02/2000
 Tulloch,56400,68400,82.5,03/2000
@@ -30085,6 +30162,8 @@ Tulloch,56994,68400,83.3,12/2016
 Tulloch,57557,68400,84.1,01/2017
 Tulloch,56961,68400,83.3,02/2017
 Tulloch,54535,68400,79.7,03/2017
+Tulloch,59831,68400,87.5,04/2017
+Tulloch,64186,68400,93.8,05/2017
 "Turlock Lake",22582,45600,49.5,01/2000
 "Turlock Lake",14580,45600,32,02/2000
 "Turlock Lake",26932,45600,59.1,03/2000
@@ -30292,6 +30371,8 @@ Tulloch,54535,68400,79.7,03/2017
 "Turlock Lake",17621,45600,38.6,01/2017
 "Turlock Lake",23400,45600,51.3,02/2017
 "Turlock Lake",21051,45600,46.2,03/2017
+"Turlock Lake",21365,45600,46.9,04/2017
+"Turlock Lake",29804,45600,65.4,05/2017
 Twitchell,0,225000,0,01/2000
 Twitchell,7900,225000,3.5,02/2000
 Twitchell,9558,225000,4.2,03/2000
@@ -30512,6 +30593,8 @@ Twitchell,0,225000,0,01/2001
 "U San Leandro",39000,38000,102.6,01/2017
 "U San Leandro",39300,38000,103.4,02/2017
 "U San Leandro",35510,38000,93.4,03/2017
+"U San Leandro",33070,38000,87,04/2017
+"U San Leandro",28660,38000,75.4,05/2017
 "Union Valley",131668,23000,572.5,01/2000
 "Union Valley",168463,23000,732.4,02/2000
 "Union Valley",187809,23000,816.6,03/2000
@@ -30719,6 +30802,8 @@ Twitchell,0,225000,0,01/2001
 "Union Valley",227968,23000,991.2,01/2017
 "Union Valley",232187,23000,1009.5,02/2017
 "Union Valley",229438,23000,997.6,03/2017
+"Union Valley",247598,23000,1076.5,04/2017
+"Union Valley",248875,23000,1082.1,05/2017
 "Upper Klamath",390047,486800,80.1,01/2000
 "Upper Klamath",406780,486800,83.6,02/2000
 "Upper Klamath",420978,486800,86.5,03/2000
@@ -30926,6 +31011,8 @@ Twitchell,0,225000,0,01/2001
 "Upper Klamath",320376,486800,65.8,01/2017
 "Upper Klamath",437351,486800,89.8,02/2017
 "Upper Klamath",464558,486800,95.4,03/2017
+"Upper Klamath",478915,486800,98.4,04/2017
+"Upper Klamath",435060,486800,89.4,05/2017
 "Vail Lake",21960,51000,43.1,01/2000
 "Vail Lake",22630,51000,44.4,02/2000
 "Vail Lake",23171,51000,45.4,03/2000
@@ -31133,6 +31220,8 @@ Twitchell,0,225000,0,01/2001
 "Vail Lake",10160,51000,19.9,01/2017
 "Vail Lake",12000,51000,23.5,02/2017
 "Vail Lake",13200,51000,25.9,03/2017
+"Vail Lake",13100,51000,25.7,04/2017
+"Vail Lake",12820,51000,25.1,05/2017
 "Warm Springs",226586,381000,59.5,01/2000
 "Warm Springs",262269,381000,68.8,02/2000
 "Warm Springs",244567,381000,64.2,03/2000
@@ -31340,6 +31429,8 @@ Twitchell,0,225000,0,01/2001
 "Warm Springs",269153,381000,70.6,01/2017
 "Warm Springs",286266,381000,75.1,02/2017
 "Warm Springs",251859,381000,66.1,03/2017
+"Warm Springs",252424,381000,66.3,04/2017
+"Warm Springs",245622,381000,64.5,05/2017
 "Whale Rock",37924,39000,97.2,01/2000
 "Whale Rock",41258,39000,105.8,02/2000
 "Whale Rock",40781,39000,104.6,03/2000
@@ -31547,6 +31638,8 @@ Twitchell,0,225000,0,01/2001
 "Whale Rock",21530,39000,55.2,01/2017
 "Whale Rock",28822,39000,73.9,02/2017
 "Whale Rock",30300,39000,77.7,03/2017
+"Whale Rock",30753,39000,78.9,04/2017
+"Whale Rock",30753,39000,78.9,05/2017
 "Whiskeytown Dam",206654,241100,85.7,01/2000
 "Whiskeytown Dam",207868,241100,86.2,02/2000
 "Whiskeytown Dam",213572,241100,88.6,03/2000
@@ -31754,6 +31847,8 @@ Twitchell,0,225000,0,01/2001
 "Whiskeytown Dam",214748,241100,89.1,01/2017
 "Whiskeytown Dam",223503,241100,92.7,02/2017
 "Whiskeytown Dam",220982,241100,91.7,03/2017
+"Whiskeytown Dam",232351,241100,96.4,04/2017
+"Whiskeytown Dam",237991,241100,98.7,05/2017
 Wishon,60791,118000,51.5,01/2000
 Wishon,43915,118000,37.2,02/2000
 Wishon,49519,118000,42,03/2000
