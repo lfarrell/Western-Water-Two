@@ -130,7 +130,7 @@
             maps.exit().remove();
 
             let center_vals = data.filter(function(d) {
-              return d.year == "2014" && d.month == "10";
+              return d.year === '2017' && d.month === '06';
             });
 
             let circles = svg.selectAll('circle')

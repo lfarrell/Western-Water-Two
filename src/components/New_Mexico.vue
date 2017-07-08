@@ -2,9 +2,9 @@
   <div>
     <nm-map
       mapFile="nm.counties.json"
-      dataFile="nm.csv"
+      dataFile="nm_load.csv"
       res="Caballo"
-      resFile="nm_all.csv"
+      resFile="nm.json"
       whichState="NM"></nm-map>
     <snow-chart whichState="NM"></snow-chart>
     <strip-chart stateFile="NM_drought_all.csv"></strip-chart>

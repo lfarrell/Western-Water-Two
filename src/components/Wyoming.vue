@@ -2,9 +2,9 @@
   <div>
     <wyoming-map
       mapFile="wy.counties.json"
-      dataFile="wy.csv"
+      dataFile="wy_load.csv"
       res="Fontenelle"
-      resFile="wy_all.csv"
+      resFile="wy.json"
       whichState="WY"></wyoming-map>
     <snow-chart whichState="WY"></snow-chart>
     <strip-chart stateFile="WY_drought_all.csv"></strip-chart>

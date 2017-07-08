@@ -2,9 +2,9 @@
   <div>
     <texas-map
       mapFile="tx.counties.json"
-      dataFile="texas_resv.csv"
+      dataFile="tx_load.csv"
       res="Meredith"
-      resFile="tx_all.csv"
+      resFile="texas_resv.json"
       whichState="TX"></texas-map>
     <strip-chart stateFile="TX_drought_all.csv"></strip-chart>
     <drought-map mapFile="tx.counties.json"

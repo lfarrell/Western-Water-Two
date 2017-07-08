@@ -125,18 +125,6 @@
         tip.tipHide(tip.tipDiv());
       },
 
-      resColors(d) {
-        if (d >= 75) {
-          return '#1a9641';
-        } else if (d >= 50) {
-          return '#FCE883';
-        } else if (d < 50) {
-          return '#d7191c';
-        } else {
-          return 'lightgray';
-        }
-      },
-
       resName(d) {
           return this.hasKey ? reservoirs.reservoir_names[d.reservoir] : d.reservoir;
       },
@@ -147,48 +135,17 @@
           .range([3, 13]);
       },
 
-      mapPctFull(data, stations, reservoir_names, key_used) {
-        let sorted = d3.nest()
-          .key(function(d) {
-            return (!key_used) ? d.reservoir : reservoir_names[d.reservoir];
-          })
-          .map(data);
-
-        stations.forEach(function(d) {
-          let res_total = _.last(sorted[`$${d.reservoir}`]);
-          d.pct_capacity = (res_total !== undefined) ? res_total.pct_capacity : undefined;
-          d.capacity = (res_total !== undefined) ? res_total.capacity : undefined;
-        });
-
-        stations.sort(function(a,b) {
-          let a_cap = +a.capacity;
-          let b_cap = +b.capacity;
-          if(b_cap < a_cap) {
-            return -1;
-          } else if(b_cap > a_cap) {
-            return 1;
-          } else {
-            return 0;
-          }
-        });
-
-        return stations;
-      },
-
       draw() {
         let vm = this;
 
         let svg = d3.select('#map');
         let width = svg.attr('width');
         let height = svg.attr('height');
-        let reservoir_names = reservoirs.reservoir_names;
-
-       // console.log(dataloader.load(`static/data/states_all/${vm.resFile}`))
 
         d3.queue()
           .defer(d3.json, `static/data/maps/${this.mapFile}`)
-          .defer(d3.csv, `static/data/stations/${this.dataFile}`)
-          .defer(d3.csv, `static/data/states_all/${this.resFile}`)
+          .defer(d3.json, `static/data/stations_enhanced/${this.resFile}`)
+          .defer(d3.csv, `static/data/states_all/${this.dataFile}`)
           .await(function(error, map, stations, data) {
             vm.map = map;
             vm.data = data;
@@ -201,7 +158,7 @@
             let path = map_path.path;
 
             let maps = svg.selectAll('path')
-              .data(map.features).call(zoom);
+              .data(vm.map.features).call(zoom);
 
             maps.enter()
               .append('path')
@@ -212,18 +169,23 @@
             maps.exit().remove();
 
             // Create reservoir circles
-            stations = vm.mapPctFull(data, stations, reservoir_names,vm.hasKey);
-            stations.forEach((d) => {
-                d.color = vm.resColors(d.pct_capacity);
-            });
-
-            vm.scale = vm.mapScale(data);
+            vm.scale = vm.mapScale(stations);
             vm.stations = stations;
             vm.projection = map_path.projection;
 
             function zoomed() {
               svg.attr("transform", d3.event.transform);
             }
+
+            let full_file = vm.dataFile.split('_')[0];
+
+            if(full_file !== 'all') {
+                full_file = `${full_file}_all`;
+            }
+
+            d3.csv(`static/data/states_all/${full_file}.csv`, (d) => {
+               vm.data = d.concat(data);
+            });
 
             vm.loading = false;
             vm.done = true;

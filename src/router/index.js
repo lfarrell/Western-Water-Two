@@ -23,9 +23,9 @@ export default new Router({
       name: 'MainMap',
       path: '/',
       props: {
-        dataFile: 'all_resv.csv',
+        dataFile: 'all_load.csv',
         mapFile: 'western_us.json',
-        resFile: 'all.csv',
+        resFile: 'all_resv.json',
         res: 'Shasta Dam',
         whichState: 'none',
         hasKey: true

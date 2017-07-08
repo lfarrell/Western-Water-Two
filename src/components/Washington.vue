@@ -2,9 +2,9 @@
   <div>
     <washington-map
       mapFile="wa.counties.json"
-      dataFile="wa.csv"
+      dataFile="wa_load.csv"
       res="Grand Coulee/FDR Lake"
-      resFile="wa_all.csv"
+      resFile="wa.json"
       whichState="WA"></washington-map>
     <snow-chart whichState="WA"></snow-chart>
     <strip-chart stateFile="WA_drought_all.csv"></strip-chart>

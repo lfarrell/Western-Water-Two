@@ -2,9 +2,9 @@
   <div>
     <idaho-map
       mapFile="id.counties.json"
-      dataFile="id.csv"
+      dataFile="id_load.csv"
       res="Arrowrock"
-      resFile="id_all.csv"
+      resFile="id.json"
       whichState="ID"></idaho-map>
     <snow-chart whichState="ID"></snow-chart>
     <strip-chart stateFile="ID_drought_all.csv"></strip-chart>

@@ -2,9 +2,9 @@
   <div>
     <arizona-map
       mapFile="az.counties.json"
-      dataFile="az.csv"
+      dataFile="az_load.csv"
       res="Lake Havasu"
-      resFile="az_all.csv"
+      resFile="az.json"
       whichState="AZ"></arizona-map>
     <snow-chart whichState="AZ"></snow-chart>
     <strip-chart stateFile="AZ_drought_all.csv"></strip-chart>

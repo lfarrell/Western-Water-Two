@@ -2,9 +2,9 @@
   <div>
     <colorado-map
       mapFile="co.counties.json"
-      dataFile="co.csv"
+      dataFile="co_load.csv"
       res="Vallecito"
-      resFile="co_all.csv"
+      resFile="co.json"
       whichState="CO"></colorado-map>
     <snow-chart whichState="CO"></snow-chart>
     <strip-chart stateFile="CO_drought_all.csv"></strip-chart>

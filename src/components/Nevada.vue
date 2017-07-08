@@ -2,9 +2,9 @@
   <div>
     <nevada-map
       mapFile="nv.counties.json"
-      dataFile="nv.csv"
+      dataFile="nv_load.csv"
       res="Lake Mead"
-      resFile="nv_all.csv"
+      resFile="nv.json"
       whichState="NV"></nevada-map>
     <snow-chart whichState="NV"></snow-chart>
     <strip-chart stateFile="NV_drought_all.csv"></strip-chart>

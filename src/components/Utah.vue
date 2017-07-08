@@ -2,9 +2,9 @@
   <div>
     <utah-map
       mapFile="ut.counties.json"
-      dataFile="utah.csv"
+      dataFile="utah_load.csv"
       res="Steinaker"
-      resFile="utah_all.csv"
+      resFile="utah.json"
       whichState="UT"></utah-map>
     <snow-chart whichState="UT"></snow-chart>
     <strip-chart stateFile="UT_drought_all.csv"></strip-chart>

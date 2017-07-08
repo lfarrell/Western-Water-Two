@@ -2,9 +2,9 @@
   <div>
     <california-map
       mapFile="ca.counties.json"
-      dataFile="ca.csv"
+      dataFile="ca_load.csv"
       res="Shasta Dam"
-      resFile="ca_all.csv"
+      resFile="ca.json"
       whichState="CA"></california-map>
     <snow-chart whichState="CA"></snow-chart>
     <strip-chart stateFile="CA_drought_all.csv"></strip-chart>
