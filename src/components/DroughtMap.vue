@@ -1,7 +1,19 @@
 <template>
-  <div class="col-sm-12 col-lg-12">
+  <div class="col-sm-12 col-lg-12 offset">
+    <h3 class="text-center" style="margin-bottom: 40px">Drought Levels</h3>
+    <vue-slider ref="slider"
+                @callback="updateSlider"
+                v-bind="slider_data"
+                v-model="slider_data.value"></vue-slider>
     <svg class="is-map" id="drought_map" :height="graph_height" :width="graph_width">
-
+      <template v-for="(d, index) in centers">
+          <circle v-for="j in num_circles"
+                  :id="d.county + index + j"
+                  :cx="projection([d.lon, d.lat])[0]"
+                  :cy="projection([d.lon, d.lat])[1]"
+                  :style="{stroke:colors[j]}"
+                  :r="findValue(d, filtered_data, j)"></circle>
+      </template>
     </svg>
   </div>
 </template>
@@ -9,6 +21,7 @@
 <script>
   import * as d3 from 'd3';
   import * as _ from 'lodash';
+  import vueSlider from 'vue-slider-component';
   import {tip} from './utilities/tip';
   import {formatting} from './utilities/formatting';
 
@@ -20,7 +33,27 @@
         graph_height: 500 - this.margins().top -this. margins().bottom,
         graph_width: window.innerWidth - this.margins().left - this.margins().right,
         graph_translate: `translate(${this.margins().left},${this.margins().top})`,
-        colors: ['#ffffd4','#fed98e','#fe9929','#d95f0e','#993404']
+        colors: ['#ffffd4','#fed98e','#fe9929','#d95f0e','#993404'],
+        num_circles: _.range(0, 5),
+        drought_data: [],
+        filtered_data: [],
+        centers: [],
+        projection: {},
+        none: '',
+        slider_data: {
+          value: '06/2017',
+          width: '80%',
+          reverse: true,
+          formatter: function(value) {
+            let formatting = d3.timeFormat('%b, %Y');
+            let create_date = d3.timeParse("%m/%Y");
+            return formatting(create_date(value));
+          },
+          style: {
+            marginLeft: '10%'
+          },
+          data: []
+        }
       }
     },
 
@@ -30,9 +63,23 @@
       dataFile: String
     },
 
+    components: {
+      vueSlider
+    },
+
     methods: {
       margins() {
         return {top: 25, right: 40, bottom: 0, left: 75};
+      },
+
+      updateSlider(val) {
+        this.filtered_data = this.filteredData(val);
+      },
+
+      filteredData(test_value) {
+        return this.drought_data.filter(function(d) {
+          return d.full_date === test_value;
+        });
       },
 
       whichState(values, d) {
@@ -102,7 +149,7 @@
             .duration(250)
             .style("opacity", 0);
         });
-  },
+      },
 
       draw() {
         let vm = this;
@@ -115,8 +162,20 @@
           .defer(d3.json, `static/data/drought/centers/${this.centersFile}`)
           .defer(d3.csv, `static/data/drought/${this.dataFile}`)
           .await(function(error, map, centers, data) {
+            data.forEach((d) => {
+              d.full_date = `${d.month}/${d.year}`;
+            });
+
+            vm.drought_data = data;
+            vm.slider_data.data = _.pluck(_.uniq(vm.drought_data, 'full_date'), 'full_date').reverse();
+
+            let test_value = _.last(vm.drought_data).full_date;
+            vm.filtered_data = vm.filteredData(test_value);
+            vm.centers = centers;
+
             let map_path = formatting.mapScaling(vm.graph_height, vm.graph_width, map);
-            let projection = map_path.projection;
+            vm.projection = map_path.projection;
+
             let path = map_path.path;
             let maps = svg.selectAll('path')
               .data(map.features);
@@ -129,29 +188,8 @@
 
             maps.exit().remove();
 
-            let center_vals = data.filter(function(d) {
-              return d.year === '2017' && d.month === '06';
-            });
-
-            let circles = svg.selectAll('circle')
-              .data(centers);
-
-            for(let i=0; i<5; i++) {
-              circles.enter().append('circle')
-                .merge(circles)
-                .attr('class', `level_${i}`)
-                .attr('cx', function(d) {
-                  return projection([d.lon, d.lat])[0];
-                }).attr('cy', function(d) {
-                  return projection([d.lon, d.lat])[1];
-                }).attr('r', function(d) {
-                  return vm.findValue(d, center_vals, i);
-                }).style('stroke', vm.colors[i])
-                .style('fill', 'none');
-
             //  let selected = d3.selectAll(`circle.level_${i}`);
             //  note(center_vals, selected);
-            }
           });
       }
     },
