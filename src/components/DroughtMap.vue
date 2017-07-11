@@ -7,12 +7,17 @@
                 v-model="slider_data.value"></vue-slider>
     <svg class="is-map" id="drought_map" :height="graph_height" :width="graph_width">
       <template v-for="(d, index) in centers">
+        <g @mouseover="showItem(d, tipDiv, $event)"
+           @mouseout="hideItem(d, tipDiv, $event)"
+           @touchstart="showItem(d, tipDiv, $event)"
+           @touchend="hideItem(d, tipDiv, $event)">
           <circle v-for="j in num_circles"
                   :id="d.county + index + j"
                   :cx="projection([d.lon, d.lat])[0]"
                   :cy="projection([d.lon, d.lat])[1]"
                   :style="{stroke:colors[j]}"
                   :r="findValue(d, filtered_data, j)"></circle>
+        </g>
       </template>
     </svg>
   </div>
@@ -39,6 +44,7 @@
         filtered_data: [],
         centers: [],
         projection: {},
+        tipDiv: tip,
         none: '',
         slider_data: {
           value: '06/2017',
@@ -82,8 +88,12 @@
         });
       },
 
+      whichType(d) {
+        return (d.county !== undefined) ? 'county' : 'state';
+      },
+
       whichState(values, d) {
-        let field = (d.county !== undefined) ? 'county' : 'state';
+        let field = this.whichType(d);
         return _.find(values, function(e) {
           return d[field] === e[field];
         });
@@ -94,67 +104,49 @@
         return state[`D${iteration}`] * .1;
       },
 
-      note(values, selector) {
-        let vm = this;
-        let state_list = {
-          AZ: 'Arizona',
-          CA: 'California',
-          CO: 'Colorado',
-          ID: 'Idaho',
-          MT: 'Montana',
-          NV: 'Nevada',
-          NM: 'New Mexico',
-          OR: 'Oregon',
-          TX: 'Texas',
-          UT: 'Utah',
-          WA: 'Washington',
-          WY: 'Wyoming'
-        };
+      formatted(value) {
+        return (value === 100.0) ? 100 : value;
+      },
 
-        function formatted(value) {
-          return  (value === 100.0) ? 100 : value;
+      showItem(d, tip, event) {
+        let state = this.whichState(this.filtered_data, d);
+        let header_field = this.whichType(d);
+        let text_formatted;
+
+        if(header_field === 'county') {
+            text_formatted = `${d[header_field]} County`;
+        } else {
+            text_formatted = d[header_field];
         }
 
-        selector.on('mouseover touchstart', function(d) {
-          let state = vm.whichState(values, d);
-
-          div.transition()
-            .duration(100)
-            .style("opacity", .9);
-
-          div.html(
-            `<h4 class="text-center"> ${state_list[state.state]}</h4>
-            <h5  class="text-center">Drought Levels (% of state)</h5>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-unstyled first">
-                  <li>D0: ${formatted(state['D0'])}%</li>
-                  <li>D1: ${formatted(state['D1'])}%</li>
-                  <li>D2: ${formatted(state['D2'])}%</li>
-                </ul>
+        let text = `
+          <h4 class="text-center">${text_formatted}</h4>
+           <h5  class="text-center">Drought Levels (% of ${_.capitalize(header_field)})</h5>
+           <div class="row">
+             <div class="col-md-6">
+               <ul class="list-unstyled first">
+                 <li>D0: ${this.formatted(state['D0'])}%</li>
+                 <li>D1: ${this.formatted(state['D1'])}%</li>
+                 <li>D2: ${this.formatted(state['D2'])}%</li>
+               </ul>
               </div>
               <div class="col-md-6">
                 <ul class="list-unstyled last">
-                  <li>D3: ${formatted(state['D3'])}%</li>
-                  <li>D4: ${formatted(state['D4'])}%</li>
+                  <li>D3: ${this.formatted(state['D3'])}%</li>
+                  <li>D4: ${this.formatted(state['D4'])}%</li>
                 </ul>
               </div>
-            </div>`
-          )
-            .style("top", (d3.event.pageY+18)+"px")
-            .style("left", (d3.event.pageX-15)+"px");
-        })
-        .on('mouseout touchend', function(d) {
-          div.transition()
-            .duration(250)
-            .style("opacity", 0);
-        });
+            </div>`;
+
+        tip.tipShow(tip.tipDiv(), text, event);
+      },
+
+      hideItem(d, tip, event) {
+        tip.tipHide(tip.tipDiv());
       },
 
       draw() {
         let vm = this;
-        let tip_div = tip.tipDiv();
-
         let svg = d3.select('#drought_map');
 
         d3.queue()
@@ -187,9 +179,6 @@
               .attr('d', path);
 
             maps.exit().remove();
-
-            //  let selected = d3.selectAll(`circle.level_${i}`);
-            //  note(center_vals, selected);
           });
       }
     },
