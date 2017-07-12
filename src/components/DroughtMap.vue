@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12 col-lg-12 offset">
+  <div  v-show="done" class="col-sm-12 col-lg-12 offset">
     <h3 class="text-center" style="margin-bottom: 40px">Drought Levels</h3>
     <vue-slider ref="slider"
                 @callback="updateSlider"
@@ -46,6 +46,7 @@
         projection: {},
         tipDiv: tip,
         none: '',
+        done: false,
         slider_data: {
           value: '06/2017',
           width: '80%',
@@ -179,6 +180,7 @@
               .attr('d', path);
 
             maps.exit().remove();
+            vm.done = true;
           });
       }
     },
