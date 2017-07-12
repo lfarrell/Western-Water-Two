@@ -44,11 +44,11 @@
           this.width = 200;
           this.translate = 'translate(0,0)';
         } else {
-          size = 70;
+          size = 80;
           orientation = 'horizontal';
           this.height = 90;
-          this.width = 840;
-          this.translate = `translate(${(screen_width - 870) / 2},20)`;
+          this.width = 900;
+          this.translate = `translate(${(screen_width - 930) / 2},20)`;
         }
 
         return {size: size, orientation: orientation};
