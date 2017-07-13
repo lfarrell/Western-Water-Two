@@ -1,6 +1,7 @@
 <template>
   <div id="drought_circle_legend" class="row color-legend offset">
-    <div class="col-sm-12 col-lg-4">
+    <div class="col-sm-12 col-lg-5">
+      <h3 class="droughty">Interpreting the Drought Circles</h3>
       <svg width="325" height="100">
         <g transform="translate(35,25)">
           <template v-for="(d, index) in radii">
@@ -13,7 +14,7 @@
         </g>
       </svg>
     </div>
-    <div class="col-sm-12 col-lg-8">
+    <div class="col-sm-12 col-lg-7">
       <h3 class="droughty">Drought Affects</h3>
       <p>The <a href="http://droughtmonitor.unl.edu/AboutUs/ClassificationScheme.aspx">United States Drought Monitor</a> defines the affects of various drought levels as follows:</p>
       <ul class="list-unstyled">
