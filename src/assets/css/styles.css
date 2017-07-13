@@ -158,6 +158,16 @@ a {
   stroke-width: 1.5
 }
 
+#drought_circle_legend circle {
+  fill: none;
+  stroke-width: 2.1;
+}
+
+.droughty {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: white;

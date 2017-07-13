@@ -20,6 +20,7 @@
         </g>
       </template>
     </svg>
+    <drought-legend-chart :colors="colors"></drought-legend-chart>
   </div>
 </template>
 
@@ -27,6 +28,7 @@
   import * as d3 from 'd3';
   import * as _ from 'lodash';
   import vueSlider from 'vue-slider-component';
+  import DroughtLegendChart from './DroughtLegendChart.vue';
   import {tip} from './utilities/tip';
   import {formatting} from './utilities/formatting';
 
@@ -71,7 +73,8 @@
     },
 
     components: {
-      vueSlider
+      vueSlider,
+      DroughtLegendChart: DroughtLegendChart
     },
 
     methods: {
