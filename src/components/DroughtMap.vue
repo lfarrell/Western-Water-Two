@@ -124,8 +124,8 @@
         }
 
         let text = `
-          <h4 class="text-center">${text_formatted}</h4>
-           <h5  class="text-center">Drought Levels (% of ${_.capitalize(header_field)})</h5>
+          <h4 class="text-center tip">${text_formatted}</h4>
+           <h5  class="text-center tip">Drought Levels (% of ${_.capitalize(header_field)})</h5>
            <div class="row">
              <div class="col-md-6">
                <ul class="list-unstyled first">

@@ -84,6 +84,8 @@ div.tooltips {
   pointer-events: none;
 }
 
+#drought_map .tooltips {}
+
 div.tooltips ul {
   list-style-type: none;
   padding: 1% 0 1% 3%;
