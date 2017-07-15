@@ -67,7 +67,7 @@ h4.upper {
 }
 
 h4.tip, h5.tip {
-  font-size: 1.05rem
+  font-size: .95rem
 }
 
 div.tooltips {
@@ -77,7 +77,7 @@ div.tooltips {
   height: auto;
   padding: 5px;
   color: white;
-  font-size: .85rem;
+  font-size: .81rem;
   background-color: rgba(0, 0, 0, .6);
   border: 1px solid lightgray;
   border-radius: 8px;
