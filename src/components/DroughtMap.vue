@@ -129,6 +129,7 @@
 
         let text = `
           <h4 class="text-center tip">${text_formatted}</h4>
+          <h5 class="text-center tip">${formatting.stringDate(state.month, true)}, ${state.year}</h5>
            <h5  class="text-center tip">Drought Levels (% of ${_.capitalize(header_field)})</h5>
            <div class="row">
              <div class="col-md-6">

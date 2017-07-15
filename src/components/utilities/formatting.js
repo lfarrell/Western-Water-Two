@@ -1,11 +1,22 @@
-import * as d3 from 'd3';
+import * as d3 from "d3";
 
 const formatting = {
-  stringDate: function(month) {
-    let month_names = ["Jan", "Feb", "Mar",
-      "Apr", "May", "Jun",
-      "Jul", "Aug", "Sep",
-      "Oct", "Nov", "Dec"];
+  stringDate: function(month, full) {
+    let month_names;
+
+    if(full !== undefined) {
+      month_names = [
+        'January', 'February', 'March',
+        'April', 'May', 'June', 'July',
+        'August', 'September', 'October',
+        'November', 'December'
+      ]
+    } else {
+      month_names = ['Jan', 'Feb', 'Mar',
+        'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep',
+        'Oct', 'Nov', 'Dec'];
+    }
 
     let month_num = parseInt(month, 10) - 1;
 
