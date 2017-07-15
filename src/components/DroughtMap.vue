@@ -1,26 +1,30 @@
 <template>
-  <div  v-show="done" class="col-sm-12 col-lg-12 offset">
-    <h3 class="text-center" style="margin-bottom: 40px">Drought Levels</h3>
-    <vue-slider ref="slider"
-                @callback="updateSlider"
-                v-bind="slider_data"
-                v-model="slider_data.value"></vue-slider>
-    <svg class="is-map" id="drought_map" :height="graph_height" :width="graph_width">
-      <template v-for="(d, index) in centers">
-        <g @mouseover="showItem(d, tipDiv, $event)"
-           @mouseout="hideItem(d, tipDiv, $event)"
-           @touchstart="showItem(d, tipDiv, $event)"
-           @touchend="hideItem(d, tipDiv, $event)">
-          <circle v-for="j in num_circles"
-                  :id="d.county + index + j"
-                  :cx="projection([d.lon, d.lat])[0]"
-                  :cy="projection([d.lon, d.lat])[1]"
-                  :style="{stroke:colors[j]}"
-                  :r="findValue(d, filtered_data, j)"></circle>
-        </g>
-      </template>
-    </svg>
-    <drought-legend-chart :colors="colors"></drought-legend-chart>
+  <div class="col-sm-12 col-lg-12 offset">
+    <div v-if="done">
+      <h3 class="text-center" style="margin-bottom: 40px">Drought Levels</h3>
+      <vue-slider ref="slider"
+                  @callback="updateSlider"
+                  v-bind="slider_data"
+                  v-model="slider_data.value"></vue-slider>
+    </div>
+    <div v-show="done">
+      <svg class="is-map" id="drought_map" :height="graph_height" :width="graph_width">
+        <template v-for="(d, index) in centers">
+          <g @mouseover="showItem(d, tipDiv, $event)"
+             @mouseout="hideItem(d, tipDiv, $event)"
+             @touchstart="showItem(d, tipDiv, $event)"
+             @touchend="hideItem(d, tipDiv, $event)">
+            <circle v-for="j in num_circles"
+                    :id="d.county + index + j"
+                    :cx="projection([d.lon, d.lat])[0]"
+                    :cy="projection([d.lon, d.lat])[1]"
+                    :style="{stroke:colors[j]}"
+                    :r="findValue(d, filtered_data, j)"></circle>
+          </g>
+        </template>
+      </svg>
+      <drought-legend-chart :colors="colors"></drought-legend-chart>
+    </div>
   </div>
 </template>
 
