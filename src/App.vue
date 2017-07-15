@@ -30,7 +30,7 @@
 
       </b-collapse>
     </b-navbar>
-    <router-view></router-view>
+    <router-view v-cloak></router-view>
     <div class="col-offset-sm-1 col-sm-10" v-cloak>
       <p>If you have any questions or comments feel free to contact me via Twitter at @farrelldlfarrel, or email
         at farrelldlfarrell at gmail.com</p>
