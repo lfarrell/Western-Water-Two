@@ -23,6 +23,25 @@ const formatting = {
     return month_names[month_num];
   },
 
+  fullStateName: function(val) {
+    let states = {
+      AZ: 'Arizona',
+      CA: 'California',
+      CO: 'Colorado',
+      ID: 'Idaho',
+      MT: 'Montana',
+      NM: 'New Mexico',
+      NV: 'Nevada',
+      OR: 'Oregon',
+      TX: 'Texas',
+      UT: 'Utah',
+      WA: 'Washington',
+      WY: 'Wyoming'
+    };
+
+    return states[val];
+  },
+
   mapScaling: function(height, width, map) {
     let scale = 1,
       projection = d3.geoAlbers()

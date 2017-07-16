@@ -15,7 +15,6 @@
              @touchstart="showItem(d, tipDiv, $event)"
              @touchend="hideItem(d, tipDiv, $event)">
             <circle v-for="j in num_circles"
-                    :id="d.county + index + j"
                     :cx="projection([d.lon, d.lat])[0]"
                     :cy="projection([d.lon, d.lat])[1]"
                     :style="{stroke:colors[j]}"
@@ -24,6 +23,10 @@
         </template>
       </svg>
       <drought-legend-chart :colors="colors"></drought-legend-chart>
+      <div class="col-offset-sm-1 col-sm-10">
+        <p>If you have any questions or comments feel free to contact me via Twitter at @farrelldlfarrel, or email
+          at farrelldlfarrell at gmail.com</p>
+      </div>
     </div>
   </div>
 </template>
@@ -102,6 +105,7 @@
 
       whichState(values, d) {
         let field = this.whichType(d);
+
         return _.find(values, function(e) {
           return d[field] === e[field];
         });
@@ -124,7 +128,7 @@
         if(header_field === 'county') {
             text_formatted = `${d[header_field]} County`;
         } else {
-            text_formatted = d[header_field];
+            text_formatted = formatting.fullStateName(d[header_field]);
         }
 
         let text = `

@@ -1,18 +1,18 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Map from '@/components/Map'
-import Arizona from '@/components/Arizona'
-import California from '@/components/California'
-import Colorado from '@/components/Colorado'
-import Idaho from '@/components/Idaho'
-import New_Mexico from '@/components/New_Mexico'
-import Nevada from '@/components/Nevada'
-import Oregon from '@/components/Oregon'
-import Texas from '@/components/Texas'
-import Utah from '@/components/Utah'
-import Washington from '@/components/Washington'
-import Wyoming from '@/components/Wyoming'
-import About from '@/components/About'
+import Vue from "vue";
+import Router from "vue-router";
+import Main from "@/components/Main";
+import Arizona from "@/components/Arizona";
+import California from "@/components/California";
+import Colorado from "@/components/Colorado";
+import Idaho from "@/components/Idaho";
+import New_Mexico from "@/components/New_Mexico";
+import Nevada from "@/components/Nevada";
+import Oregon from "@/components/Oregon";
+import Texas from "@/components/Texas";
+import Utah from "@/components/Utah";
+import Washington from "@/components/Washington";
+import Wyoming from "@/components/Wyoming";
+import About from "@/components/About";
 
 
 Vue.use(Router);
@@ -22,15 +22,7 @@ export default new Router({
     {
       name: 'MainMap',
       path: '/',
-      props: {
-        dataFile: 'all_load.csv',
-        mapFile: 'western_us.json',
-        resFile: 'all_resv.json',
-        res: 'Shasta Dam',
-        whichState: 'none',
-        hasKey: true
-      },
-      component: Map
+      component: Main
     },
     {
       name: 'Arizona',
