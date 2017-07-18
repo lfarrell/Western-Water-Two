@@ -112,7 +112,7 @@
           case 'WY':
             return 320;
           default:
-            return 350;
+            return 500;
         }
       },
 
@@ -199,6 +199,9 @@
             });
 
             let elevations = _.pluck(_.uniq(data, 'elev'), 'elev');
+            elevations.sort(function(a, b) {
+                return parseInt(a) - parseInt(b);
+            });
 
             vm.snow_data = data;
             vm.circleSize = vm.circleRadius(data, sizing);

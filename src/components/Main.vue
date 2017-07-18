@@ -7,7 +7,7 @@
       resFile="all_resv.json"
       :hasKey="hasKey"
       whichState="none"></main-map>
-<!--    <snow-chart whichState="AZ"></snow-chart>-->
+    <snow-chart whichState="main"></snow-chart>
     <strip-chart stateFile="munged_drought_all.csv"></strip-chart>
     <drought-map mapFile="western_us.json"
                  centersFile="all_centers.json"
