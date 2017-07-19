@@ -116,8 +116,9 @@
       },
 
       showItem(d, tip, event) {
-        d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
-        tip.tipShow(tip.tipDiv(), d.reservoir, event);
+          let t = d3.select(event.target).attr('r');
+       // d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
+        tip.tipShow(tip.tipDiv(), t, event);
       },
 
       hideItem(d, tip, event) {

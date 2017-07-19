@@ -36,9 +36,7 @@
       circleSizing() {
         let sizing;
 
-        if (this.whichType !== 'map') {
-          sizing = [3, 13];
-        } else if (window.innerWidth < 500) {
+        if (window.innerWidth < 500) {
           sizing = [1, 6];
         } else {
           sizing = [2, 20];
@@ -59,8 +57,8 @@
         } else {
           orientation = 'horizontal';
           this.height = 70;
-          this.width = 350;
-          this.translate = (this.whichType === 'map') ? `translate(${(this.width - 65)  / 2},0)` :
+          this.width = 450;
+          this.translate = (this.whichType === 'map') ? `translate(${(this.width - 165)  / 2},0)` :
             `translate(${(screen_width - 320) / 2},0)`;
         }
 
