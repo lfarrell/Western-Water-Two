@@ -1,6 +1,7 @@
 body {
   color: white;
-  background-color: #333;
+ /* background-color: #333;*/
+  background-color: rgb(37, 37, 35);
   font-size: .93rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -87,6 +88,9 @@ div.tooltips {
 
 #drought_map .tooltips {}
 
+.annotations path {
+  stroke: white;
+}
 div.tooltips ul {
   list-style-type: none;
   padding: 1% 0 1% 3%;
