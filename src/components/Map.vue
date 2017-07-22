@@ -26,19 +26,21 @@
         :dataValues="stations"
         :field="legend_field"
         :whichType="whichType"></circle-legend-chart>
-      <svg id="map" class="is-map" width="600" height="500">
-        <template v-for="(d, index) in stations">
-          <circle :id="whichType + d.state + index"
-                  :cx="projection([d.lng, d.lat])[0]"
-                  :cy="projection([d.lng, d.lat])[1]"
-                  :fill="d.color"
-                  :r="scale(d.capacity)"
-                  @click="newRes(d)"
-                  @mouseover="showItem(d, tipDiv, $event)"
-                  @mouseout="hideItem(d, tipDiv, $event)"
-                  @touchstart="showItem(d, tipDiv, $event)"
-                  @touchend="hideItem(d, tipDiv, $event)"></circle>
-        </template>
+      <svg id="map" class="is-map" :width="width" :height="height" transform="translate(20,0)">
+        <g>
+          <template v-for="(d, index) in stations">
+            <circle :id="whichType + d.state + index"
+                    :cx="projection([d.lng, d.lat])[0]"
+                    :cy="projection([d.lng, d.lat])[1]"
+                    :fill="d.color"
+                    :r="scale(d.capacity)"
+                    @click="newRes(d)"
+                    @mouseover="showItem(d, tipDiv, $event)"
+                    @mouseout="hideItem(d, tipDiv, $event)"
+                    @touchstart="showItem(d, tipDiv, $event)"
+                    @touchend="hideItem(d, tipDiv, $event)"></circle>
+          </template>
+        </g>
       </svg>
     </div>
     <line-chart v-show="done" :whichState="whichState" :reservoirName="reservoirName"
@@ -68,6 +70,8 @@
         data: [],
         stations: [],
         resValue: this.res,
+        height: 600,
+        width: 500,
         scale: {},
         projection: {},
         tipDiv: tip,
@@ -116,9 +120,9 @@
       },
 
       showItem(d, tip, event) {
-          let t = d3.select(event.target).attr('r');
-       // d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
-        tip.tipShow(tip.tipDiv(), t, event);
+        //  let t = d3.select(event.target).attr('r');
+        d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
+        tip.tipShow(tip.tipDiv(), d.reservoir, event);
       },
 
       hideItem(d, tip, event) {
@@ -138,10 +142,7 @@
 
       draw() {
         let vm = this;
-
-        let svg = d3.select('#map');
-        let width = svg.attr('width');
-        let height = svg.attr('height');
+        let svg = d3.select('#map g');
 
         d3.queue()
           .defer(d3.json, `static/data/maps/${this.mapFile}`)
@@ -155,7 +156,7 @@
             let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
             svg.call(zoom);
 
-            let map_path = formatting.mapScaling(height, width, map);
+            let map_path = formatting.mapScaling(vm.height, vm.width, map);
             let path = map_path.path;
 
             let maps = svg.selectAll('path')
