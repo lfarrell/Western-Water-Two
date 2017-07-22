@@ -26,7 +26,7 @@
         :dataValues="stations"
         :field="legend_field"
         :whichType="whichType"></circle-legend-chart>
-      <svg id="map" class="is-map" :width="width" :height="height" transform="translate(20,0)">
+      <svg id="map" class="is-map" :width="width" :height="height" transform="translate(10,0)">
         <g>
           <template v-for="(d, index) in stations">
             <circle :id="whichType + d.state + index"
