@@ -60,9 +60,8 @@
         </ul>
         <p>Project built using:</p>
         <ul>
-          <li><a href="http://d3js.org/">D3.js</a></li>
-          <li><a href="https://github.com/gka/d3-jetpack">D3-jetpack</a></li>
-          <li><a href="https://angularjs.org/">AngularJS</a></li>
+          <li><a href="https://d3js.org/">D3.js</a></li>
+          <li><a href="https://vuejs.org">Vue.js</a></li>
           <li><a href="http://simplehtmldom.sourceforge.net/">PHP Simple HTML DOM Parser</a></li>
         </ul>
         <p>If you have questions or comments feel free to contact me on Twitter at <a href="https://twitter.com/farrelldlfarrel">@farrelldlfarrel</a></p>

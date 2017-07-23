@@ -2,6 +2,11 @@
   <div id="is-top">
     <div v-if="loading" class="loader">Loading...</div>
     <div class="row">
+      <p v-show="done" class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
+        {{headerText}}
+        Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
+        updated monthly; so feel free to check back often. For a writeup on how this site was built see
+      <a href="" class="inside">Water Data for the West</a></p>
     <div v-show="done" class="col-sm-12 col-lg-6 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
@@ -21,11 +26,11 @@
           </g>
         </svg>
       </p>
-      <h4 class="text-center upper">Reservoir Capacity (acre feet)</h4>
-      <circle-legend-chart
-        :dataValues="stations"
-        :field="legend_field"
-        :whichType="whichType"></circle-legend-chart>
+       <h4 class="text-center upper">Reservoir Capacity (acre feet)</h4>
+       <circle-legend-chart
+         :dataValues="stations"
+         :field="legend_field"
+         :whichType="whichType"></circle-legend-chart>
       <svg id="map" class="is-map" :width="width" :height="height" transform="translate(10,0)">
         <g>
           <template v-for="(d, index) in stations">
@@ -76,7 +81,8 @@
         projection: {},
         tipDiv: tip,
         whichType: 'map',
-        legend_field: 'capacity'
+        legend_field: 'capacity',
+        headerText: this.startText
       }
     },
 
@@ -88,6 +94,7 @@
       hasKey: Boolean,
       selectedData: Array,
       reservoirName: String,
+      startText: String,
       whichState: String
     },
 
