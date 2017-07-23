@@ -139,7 +139,7 @@ a, a:visited, a:hover {
   color: white;
 }
 
-.inside a, .inside a:visited, .inside a:hover {
+a.inside, a.inside:visited, a.inside:hover {
   color: orange;
 }
 

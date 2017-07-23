@@ -6,7 +6,7 @@
         {{headerText}}
         Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
         updated monthly; so feel free to check back often. For a writeup on how this site was built see
-      <a href="" class="inside">Water Data for the West</a></p>
+      <a href="" class="inside">Water Data for the West</a>.</p>
     <div v-show="done" class="col-sm-12 col-lg-6 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
@@ -22,7 +22,7 @@
           </g>
           <g>
             <rect x="165" y="15" width="10" height="10" style="fill: rgb(215, 25, 28);"></rect>
-            <text x="180" y="25" height="30" width="40">Less than 50% </text>
+            <text x="180" y="25" height="30" width="40">Less than 50%</text>
           </g>
         </svg>
       </p>
