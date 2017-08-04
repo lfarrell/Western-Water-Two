@@ -135,7 +135,8 @@ g.focus text {
   font-size: .8em;
 }
 
-a, a:visited, a:hover {
+
+a:hover {
   color: white;
 }
 
@@ -157,6 +158,12 @@ a.inside, a.inside:visited, a.inside:hover {
   text-align: center;
 }
 
+.map-header {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
 .hide {
   display: none;
 }

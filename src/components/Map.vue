@@ -2,6 +2,8 @@
   <div id="is-top">
     <div v-if="loading" class="loader">Loading...</div>
     <div class="row">
+      <h3 class="map-header" v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
+      <h3 class="map-header" v-show="done" v-else>The Water of the West - {{fullState}}</h3>
       <p v-show="done" class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
         {{headerText}}
         Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
@@ -75,6 +77,7 @@
         data: [],
         stations: [],
         resValue: this.res,
+        fullState: formatting.fullStateName(this.whichState),
         height: 600,
         width: 500,
         scale: {},
