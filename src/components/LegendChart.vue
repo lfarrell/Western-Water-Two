@@ -37,7 +37,7 @@
         let screen_width = window.innerWidth;
         let size, orientation;
 
-        if(screen_width < 1000) {
+        if(screen_width < 1100) {
           size = 40;
           orientation = 'vertical';
           this.height = 210;
@@ -47,7 +47,7 @@
           size = 80;
           orientation = 'horizontal';
           this.height = 90;
-          this.width = 900;
+          this.width = 1100;
           this.translate = `translate(${(screen_width - 930) / 2},20)`;
         }
 

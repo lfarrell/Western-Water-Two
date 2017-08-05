@@ -57,8 +57,8 @@
         } else {
           orientation = 'horizontal';
           this.height = 70;
-          this.width = 500;
-          this.translate = (this.whichType === 'map') ? `translate(${(this.width - 215)  / 2},0)` :
+          this.width = (this.whichType === 'map') ? 500 : 750;
+          this.translate = (this.whichType === 'map') ? `translate(${(this.width - 225)  / 2},0)` :
             `translate(${(screen_width - 320) / 2},0)`;
         }
 
