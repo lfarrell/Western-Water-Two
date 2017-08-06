@@ -78,7 +78,7 @@
         stations: [],
         resValue: this.res,
         fullState: formatting.fullStateName(this.whichState),
-        height: 600,
+        height: this.baseOffset(this.whichState),
         width: 500,
         scale: {},
         projection: {},
@@ -126,6 +126,37 @@
     },
 
     methods: {
+      baseOffset() {
+        switch(this.whichState) {
+          case 'AZ':
+            return 600;
+          case 'CA':
+            return 600;
+          case 'CO':
+            return 440;
+          case 'ID':
+            return 500;
+          case 'MT':
+            return 500;
+          case 'NV':
+            return 500;
+          case 'NM':
+            return 550;
+          case 'OR':
+            return 430;
+          case 'TX':
+            return 520;
+          case 'UT':
+            return 600;
+          case 'WA':
+            return 430;
+          case 'WY':
+            return 430;
+          default:
+            return 600;
+        }
+      },
+
       newRes(d) {
         this.resValue = d.reservoir;
       },

@@ -68,17 +68,13 @@ const formatting = {
 function yOffset(state) {
   switch(state) {
     case 'CO':
+      return -10;
     case 'OR':
-    case 'WY':
-      return -80;
+      return -30;
     case 'MT':
       return -30;
-    case 'NM':
-      return -30;
-    case 'TX':
-      return -40;
     case 'WA':
-      return -100;
+      return -20;
     default:
       return 0;
   }
