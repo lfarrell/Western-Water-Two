@@ -44,7 +44,8 @@ const formatting = {
 
   mapScaling: function(height, width, map, state) {
     let scale = 1,
-      projection = d3.geoAlbers()
+      mapType = (state !== 'none') ? d3.geoMercator() : d3.geoAlbersUsa(),
+      projection = mapType
         .scale(scale)
         .translate([0,0]);
 
@@ -55,7 +56,7 @@ const formatting = {
       (height - scale * (bounds[1][1] + bounds[0][1])) / 2 + yOffset(state)];
 
     // update projection
-    projection = d3.geoAlbersUsa()
+    projection = mapType
       .scale(scale)
       .translate(translation);
     path = path.projection(projection);
