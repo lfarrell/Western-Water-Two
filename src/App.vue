@@ -19,9 +19,10 @@
             <b-dropdown-item to="/wyoming">Wyoming</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item-dropdown text="Pacific Northwest States">
+            <b-dropdown-item to="/idaho">Idaho</b-dropdown-item>
+            <b-dropdown-item to="/montana">Montana</b-dropdown-item>
             <b-dropdown-item to="/oregon">Oregon</b-dropdown-item>
             <b-dropdown-item to="/washington">Washington</b-dropdown-item>
-            <b-dropdown-item to="/wyoming">Wyoming</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item to="/texas">Texas</b-nav-item>
           <b-nav-item to="/about">About</b-nav-item>
