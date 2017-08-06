@@ -33,7 +33,7 @@
          :dataValues="stations"
          :field="legend_field"
          :whichType="whichType"></circle-legend-chart>
-      <svg id="map" class="is-map" :width="width" :height="height" transform="translate(10,0)">
+      <svg id="map" class="is-map" :width="width" :height="height" transform="translate(35,0)">
         <g>
           <template v-for="(d, index) in stations">
             <circle :id="whichType + d.state + index"
@@ -85,6 +85,7 @@
         tipDiv: tip,
         whichType: 'map',
         legend_field: 'capacity',
+        stateCode: this.whichState,
         headerText: this.startText
       }
     },
@@ -166,7 +167,7 @@
             let zoom = d3.zoom().scaleExtent([1, 5]).on("zoom", zoomed);
             svg.call(zoom);
 
-            let map_path = formatting.mapScaling(vm.height, vm.width, map);
+            let map_path = formatting.mapScaling(vm.height, vm.width, map, vm.stateCode);
             let path = map_path.path;
 
             let maps = svg.selectAll('path')

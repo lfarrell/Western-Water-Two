@@ -42,7 +42,7 @@ const formatting = {
     return states[val];
   },
 
-  mapScaling: function(height, width, map) {
+  mapScaling: function(height, width, map, state) {
     let scale = 1,
       projection = d3.geoAlbers()
         .scale(scale)
@@ -51,9 +51,8 @@ const formatting = {
     let path = d3.geoPath().projection(projection);
     let bounds = path.bounds(map);
     scale = .95 / Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height);
-
     let translation = [(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
-      (height - scale * (bounds[1][1] + bounds[0][1])) / 2];
+      (height - scale * (bounds[1][1] + bounds[0][1])) / 2 + yOffset(state)];
 
     // update projection
     projection = d3.geoAlbersUsa()
@@ -64,5 +63,24 @@ const formatting = {
     return {path: path, projection: projection};
   }
 };
+
+function yOffset(state) {
+  switch(state) {
+    case 'CO':
+    case 'OR':
+    case 'WY':
+      return -80;
+    case 'MT':
+      return -30;
+    case 'NM':
+      return -30;
+    case 'TX':
+      return -40;
+    case 'WA':
+      return -100;
+    default:
+      return 0;
+  }
+}
 
 export {formatting}
