@@ -57,7 +57,7 @@
         none: '',
         done: false,
         slider_data: {
-          value: '06/2017',
+          value: '07/2017',
           width: '80%',
           reverse: true,
           formatter: function(value) {
