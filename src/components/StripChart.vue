@@ -1,6 +1,6 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
-    <h3 class="text-center">Drought Level</h3>
+    <h3 class="text-center">Drought Level (Palmer Drought Index)</h3>
     <h4 class="text-center">Departure from Average (Anomaly from Avg Palmer Value)</h4>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"

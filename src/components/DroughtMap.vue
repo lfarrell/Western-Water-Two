@@ -1,7 +1,7 @@
 <template>
   <div class="col-sm-12 col-lg-12 offset">
     <div v-if="done">
-      <h3 class="text-center" style="margin-bottom: 40px">Drought Levels</h3>
+      <h3 class="text-center" style="margin-bottom: 40px">Drought Levels by {{droughtType}}</h3>
       <vue-slider ref="slider"
                   @callback="updateSlider"
                   v-bind="slider_data"
@@ -56,6 +56,7 @@
         tipDiv: tip,
         none: '',
         done: false,
+        droughtType: '',
         slider_data: {
           value: '07/2017',
           width: '80%',
@@ -66,7 +67,8 @@
             return formatting(create_date(value));
           },
           style: {
-            marginLeft: '10%'
+            marginLeft: '10%',
+            marginBottom: '1%'
           },
           data: []
         }
@@ -171,6 +173,7 @@
               d.full_date = `${d.month}/${d.year}`;
             });
 
+            vm.droughtType = _.capitalize(vm.whichType(data[0]));
             vm.drought_data = data;
             vm.slider_data.data = _.pluck(_.uniq(vm.drought_data, 'full_date'), 'full_date').reverse();
 
