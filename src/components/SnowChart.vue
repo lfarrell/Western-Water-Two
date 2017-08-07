@@ -108,7 +108,7 @@
           case 'UT':
             return 330;
           case 'WA':
-            return 280;
+            return 270;
           case 'WY':
             return 320;
           default:

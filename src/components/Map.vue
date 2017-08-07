@@ -78,7 +78,7 @@
         stations: [],
         resValue: this.res,
         fullState: formatting.fullStateName(this.whichState),
-        height: this.baseOffset(this.whichState),
+        height: this.baseHeight(),
         width: 500,
         scale: {},
         projection: {},
@@ -126,7 +126,7 @@
     },
 
     methods: {
-      baseOffset() {
+      baseHeight() {
         switch(this.whichState) {
           case 'AZ':
             return 600;
