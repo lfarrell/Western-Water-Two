@@ -98,7 +98,7 @@
           case 'ID':
             return 350;
           case 'MT':
-            return 350;
+            return 320;
           case 'NV':
             return 280;
           case 'NM':

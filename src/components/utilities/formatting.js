@@ -72,7 +72,7 @@ function yOffset(state) {
     case 'OR':
       return -30;
     case 'MT':
-      return -30;
+      return -70;
     case 'WA':
       return -20;
     default:
