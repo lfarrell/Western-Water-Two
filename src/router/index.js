@@ -5,6 +5,7 @@ import Arizona from "@/components/Arizona";
 import California from "@/components/California";
 import Colorado from "@/components/Colorado";
 import Idaho from "@/components/Idaho";
+import Montana from "@/components/Montana";
 import New_Mexico from "@/components/New_Mexico";
 import Nevada from "@/components/Nevada";
 import Oregon from "@/components/Oregon";
@@ -13,7 +14,6 @@ import Utah from "@/components/Utah";
 import Washington from "@/components/Washington";
 import Wyoming from "@/components/Wyoming";
 import About from "@/components/About";
-
 
 Vue.use(Router);
 
@@ -43,6 +43,11 @@ export default new Router({
       name: 'Idaho',
       path: '/idaho',
       component: Idaho
+    },
+    {
+      name: 'Montana',
+      path: '/montana',
+      component: Montana
     },
     {
       name: 'Nevada',

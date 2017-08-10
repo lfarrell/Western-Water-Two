@@ -3,7 +3,7 @@
     <montana-map
       mapFile="mt.counties.json"
       dataFile="mt_load.csv"
-      res="Arrowrock"
+      res="Lake Koocanusa"
       resFile="mt.json"
       whichState="MT"></montana-map>
     <snow-chart whichState="MT"></snow-chart>
