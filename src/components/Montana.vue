@@ -8,6 +8,9 @@
       whichState="MT"></montana-map>
     <snow-chart whichState="MT"></snow-chart>
     <strip-chart stateFile="MT_drought_all.csv"></strip-chart>
+    <drought-map mapFile="mt.counties.json"
+                 centersFile="mt_centers.json"
+                 dataFile="mt-counties.csv"></drought-map>
   </div>
 </template>
 
@@ -23,7 +26,8 @@
     components: {
       montanaMap: Map,
       snowChart: SnowChart,
-      stripChart: StripChart
+      stripChart: StripChart,
+      droughtMap: DroughtMap
     }
 
   }

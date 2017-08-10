@@ -78,7 +78,7 @@
     <div class="col-sm-12 col-lg-12">
       <h3 class="droughty text-center offset">Drought Affects</h3>
       <div class="col-xs-12 offset-sm-3 col-sm-9 offset-lg-3 col-lg-8">
-        <p>The <a href="http://droughtmonitor.unl.edu/AboutUs/ClassificationScheme.aspx">United States Drought
+        <p>The <a class="inside" href="http://droughtmonitor.unl.edu/AboutUs/ClassificationScheme.aspx">United States Drought
           Monitor</a> defines the affects of various drought levels as follows:</p>
         <ul class="list-unstyled">
           <li>DO
