@@ -1,7 +1,14 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
     <h3 class="text-center">Drought Level (Palmer Drought Index)</h3>
-    <h4 class="text-center">Departure from Average (Anomaly from Avg Palmer Value)</h4>
+    <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer">
+    The Palmer Drought Index is a measure of long term drought. It calculates soil moisture based on
+      recent precipitation and temperature. 0 is considered a normal level of soil moisture,
+      while increasingly negative numbers indicate progressively severe levels of drought.
+      Positive numbers represent increasingly wet soil conditions. For full details see the
+      <a class="inside" href="https://en.wikipedia.org/wiki/Palmer_drought_index">Wikipedia entry</a>.
+    Hover over a bar to see the value for a particular month.</p>
+    <h5 class="text-center">Departure from Average (Departure from Avg Value)</h5>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
                   :field="legend_field"></legend-chart>

@@ -1,7 +1,13 @@
 <template>
   <div class="col-sm-12 col-lg-12 offset">
     <div v-if="done">
-      <h3 class="text-center" style="margin-bottom: 40px">Drought Levels by {{droughtType}}</h3>
+      <h3 class="text-center">Drought Levels by {{droughtType}}</h3>
+      <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-drought">
+        The following chart shows drought level by {{droughtTypeLower}}. Drought levels are show by a series of nested
+        circles. The larger the circle the greater percentage of the {{droughtTypeLower}} that is at that drought level.
+      In extreme cases, e.g. 100% drought levels, the circles will overlap. If there is no drought in a {{droughtTypeLower}}
+      there won't be any circles at all. Hover over a circle to see the levels for a
+      particular {{droughtTypeLower}}. See the legends below the map for full details.</p>
       <vue-slider ref="slider"
                   @callback="updateSlider"
                   v-bind="slider_data"
@@ -57,6 +63,7 @@
         none: '',
         done: false,
         droughtType: '',
+        droughtTypeLower: '',
         slider_data: {
           value: '07/2017',
           width: '80%',
@@ -173,6 +180,7 @@
               d.full_date = `${d.month}/${d.year}`;
             });
 
+            vm.droughtTypeLower = vm.whichType(data[0]);
             vm.droughtType = _.capitalize(vm.whichType(data[0]));
             vm.drought_data = data;
             vm.slider_data.data = _.pluck(_.uniq(vm.drought_data, 'full_date'), 'full_date').reverse();
