@@ -116,9 +116,7 @@
 
       draw() {
         let data = this.histAvg(this.selectedData),
-          short_format = d3.timeParse('%m/%y'),
-          long_format = d3.timeParse('%m/%Y'),
-          format = this.hasKey ? short_format : long_format,
+          format = d3.timeParse('%m/%Y'),
           margin = this.margins(),
           num_format = d3.format(','),
           vm = this;
@@ -151,7 +149,7 @@
         let avg_storage = this.linePath('mean', format, scales);
         let capacity = this.linePath('capacity', format, scales);
 
-        let chart = d3.select('#line-chart')
+        d3.select('#line-chart')
           .attr('width', this.graph_width + margin.left + margin.right)
           .attr('height', this.graph_height + margin.top + margin.bottom);
 

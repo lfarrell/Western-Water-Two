@@ -1,15 +1,15 @@
 <template>
   <div id="is-top">
     <div v-if="loading" class="loader">Loading...</div>
-    <div class="row">
+    <div class="row" v-show="done">
       <h3 class="map-header" v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
       <h3 class="map-header" v-show="done" v-else>The Water of the West - {{fullState}}</h3>
-      <p v-show="done" class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
+      <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
         {{headerText}}
         Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
         updated monthly; so feel free to check back often. For a writeup on how this site was built see
       <a href="" class="inside">Water Data for the West</a>.</p>
-    <div v-show="done" class="col-sm-12 col-lg-6 map-graph">
+    <div class="col-sm-12 col-lg-6 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
       <p id="map_legend">
@@ -33,7 +33,7 @@
          :dataValues="stations"
          :field="legend_field"
          :whichType="whichType"></circle-legend-chart>
-      <svg id="map" class="is-map" :width="width" :height="height" transform="translate(35,0)">
+      <svg id="map" class="is-map" :width="width" :height="height" :transform="offset">
         <g>
           <template v-for="(d, index) in stations">
             <circle :id="whichType + d.state + index"
@@ -86,6 +86,7 @@
         whichType: 'map',
         legend_field: 'capacity',
         stateCode: this.whichState,
+        offset: this.hasKey ? 'translate(0,0)' : 'translate(35,0)',
         headerText: this.startText
       }
     },
@@ -109,10 +110,7 @@
 
     computed: {
       selectedData: function() {
-        let vm = this;
-        return this.data.filter((d) => {
-          return vm.resName(d) === this.resValue;
-        });
+        return this.data;
       },
 
       reservoirName: function () {
@@ -129,17 +127,15 @@
       baseHeight() {
         switch(this.whichState) {
           case 'AZ':
-            return 600;
+          case 'NV':
+          case 'ID':
+            return 500;
           case 'CA':
             return 600;
           case 'CO':
             return 440;
-          case 'ID':
-            return 500;
           case 'MT':
             return 400;
-          case 'NV':
-            return 500;
           case 'NM':
             return 550;
           case 'OR':
@@ -153,16 +149,23 @@
           case 'WY':
             return 430;
           default:
-            return 600;
+            return 620;
         }
       },
 
       newRes(d) {
         this.resValue = d.reservoir;
+
+        let selected_file = reservoirs.mapped[this.resValue];
+
+        if(selected_file !== undefined) {
+          d3.csv(`static/data/states_all/res/${selected_file}`, (d) => {
+            this.data = d;
+          });
+        }
       },
 
       showItem(d, tip, event) {
-        //  let t = d3.select(event.target).attr('r');
         d3.select(event.target).attr('r', this.scale(d.capacity) * 1.5);
         tip.tipShow(tip.tipDiv(), d.reservoir, event);
       },
@@ -170,10 +173,6 @@
       hideItem(d, tip, event) {
         d3.select(event.target).attr('r', this.scale(d.capacity));
         tip.tipHide(tip.tipDiv());
-      },
-
-      resName(d) {
-          return this.hasKey ? reservoirs.reservoir_names[d.reservoir] : d.reservoir;
       },
 
       mapScale(data) {
@@ -220,16 +219,6 @@
             function zoomed() {
               svg.attr("transform", d3.event.transform);
             }
-
-            let full_file = vm.dataFile.split('_')[0];
-
-            if(full_file !== 'all') {
-                full_file = `${full_file}_all`;
-            }
-
-            d3.csv(`static/data/states_all/${full_file}.csv`, (d) => {
-               vm.data = d.concat(data);
-            });
 
             vm.loading = false;
             vm.done = true;
