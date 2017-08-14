@@ -1,4 +1,4 @@
-reservoir,storage,capacity,pct_capacity,date
+reservoir,storage,capacity,pct_capacity,date,state
 "Alpine Lake",6023,8900,67.7,01/2000
 "Alpine Lake",8891,8900,99.9,02/2000
 "Alpine Lake",8891,8900,99.9,03/2000

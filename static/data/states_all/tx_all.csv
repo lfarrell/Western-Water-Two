@@ -1,4 +1,4 @@
-reservoir,storage,capacity,pct_capacity,date
+reservoir,storage,capacity,pct_capacity,date,state
 Abilene,1079,7900,13.7,01/2000
 Abilene,994,7900,12.6,02/2000
 Abilene,904,7900,11.4,03/2000

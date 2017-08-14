@@ -86,7 +86,7 @@
         whichType: 'map',
         legend_field: 'capacity',
         stateCode: this.whichState,
-        offset: this.hasKey ? 'translate(0,0)' : 'translate(35,0)',
+        offset: this.hasKey || this.whichState === 'TX' ? 'translate(10,0)' : 'translate(35,0)',
         headerText: this.startText
       }
     },
