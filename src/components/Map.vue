@@ -5,7 +5,14 @@
       <h3 class="map-header" v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
       <h3 class="map-header" v-show="done" v-else>The Water of the West - {{fullState}}</h3>
       <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
-        {{headerText}}
+        The western landscape is varied running from desert to rain forest.
+        However, most of the region tends towards aridness, requiring concentrated reservoirs and irrigation
+        to allow for large scale human settlement. The map and graph below shows the network of reservoirs across
+        the west.</p>
+        <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top text-next">
+          Much of the American West has been in and out of drought for most of the 21<sup>st</sup> century; leading
+        to lower average water levels than would be typical. For an example, checkout reservoir levels in California
+        in 2015 and most of 2016.
         Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
         updated monthly; so feel free to check back often. For a writeup on how this site was built see
       <a href="" class="inside">Water Data for the West</a>.</p>
@@ -64,7 +71,6 @@
   import {tip} from './utilities/tip';
   import {reservoirs} from './utilities/stations';
   import {formatting} from './utilities/formatting';
-  import {dataloader} from './utilities/dataloader';
 
   export default {
     name: 'Map',
@@ -79,15 +85,14 @@
         resValue: this.res,
         fullState: formatting.fullStateName(this.whichState),
         height: this.baseHeight(),
-        width: 500,
+        width: 620,
         scale: {},
         projection: {},
         tipDiv: tip,
         whichType: 'map',
         legend_field: 'capacity',
         stateCode: this.whichState,
-        offset: this.hasKey || this.whichState === 'TX' ? 'translate(10,0)' : 'translate(35,0)',
-        headerText: this.startText
+        offset: this.hasKey || this.whichState === 'TX' ? 'translate(10,0)' : 'translate(35,0)'
       }
     },
 
@@ -99,7 +104,6 @@
       hasKey: Boolean,
       selectedData: Array,
       reservoirName: String,
-      startText: String,
       whichState: String
     },
 
@@ -149,7 +153,7 @@
           case 'WY':
             return 430;
           default:
-            return 620;
+            return 420;
         }
       },
 
