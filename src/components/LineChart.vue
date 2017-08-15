@@ -199,8 +199,7 @@
             .attr('transform', `translate(${xScale(format(d.date)) + margin.left},${margin.top})`);
 
           let date_bits = d.date.split('/');
-          let date_offset = vm.whichState === 'none' ? '20' : '';
-          let message = `<h4 class='text-center tip'>${formatting.stringDate(date_bits[0])}, ${date_offset}${date_bits[1]}</h4>
+          let message = `<h4 class='text-center tip'>${formatting.stringDate(date_bits[0])}, ${date_bits[1]}</h4>
           <ul class='list-unstyled'>
           <li>Capacity: ${num_format(d.capacity)} acre ft</li>
           <li>Vol: ${num_format(d.storage)} acre ft</li>
