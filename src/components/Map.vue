@@ -85,7 +85,7 @@
         resValue: this.res,
         fullState: formatting.fullStateName(this.whichState),
         height: this.baseHeight(),
-        width: 620,
+        width: (window.innerWidth > 1000) ? (window.innerWidth / 2) - 20 : 500,
         scale: {},
         projection: {},
         tipDiv: tip,

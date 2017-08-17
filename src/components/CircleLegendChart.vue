@@ -52,7 +52,7 @@
         if(screen_width < 1000) {
           orientation = 'vertical';
           this.height = 210;
-          this.width = 100;
+          this.width = window.innerWidth;
           this.translate = 'translate(0,0)';
         } else {
           orientation = 'horizontal';
@@ -68,8 +68,12 @@
       chartType() {
           let format, spacing;
           if(this.whichType === 'map') {
-              format = ',';
+            format = ',';
+            if(window.innerWidth < 1000) {
+              spacing = 25;
+            } else {
               spacing = 50;
+            }
           } else {
               format = '.01f';
               spacing = 30;

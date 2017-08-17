@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12 col-md-5" id="graph">
+  <div class="col-sm-12 col-lg-6" id="graph">
     <h3>Reservoir: <span>{{location}}</span></h3>
     <p class='center'>21st Century Average Volume: <span>{{res_avg}}</span> acre feet</p>
     <p id="res_legend">
@@ -118,8 +118,7 @@
         let data = this.histAvg(this.selectedData),
           format = d3.timeParse('%m/%Y'),
           margin = this.margins(),
-          num_format = d3.format(','),
-          vm = this;
+          num_format = d3.format(',');
 
         let tip_div = tip.tipDiv();
         let xScale = d3.scaleTime().domain(d3.extent(data, function(d) { return format(d.date); }));
