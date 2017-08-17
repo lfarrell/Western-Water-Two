@@ -1,9 +1,11 @@
 <template>
   <div id="is-top">
-    <div v-if="loading" class="loader">Loading...</div>
+    <div v-if="loading" class="loader" v-bind:class="{'loader-more': loadOffset}">Loading...</div>
     <div class="row" v-show="done">
-      <h3 class="map-header" v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
-      <h3 class="map-header" v-show="done" v-else>The Water of the West - {{fullState}}</h3>
+      <h3 class="map-header" v-bind:class="{'map-header-lower': loadOffset}"
+          v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
+      <h3 class="map-header" v-bind:class="{'map-header-lower': loadOffset}"
+          v-show="done" v-else>The Water of the West - {{fullState}}</h3>
       <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
         The western landscape is varied running from desert to rain forest.
         However, most of the region tends towards aridness, requiring concentrated reservoirs and irrigation
@@ -86,6 +88,7 @@
         fullState: formatting.fullStateName(this.whichState),
         height: this.baseHeight(),
         width: (window.innerWidth > 1000) ? (window.innerWidth / 2) - 20 : 500,
+        loadOffset: window.innerWidth < 1080,
         scale: {},
         projection: {},
         tipDiv: tip,

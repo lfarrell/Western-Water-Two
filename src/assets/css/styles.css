@@ -53,6 +53,10 @@ h1, h2 {
   text-align: center;
 }
 
+.loader-more {
+  margin-top: 90px;
+}
+
 h3, #res_legend, #compare_legend, #map_legend, .center {
   text-align: center;
 }
@@ -177,6 +181,11 @@ a.inside, a.inside:visited, a.inside:hover {
   margin-top: 20px;
   margin-bottom: -10px;
 }
+
+.map-header-lower {
+  margin-top: 60px;
+}
+
 .hide {
   display: none;
 }
