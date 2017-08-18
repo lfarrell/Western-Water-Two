@@ -51,15 +51,15 @@
 
         if(screen_width < 1000) {
           orientation = 'vertical';
-          this.height = 210;
+          this.height = 250;
           this.width = window.innerWidth;
           this.translate = 'translate(0,0)';
         } else {
           orientation = 'horizontal';
           this.height = 70;
-          this.width = (this.whichType === 'map') ? 500 : 750;
-          this.translate = (this.whichType === 'map') ? `translate(${(this.width - 225)  / 2},0)` :
-            `translate(${(screen_width - 320) / 2},0)`;
+          this.width = (this.whichType === 'map') ? 500 : window.innerWidth;
+          this.translate = (this.whichType === 'map') ? `translate(${(this.width -320) / 2},0)` :
+            `translate(${(this.width - 380) / 2},0)`;
         }
 
         return {orientation: orientation};
@@ -76,7 +76,11 @@
             }
           } else {
               format = '.01f';
-              spacing = 30;
+            if(window.innerWidth < 1000) {
+              spacing = 25;
+            } else {
+              spacing = 50;
+            };
           }
 
           return {format: format, spacing: spacing};
