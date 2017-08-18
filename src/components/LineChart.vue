@@ -4,17 +4,17 @@
     <p class='center'>21st Century Average Volume: <span>{{res_avg}}</span> acre feet</p>
     <p id="res_legend">
       <svg width="450" height="45" transform="translate(70,0)">
-        <g>
+     <!--   <g>
           <rect x="20" y="15" width="10" height="10" style="fill: rgb(26, 150, 65);"></rect>
           <text x="35" y="25" height="30" width="40">Capacity</text>
+        </g> -->
+        <g>
+          <rect x="55" y="15" width="10" height="10" style="fill: rgb(252, 232, 131);"></rect>
+          <text x="70" y="25" height="30" width="50">Avg Levels</text>
         </g>
         <g>
-          <rect x="95" y="15" width="10" height="10" style="fill: rgb(252, 232, 131);"></rect>
-          <text x="115" y="25" height="30" width="50">Avg Levels</text>
-        </g>
-        <g>
-          <rect x="185" y="15" width="10" height="10" style="fill: steelblue;"></rect>
-          <text x="200" y="25" height="30" width="50">Current Storage</text>
+          <rect x="150" y="15" width="10" height="10" style="fill: steelblue;"></rect>
+          <text x="165" y="25" height="30" width="50">Current Storage</text>
         </g>
       </svg>
     </p>
