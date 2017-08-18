@@ -29,9 +29,9 @@
       <g>
         <path id="avg_storage" :d="avg_storage" stroke="#FCE883" stroke-dasharray="5,5" :transform="graph_translate"></path>
       </g>
-      <g>
+   <!--   <g>
         <path id="capacity" :d="capacity" stroke="green" :transform="graph_translate"></path>
-      </g>
+      </g> -->
       <g class="focus" style="display:none">
         <line class="y0" x1="0" x2="0" y1="0" :y2="graph_height"></line>
       </g>
@@ -55,7 +55,7 @@
         res_avg: '',
         storage: '',
         avg_storage: '',
-        capacity: '',
+       // capacity: '',
         graph_height: 500 - this.margins().top -this. margins().bottom,
         graph_width: 650 - this.margins().left - this.margins().right,
         graph_translate: `translate(${this.margins().left},${this.margins().top})`
@@ -172,10 +172,10 @@
           .ease(d3.easeSinInOut)
           .attr('d', avg_storage(data));
 
-        d3.select('#capacity').transition()
+       /* d3.select('#capacity').transition()
           .duration(1000)
           .ease(d3.easeSinInOut)
-          .attr('d', capacity(data));
+          .attr('d', capacity(data)); */
 
         let focus = d3.select('.focus');
         d3.select('rect.overlay').on('mouseover touchstart', function () {
