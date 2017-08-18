@@ -2,10 +2,8 @@
   <div id="is-top">
     <div v-if="loading" class="loader" v-bind:class="{'loader-more': loadOffset}">Loading...</div>
     <div class="row" v-show="done">
-      <h3 class="map-header" v-bind:class="{'map-header-lower': loadOffset}"
-          v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
-      <h3 class="map-header" v-bind:class="{'map-header-lower': loadOffset}"
-          v-show="done" v-else>The Water of the West - {{fullState}}</h3>
+      <h3 class="map-header" v-bind:class="{'loader-more': loadOffset}" v-show="done" v-if="this.whichState === 'none'">The Water of the West</h3>
+      <h3 class="map-header" v-bind:class="{'map-header-lower': loadOffset}" v-show="done" v-else>The Water of the West - {{fullState}}</h3>
       <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top">
         The western landscape is varied running from desert to rain forest.
         However, most of the region tends towards aridness, requiring concentrated reservoirs and irrigation
@@ -37,11 +35,11 @@
           </g>
         </svg>
       </p>
-       <h4 class="text-center upper">Reservoir Capacity (acre feet)</h4>
-       <circle-legend-chart
-         :dataValues="stations"
-         :field="legend_field"
-         :whichType="whichType"></circle-legend-chart>
+      <h4 class="text-center upper">Reservoir Capacity (acre feet)</h4>
+      <circle-legend-chart
+        :dataValues="stations"
+        :field="legend_field"
+        :whichType="whichType"></circle-legend-chart>
       <svg id="map" class="is-map" :width="width" :height="height" :transform="offset">
         <g>
           <template v-for="(d, index) in stations">
@@ -87,7 +85,7 @@
         resValue: this.res,
         fullState: formatting.fullStateName(this.whichState),
         height: this.baseHeight(),
-        width: (window.innerWidth > 1000) ? (window.innerWidth / 2) - 20 : 500,
+        width: this.baseWidth(),
         loadOffset: window.innerWidth < 1080,
         scale: {},
         projection: {},
@@ -158,6 +156,18 @@
           default:
             return 420;
         }
+      },
+
+      baseWidth() {
+        let width;
+
+        if(window.innerWidth > 1000 || window.innerWidth < 500) {
+          width = (window.innerWidth / 2) - 20;
+        } else {
+          width = 700;
+        }
+
+        return width;
       },
 
       newRes(d) {
