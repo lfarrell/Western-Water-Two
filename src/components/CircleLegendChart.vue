@@ -1,7 +1,9 @@
 <template>
-  <svg :width="width" :height="height" :transform="translate">
-    <g :id="field" :width="width" transform="translate(20,15)"></g>
-  </svg>
+  <div v-bind:class="{'circle-legend': centerClass}">
+    <svg :width="width" :height="height" :transform="translate">
+      <g :id="field" :width="width" transform="translate(20,15)"></g>
+    </svg>
+  </div>
 </template>
 
 <script>
@@ -15,7 +17,8 @@
       return {
         width: '',
         height: '',
-        translate: ''
+        translate: '',
+        centerClass: false
       }
     },
 
@@ -56,10 +59,17 @@
           this.translate = 'translate(0,0)';
         } else {
           orientation = 'horizontal';
-          this.height = 70;
-          this.width = (this.whichType === 'map') ? 500 : window.innerWidth;
-          this.translate = (this.whichType === 'map') ? `translate(${(this.width -320) / 2},0)` :
-            `translate(${(this.width - 380) / 2},0)`;
+
+          if(this.whichType === 'map') {
+            this.width = 500;
+            this.centerClass = true;
+            this.height = 120;
+            this.translate = '(0,0)';
+          } else {
+            this.width = window.innerWidth;
+            this.height = 70;
+            this.translate = `translate(${(screen_width - 330) / 2},0)`;
+          }
         }
 
         return {orientation: orientation};

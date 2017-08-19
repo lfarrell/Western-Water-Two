@@ -1,8 +1,8 @@
 <template>
   <div id="drought_circle_legend" class="row color-legend offset">
-    <div class="col-xs-12 offset-sm-2 col-sm-5 offset-lg-1 col-lg-5">
+    <div class="col-xs-12 offset-sm-2 col-sm-5 offset-lg-1 col-lg-5 circle-legend">
       <h3 class="droughty">Percentage of State at a Particular Drought Level</h3>
-      <svg width="350" height="55" class="legend" transform="translate(35,0)">
+      <svg width="350" height="55" class="legend">
         <text x="1" y="35" height="30" width="25">
           Smaller
         </text>
@@ -26,7 +26,7 @@
         </text>
       </svg>
     </div>
-    <div class="col-xs-12 col-sm-4 col-lg-4">
+    <div class="col-xs-12 col-sm-4 col-lg-4 circle-legend">
       <h3 class="droughty">Interpreting the Drought Circles</h3>
       <svg width="325" height="100">
         <g class="color-legend" transform="translate(35,25)">
