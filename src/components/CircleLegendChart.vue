@@ -64,7 +64,7 @@
             this.width = 500;
             this.centerClass = true;
             this.height = 120;
-            this.translate = '(0,0)';
+            this.translate = 'translate(0,0)';
           } else {
             this.width = window.innerWidth;
             this.height = 70;
