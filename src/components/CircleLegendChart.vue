@@ -68,7 +68,7 @@
           } else {
             this.width = window.innerWidth;
             this.height = 70;
-            this.translate = `translate(${(screen_width - 330) / 2},0)`;
+            this.translate = `translate(${(screen_width - 380) / 2},0)`;
           }
         }
 
