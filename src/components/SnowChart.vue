@@ -14,7 +14,7 @@
         <a class="inside" href="http://www.nrcs.usda.gov/wps/portal/nrcs/detail/or/snow/?cid=nrcs142p2_046155"
            target="_blank">snow water equivalence</a> is used to normalize the amount of liquid water
         in a given level of snow. The graph below uses <a class="inside" href="https://www.wcc.nrcs.usda.gov/snow">SNOTEL</a>
-        data from automated stations across the west to
+        data; a series automated weather stations distributed across the west to
         measure things such as snow levels and temperature. Notice how temperature and snow levels change with elevation.
         Compare the average snow/water levels by year and elevation. The general trend is towards drier
         conditions, but wet years are interspersed with drier years.</p>
