@@ -7,7 +7,12 @@
       resFile="id.json"
       whichState="ID"></idaho-map>
     <snow-chart whichState="ID"></snow-chart>
-    <strip-chart stateFile="ID_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="ID_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="ID_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="ID_precip_all.csv" stripType="precip"></strip-chart>
+    <drought-map mapFile="id.counties.json"
+                 centersFile="id_centers.json"
+                 dataFile="id-counties.csv"></drought-map>
   </div>
 </template>
 

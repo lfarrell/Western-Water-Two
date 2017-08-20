@@ -7,7 +7,9 @@
       resFile="mt.json"
       whichState="MT"></montana-map>
     <snow-chart whichState="MT"></snow-chart>
-    <strip-chart stateFile="MT_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="MT_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="MT_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="MT_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="mt.counties.json"
                  centersFile="mt_centers.json"
                  dataFile="mt-counties.csv"></drought-map>

@@ -7,7 +7,9 @@
       resFile="az.json"
       whichState="AZ"></arizona-map>
     <snow-chart whichState="AZ"></snow-chart>
-    <strip-chart stateFile="AZ_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="AZ_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="AZ_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="AZ_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="az.counties.json"
       centersFile="az_centers.json"
       dataFile="az-counties.csv"></drought-map>

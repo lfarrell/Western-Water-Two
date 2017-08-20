@@ -7,7 +7,9 @@
       resFile="utah.json"
       whichState="UT"></utah-map>
     <snow-chart whichState="UT"></snow-chart>
-    <strip-chart stateFile="UT_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="UT_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="UT_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="UT_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="ut.counties.json"
                  centersFile="ut_centers.json"
                  dataFile="ut-counties.csv"></drought-map>

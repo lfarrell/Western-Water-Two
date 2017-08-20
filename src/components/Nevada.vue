@@ -7,7 +7,9 @@
       resFile="nv.json"
       whichState="NV"></nevada-map>
     <snow-chart whichState="NV"></snow-chart>
-    <strip-chart stateFile="NV_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="NV_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="NV_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="NV_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="nv.counties.json"
                  centersFile="nv_centers.json"
                  dataFile="nv-counties.csv"></drought-map>

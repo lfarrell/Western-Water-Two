@@ -8,7 +8,9 @@
       :hasKey="hasKey"
       whichState="none"></main-map>
     <snow-chart whichState="main"></snow-chart>
-    <strip-chart stateFile="munged_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="munged_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="munged_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="munged_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="western_us.json"
                  centersFile="all_centers.json"
                  dataFile="all.csv"></drought-map>

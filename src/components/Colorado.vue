@@ -7,7 +7,9 @@
       resFile="co.json"
       whichState="CO"></colorado-map>
     <snow-chart whichState="CO"></snow-chart>
-    <strip-chart stateFile="CO_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="CO_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="CO_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="CO_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="co.counties.json"
                  centersFile="co_centers.json"
                  dataFile="co-counties.csv"></drought-map>

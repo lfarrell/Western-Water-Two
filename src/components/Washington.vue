@@ -7,7 +7,9 @@
       resFile="wa.json"
       whichState="WA"></washington-map>
     <snow-chart whichState="WA"></snow-chart>
-    <strip-chart stateFile="WA_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="WA_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="WA_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="WA_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="wa.counties.json"
                  centersFile="wa_centers.json"
                  dataFile="wa-counties.csv"></drought-map>

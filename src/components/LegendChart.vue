@@ -55,8 +55,9 @@
       },
 
       legendSquare() {
+        let field_name = this.field.split('-')[0];
         let legend_scales = d3.scaleQuantile()
-          .domain(d3.extent(this.dataValues, (d) => { return +d[this.field]; }))
+          .domain(d3.extent(this.dataValues, (d) => { return +d[field_name]; }))
           .range(this.colors);
         let configs = this.legendOrientation();
 

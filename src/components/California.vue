@@ -7,7 +7,9 @@
       resFile="ca.json"
       whichState="CA"></california-map>
     <snow-chart whichState="CA"></snow-chart>
-    <strip-chart stateFile="CA_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="CA_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="CA_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="CA_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="ca.counties.json"
                  centersFile="ca_centers.json"
                  dataFile="ca-counties.csv"></drought-map>

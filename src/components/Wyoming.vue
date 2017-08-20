@@ -7,7 +7,9 @@
       resFile="wy.json"
       whichState="WY"></wyoming-map>
     <snow-chart whichState="WY"></snow-chart>
-    <strip-chart stateFile="WY_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="WY_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="WY_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="WY_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="wy.counties.json"
                  centersFile="wy_centers.json"
                  dataFile="wy-counties.csv"></drought-map>

@@ -7,7 +7,9 @@
       resFile="nm.json"
       whichState="NM"></nm-map>
     <snow-chart whichState="NM"></snow-chart>
-    <strip-chart stateFile="NM_drought_all.csv"></strip-chart>
+    <strip-chart stateFile="NM_drought_all.csv" stripType="drought"></strip-chart>
+    <strip-chart stateFile="NM_temp_all.csv" stripType="temp"></strip-chart>
+    <strip-chart stateFile="NM_precip_all.csv" stripType="precip"></strip-chart>
     <drought-map mapFile="nm.counties.json"
                  centersFile="nm_centers.json"
                  dataFile="nm-counties.csv"></drought-map>

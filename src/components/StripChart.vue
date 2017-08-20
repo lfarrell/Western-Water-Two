@@ -1,14 +1,22 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
-    <h3 class="text-center">Drought Level (Palmer Drought Index)</h3>
-    <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer">
-    The Palmer Drought Index is a measure of long term drought. It calculates soil moisture based on
+    <h3 class="text-center" v-if="this.stripType === 'drought'">Drought Level (Palmer Drought Index)</h3>
+    <h4 class="text-center" v-else-if="this.stripType === 'precip'">Precipitation Level</h4>
+    <h4 class="text-center" v-else="this.stripType === 'temp'">Temperature Level</h4>
+    <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer" v-if="this.stripType === 'drought'">
+      The <a class="inside" href="https://en.wikipedia.org/wiki/Palmer_drought_index">Palmer Drought Index</a>
+      is a measure of long term drought. It calculates soil moisture based on
       recent precipitation and temperature. 0 is considered a normal level of soil moisture,
       while increasingly negative numbers indicate progressively severe levels of drought.
-      Positive numbers represent increasingly wet soil conditions. For full details see the
-      <a class="inside" href="https://en.wikipedia.org/wiki/Palmer_drought_index">Wikipedia entry</a>.
-    Hover over a bar to see the value for a particular month.</p>
-    <h5 class="text-center">Departure from Average (Departure from Avg Value)</h5>
+      Positive numbers represent increasingly wet soil conditions. Compare the Palmer Index to the
+      temperature and precipitation levels below. Recent droughts have tended to have hotter  temperatures
+      than usual. This results in increased levels of
+      <a class="inside" href="https://en.wikipedia.org/wiki/Evapotranspiration">evapotranspiration</a>
+      from the soil and plants, leading to more
+      severe droughts and worse Palmer Index numbers.</p>
+    <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10" v-if="this.stripType === 'drought'">
+      Note: Hover over a bar to see the value for a particular month.</p>
+    <h5 class="text-center">Departure from Average (Avg Anomaly)</h5>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
                   :field="legend_field"></legend-chart>
@@ -47,20 +55,20 @@
         width_large: window.innerWidth - 100 + margins.left + margins.right,
         offset: `translate(${margins.left},0)`,
         scale: {},
-        colors: ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',
-          '#c7eae5','#80cdc1','#35978f','#01665e','#003c30'],
+        colors: this.colorList(),
         stripColor: {},
         barWidth: '',
         avgVals: [],
         tipDiv: tip,
         done: false,
-        legend_field: 'anomaly'
+        legend_field: `anomaly-${this.stripType}`
       }
     },
 
     props: {
       stateFile: String,
-      dataValues: Array
+      dataValues: Array,
+      stripType: String
     },
 
     computed: {
@@ -74,6 +82,20 @@
     },
 
     methods: {
+      colorList() {
+        let colors;
+
+        if(this.stripType === 'precip' || this.stripType === 'drought') {
+          colors = ['#543005','#8c510a','#bf812d','#dfc27d','#f6e8c3','#f5f5f5',
+            '#c7eae5','#80cdc1','#35978f','#01665e','#003c30'];
+        } else {
+          colors = ['#a50026','#d73027','#f46d43','#fdae61','#fee090',
+            '#ffffbf','#e0f3f8','#abd9e9','#74add1','#4575b4','#313695'].reverse();
+        }
+
+        return colors;
+      },
+
       xScale() {
         let scale = d3.scaleTime()
           .range([0, this.width]);
