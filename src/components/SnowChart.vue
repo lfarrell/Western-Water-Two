@@ -128,7 +128,7 @@
           case 'WY':
             return 320;
           default:
-            return 500;
+            return 520;
         }
       },
 

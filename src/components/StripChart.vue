@@ -1,8 +1,8 @@
 <template>
   <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
-    <h3 class="text-center" v-if="this.stripType === 'drought'">Drought Level (Palmer Drought Index)</h3>
-    <h4 class="text-center" v-else-if="this.stripType === 'precip'">Precipitation Level</h4>
-    <h4 class="text-center" v-else="this.stripType === 'temp'">Temperature Level</h4>
+    <h3 class="text-center" v-if="this.stripType === 'drought'">Drought Level ({{areaType}} Wide Palmer Drought Index)</h3>
+    <h4 class="text-center" v-else-if="this.stripType === 'precip'">Precipitation Level ({{areaType}} Wide)</h4>
+    <h4 class="text-center" v-else="this.stripType === 'temp'">Temperature Level ({{areaType}} Wide)</h4>
     <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer" v-if="this.stripType === 'drought'">
       The <a class="inside" href="https://en.wikipedia.org/wiki/Palmer_drought_index">Palmer Drought Index</a>
       is a measure of long term drought. It calculates soil moisture based on
@@ -61,7 +61,8 @@
         avgVals: [],
         tipDiv: tip,
         done: false,
-        legend_field: `anomaly-${this.stripType}`
+        legend_field: `anomaly-${this.stripType}`,
+        areaType: /munged/.test(this.stateFile) ? 'Region' : 'State'
       }
     },
 
