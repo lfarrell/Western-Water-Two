@@ -14,8 +14,8 @@
         to lower average water levels than would be typical. For an example, checkout reservoir levels in California
         in 2015 and most of 2016.
         Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
-        updated monthly; so feel free to check back often. For a writeup on how this site was built see
-      <a href="" class="inside">Water Data for the West</a>.</p>
+          updated monthly; so feel free to check back often.</p><!-- For a writeup on how this site was built see
+      <a href="" class="inside">Water Data for the West</a>.</p>-->
     <div class="col-sm-12 col-lg-6 map-graph">
       <h3>Reservoirs</h3>
       <p class="center">Percent Full for Month Ending ({{dateListing}}), or Most Recently Available Month</p>
