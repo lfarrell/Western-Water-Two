@@ -11,7 +11,7 @@
         the west.</p>
         <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top text-next">
           Much of the American West has been in and out of drought for most of the 21<sup>st</sup> century; leading
-        to lower average water levels than would be typical. For an example, checkout reservoir levels in California
+        to lower average water levels than would be typical. For an example, check out reservoir levels in California
         in 2015 and most of 2016.
         Click a reservoir to display its levels. Hover over the graph to see the levels for a given month. Data
           updated monthly; so feel free to check back often.</p><!-- For a writeup on how this site was built see
