@@ -28,7 +28,8 @@
     components: {
       idahoMap: Map,
       snowChart: SnowChart,
-      stripChart: StripChart
+      stripChart: StripChart,
+      droughtMap: DroughtMap
     }
 
   }
