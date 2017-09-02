@@ -71,6 +71,7 @@
   import {tip} from './utilities/tip';
   import {reservoirs} from './utilities/stations';
   import {formatting} from './utilities/formatting';
+  import {eventing} from './utilities/eventing.js';
 
   export default {
     name: 'Map',
@@ -239,6 +240,9 @@
 
             vm.loading = false;
             vm.done = true;
+
+            // Pass done notice to other components
+            eventing.$emit('is-done', true);
           });
       }
     },

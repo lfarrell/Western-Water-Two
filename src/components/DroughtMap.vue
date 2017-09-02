@@ -45,6 +45,7 @@
   import DroughtLegendChart from './DroughtLegendChart.vue';
   import {tip} from './utilities/tip';
   import {formatting} from './utilities/formatting';
+  import {eventing} from './utilities/eventing.js';
 
   export default {
     name: 'DroughtMap',
@@ -204,8 +205,11 @@
               .attr('d', path);
 
             maps.exit().remove();
-            vm.done = true;
           });
+
+        eventing.$on('is-done', (done) => {
+          vm.done = done;
+        });
       }
     },
 

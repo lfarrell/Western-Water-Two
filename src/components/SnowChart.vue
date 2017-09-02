@@ -54,6 +54,7 @@
   import LegendChart from './LegendChart.vue';
   import CircleLegendChart from './CircleLegendChart.vue';
   import {tip} from './utilities/tip';
+  import {eventing} from './utilities/eventing.js';
 
   export default {
     name: 'SnowChart',
@@ -237,9 +238,11 @@
 
             d3.select("#snow g.x").call(xYearAxis);
             d3.select('#snow g.y').call(yYearAxis);
-
-            vm.done = true;
           });
+
+        eventing.$on('is-done', (done) => {
+          vm.done = done;
+        });
       }
     },
 

@@ -41,6 +41,7 @@
   import * as _ from 'lodash';
   import LegendChart from './LegendChart.vue';
   import {tip} from './utilities/tip';
+  import {eventing} from './utilities/eventing.js';
 
   const margins = { top: 20, right: 50, left: 75, bottom: 75 };
 
@@ -184,7 +185,10 @@
           vm.barWidth = vm.barsWidth();
           vm.avgVals = vm.avgValues(sorted_data);
           vm.barWidth = vm.barsWidth();
-          vm.done = true;
+        });
+
+        eventing.$on('is-done', (done) => {
+          vm.done = done;
         });
       }
     },
