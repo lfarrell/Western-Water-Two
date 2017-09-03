@@ -18,6 +18,10 @@ import About from "@/components/About";
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+
+  base: '/western_water/',
+
   routes: [
     {
       name: 'MainMap',
