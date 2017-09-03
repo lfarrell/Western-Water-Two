@@ -18,6 +18,8 @@ import About from "@/components/About";
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+
   routes: [
     {
       name: 'MainMap',
