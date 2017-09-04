@@ -76,7 +76,7 @@
 
         setTimeout(function() {
           svg.call(legend_scale);
-        }, 100);
+        }, 500);
       }
     }
   }

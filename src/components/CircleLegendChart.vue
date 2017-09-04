@@ -120,7 +120,7 @@
         if(this.whichType !== 'map') {
           setTimeout(function() {
             svg.call(legend_scale);
-          }, 100);
+          }, 500);
         } else {
           svg.call(legend_scale);
         }
