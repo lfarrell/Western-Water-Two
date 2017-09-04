@@ -16,7 +16,8 @@
       return {
         width: '',
         height: '',
-        translate: ''
+        translate: '',
+        done: false
       }
     },
 
@@ -73,9 +74,9 @@
         let svg = d3.select(`#${this.field}`);
         let legend_scale = this.legendSquare();
 
-        eventing.$on('is-done', (done) => {
+        setTimeout(function() {
           svg.call(legend_scale);
-        });
+        }, 100);
       }
     }
   }

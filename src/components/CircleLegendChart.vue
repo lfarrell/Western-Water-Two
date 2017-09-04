@@ -118,9 +118,9 @@
         let legend_scale = this.legendCircle();
 
         if(this.whichType !== 'map') {
-          eventing.$on('is-done', (done) => {
+          setTimeout(function() {
             svg.call(legend_scale);
-          });
+          }, 100);
         } else {
           svg.call(legend_scale);
         }
