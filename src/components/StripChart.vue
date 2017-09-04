@@ -1,26 +1,28 @@
 <template>
-  <div v-show="done" class="col-sm-12 col-lg-12" id="drought-strip">
-    <h3 class="text-center" v-if="this.stripType === 'drought'">Drought Level ({{areaType}} Wide Palmer Drought Index)</h3>
-    <h4 class="text-center" v-else-if="this.stripType === 'precip'">Precipitation Level ({{areaType}} Wide)</h4>
-    <h4 class="text-center" v-else="this.stripType === 'temp'">Temperature Level ({{areaType}} Wide)</h4>
-    <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer" v-if="this.stripType === 'drought'">
-      The <a class="inside" href="https://en.wikipedia.org/wiki/Palmer_drought_index">Palmer Drought Index</a>
-      is a measure of long term drought. It calculates soil moisture based on
-      recent precipitation and temperature. 0 is considered a normal level of soil moisture,
-      while increasingly negative numbers indicate progressively severe levels of drought.
-      Positive numbers represent increasingly wet soil conditions. Compare the Palmer Index to the
-      temperature and precipitation levels below. Recent droughts have tended to have hotter  temperatures
-      than usual. This results in increased levels of
-      <a class="inside" href="https://en.wikipedia.org/wiki/Evapotranspiration">evapotranspiration</a>
-      from the soil and plants, leading to more
-      severe droughts and worse Palmer Index numbers.</p>
-    <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10" v-if="this.stripType === 'drought'">
-      Note: Hover over a bar to see the value for a particular month.</p>
-    <h5 class="text-center">Departure from Average (Avg Anomaly)</h5>
+  <div class="col-sm-12 col-lg-12" id="drought-strip">
+    <div v-show="done">
+      <h3 class="text-center" v-if="this.stripType === 'drought'">Drought Level ({{areaType}} Wide Palmer Drought Index)</h3>
+      <h4 class="text-center" v-else-if="this.stripType === 'precip'">Precipitation Level ({{areaType}} Wide)</h4>
+      <h4 class="text-center" v-else="this.stripType === 'temp'">Temperature Level ({{areaType}} Wide)</h4>
+      <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer" v-if="this.stripType === 'drought'">
+        The <a class="inside" href="https://en.wikipedia.org/wiki/Palmer_drought_index">Palmer Drought Index</a>
+        is a measure of long term drought. It calculates soil moisture based on
+        recent precipitation and temperature. 0 is considered a normal level of soil moisture,
+        while increasingly negative numbers indicate progressively severe levels of drought.
+        Positive numbers represent increasingly wet soil conditions. Compare the Palmer Index to the
+        temperature and precipitation levels below. Recent droughts have tended to have hotter  temperatures
+        than usual. This results in increased levels of
+        <a class="inside" href="https://en.wikipedia.org/wiki/Evapotranspiration">evapotranspiration</a>
+        from the soil and plants, leading to more
+        severe droughts and worse Palmer Index numbers.</p>
+      <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10" v-if="this.stripType === 'drought'">
+        Note: Hover over a bar to see the value for a particular month.</p>
+      <h5 class="text-center">Departure from Average (Avg Anomaly)</h5>
+    </div>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
                   :field="legend_field"></legend-chart>
-    <svg id="strip" height="110" :width="width_large">
+    <svg v-show="done" id="strip" height="110" :width="width_large">
       <template v-for="d in data">
         <rect :x="scale(d.date)" y="0"
               :height="height"

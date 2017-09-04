@@ -8,7 +8,8 @@
 
 <script>
   import * as d3 from 'd3';
-  import legend from 'd3-svg-legend'
+  import legend from 'd3-svg-legend';
+  import {eventing} from './utilities/eventing.js';
 
   export default {
     name: 'CircleLegendChart',
@@ -116,8 +117,14 @@
         let svg = d3.select(`#${this.field}`);
         let legend_scale = this.legendCircle();
 
-        svg.call(legend_scale);
+        if(this.whichType !== 'map') {
+          eventing.$on('is-done', (done) => {
+            svg.call(legend_scale);
+          });
+        } else {
+          svg.call(legend_scale);
+        }
       }
-    }
+    },
   }
 </script>

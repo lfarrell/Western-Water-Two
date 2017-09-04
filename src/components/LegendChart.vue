@@ -6,7 +6,8 @@
 
 <script>
   import * as d3 from 'd3';
-  import legend from 'd3-svg-legend'
+  import legend from 'd3-svg-legend';
+  import {eventing} from './utilities/eventing.js';
 
   export default {
     name: 'LegendChart',
@@ -72,7 +73,9 @@
         let svg = d3.select(`#${this.field}`);
         let legend_scale = this.legendSquare();
 
-        svg.call(legend_scale);
+        eventing.$on('is-done', (done) => {
+          svg.call(legend_scale);
+        });
       }
     }
   }

@@ -1,34 +1,36 @@
 <template>
-  <div v-show="done" class="col-sm-12 col-lg-12">
-    <h3>Snow Levels</h3>
-    <div class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer">
-      <p>Snow is vital to the environmental health of the western United States. Unlike rainfall, it doesn't
-        come as one burst that's here and then quickly gone. Instead, it tends to accrue over the winter and slowly
-        melt as the temperatures rise in the spring. The melt typically continues into the early summer, providing
-        a steady, consistent level of water in mountain watersheds. This is particularly important for a
-        state like California, which receives almost no summer rainfall.</p>
-      <p>Snow comes in a variety of forms. It can be light and airy, almost dry, or it can heavy and dense. For example,
-        light, fluffy snow that measures four feet deep might actually have the
-        same volume of water as heavier, denser snow that is two feet deep.To account
-        for this variation a measure called
-        <a class="inside" href="http://www.nrcs.usda.gov/wps/portal/nrcs/detail/or/snow/?cid=nrcs142p2_046155"
-           target="_blank">snow water equivalence</a> is used to normalize the amount of liquid water
-        in a given level of snow. The graph below uses <a class="inside" href="https://www.wcc.nrcs.usda.gov/snow">SNOTEL</a>
-        data; a series of automated weather stations distributed across the west to
-        measure things such as snow levels and temperature. Notice how temperature and snow levels change with elevation.
-        Compare the average snow/water levels by year and elevation. The general trend is towards drier
-        conditions, but wet years are interspersed with drier years.</p>
+  <div class="col-sm-12 col-lg-12">
+    <div v-show="done">
+      <h3>Snow Levels</h3>
+      <div class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-palmer">
+        <p>Snow is vital to the environmental health of the western United States. Unlike rainfall, it doesn't
+          come as one burst that's here and then quickly gone. Instead, it tends to accrue over the winter and slowly
+          melt as the temperatures rise in the spring. The melt typically continues into the early summer, providing
+          a steady, consistent level of water in mountain watersheds. This is particularly important for a
+          state like California, which receives almost no summer rainfall.</p>
+        <p>Snow comes in a variety of forms. It can be light and airy, almost dry, or it can heavy and dense. For example,
+          light, fluffy snow that measures four feet deep might actually have the
+          same volume of water as heavier, denser snow that is two feet deep.To account
+          for this variation a measure called
+          <a class="inside" href="http://www.nrcs.usda.gov/wps/portal/nrcs/detail/or/snow/?cid=nrcs142p2_046155"
+             target="_blank">snow water equivalence</a> is used to normalize the amount of liquid water
+          in a given level of snow. The graph below uses <a class="inside" href="https://www.wcc.nrcs.usda.gov/snow">SNOTEL</a>
+          data; a series of automated weather stations distributed across the west to
+          measure things such as snow levels and temperature. Notice how temperature and snow levels change with elevation.
+          Compare the average snow/water levels by year and elevation. The general trend is towards drier
+          conditions, but wet years are interspersed with drier years.</p>
+      </div>
+      <h4 class="text-center">Temperature (degrees Fahrenheit)</h4>
     </div>
-    <h4 class="text-center">Temperature (degrees Fahrenheit)</h4>
     <legend-chart :colors="colors"
                   :dataValues="dataValues"
                   :field="legend_temp"></legend-chart>
-    <h4 class="text-center">Snow/Water Equivalence (inches)</h4>
+    <h4 v-show="done" class="text-center">Snow/Water Equivalence (inches)</h4>
     <circle-legend-chart
            :dataValues="dataValues"
            :field="legend_snow"
            :whichType="whichType"></circle-legend-chart>
-    <div id="snow_graph">
+    <div v-show="done" id="snow_graph">
       <svg id="snow" :height="graph_height" :width="graph_width">
         <g class="axis x" :transform="graph_translate"></g>
         <g class="axis y" :transform="graph_translate_left"></g>
