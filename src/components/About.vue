@@ -2,7 +2,7 @@
   <div>
     <h1>Western Water - Introduction</h1>
     <div class="row">
-      <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+      <div class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10">
         <p>Much of the American West is in a prolonged drought. Western Water tracks the water levels of reservoirs in several western states. It is a proxy for water availability
           in the selected states more generally. Results will be updated monthly. The initial goal was to update levels daily,
           but there isn't enough daily change in reservoir levels to warrant such granularity.</p>
@@ -31,7 +31,6 @@
           <li>Lake Texoma, shared with Oklahoma: 50.0% of reservoir belongs to Texas</li>
           <li>Toledo Bend Reservoir, shared with Louisiana: 50.0% of reservoir belongs to Texas</li>
         </ul>
-        </p>
         <p>The goal is to include reservoirs from across the west, particularly the states in the Colorado River basin:
           Colorado, Wyoming, Utah, New Mexico, Nevada, Arizona and California. However, it has been difficult to find historical
           data for most states. For example, the United States Bureau of Reclamation maintains separate web sites for the upper and lower
