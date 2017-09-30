@@ -16,10 +16,10 @@
           Compact guarantees California 4,400,000 acre feet a year. So
           you can spread it among the Colorado River reservoirs however you see fit. If there
           is a shortfall in available water in the river California's water rights trump Arizona's.</p>
-        <p>Texas reservoir data should be complete. A handful of reservoirs in Texas are shared with other states or countries, with
+        <p>Texas reservoir data should be complete. a class="inside" handful of reservoirs in Texas are shared with other states or countries, with
           the water split as a percentage between the agreement partners. The reservoir capacities and volume in the visualization
           are based on Texas' percentages, except as noted below.</p>
-        <p>The shared reservoirs are (per <a href="http://waterdatafortexas.org/">http://waterdatafortexas.org/</a>):
+        <p>The shared reservoirs are (per <a class="inside" href="http://waterdatafortexas.org/">http://waterdatafortexas.org</a>):
         <ul>
           <li>Lake Amistad, shared with Mexico: 56.2% of reservoir belongs to Texas.</li>
           <li>Lake Falcon, shared with Mexico: 58.6% of reservoir belongs to Texas.</li>
@@ -45,27 +45,27 @@
           to obtain, as for instance, California doesn't track groundwater use.</p>
         <p>Data courtesy of the following locations:</p>
         <ul class="no-style">
-          <li><a href="http://cdec.water.ca.gov">California Data Exchange Center</a></li>
-          <li><a href="http://waterdatafortexas.org/">Water Data for Texas</a></li>
-          <li><a href="http://waterdata.usgs.gov/">United States Geological Survey - National Water Information System</a></li>
-          <li><a href="https://www.usbr.gov/">United States Bureau of Reclamation</a></li>
-          <li><a href="http://data.hydrometdataservice.info/dwr/">Salt River Project</a></li>
-          <li><a href="http://www.nwd.usace.army.mil/Media/Fact-Sheets/Fact-Sheet-Article-View/Article/475820/columbia-river-basin-dams/">US Army Corps of Engineers - Northwestern Division</a></li>
-          <li><a href="http://www.wcc.nrcs.usda.gov/snow/">United States Dept of Agriculture - Natural Resources Conservation Service</a></li>
-          <li><a href="http://www.denverwater.org/SupplyPlanning/WaterSupply/ReservoirLevels/">Denver Water</a></li>
-          <li><a href="http://www.waterquality.utah.gov/">Utah Department of Environmental Quality - Division of Water Quality</a></li>
-          <li><a href="https://en.wikipedia.org/">Wikipedia</a></li>
-          <li><a href="https://tools.wmflabs.org/geohack/">GeoHack</a></li>
-          <li><a href="http://www.lat-long.com/">http://www.lat-long.com</a></li>
-          <li><a href="http://catalog.opendata.city/">opendata.city</a></li>
+          <li><a class="inside" href="http://cdec.water.ca.gov">California Data Exchange Center</a></li>
+          <li><a class="inside" href="http://waterdatafortexas.org/">Water Data for Texas</a></li>
+          <li><a class="inside" href="http://waterdata.usgs.gov/">United States Geological Survey - National Water Information System</a></li>
+          <li><a class="inside" href="https://www.usbr.gov/">United States Bureau of Reclamation</a></li>
+          <li><a class="inside" href="http://data.hydrometdataservice.info/dwr/">Salt River Project</a></li>
+          <li><a class="inside" href="http://www.nwd.usace.army.mil/Media/Fact-Sheets/Fact-Sheet-Article-View/Article/475820/columbia-river-basin-dams/">US Army Corps of Engineers - Northwestern Division</a></li>
+          <li><a class="inside" href="http://www.wcc.nrcs.usda.gov/snow/">United States Dept of Agriculture - Natural Resources Conservation Service</a></li>
+          <li><a class="inside" href="http://www.denverwater.org/SupplyPlanning/WaterSupply/ReservoirLevels/">Denver Water</a></li>
+          <li><a class="inside" href="http://www.waterquality.utah.gov/">Utah Department of Environmental Quality - Division of Water Quality</a></li>
+          <li><a class="inside" href="https://en.wikipedia.org/">Wikipedia</a></li>
+          <li><a class="inside" href="https://tools.wmflabs.org/geohack/">GeoHack</a></li>
+          <li><a class="inside" href="http://www.lat-long.com/">http://www.lat-long.com</a></li>
+          <li><a class="inside" href="http://catalog.opendata.city/">opendata.city</a></li>
         </ul>
         <p>Project built using:</p>
         <ul>
-          <li><a href="https://d3js.org/">D3.js</a></li>
-          <li><a href="https://vuejs.org">Vue.js</a></li>
-          <li><a href="http://simplehtmldom.sourceforge.net/">PHP Simple HTML DOM Parser</a></li>
+          <li><a class="inside" href="https://d3js.org/">D3.js</a></li>
+          <li><a class="inside" href="https://vuejs.org">Vue.js</a></li>
+          <li><a class="inside" href="http://simplehtmldom.sourceforge.net/">PHP Simple HTML DOM Parser</a></li>
         </ul>
-        <p>If you have questions or comments feel free to contact me on Twitter at <a href="https://twitter.com/farrelldlfarrel">@farrelldlfarrel</a></p>
+        <p>If you have questions or comments feel free to contact me on Twitter at <a class="inside" href="https://twitter.com/farrelldlfarrel">@farrelldlfarrel</a></p>
       </div>
     </div>
   </div>
