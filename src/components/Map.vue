@@ -141,7 +141,7 @@
           case 'CO':
             return 440;
           case 'MT':
-            return 400;
+            return 500;
           case 'NM':
             return 550;
           case 'OR':
