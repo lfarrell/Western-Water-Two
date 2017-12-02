@@ -26,7 +26,7 @@
           </b-nav-item-dropdown>
           <b-nav-item to="/texas">Texas</b-nav-item>
           <b-nav-item to="/about">About</b-nav-item>
-          <b-nav-item to="http://www.deanfarr.com">Other Visuals</b-nav-item>
+          <b-nav-item href="http://www.deanfarr.com">Other Visuals</b-nav-item>
         </b-nav>
 
       </b-collapse>
