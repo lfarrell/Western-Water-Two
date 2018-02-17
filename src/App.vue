@@ -3,7 +3,7 @@
     <b-navbar toggleable type="inverse" variant="inverse" fixed="top">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-link class="navbar-brand" to="/">
-        <span>Western Water (2000-2017)</span>
+        <span>Western Water (2000-2018)</span>
       </b-link>
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar>
