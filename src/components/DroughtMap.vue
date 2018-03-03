@@ -67,7 +67,7 @@
         droughtType: '',
         droughtTypeLower: '',
         slider_data: {
-          value: '01/2018',
+          value: '02/2018',
           width: '80%',
           reverse: true,
           formatter: function(value) {
