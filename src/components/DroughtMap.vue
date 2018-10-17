@@ -4,7 +4,7 @@
       <h3 class="text-center">Drought Levels by {{droughtType}}</h3>
       <p class="offset-sm-1 col-sm-10 offset-lg-1 col-lg-10 text-top-drought">
         The following chart shows drought level by {{droughtTypeLower}} as reported by the
-        <a class="inside" href="http://droughtmonitor.unl.edu">United States Drought Monitor</a>. Drought levels are show by a series of nested
+        <a class="inside" href="http://droughtmonitor.unl.edu">United States Drought Monitor</a>. Drought levels are represented by a series of nested
         circles. The larger the circle the greater percentage of the {{droughtTypeLower}} that is at that drought level.
       In extreme cases, e.g. 100% drought levels, the circles will overlap. If there is no drought in a {{droughtTypeLower}}
       there won't be any circles at all. Hover over a circle to see the levels for a
@@ -67,7 +67,7 @@
         droughtType: '',
         droughtTypeLower: '',
         slider_data: {
-          value: '05/2018',
+          value: '09/2018',
           width: '80%',
           reverse: true,
           formatter: function(value) {
